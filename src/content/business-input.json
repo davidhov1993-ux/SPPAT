@@ -1,0 +1,31 @@
+{
+  "address": null,
+  "phone": null,
+  "email": null,
+  "kvk": null,
+  "btw": null,
+  "siteUrl": null,
+  "formEndpoint": null,
+  "privacyApproved": false,
+  "responseTime": null,
+  "projects": [],
+  "requiredConfirmations": [
+    "BUSINESS INPUT REQUIRED: Wat is de gemiddelde doorlooptijd voor een complete badkamer bij Sppat?",
+    "BUSINESS INPUT REQUIRED: Werkt Sppat samen met showrooms, leveren jullie zelf, of werkt u uitsluitend met materialen die de klant zelf aanschaft?",
+    "BUSINESS INPUT REQUIRED: Gemiddelde doorlooptijd Sppat invullen",
+    "BUSINESS INPUT REQUIRED: Bevestig of Sppat elektrische of watergedragen vloerverwarming installeert tijdens de renovatie",
+    "BUSINESS INPUT REQUIRED: Bevestig in hoeverre Sppat standaard ontkoppelingsmatten toepast/adviseert",
+    "BUSINESS INPUT REQUIRED: Bevestig of Sppat standaard epoxyvoegen adviseert/uitvoert voor keukenachterwanden",
+    "BUSINESS INPUT REQUIRED: Bevestig de standaard methodiek/systemen van Sppat voor balkons",
+    "BUSINESS INPUT REQUIRED: Welke XXL formaten verwerkt Sppat maximaal in de badkamer?",
+    "BUSINESS INPUT REQUIRED: Bevestig of Sppat het impregneren van natuursteen standaard uitvoert, of dat dit onderhoud is voor de klant",
+    "BUSINESS INPUT REQUIRED: Bevestig welke waterdichtingssystemen Sppat standaard toepast in projecten",
+    "BUSINESS INPUT REQUIRED: Bevestig of er reeds projectfoto's (uit Almere e.o.) beschikbaar zijn om dit grid bij livegang te vullen, inclusief titels en locaties",
+    "BUSINESS INPUT REQUIRED: Korte introductie over de oprichting/historie van Sppat en de omvang/ervaring van het team",
+    "BUSINESS INPUT REQUIRED: responstijd"
+  ],
+  "successMessage": null,
+  "errorMessage": null,
+  "source": "SPPAT_IMPLEMENTATION.md",
+  "businessInformationRequired": "Om de laatste feitelijke bedrijfsdetails te kunnen verifiëren of vullen voor\nlivegang, is de volgende informatie van Sppat noodzakelijk:\n\n1.  Levering materialen: Levert Sppat zelf ook het sanitair en de zichttegels,\n    of wordt uitsluitend ruwbouwmateriaal/arbeid geleverd en shopt de klant zelf\n    of bij een door u aanbevolen showroom?\n2.  Doorlooptijd: Wat is bij Sppat de gem. doorlooptijd (aantal weken) die\n    jullie communiceren voor een standaard complete badkamerrenovatie?\n3.  Standaard werkwijze (Optioneel om te bevestigen):\n    - Vloerverwarming: Installeert Sppat zelf vloerverwarming? Gebruiken\n      jullie standaard ontkoppelingsmatten?\n    - Keukens/Douches: Adviseren jullie proactief epoxyvoeg voor de klant, of\n      is het standaard cement (met evt coating)?\n    - Waterdichting: Welk systeem hanteert Sppat doorgaans in inloopdouches\n      (Kimband+pasta, wedi/bouwplaten, of membranen)?\n    - Natuursteen: Is het impregneren inbegrepen in de Sppat dienst, of is dit\n      klantverantwoordelijkheid na oplevering?\n    - Legverbanden: Welke legverbanden biedt Sppat standaard aan voor\n      vloertegels?\n    - XXL Tegels: Welke XXL formaten verwerkt Sppat maximaal in de badkamer?\n4.  Bedrijfsfeiten (Voor /over-ons/):\n    - Jaar van oprichting of totaal jaren branche-ervaring van de eigenaar(s).\n    - Vorm (eenmanszaak, klein team of vaste poule van onderaannemers).\n5.  Portfolio: Zijn er reeds projectfoto's (uit Almere e.o.) beschikbaar om het\n    portfolio bij livegang te vullen?\n6.  Responstijd contactformulier: Communiceren jullie bijv. 'binnen 24 uur' of\n    'binnen 2 werkdagen'?"
+}

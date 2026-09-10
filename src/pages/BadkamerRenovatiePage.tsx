@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
+import CtaArrow from '../components/CtaArrow'
 
 export default function BadkamerRenovatiePage({ page }: { page: Page }) {
   const [pastHero, setPastHero] = useState(false)
@@ -58,7 +59,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
                 <div className="hero-cta-action">
                   <a href={hero['Primary CTA URL']} className="btn">
                     {hero['Primary CTA']}
-                    <span className="btn-arrow" aria-hidden="true">↗</span>
+                    <CtaArrow />
                   </a>
                 </div>
               )}
@@ -286,7 +287,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
                 <div className="conclusion-action">
                   <a href={cta.URL || '/contact/'} className="btn">
                     {cta.Button || 'Project bespreken'}
-                    <span className="btn-arrow" aria-hidden="true">↗</span>
+                    <CtaArrow />
                   </a>
                 </div>
               </div>
@@ -315,7 +316,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
           <span className="sticky-mobile-cta-label">Badkamer Renovatie</span>
           <a href="/contact/" className="sticky-mobile-cta-btn">
             Offerte Aanvragen
-            <span aria-hidden="true">↗</span>
+            <CtaArrow />
           </a>
         </div>
       </div>

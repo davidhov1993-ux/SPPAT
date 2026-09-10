@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { Page, Project } from '../content/types'
 import business from '../content/business-input.json'
 import { CtaTypeA } from '../components/CtaSection'
+import CtaArrow from '../components/CtaArrow'
 
 export default function ProjectsPage({ page }: { page: Page }) {
   const [filter, setFilter] = useState('Alle')
@@ -32,7 +33,7 @@ export default function ProjectsPage({ page }: { page: Page }) {
               <div style={{ marginTop: '16px' }}>
                 <a href={hero['Primary CTA URL']} className="btn">
                   {hero['Primary CTA']}
-                  <span className="btn-arrow" aria-hidden="true">↗</span>
+                  <CtaArrow />
                 </a>
               </div>
             )}

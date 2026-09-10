@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
 import { CtaTypeA } from '../components/CtaSection'
+import CtaArrow from '../components/CtaArrow'
 
 const heroMedia = {
   src: '/media/SPPAT-VIS-001.jpg',
@@ -67,7 +68,7 @@ export default function HomePage({ page }: { page: Page }) {
                 <div>
                   <a href={hero['Primary CTA URL']} className="btn">
                     {hero['Primary CTA']}
-                    <span className="btn-arrow" aria-hidden="true">↗</span>
+                    <CtaArrow />
                   </a>
                 </div>
               )}
@@ -144,7 +145,7 @@ export default function HomePage({ page }: { page: Page }) {
 
                     <a href={card['CTA URL']} className="text-link">
                       {card.CTA || 'Lees meer'}
-                      <span className="btn-arrow" aria-hidden="true">↗</span>
+                      <CtaArrow />
                     </a>
                   </article>
                 )
@@ -207,7 +208,7 @@ export default function HomePage({ page }: { page: Page }) {
                   <div style={{ marginTop: '16px' }}>
                     <a href={proofBlock['CTA URL']} className="text-link">
                       {proofBlock.CTA}
-                      <span className="btn-arrow" aria-hidden="true">↗</span>
+                      <CtaArrow />
                     </a>
                   </div>
                 )}

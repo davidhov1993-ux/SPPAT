@@ -265,12 +265,21 @@ summary:focus-visible {
 .btn-arrow {
   font-size: 18px;
   line-height: 1;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.btn-arrow svg {
+  display: block;
 }
 
 .btn:hover .btn-arrow,
-.text-link:hover .btn-arrow {
+.text-link:hover .btn-arrow,
+.sticky-mobile-cta-btn:hover .btn-arrow,
+.footer-almere-link:hover .btn-arrow {
   transform: translate(3px, -3px);
 }
 

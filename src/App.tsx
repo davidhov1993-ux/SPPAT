@@ -3,6 +3,7 @@ import pageData from './content/pages.json'
 import type { Page } from './content/types'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import CtaArrow from './components/CtaArrow'
 import HomePage from './pages/HomePage'
 import CommercialPage from './pages/CommercialPage'
 import BadkamerRenovatiePage from './pages/BadkamerRenovatiePage'
@@ -97,7 +98,7 @@ export default function App({
             <p>De opgevraagde pagina bestaat niet of is verplaatst.</p>
             <a href="/" className="btn">
               Naar homepagina
-              <span className="btn-arrow" aria-hidden="true">↗</span>
+              <CtaArrow />
             </a>
           </section>
         )}

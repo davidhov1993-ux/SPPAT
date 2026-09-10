@@ -1,4 +1,5 @@
 import business from '../content/business-input.json'
+import CtaArrow from './CtaArrow'
 
 const dienstenLinks: [string, string][] = [
   ['Complete badkamer renovatie', '/complete-badkamer-renovatie/'],
@@ -90,7 +91,7 @@ export default function Footer() {
           <p className="footer-copy">Sppat — Almere &amp; Nederland</p>
           <a href="/complete-badkamer-renovatie/almere/" className="footer-almere-link">
             Badkamer Renovatie in Almere
-            <span className="btn-arrow" aria-hidden="true">↗</span>
+            <CtaArrow />
           </a>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import CtaArrow from './CtaArrow'
 
 const navItems: [string, string][] = [
   ['Badkamers', '/complete-badkamer-renovatie/'],
@@ -62,7 +63,7 @@ export default function Header({ path }: { path: string }) {
         <div className="header-action-desktop">
           <a href="/contact/" className="btn btn-header">
             Project bespreken
-            <span className="btn-arrow" aria-hidden="true">↗</span>
+            <CtaArrow />
           </a>
         </div>
 
@@ -116,7 +117,7 @@ export default function Header({ path }: { path: string }) {
                   onClick={handleClose}
                 >
                   <span className="mobile-nav-label">{label}</span>
-                  <span className="btn-arrow" aria-hidden="true">↗</span>
+                  <CtaArrow />
                 </a>
               )
             })}
@@ -125,7 +126,7 @@ export default function Header({ path }: { path: string }) {
           <div className="mobile-menu-footer">
             <a href="/contact/" className="btn btn-mobile-cta" onClick={handleClose}>
               Project bespreken
-              <span className="btn-arrow" aria-hidden="true">↗</span>
+              <CtaArrow />
             </a>
             <p className="mobile-location-notice">Sppat — Almere &amp; Nederland</p>
           </div>

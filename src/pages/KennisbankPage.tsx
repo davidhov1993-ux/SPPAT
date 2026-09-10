@@ -3,6 +3,7 @@ import RichText from '../components/RichText'
 import Placeholder from '../components/Placeholder'
 import KennisbankNav from '../components/KennisbankNav'
 import { CtaTypeB, CtaTypeC } from '../components/CtaSection'
+import CtaArrow from '../components/CtaArrow'
 
 export default function KennisbankPage({ page }: { page: Page }) {
   const isHub = page.url === '/kennisbank/'
@@ -72,7 +73,7 @@ export default function KennisbankPage({ page }: { page: Page }) {
                             </div>
                             <a href={card['CTA URL']} className="text-link">
                               {card.CTA || 'Lees artikel'}
-                              <span className="btn-arrow" aria-hidden="true">↗</span>
+                              <CtaArrow />
                             </a>
                           </article>
                         ))}
@@ -83,7 +84,7 @@ export default function KennisbankPage({ page }: { page: Page }) {
                       <div style={{ marginTop: '16px' }}>
                         <a href={block['CTA URL']} className="text-link">
                           {block.CTA}
-                          <span className="btn-arrow" aria-hidden="true">↗</span>
+                          <CtaArrow />
                         </a>
                       </div>
                     )}

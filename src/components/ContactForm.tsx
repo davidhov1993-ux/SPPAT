@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import type { ChangeEvent, DragEvent, FormEvent } from 'react'
 import business from '../content/business-input.json'
+import CtaArrow from './CtaArrow'
 
 const projectTypes = [
   'Badkamer renovatie',
@@ -262,7 +263,7 @@ export default function ContactForm() {
           disabled={!business.formEndpoint || status === 'sending'}
         >
           {status === 'sending' ? 'Verzenden…' : 'Project bespreken'}
-          <span className="btn-arrow" aria-hidden="true">↗</span>
+          <CtaArrow />
         </button>
       </div>
     </form>

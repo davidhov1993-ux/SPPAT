@@ -1,4 +1,5 @@
 import type { Block } from '../content/types'
+import CtaArrow from './CtaArrow'
 
 interface CtaProps {
   block: Block
@@ -18,7 +19,7 @@ export function CtaTypeA({ block, className = '' }: CtaProps) {
         <div className="cta-a-action">
           <a href={url} className="btn">
             {buttonLabel}
-            <span className="btn-arrow" aria-hidden="true">↗</span>
+            <CtaArrow />
           </a>
         </div>
       </div>
@@ -41,7 +42,7 @@ export function CtaTypeB({ block, className = '' }: CtaProps) {
         <div className="cta-b-action">
           <a href={url} className="btn">
             {buttonLabel}
-            <span className="btn-arrow" aria-hidden="true">↗</span>
+            <CtaArrow />
           </a>
         </div>
       </div>
@@ -57,7 +58,7 @@ export function CtaTypeC({ className = '' }: { className?: string }) {
       <p>Heeft u vragen over de haalbaarheid of technische detaillering van uw project?</p>
       <a href="/contact/" className="text-link">
         Project bespreken
-        <span className="btn-arrow" aria-hidden="true">↗</span>
+        <CtaArrow />
       </a>
     </aside>
   )

@@ -2,6 +2,7 @@ import type { Page } from '../content/types'
 import RichText from '../components/RichText'
 import Placeholder from '../components/Placeholder'
 import { CtaTypeA, CtaTypeB } from '../components/CtaSection'
+import CtaArrow from '../components/CtaArrow'
 
 const specialisatiesImages: Record<string, { src: string; alt: string }> = {
   '/specialisaties/': {
@@ -50,7 +51,7 @@ export default function SpecialisatiesPage({ page }: { page: Page }) {
                 <div>
                   <a href={hero['Primary CTA URL']} className="btn">
                     {hero['Primary CTA']}
-                    <span className="btn-arrow" aria-hidden="true">↗</span>
+                    <CtaArrow />
                   </a>
                 </div>
               )}
@@ -146,7 +147,7 @@ export default function SpecialisatiesPage({ page }: { page: Page }) {
                           </div>
                           <a href={card['CTA URL']} className="text-link">
                             {card.CTA || 'Lees meer'}
-                            <span className="btn-arrow" aria-hidden="true">↗</span>
+                            <CtaArrow />
                           </a>
                         </article>
                       ))}
@@ -157,7 +158,7 @@ export default function SpecialisatiesPage({ page }: { page: Page }) {
                     <div style={{ marginTop: '16px' }}>
                       <a href={block['CTA URL']} className="text-link">
                         {block.CTA}
-                        <span className="btn-arrow" aria-hidden="true">↗</span>
+                        <CtaArrow />
                       </a>
                     </div>
                   )}

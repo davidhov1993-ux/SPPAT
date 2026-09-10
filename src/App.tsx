@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import CommercialPage from './pages/CommercialPage'
+import BadkamerRenovatiePage from './pages/BadkamerRenovatiePage'
 import TegelwerkPage from './pages/TegelwerkPage'
 import SpecialisatiesPage from './pages/SpecialisatiesPage'
 import KennisbankPage from './pages/KennisbankPage'
@@ -18,6 +19,9 @@ const pages = pageData as Page[]
 function renderPage(page: Page) {
   if (page.url === '/') {
     return <HomePage page={page} />
+  }
+  if (page.url === '/complete-badkamer-renovatie/') {
+    return <BadkamerRenovatiePage page={page} />
   }
   if (
     page.url.startsWith('/complete-badkamer-renovatie') ||

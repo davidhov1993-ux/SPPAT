@@ -1548,3 +1548,592 @@
     gap: 12px;
   }
 }
+
+/* --------------------------------------------------
+   14. COMPLETE BADKAMER RENOVATIE PAGE ("The Anatomy of Precision")
+   -------------------------------------------------- */
+.badkamer-page {
+  position: relative;
+}
+
+/* Section Spacing (Desktop min 120px, Mobile 50% reduction = 60px) */
+.badkamer-phase-section,
+.badkamer-intro-section,
+.badkamer-standard-section,
+.badkamer-pricing-section,
+.badkamer-conclusion-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .badkamer-phase-section,
+  .badkamer-intro-section,
+  .badkamer-standard-section,
+  .badkamer-pricing-section,
+  .badkamer-conclusion-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+/* SECTION 1: HERO (The Architectural Ambition) */
+.badkamer-hero-section {
+  padding-top: var(--space-md);
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.badkamer-hero-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.badkamer-hero-media {
+  margin: 0;
+  width: 100%;
+}
+
+.badkamer-hero-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.badkamer-hero-content-block {
+  position: relative;
+  z-index: 2;
+  background-color: var(--color-bg);
+  max-width: 680px;
+  margin-top: -80px;
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.badkamer-hero-content-block h1 {
+  font-size: clamp(32px, 4.2vw, 56px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1024px) {
+  .badkamer-hero-section {
+    padding-bottom: 80px;
+  }
+
+  .badkamer-hero-img {
+    aspect-ratio: 4 / 3;
+    object-position: center right;
+  }
+
+  .badkamer-hero-content-block {
+    margin-top: 0;
+    max-width: 100%;
+    padding: var(--space-md) 0 0 0;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .badkamer-hero-section {
+    padding-top: var(--space-xs);
+    padding-bottom: 60px;
+  }
+
+  .badkamer-hero-img {
+    aspect-ratio: 4 / 5;
+    object-position: center right;
+  }
+
+  .badkamer-hero-content-block {
+    margin-top: 0;
+    padding: var(--space-sm) 0 0 0;
+    border: none;
+  }
+}
+
+/* SECTION 2: INTRODUCTION (Typography-led Manifesto) */
+.badkamer-intro-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+}
+
+.badkamer-intro-container {
+  grid-column: 3 / 11;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.manifesto-lead {
+  font-size: clamp(19px, 2vw, 26px);
+  line-height: 1.5;
+  color: var(--color-text);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 1024px) {
+  .badkamer-intro-container {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Common Phase Styles */
+.phase-badge {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+  display: block;
+}
+
+.phase-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.phase-item {
+  display: flex;
+  gap: var(--space-xs);
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--color-border);
+}
+
+.phase-item-num {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.phase-item-content p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.phase-media-figure {
+  margin: 0;
+  width: 100%;
+}
+
+/* SECTION 3: PHASE 1 (Deconstruction & Foundation) */
+.phase-1-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  align-items: center;
+}
+
+.phase-1-media {
+  grid-column: 1 / 6;
+}
+
+.phase-1-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center center;
+  filter: contrast(1.05) saturate(0.85);
+  display: block;
+  border: 1px solid var(--color-border);
+}
+
+.phase-1-text {
+  grid-column: 7 / 13;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 1024px) {
+  .phase-1-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .phase-1-media {
+    order: 1;
+    width: 100%;
+  }
+
+  .phase-1-img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .phase-1-text {
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .phase-1-img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* SECTION 4: PHASE 2 (Waterproofing & Preparation) */
+.phase-2-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  align-items: center;
+}
+
+.phase-2-text {
+  grid-column: 1 / 7;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.phase-2-media {
+  grid-column: 9 / 13;
+  margin-top: -40px;
+}
+
+.phase-2-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  border: 1px solid var(--color-border);
+}
+
+@media (max-width: 1024px) {
+  .phase-2-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .phase-2-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .phase-2-media {
+    order: 2;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .phase-2-img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .phase-2-img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* SECTION 5: PHASE 3 (Tile Execution) */
+.phase-3-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+}
+
+.phase-3-text {
+  grid-column: 3 / 11;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.phase-3-media {
+  grid-column: 3 / 11;
+  width: 100%;
+}
+
+.phase-3-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  border: 1px solid var(--color-border);
+}
+
+@media (max-width: 1024px) {
+  .phase-3-text {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .phase-3-media {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .phase-3-img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .phase-3-media {
+    margin-left: calc(-1 * var(--grid-margin));
+    margin-right: calc(-1 * var(--grid-margin));
+    width: calc(100% + 2 * var(--grid-margin));
+  }
+
+  .phase-3-img {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+/* SECTION 6: THE SPPAT STANDARD (Details) */
+.standard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  align-items: center;
+}
+
+.standard-media {
+  grid-column: 1 / 7;
+}
+
+.standard-media-figure {
+  margin: 0;
+  width: 100%;
+}
+
+.standard-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center right;
+  display: block;
+  border: 1px solid var(--color-border);
+}
+
+.standard-text {
+  grid-column: 8 / 13;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 1024px) {
+  .standard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .standard-media {
+    order: 1;
+    width: 100%;
+  }
+
+  .standard-img {
+    aspect-ratio: 3 / 4;
+  }
+
+  .standard-text {
+    order: 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .standard-img {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+/* INTERLUDE: PRICING & MARKET INDICATIONS */
+.pricing-header {
+  margin-bottom: var(--space-lg);
+  max-width: 780px;
+}
+
+.pricing-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gutter);
+}
+
+.pricing-card {
+  background-color: var(--color-surface);
+  padding: var(--space-md) var(--space-sm);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.pricing-card-num {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.pricing-card-body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+@media (max-width: 1024px) {
+  .pricing-cards-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+}
+
+/* SECTION 7: CONCLUSION & CTA */
+.badkamer-conclusion-section {
+  background-color: var(--color-surface);
+}
+
+.badkamer-conclusion-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  align-items: center;
+}
+
+.badkamer-conclusion-text {
+  grid-column: 1 / 7;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.badkamer-conclusion-media {
+  grid-column: 8 / 13;
+}
+
+.badkamer-conclusion-figure {
+  margin: 0;
+  width: 100%;
+}
+
+.badkamer-conclusion-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  border: 1px solid var(--color-border);
+}
+
+@media (max-width: 1024px) {
+  .badkamer-conclusion-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .badkamer-conclusion-text {
+    order: 1;
+    width: 100%;
+  }
+
+  .badkamer-conclusion-media {
+    order: 2;
+    width: 100%;
+  }
+
+  .badkamer-conclusion-img {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@media (max-width: 768px) {
+  .badkamer-conclusion-img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* MOBILE UI ADDITION: STICKY BOTTOM "OFFERTE AANVRAGEN" BAR */
+.sticky-mobile-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 12px 0;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.25s ease;
+}
+
+.sticky-mobile-cta.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sticky-mobile-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs);
+}
+
+.sticky-mobile-cta-label {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.02em;
+}
+
+.sticky-mobile-cta-btn {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sticky-mobile-cta-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+@media (min-width: 1025px) {
+  .sticky-mobile-cta {
+    display: none !important;
+  }
+}
+

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import pageData from './content/pages.json'
 import type { Page } from './content/types'
 import Header from './components/Header'
@@ -51,81 +51,12 @@ function renderPage(page: Page) {
 }
 
 export default function App({
-  path: initialPath = typeof window !== 'undefined' ? window.location.pathname : '/'
+  path = typeof window !== 'undefined' ? window.location.pathname : '/'
 }: {
   path?: string
 }) {
-  const [prevInitialPath, setPrevInitialPath] = useState(initialPath)
-  const [currentPath, setCurrentPath] = useState(initialPath)
-
-  if (initialPath !== prevInitialPath) {
-    setPrevInitialPath(initialPath)
-    setCurrentPath(initialPath)
-  }
-
-  const normalized = currentPath === '/' ? '/' : `${currentPath.replace(/\/+$/, '')}/`
+  const normalized = path === '/' ? '/' : `${path.replace(/\/+$/, '')}/`
   const page = pages.find(item => item.url === normalized)
-
-  useEffect(() => {
-    const handleLocationChange = () => {
-      setCurrentPath(window.location.pathname)
-    }
-
-    const handleClick = (e: MouseEvent) => {
-      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return
-
-      const target = (e.target as HTMLElement).closest('a')
-      if (!target) return
-      if (e.defaultPrevented || target.target === '_blank') return
-
-      const href = target.getAttribute('href')
-      if (!href) return
-
-      // In-page hash jumps
-      if (href.startsWith('#')) return
-
-      // External links or protocols
-      if (
-        href.startsWith('http://') ||
-        href.startsWith('https://') ||
-        href.startsWith('mailto:') ||
-        href.startsWith('tel:')
-      ) {
-        return
-      }
-
-      // Internal same-origin route
-      if (href.startsWith('/')) {
-        const [targetPath, hash] = href.split('#')
-        const currentNorm = window.location.pathname === '/' ? '/' : `${window.location.pathname.replace(/\/+$/, '')}/`
-        const targetNorm = targetPath === '/' ? '/' : `${targetPath.replace(/\/+$/, '')}/`
-
-        e.preventDefault()
-
-        if (targetNorm !== currentNorm) {
-          window.history.pushState(null, '', href)
-          setCurrentPath(targetNorm)
-          if (!hash) {
-            window.scrollTo(0, 0)
-          } else {
-            const el = document.getElementById(hash)
-            if (el) el.scrollIntoView()
-          }
-        } else if (hash) {
-          window.location.hash = hash
-          const el = document.getElementById(hash)
-          if (el) el.scrollIntoView()
-        }
-      }
-    }
-
-    window.addEventListener('click', handleClick)
-    window.addEventListener('popstate', handleLocationChange)
-    return () => {
-      window.removeEventListener('click', handleClick)
-      window.removeEventListener('popstate', handleLocationChange)
-    }
-  }, [])
 
   useEffect(() => {
     if (!page) {

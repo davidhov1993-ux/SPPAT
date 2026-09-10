@@ -15,10 +15,27 @@ try {
     let html = template.replace(/<title>.*?<\/title>/, `<title>${escape(page.title)}</title>`)
       .replace(/<meta name="description" content=".*?"\s*\/>/, `<meta name="description" content="${escape(page.description)}" />`)
       .replace('<div id="root"></div>', `<div id="root" data-route="${page.url}">${body}</div>`)
-    if (page.url === '/404/') html = html.replace('</head>', '<meta name="robots" content="noindex" /></head>')
+    if (page.url === '/404/') {
+      const redirectScript = `<meta name="robots" content="noindex" />
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      if (l.pathname !== '/404' && l.pathname !== '/404/' && l.pathname !== '/404.html') {
+        l.replace(
+          l.protocol + '//' + l.host + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      }
+    </script></head>`
+      html = html.replace('</head>', redirectScript)
+    }
     const target = page.url === '/404/' ? 'dist/404.html' : path.join('dist', page.url, 'index.html')
     await mkdir(path.dirname(target), { recursive: true })
     await writeFile(target, html)
   }
+  await writeFile('dist/.nojekyll', '')
   console.log(`Prerendered ${pages.length} approved routes and a 404 page.`)
 } finally { await server.close() }

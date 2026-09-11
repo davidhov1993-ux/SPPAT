@@ -12,7 +12,7 @@ export default function RichText({ text, links }: { text: string; links?: Link[]
       const index = part.indexOf(anchor)
       return [
         part.slice(0, index),
-        <a key={`${link.url}-${i}`} href={link.url}>
+        <a key={`${link.url}-${i}`} className="inline-link" href={link.url}>
           {anchor}
         </a>,
         part.slice(index + anchor.length)

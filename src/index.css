@@ -45,6 +45,12 @@
   --space-xl: 120px;
   --space-2xl: 160px;
 
+  --spacing-xs: 16px;
+  --spacing-sm: 32px;
+  --spacing-md: 64px;
+  --spacing-lg: 120px;
+  --spacing-xl: 160px;
+
   /* Grid Tokens */
   --grid-max-width: 1440px;
   --grid-gutter: 24px;

@@ -7,7 +7,9 @@ import CtaArrow from './components/CtaArrow'
 import HomePage from './pages/HomePage'
 import CommercialPage from './pages/CommercialPage'
 import BadkamerRenovatiePage from './pages/BadkamerRenovatiePage'
-import TegelwerkPage from './pages/TegelwerkPage'
+import BadkamerRenovatieAlmerePage from './pages/BadkamerRenovatieAlmerePage'
+import TegelwerkHubPage from './pages/TegelwerkHubPage'
+import TegelwerkServicePage from './pages/TegelwerkServicePage'
 import SpecialisatiesPage from './pages/SpecialisatiesPage'
 import KennisbankPage from './pages/KennisbankPage'
 import ProjectsPage from './pages/ProjectsPage'
@@ -24,14 +26,20 @@ function renderPage(page: Page) {
   if (page.url === '/complete-badkamer-renovatie/') {
     return <BadkamerRenovatiePage page={page} />
   }
+  if (page.url === '/complete-badkamer-renovatie/almere/') {
+    return <BadkamerRenovatieAlmerePage page={page} />
+  }
   if (
     page.url.startsWith('/complete-badkamer-renovatie') ||
     page.url === '/complete-toilet-renovatie/'
   ) {
     return <CommercialPage page={page} />
   }
+  if (page.url === '/tegelwerk/') {
+    return <TegelwerkHubPage page={page} />
+  }
   if (page.url.startsWith('/tegelwerk/')) {
-    return <TegelwerkPage page={page} />
+    return <TegelwerkServicePage page={page} />
   }
   if (page.url.startsWith('/specialisaties/')) {
     return <SpecialisatiesPage page={page} />

@@ -158,13 +158,20 @@
         "id": "SECTION 2",
         "Type": "Text",
         "H2": "Kennis van lokale installatietechniek",
-        "Body": "Wonen in Almere betekent een grote diversiteit aan bouwstijlen: van de jongere woningen in Almere Poort en Duin tot de bestaande bouw in Almere Haven en Buiten. Een relevant detail voor verbouwingen in deze regio is dat veel wijken zijn aangesloten op stadsverwarming. Dit vereist specifieke kennis bij het verleggen van leidingwerk, het installeren van watergedragen vloerverwarming en het plaatsen van radiatoren of verdelers. Bij de technische voorbereiding van uw badkamer wordt hier rekening mee gehouden."
+        "Body": "Wonen in Almere betekent een grote diversiteit aan bouwstijlen: van de jongere woningen in Almere Poort en Duin tot de bestaande bouw in Almere Haven en Buiten. Een relevant detail voor verbouwingen in deze regio is dat veel wijken zijn aangesloten op stadsverwarming. Dit vereist specifieke kennis bij het verleggen van leidingwerk, het installeren van watergedragen vloerverwarming en het plaatsen van radiatoren of verdelers. Bij de technische voorbereiding van uw badkamer wordt hier rekening mee gehouden.",
+        "Lead": "Of u nu woont in Almere Poort, Duin of Haven, wij kennen de lokale bouwstijlen. Wij onderscheiden ons door niet te kiezen voor de makkelijkste weg, maar voor de technisch beste oplossing. Rechte wanden, perfect afschot in uw inloopdouche en tegelwerk zonder hoogteverschillen."
       },
       {
         "id": "SECTION 3",
         "Type": "Text + Internal Links",
         "H2": "Uw project van sloop tot afwerking",
-        "Body": "Wij voeren de stappen van de verbouwing uit. Van het vakkundig slopen tot het waterdicht maken van de doucheruimte en het integreren van inbouwkranen. Voor het tegelwerk kunnen alle materialen worden verwerkt, waaronder grootformaat tegels, natuursteen en mozaïek."
+        "Body": "Wij voeren de stappen van de verbouwing uit. Van het vakkundig slopen tot het waterdicht maken van de doucheruimte en het integreren van inbouwkranen. Voor het tegelwerk kunnen alle materialen worden verwerkt, waaronder grootformaat tegels, natuursteen en mozaïek.",
+        "Lead": "Het tegelwerk bepaalt de uiteindelijke uitstraling van de ruimte. Wij zijn gespecialiseerd in het verwerken van complexe materialen. Of u nu kiest voor de naadloze look van [grootformaat tegels](/specialisaties/grootformaat-tegels/), de detaillering van [mozaïek](/specialisaties/mozaiek-zetten/), of de organische uitstraling van [natuursteen](/specialisaties/natuursteen/), wij streven naar een technisch en visueel hoogwaardige verwerking."
+      },
+      {
+        "id": "SECTION 4",
+        "H2": "Technische Precisie & Veelgestelde Vragen",
+        "Body": "De bouwkundige kwaliteit van een badkamer zit in het onzichtbare werk. Wij werken met gecertificeerde waterdichtingssystemen: kimband in alle aansluitingen, afdichtingspasta rondom doorvoeren en een uiterst vlakke voorbereiding van wand en vloer. Douchedrains en inbouwkranen worden op de millimeter nauwkeurig gepositioneerd zodat het tegelwerk naadloos aansluit op het afwateringssysteem."
       }
     ],
     "links": [
@@ -184,7 +191,16 @@
         "placement": "SECTION 3 Body"
       }
     ],
-    "faq": [],
+    "faq": [
+      {
+        "question": "Installeren jullie ook inbouwkranen en nissen?",
+        "answer": "Ja. Inbouwkranen, regendouches uit het plafond en op maat gemaakte nissen (eventueel met LED-profielen) behoren tot onze standaard werkzaamheden bij luxe renovaties."
+      },
+      {
+        "question": "Regelen jullie ook het leidingwerk?",
+        "answer": "Ja, bij een complete renovatie passen wij al het benodigde leidingwerk en de afvoeren aan op het nieuwe ontwerp."
+      }
+    ],
     "hero": {
       "Eyebrow": "Lokaal Vakmanschap",
       "H1": "Badkamer Renovatie in Almere",

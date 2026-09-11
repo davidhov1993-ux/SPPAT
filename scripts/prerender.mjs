@@ -5,6 +5,8 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import path from 'node:path'
 
 const pages = JSON.parse(await readFile('src/content/pages.json', 'utf8'))
+const SITE_URL = 'https://sppat.nl'
+
 const template = await readFile('dist/index.html', 'utf8')
 const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;')
 const server = await createServer({ server: { middlewareMode: true, ws: false }, appType: 'custom' })
@@ -16,6 +18,16 @@ try {
       .replace(/<meta name="description" content=".*?"\s*\/>/, `<meta name="description" content="${escape(page.description)}" />`)
       .replace('<div id="root"></div>', `<div id="root" data-route="${page.url}">${body}</div>`)
     if (page.url === '/404/') html = html.replace('</head>', '<meta name="robots" content="noindex" /></head>')
+    const absoluteUrl = SITE_URL + (page.url.endsWith('/') ? page.url : page.url + '/')
+    const ogTags = `
+    <link rel="canonical" href="${absoluteUrl}" />
+    <meta property="og:title" content="${escape(page.title)}" />
+    <meta property="og:description" content="${escape(page.description)}" />
+    <meta property="og:url" content="${absoluteUrl}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    `
+    html = html.replace('</head>', ogTags + '</head>')
     const target = page.url === '/404/' ? 'dist/404.html' : path.join('dist', page.url, 'index.html')
     await mkdir(path.dirname(target), { recursive: true })
     await writeFile(target, html)

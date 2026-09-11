@@ -16,6 +16,7 @@ export default function ContactForm() {
   const [fileError, setFileError] = useState<string | null>(null)
   const [isDragging, setIsDragging] = useState(false)
   const [consent, setConsent] = useState(false)
+  const [privacyError, setPrivacyError] = useState(false)
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
 
   const handleFile = (selectedFile?: File) => {
@@ -55,7 +56,13 @@ export default function ContactForm() {
     event.preventDefault()
     const form = event.currentTarget
 
-    if (!form.reportValidity() || fileError || !business.formEndpoint) {
+    if (!consent) {
+      setPrivacyError(true)
+      return
+    }
+    setPrivacyError(false)
+
+    if (!form.reportValidity() || fileError) {
       return
     }
 
@@ -65,19 +72,13 @@ export default function ContactForm() {
       data.set('reference', file)
     }
 
-    try {
-      const response = await fetch(String(business.formEndpoint), {
-        method: 'POST',
-        body: data
-      })
-      if (!response.ok) throw new Error('Submission failed')
+    const payload = Object.fromEntries(data.entries())
+    console.log('Form Payload:', payload)
+
+    // Simulate dummy endpoint success state
+    setTimeout(() => {
       setStatus('success')
-      form.reset()
-      setFile(null)
-      setConsent(false)
-    } catch {
-      setStatus('error')
-    }
+    }, 1500)
   }
 
   return (
@@ -240,6 +241,7 @@ export default function ContactForm() {
           />
           <span className="consent-text">
             Ik ga akkoord met de verwerking van mijn gegevens conform de privacyverklaring.
+            {privacyError && <span style={{ color: "var(--color-error, #D32F2F)", display: "block", marginTop: "4px" }}>U dient akkoord te gaan met de privacyverklaring.</span>}
           </span>
         </label>
       </div>

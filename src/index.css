@@ -4,6 +4,7 @@
   --color-surface: #E8E8E5;
   --color-text: #0A0A0A;
   --color-text-secondary: #5C5C5A;
+  --color-muted: #8C8C8A;
   --color-border: #D4D4D0;
   --color-accent: #9C6644;
   --color-dark: #1C1A19;
@@ -45,11 +46,11 @@
   --space-xl: 120px;
   --space-2xl: 160px;
 
-  --spacing-xs: 16px;
-  --spacing-sm: 32px;
-  --spacing-md: 64px;
-  --spacing-lg: 120px;
-  --spacing-xl: 160px;
+  
+  
+  
+  
+  
 
   /* Grid Tokens */
   --grid-max-width: 1440px;
@@ -83,6 +84,8 @@
     --space-lg: 48px;
     --space-xl: 64px;
     --space-2xl: 80px;
+    --space-3xl: 120px;
+    --space-4xl: 160px;
     --header-height: 72px;
   }
 }

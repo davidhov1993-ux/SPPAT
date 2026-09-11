@@ -511,7 +511,7 @@
   max-width: calc(100% / 12 * 8); /* 8 columns max */
   margin: 0 auto;
   text-align: center;
-  padding: var(--spacing-xl) 0;
+  padding: var(--space-4xl) 0;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
   display: flex;
@@ -553,13 +553,13 @@
 
 /* FIX 2: SPACING SCALE VIOLATION (Pricing Section) */
 .pricing-section h2 {
-  margin-bottom: var(--spacing-xs); /* 16px */
+  margin-bottom: var(--space-sm); /* 16px */
 }
 
 .pricing-section ul {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm); /* 32px */
+  gap: var(--space-md); /* 32px */
   padding-left: 0;
   list-style-position: inside;
 }
@@ -3319,7 +3319,7 @@
 /* SECTION 1 (HERO): Asymmetrical Split. Text left (6 cols), Placeholder right (5 cols, offset by 1). */
 .service-hero-section {
   padding-top: var(--space-md);
-  padding-bottom: var(--spacing-xl);
+  padding-bottom: var(--space-4xl);
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -3344,6 +3344,7 @@
 }
 
 .service-hero-media {
+  width: 100%;
   grid-column: 8 / 13; /* Placeholder right (5 cols, offset by 1) */
 }
 
@@ -3355,6 +3356,7 @@
     grid-column: 1 / -1;
   }
   .service-hero-media {
+  width: 100%;
     grid-column: 1 / -1;
   }
 }
@@ -3374,14 +3376,15 @@
     order: 1;
   }
   .service-hero-media {
+  width: 100%;
     order: 2;
   }
 }
 
 /* SECTION 2 (CONTENT/LIST): Typography-led, centered alignment. Max-width 8 columns. Apply spacing-lg top and bottom. */
 .service-content-section {
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -3413,7 +3416,7 @@
   margin: var(--space-xs) 0 0 0;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--space-md);
   text-align: left;
 }
 
@@ -3454,8 +3457,8 @@
 
 /* SECTION 3 (TEXT + INTERNAL LINK): Left-aligned, spanning 6 columns. Apply spacing-lg top and bottom. Use the .inline-link class for the internal link. */
 .service-links-section {
-  padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
   border-bottom: 1px solid #E5E5E5;
 }
 

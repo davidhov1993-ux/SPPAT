@@ -17,6 +17,7 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import './App.css'
 
+const SITE_URL = "https://sppat.nl"
 const pages = pageData as Page[]
 
 function renderPage(page: Page) {
@@ -90,7 +91,8 @@ export default function App({
       canonical.setAttribute('rel', 'canonical')
       document.head.appendChild(canonical)
     }
-    canonical.setAttribute('href', page.url)
+    const absoluteUrl = SITE_URL + (page.url.endsWith('/') ? page.url : page.url + '/')
+    canonical.setAttribute('href', absoluteUrl)
   }, [page])
 
   return (

@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
-import CtaArrow from '../components/CtaArrow'
+import CtaTypeA from '../components/CtaTypeA'
+import StickyMobileCta from '../components/StickyMobileCta'
+import HeroSplit from '../components/HeroSplit'
 
 export default function BadkamerRenovatiePage({ page }: { page: Page }) {
   const [pastHero, setPastHero] = useState(false)
@@ -33,40 +35,16 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
 
   return (
     <div className="badkamer-page">
-      {/* SECTION 1: HERO (The Architectural Ambition) */}
-      <section ref={heroRef} className="badkamer-hero-section" aria-label="Introductie">
-        <div className="container">
-          <div className="badkamer-hero-wrapper">
-            <figure className="badkamer-hero-media">
-              <img
-                src="/media/Generated Image September 10, 2026 - 7_57PM(1).jpg"
-                alt={hero.ALT || 'Overzichtsfoto van een compleet gerenoveerde badkamer met inloopdouche'}
-                fetchPriority="high"
-                className="badkamer-hero-img"
-              />
-            </figure>
-
-            <div className="badkamer-hero-content-block">
-              {hero.Eyebrow && (
-                <p className="eyebrow">
-                  <span aria-hidden="true">—</span>
-                  {hero.Eyebrow}
-                </p>
-              )}
-              <h1>{hero.H1}</h1>
-              {hero.Body && <p className="lead">{hero.Body}</p>}
-              {hero['Primary CTA URL'] && (
-                <div className="hero-cta-action">
-                  <a href={hero['Primary CTA URL']} className="btn">
-                    {hero['Primary CTA']}
-                    <CtaArrow />
-                  </a>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSplit 
+        ref={heroRef}
+        eyebrow={hero.Eyebrow}
+        title={hero.H1}
+        body={hero.Body}
+        ctaUrl={hero['Primary CTA URL']}
+        ctaText={hero['Primary CTA']}
+        imageSrc="/media/Generated Image September 10, 2026 - 7_57PM(1).jpg"
+        imageAlt={hero.ALT || 'Overzichtsfoto van een compleet gerenoveerde badkamer met inloopdouche'}
+      />
 
       {/* SECTION 2: INTRODUCTION (Typography-led Manifesto) */}
       {sections[0] && (
@@ -275,51 +253,20 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
         </section>
       )}
 
-      {/* SECTION 7: CONCLUSION & CTA */}
-      {cta && (
-        <section className="badkamer-conclusion-section" aria-label="Afsluiting & Contact">
-          <div className="container">
-            <div className="badkamer-conclusion-grid">
-              <div className="badkamer-conclusion-text">
-                <span className="section-num">04 / CONTACT</span>
-                <h2>{cta.H2}</h2>
-                <p className="lead cta-lead">{cta.Body}</p>
-                <div className="conclusion-action">
-                  <a href={cta.URL || '/contact/'} className="btn">
-                    {cta.Button || 'Project bespreken'}
-                    <CtaArrow />
-                  </a>
-                </div>
-              </div>
+      <CtaTypeA 
+        sectionNum="04 / CONTACT"
+        title={cta?.H2 || 'Start uw renovatie'}
+        lead={cta?.Body || 'Neem contact op voor een technische opname.'}
+        ctaUrl={cta?.URL || '/contact/'}
+        ctaText={cta?.Button || 'Project bespreken'}
+        imageSrc="/media/Generated Image September 10, 2026 - 8_39PM(1).jpg"
+        imageAlt="Sppat afgerond badkamerproject gereed voor gebruik"
+      />
 
-              <div className="badkamer-conclusion-media">
-                <figure className="badkamer-conclusion-figure">
-                  <img
-                    src="/media/Generated Image September 10, 2026 - 8_39PM(1).jpg"
-                    alt="Sppat afgerond badkamerproject gereed voor gebruik"
-                    loading="lazy"
-                    className="badkamer-conclusion-img"
-                  />
-                </figure>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* MOBILE UI ADDITION: STICKY BOTTOM "OFFERTE AANVRAGEN" BAR */}
-      <div
-        className={`sticky-mobile-cta ${pastHero ? 'is-visible' : ''}`}
-        aria-hidden={!pastHero}
-      >
-        <div className="sticky-mobile-cta-inner container">
-          <span className="sticky-mobile-cta-label">Badkamer Renovatie</span>
-          <a href="/contact/" className="sticky-mobile-cta-btn">
-            Offerte Aanvragen
-            <CtaArrow />
-          </a>
-        </div>
-      </div>
+      <StickyMobileCta 
+        isVisible={pastHero}
+        label="Complete Badkamer Renovatie"
+      />
     </div>
   )
 }

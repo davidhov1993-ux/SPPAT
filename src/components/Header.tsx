@@ -11,6 +11,28 @@ const navItems: [string, string][] = [
 
 export default function Header({ path }: { path: string }) {
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    const mainEl = document.getElementById('main')
+    const footerEl = document.querySelector('.site-footer')
+    if (open) {
+      if (mainEl) mainEl.setAttribute('inert', '')
+      if (footerEl) footerEl.setAttribute('inert', '')
+      document.body.style.overflow = 'hidden'
+    } else {
+      if (mainEl) mainEl.removeAttribute('inert')
+      if (footerEl) footerEl.removeAttribute('inert')
+      document.body.style.overflow = ''
+    }
+    
+    return () => {
+      if (mainEl) mainEl.removeAttribute('inert')
+      if (footerEl) footerEl.removeAttribute('inert')
+      document.body.style.overflow = ''
+    }
+  }, [open])
+
+
   const toggleRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {

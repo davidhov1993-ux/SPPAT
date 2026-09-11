@@ -1,59 +1,8 @@
-import RichText from "../components/RichText"
-import { useState, useEffect, useRef } from 'react'
-import type { Page } from '../content/types'
-import CtaTypeB from '../components/CtaTypeB'
-import StickyMobileCta from '../components/StickyMobileCta'
-import CtaArrow from "../components/CtaArrow";
-import HeroSplit from '../components/HeroSplit'
+const fs = require('fs')
+let content = fs.readFileSync('src/pages/TegelwerkHubPage.tsx', 'utf8')
 
-export default function TegelwerkHubPage({ page }: { page: Page }) {
-  const [pastHero, setPastHero] = useState(false)
-  const heroRef = useRef<HTMLElement>(null)
-  
-  const routingSection = page.sections.find(s => s.H2 === 'Onze tegelwerk diensten') || page.sections[0]
-  
-  const CARD_IMAGES = [
-    '/media/Generated Image September 11, 2026 - 11_36AM.jpg',
-    '/media/SPPAT-VIS-023.jpg',
-    '/media/Generated Image September 11, 2026 - 11_16AM.jpg',
-    '/media/Generated Image September 11, 2026 - 11_18AM.jpg',
-    '/media/Generated Image September 11, 2026 - 11_38AM.jpg'
-  ]
-
-
-  const hero = page.hero
-  const pricingSection = page.sections.find(
-    s => s.H2 === 'Prijzen in de tegelbranche (Marktindicaties 2026)'
-  ) || page.sections[1]
-  const cta = page.cta
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const handleScroll = () => {
-      if (!heroRef.current) return
-      const rect = heroRef.current.getBoundingClientRect()
-      setPastHero(rect.bottom <= 0)
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll()
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  return (
-    <div className="tegelwerk-hub-page">
-      <HeroSplit 
-        ref={heroRef}
-        eyebrow={hero.Eyebrow}
-        title={hero.H1}
-        body={hero.Body}
-        ctaUrl={hero['Primary CTA URL']}
-        ctaText={hero['Primary CTA'] || 'Project bespreken'}
-        imageSrc="/media/Generated Image September 11, 2026 - 11_48AM.jpg"
-        imageAlt={hero.ALT || 'Getegelde vloer in moderne woonruimte'}
-      />
-
-            {/* SECTION 2: THE ROUTING GRID (Waar kunnen wij u mee helpen?) */}
+// Replace the routing section
+content = content.replace(/\{\/\* SECTION 2: THE ROUTING GRID[\s\S]*?(?=\{\/\* SECTION 3: PRICING INTERLUDE)/, `      {/* SECTION 2: THE ROUTING GRID (Waar kunnen wij u mee helpen?) */}
       {routingSection && (
         <section className="tegel-routing-section" aria-label="Waar kunnen wij u mee helpen?">
           <div className="container">
@@ -68,7 +17,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
 
             <div className="tegel-routing-grid">
               {routingSection.cards?.map((card, index) => (
-                <article key={card['CTA URL']} className={`tegel-grid-item tegel-grid-item-${index + 1}`}>
+                <article key={card['CTA URL']} className={\`tegel-grid-item tegel-grid-item-\${index + 1}\`}>
                   <a
                     href={card['CTA URL']}
                     className="tegel-grid-media-link"
@@ -79,7 +28,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
                         src={CARD_IMAGES[index] || '/media/SPPAT-VIS-023.jpg'}
                         alt={card.Title}
                         loading={index === 0 ? 'eager' : 'lazy'}
-                        className={`tegel-grid-img ${index === 0 ? 'tegel-img-16-9' : 'tegel-img-1-1'}`}
+                        className={\`tegel-grid-img \${index === 0 ? 'tegel-img-16-9' : 'tegel-img-1-1'}\`}
                       />
                     </figure>
                   </a>
@@ -103,7 +52,9 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
         </section>
       )}
 
-      {/* SECTION 3: PRICING INTERLUDE */}
+`)
+
+content = content.replace(/\{\/\* SECTION 3: PRICING INTERLUDE[\s\S]*?(?=<CtaTypeB)/, `      {/* SECTION 3: PRICING INTERLUDE */}
       {pricingSection && (
         <section className="pricing-section tegel-pricing-section" aria-label={pricingSection.H2 || "Prijzen in de tegelbranche"}>
           <div className="container">
@@ -141,18 +92,25 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
         </section>
       )}
 
-      <CtaTypeB 
-        sectionNum="03 / CONTACT"
-        title={cta?.H2 || 'Uw tegelproject bespreken?'}
-        body={cta?.Body || 'Wij beoordelen de ondergrond en bespreken de mogelijkheden qua formaten en legverbanden.'}
-        ctaUrl={cta?.URL || '/contact/'}
-        ctaText={cta?.Button || 'Project bespreken'}
-      />
+      `)
 
-      <StickyMobileCta 
-        isVisible={pastHero}
-        label="Tegelwerk & Installatie"
-      />
-    </div>
-  )
+// Add variables to top
+content = content.replace('const heroRef = useRef<HTMLElement>(null)', `const heroRef = useRef<HTMLElement>(null)
+  
+  const routingSection = page.sections.find(s => s.H2 === 'Onze tegelwerk diensten') || page.sections[0]
+  
+  const CARD_IMAGES = [
+    '/media/Generated Image September 11, 2026 - 11_36AM.jpg',
+    '/media/SPPAT-VIS-023.jpg',
+    '/media/Generated Image September 11, 2026 - 11_16AM.jpg',
+    '/media/Generated Image September 11, 2026 - 11_18AM.jpg',
+    '/media/Generated Image September 11, 2026 - 11_38AM.jpg'
+  ]
+`)
+
+// Add RichText import
+if (!content.includes('RichText')) {
+  content = content.replace("import CtaTypeB", "import RichText from '../components/RichText'\nimport CtaTypeB")
 }
+
+fs.writeFileSync('src/pages/TegelwerkHubPage.tsx', content)

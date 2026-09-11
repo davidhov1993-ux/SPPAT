@@ -14,7 +14,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
   
   const CARD_IMAGES = [
     '/media/Generated Image September 11, 2026 - 11_36AM.jpg',
-    '/media/SPPAT-VIS-023.jpg',
+    '/media/README.jpg',
     '/media/Generated Image September 11, 2026 - 11_16AM.jpg',
     '/media/Generated Image September 11, 2026 - 11_18AM.jpg',
     '/media/Generated Image September 11, 2026 - 11_38AM.jpg'
@@ -76,7 +76,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
                   >
                     <figure className="tegel-grid-figure">
                       <img
-                        src={CARD_IMAGES[index] || '/media/SPPAT-VIS-023.jpg'}
+                        src={CARD_IMAGES[index] || '/media/README.jpg'}
                         alt={card.Title}
                         loading={index === 0 ? 'eager' : 'lazy'}
                         className={`tegel-grid-img ${index === 0 ? 'tegel-img-16-9' : 'tegel-img-1-1'}`}

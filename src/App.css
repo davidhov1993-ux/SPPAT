@@ -3036,10 +3036,14 @@
 
 .tegel-img-16-9 {
   aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
 }
 
 .tegel-img-1-1 {
   aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
 }
 
 .tegel-grid-content {
@@ -3516,3 +3520,254 @@
 
 
 
+
+/* ==================================================
+   SPECIALISATIES HUB PAGE
+   ================================================== */
+.spec-hub-page {
+  /* No padding-top so the hero can be full-bleed if we want, or just rely on container */
+}
+
+/* SECTION 1: HERO */
+.spec-hub-hero-section {
+  padding-bottom: var(--space-xl);
+}
+
+.spec-hub-hero-container {
+  position: relative;
+}
+
+.spec-hub-hero-media {
+  width: 100%;
+}
+
+.spec-hub-hero-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.spec-hub-hero-text {
+  background: var(--color-bg);
+  padding: var(--space-md);
+}
+
+@media (min-width: 1025px) {
+  .spec-hub-hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 80px; /* offset 80px */
+    width: 40%;
+    transform: translateY(50%); /* overlap */
+    z-index: 2;
+    padding: var(--space-lg);
+  }
+  .spec-hub-hero-section {
+    padding-bottom: calc(var(--space-xl) + 150px);
+  }
+}
+
+@media (max-width: 767px) {
+  .spec-hub-hero-img {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+/* SECTION 2: EXPERTISE GEBIEDEN (Alternating Split Cards) */
+.spec-hub-expertise-section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.spec-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  align-items: center;
+  margin-bottom: var(--space-xl); /* spacing-xl between rows */
+}
+
+.spec-row:last-child {
+  margin-bottom: 0;
+}
+
+.spec-row-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.spec-row-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 1025px) {
+  .spec-row:nth-child(odd) .spec-row-media-wrapper {
+    grid-column: 1 / 8;
+  }
+  .spec-row:nth-child(odd) .spec-row-text {
+    grid-column: 9 / 13;
+  }
+
+  .spec-row:nth-child(even) .spec-row-media-wrapper {
+    grid-column: 6 / 13;
+  }
+  .spec-row:nth-child(even) .spec-row-text {
+    grid-column: 1 / 5;
+    order: -1; /* text on left */
+  }
+}
+
+@media (max-width: 767px) {
+  .spec-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  .spec-row-media-wrapper {
+    order: 1;
+  }
+  .spec-row-text {
+    order: 2;
+  }
+  .spec-row-img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ==================================================
+   SPECIALISATIES NESTED PAGE
+   ================================================== */
+.spec-nested-page {
+}
+
+/* SECTION 1: HERO */
+.spec-nested-hero-img-wrapper {
+  width: 100%;
+}
+
+.spec-nested-hero-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.spec-nested-hero-text-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.spec-nested-hero-text {
+  grid-column: 3 / 11;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.spec-nested-hero-text h1 {
+  margin: 0;
+}
+
+.spec-nested-hero-text .lead {
+  max-width: 800px;
+}
+
+@media (max-width: 1024px) {
+  .spec-nested-hero-text {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .spec-nested-hero-img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* CONTENT SECTIONS */
+.spec-nested-content-section {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.spec-nested-content-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+}
+
+.spec-nested-content-block {
+  grid-column: 3 / 11;
+  text-align: center;
+}
+
+.spec-nested-content-block h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.spec-nested-content-block p {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.spec-nested-content-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 600px;
+}
+
+.spec-nested-content-block li {
+  margin-bottom: var(--space-sm);
+  position: relative;
+  padding-left: 24px;
+}
+
+.spec-nested-content-block li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+@media (max-width: 1024px) {
+  .spec-nested-content-block {
+    grid-column: 1 / -1;
+  }
+}
+
+/* MINIMALIST BULLETS */
+.spec-minimal-list {
+  text-align: center;
+}
+.spec-minimal-item {
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* ==================================================
+   TOILET RENOVATIE PAGE
+   ================================================== */
+.toilet-hero-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .toilet-hero-img {
+    aspect-ratio: 1 / 1;
+  }
+}

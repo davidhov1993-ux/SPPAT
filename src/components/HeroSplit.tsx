@@ -7,6 +7,7 @@ interface HeroSplitProps {
   body?: string
   imageSrc?: string
   imageAlt?: string
+  imageClassName?: string
   ctaText?: string
   ctaUrl?: string
 }
@@ -18,7 +19,8 @@ const HeroSplit = forwardRef<HTMLElement, HeroSplitProps>(({
   imageSrc,
   imageAlt,
   ctaText,
-  ctaUrl
+  ctaUrl,
+  imageClassName = "almere-hero-img"
 }, ref) => {
   return (
     <section ref={ref} className="service-hero-section" aria-label="Introductie">
@@ -47,7 +49,7 @@ const HeroSplit = forwardRef<HTMLElement, HeroSplitProps>(({
               <img
                 src={imageSrc}
                 alt={imageAlt || title}
-                className="almere-hero-img"
+                className={imageClassName}
               />
             ) : (
               <div className="hero-image-placeholder" aria-hidden="true" />

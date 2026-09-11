@@ -15,7 +15,7 @@
   --font-body: 'Inter', Arial, sans-serif;
 
   /* Typography Scale */
-  --font-h1: clamp(38px, 5.2vw, 72px);
+  --font-h1: clamp(2.5rem, 5vw, 4.5rem);
   --lh-h1: 1.1;
   --ls-h1: -0.03em;
   --fw-h1: 500;
@@ -123,8 +123,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text);
   margin: 0;
   text-wrap: balance;
-  overflow-wrap: break-word;
-  word-break: keep-all;
+  overflow-wrap: normal;
+  word-break: normal;
   hyphens: none;
   -webkit-hyphens: none;
 }
@@ -154,7 +154,7 @@ p {
   font-size: var(--font-body-size);
   line-height: var(--lh-body);
   color: var(--color-text);
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 .lead {

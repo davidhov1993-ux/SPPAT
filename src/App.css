@@ -1682,8 +1682,8 @@
   font-size: clamp(32px, 4.2vw, 56px);
   line-height: 1.15;
   letter-spacing: -0.03em;
-  word-break: keep-all;
-  overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 @media (max-width: 1024px) {
@@ -2207,8 +2207,8 @@
 .almere-page h1,
 .almere-page h2,
 .almere-page h3 {
-  word-break: keep-all;
-  overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 /* SECTION 1: HERO (Lokaal Vakmanschap, Landelijke Kwaliteit) */
@@ -2602,8 +2602,8 @@
 .badkamer-tegelen-page h1,
 .badkamer-tegelen-page h2,
 .badkamer-tegelen-page h3 {
-  word-break: keep-all;
-  overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 /* SECTION 1: HERO (Tegelwerk in natte ruimtes) */
@@ -2857,8 +2857,8 @@
 .tegelwerk-hub-page h1,
 .tegelwerk-hub-page h2,
 .tegelwerk-hub-page h3 {
-  word-break: keep-all;
-  overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 /* STRICT GLOBAL RULE 4: Borderless images & object-fit: cover */
@@ -3308,8 +3308,8 @@
 .service-page h1,
 .service-page h2,
 .service-page h3 {
-  word-break: keep-all;
-  overflow-wrap: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 /* Placeholder Specification (Hero Section Right Column) */
@@ -3559,7 +3559,8 @@
     position: absolute;
     bottom: 0;
     left: 80px; /* offset 80px */
-    width: 40%;
+    width: 55%;
+    max-width: 650px;
     transform: translateY(50%); /* overlap */
     z-index: 2;
     padding: var(--space-lg);

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import pageData from './content/pages.json'
+import projectsData from './content/projects.json'
 import type { Page } from './content/types'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -15,12 +16,14 @@ import SpecialisatiesNestedPage from './pages/SpecialisatiesNestedPage'
 import ToiletRenovatiePage from './pages/ToiletRenovatiePage'
 import KennisbankPage from './pages/KennisbankPage'
 import ProjectsPage from './pages/ProjectsPage'
+import ProjectDetailPage from './pages/ProjectDetailPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import './App.css'
 
 const SITE_URL = "https://sppat.nl"
 const pages = pageData as Page[]
+const projectCases = projectsData
 
 function renderPage(page: Page) {
   if (page.url === '/') {
@@ -54,7 +57,7 @@ function renderPage(page: Page) {
     return <KennisbankPage page={page} />
   }
   if (page.url === '/projecten/') {
-    return <ProjectsPage page={page} />
+    return <ProjectsPage page={page} projectCases={projectCases} />
   }
   if (page.url === '/over-ons/') {
     return <AboutPage page={page} />
@@ -71,10 +74,20 @@ export default function App({
   path?: string
 }) {
   const normalized = path === '/' ? '/' : `${path.replace(/\/+$/, '')}/`
+  
+  // Check if it's a project case
+  const projectCase = projectCases.find(p => `/projecten/${p.slug}/` === normalized)
+  
   const page = pages.find(item => item.url === normalized)
-
+  
   useEffect(() => {
-    if (!page) {
+    if (projectCase) {
+      document.title = `${projectCase.title} | Sppat`
+      document.querySelector('meta[name="description"]')?.setAttribute('content', projectCase.meta)
+    } else if (page) {
+      document.title = page.title
+      document.querySelector('meta[name="description"]')?.setAttribute('content', page.description)
+    } else {
       document.title = '404 | Sppat'
       document.querySelector('meta[name="description"]')?.setAttribute('content', '')
       let robots = document.querySelector('meta[name="robots"]')
@@ -87,24 +100,23 @@ export default function App({
       return
     }
 
-    document.title = page.title
-    document.querySelector('meta[name="description"]')?.setAttribute('content', page.description)
-
     let canonical = document.querySelector('link[rel="canonical"]')
     if (!canonical) {
       canonical = document.createElement('link')
       canonical.setAttribute('rel', 'canonical')
       document.head.appendChild(canonical)
     }
-    const absoluteUrl = SITE_URL + (page.url.endsWith('/') ? page.url : page.url + '/')
+    const absoluteUrl = SITE_URL + normalized
     canonical.setAttribute('href', absoluteUrl)
-  }, [page])
+  }, [page, projectCase, normalized])
 
   return (
     <div className="site-wrapper">
       <Header path={normalized} />
       <main id="main" className="site-main">
-        {page ? (
+        {projectCase ? (
+          <ProjectDetailPage project={projectCase} />
+        ) : page ? (
           renderPage(page)
         ) : (
           <section className="not-found-section container">

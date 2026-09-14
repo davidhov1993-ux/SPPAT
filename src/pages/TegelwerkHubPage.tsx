@@ -42,7 +42,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
 
   return (
     <div className="tegelwerk-hub-page">
-      <HeroSplit 
+      <HeroSplit currentPath={page.url} pageTitle={page.title}  
         ref={heroRef}
         eyebrow={hero.Eyebrow}
         title={hero.H1}
@@ -124,7 +124,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
                           <p>
                             {match ? (
                               <>
-                                <strong>{match[1]}:</strong>{match[2]}
+                                <strong>{match[1]}:</strong><RichText text={match[2]} links={page.links || []} />
                               </>
                             ) : (
                               <RichText text={bullet} links={page.links || []} />

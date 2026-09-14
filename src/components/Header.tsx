@@ -1,16 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import CtaArrow from './CtaArrow'
-
-const navItems: [string, string][] = [
-  ['Badkamers', '/complete-badkamer-renovatie/'],
-  ['Tegelwerk', '/tegelwerk/'],
-  ['Projecten', '/projecten/'],
-  ['Over ons', '/over-ons/'],
-  ['Contact', '/contact/']
-]
+import { mainNav } from '../data/navigation'
+import type { NavItem } from '../data/navigation'
 
 export default function Header({ path }: { path: string }) {
   const [open, setOpen] = useState(false)
+  const [mobileLevel2, setMobileLevel2] = useState<NavItem | null>(null)
+  
+  const toggleRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const mainEl = document.getElementById('main')
@@ -32,12 +29,8 @@ export default function Header({ path }: { path: string }) {
     }
   }, [open])
 
-
-  const toggleRef = useRef<HTMLButtonElement>(null)
-
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = 'hidden'
       const handleKeyDown = (event: KeyboardEvent) => {
         if (event.key === 'Escape') {
           setOpen(false)
@@ -46,18 +39,18 @@ export default function Header({ path }: { path: string }) {
       }
       document.addEventListener('keydown', handleKeyDown)
       return () => {
-        document.body.style.overflow = ''
         document.removeEventListener('keydown', handleKeyDown)
       }
-    } else {
-      document.body.style.overflow = ''
     }
   }, [open])
 
   const handleClose = () => {
     setOpen(false)
+    setMobileLevel2(null)
     toggleRef.current?.focus()
   }
+  
+  const isPathActive = (href: string) => path.startsWith(href) && (href !== '/' || path === '/')
 
   return (
     <header className="site-header">
@@ -67,17 +60,35 @@ export default function Header({ path }: { path: string }) {
         </a>
 
         <nav className="nav-desktop" aria-label="Hoofdnavigatie">
-          {navItems.map(([label, href]) => {
-            const isActive = path === href
+          {mainNav.map((item) => {
+            const isActive = isPathActive(item.href)
+            const hasChildren = !!item.children?.length
+            
             return (
-              <a
-                key={href}
-                href={href}
-                className={`nav-link ${isActive ? 'is-active' : ''}`}
-                aria-current={isActive ? 'page' : undefined}
-              >
-                {label}
-              </a>
+              <div key={item.label} className={`nav-desktop-item ${hasChildren ? 'has-dropdown' : ''}`}>
+                <a
+                  href={item.href}
+                  className={`nav-link ${isActive ? 'is-active' : ''}`}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {item.label}
+                  {hasChildren && <span className="nav-dropdown-icon">▾</span>}
+                </a>
+                
+                {hasChildren && (
+                  <div className="nav-dropdown">
+                    <ul className="nav-dropdown-list">
+                      {item.children?.map(child => (
+                        <li key={child.href}>
+                          <a href={child.href} className={`nav-dropdown-link ${path === child.href ? 'is-active' : ''}`}>
+                            {child.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
             )
           })}
         </nav>
@@ -127,30 +138,80 @@ export default function Header({ path }: { path: string }) {
         </div>
 
         <div className="mobile-menu-content container">
-          <nav className="mobile-nav" aria-label="Mobiele navigatie">
-            {navItems.map(([label, href]) => {
-              const isActive = path === href
-              return (
-                <a
-                  key={href}
-                  href={href}
-                  className={`mobile-nav-link ${isActive ? 'is-active' : ''}`}
-                  aria-current={isActive ? 'page' : undefined}
-                  onClick={handleClose}
-                >
-                  <span className="mobile-nav-label">{label}</span>
+          <div className="mobile-nav-slider" style={{ transform: mobileLevel2 ? 'translateX(-100%)' : 'translateX(0)' }}>
+            
+            {/* Level 1 */}
+            <div className="mobile-nav-pane mobile-nav-pane-1">
+              <nav className="mobile-nav" aria-label="Mobiele hoofdnavigatie">
+                {mainNav.map((item) => {
+                  const isActive = isPathActive(item.href)
+                  const hasChildren = !!item.children?.length
+                  
+                  if (hasChildren) {
+                    return (
+                      <button 
+                        key={item.label}
+                        type="button"
+                        className={`mobile-nav-link ${isActive ? 'is-active' : ''}`}
+                        onClick={() => setMobileLevel2(item)}
+                      >
+                        <span className="mobile-nav-label">{item.label}</span>
+                        <span className="mobile-nav-arrow">→</span>
+                      </button>
+                    )
+                  }
+                  
+                  return (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className={`mobile-nav-link ${isActive ? 'is-active' : ''}`}
+                      aria-current={isActive ? 'page' : undefined}
+                      onClick={handleClose}
+                    >
+                      <span className="mobile-nav-label">{item.label}</span>
+                    </a>
+                  )
+                })}
+              </nav>
+
+              <div className="mobile-menu-footer">
+                <a href="/contact/" className="btn btn-mobile-cta" onClick={handleClose}>
+                  Project bespreken
                   <CtaArrow />
                 </a>
-              )
-            })}
-          </nav>
-
-          <div className="mobile-menu-footer">
-            <a href="/contact/" className="btn btn-mobile-cta" onClick={handleClose}>
-              Project bespreken
-              <CtaArrow />
-            </a>
-            <p className="mobile-location-notice">Sppat — Almere &amp; Nederland</p>
+                <p className="mobile-location-notice">Sppat — Almere &amp; Nederland</p>
+              </div>
+            </div>
+            
+            {/* Level 2 */}
+            <div className="mobile-nav-pane mobile-nav-pane-2">
+              {mobileLevel2 && (
+                <div className="mobile-nav-level2">
+                  <button 
+                    type="button" 
+                    className="mobile-nav-back"
+                    onClick={() => setMobileLevel2(null)}
+                  >
+                    ← Terug
+                  </button>
+                  <div className="mobile-nav-title">{mobileLevel2.label}</div>
+                  <nav className="mobile-nav" aria-label={`Subnavigatie ${mobileLevel2.label}`}>
+                    {mobileLevel2.children?.map(child => (
+                      <a
+                        key={child.href}
+                        href={child.href}
+                        className={`mobile-nav-link ${path === child.href ? 'is-active' : ''}`}
+                        onClick={handleClose}
+                      >
+                        <span className="mobile-nav-label">{child.label}</span>
+                      </a>
+                    ))}
+                  </nav>
+                </div>
+              )}
+            </div>
+            
           </div>
         </div>
       </div>

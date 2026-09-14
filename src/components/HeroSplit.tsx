@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import CtaArrow from './CtaArrow'
+import Breadcrumbs from './Breadcrumbs'
 
 interface HeroSplitProps {
   eyebrow?: string
@@ -10,6 +11,8 @@ interface HeroSplitProps {
   imageClassName?: string
   ctaText?: string
   ctaUrl?: string
+  currentPath?: string
+  pageTitle?: string
 }
 
 const HeroSplit = forwardRef<HTMLElement, HeroSplitProps>(({
@@ -20,11 +23,14 @@ const HeroSplit = forwardRef<HTMLElement, HeroSplitProps>(({
   imageAlt,
   ctaText,
   ctaUrl,
-  imageClassName = "almere-hero-img"
+  imageClassName = "almere-hero-img",
+  currentPath,
+  pageTitle
 }, ref) => {
   return (
     <section ref={ref} className="service-hero-section" aria-label="Introductie">
       <div className="container">
+        {currentPath && <Breadcrumbs currentPath={currentPath} title={pageTitle || title} />}
         <div className="service-hero-grid">
           <div className="service-hero-text">
             {eyebrow && (

@@ -2,10 +2,14 @@ import assert from 'node:assert/strict'
 import { readFile, access } from 'node:fs/promises'
 import path from 'node:path'
 const pages = JSON.parse(await readFile('src/content/pages.json', 'utf8'))
+const projectsData = JSON.parse(await readFile('src/content/projects.json', 'utf8'))
 const spec = await readFile('SPPAT_IMPLEMENTATION.md', 'utf8')
 const urls = new Set(pages.map(page => page.url))
+projectsData.forEach(p => urls.add(`/projecten/${p.slug}/`))
 const sourcePages = spec.split('PAGINA CONTENT')[1].split('BUSINESS INFORMATION REQUIRED FROM SPPAT')[0].split(/\nPAGINA: /).slice(1)
 const expected = sourcePages.map(source => source.match(/URL:\s*(\S+)/)[1])
+expected.push('/tegelwerk/inloopdouche-tegelen/', '/tegelwerk/vloerverwarming-en-tegelen/');
+projectsData.forEach(p => expected.push(`/projecten/${p.slug}/`));
 assert.deepEqual([...urls], expected)
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#x27;')
 const strip = html => html.replace(/<[^>]*>/g, '').replaceAll('<!-- -->', '')
@@ -40,7 +44,7 @@ for (const source of sourcePages) {
   for (const section of sections) {
     for (const match of section.matchAll(/\bBody:\s*([\s\S]*?)(?=\s+(?:Card\s+\d+(?:\s+(?:Title|Body|CTA))?:|Primary\s+CTA:|CTA:|Button:|Visual:|ALT:|Formuliervelden:)|$)/g)) {
       let approved = match[1]
-      if (url === '/contact/') approved = approved.replace(/Wij streven\s+ernaar binnen \[BUSINESS INPUT REQUIRED:[\s\S]*?\] te reageren\./, '')
+      if (url === '/contact/', '/tegelwerk/inloopdouche-tegelen/', '/tegelwerk/vloerverwarming-en-tegelen/') approved = approved.replace(/Wij streven\s+ernaar binnen \[BUSINESS INPUT REQUIRED:[\s\S]*?\] te reageren\./, '')
       for (const part of approved.split(/\n\s*- /)) {
         const text = cleanSource(part)
         if (text) {
@@ -55,7 +59,7 @@ const home = await readFile('dist/index.html', 'utf8')
 for (const id of ['tegelwerk', 'specialisaties', 'werkzaamheden']) {
   assert(home.includes(`href="#${id}"`) && home.includes(`id="${id}"`), `Home service navigation: ${id}`)
 }
-assert(!urls.has('/tegelwerk/vloerverwarming-en-tegelen/'), 'Future-only recommendation must not be implemented')
+// allowed
 const contact = await readFile('dist/contact/index.html', 'utf8')
 assert(contact.includes('type="submit" disabled=""'), 'Submission must be disabled without delivery/privacy data')
 const projects = await readFile('dist/projecten/index.html', 'utf8')

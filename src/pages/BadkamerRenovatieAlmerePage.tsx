@@ -30,7 +30,7 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
 
   return (
     <div className="almere-page">
-      <HeroSplit
+      <HeroSplit currentPath={page.url} pageTitle={page.title} 
         ref={heroRef}
         eyebrow={hero.Eyebrow}
         title={hero.H1}

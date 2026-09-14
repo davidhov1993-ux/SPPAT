@@ -1,6 +1,7 @@
 import type { Page } from '../content/types'
 import CtaArrow from '../components/CtaArrow'
 import CtaTypeB from '../components/CtaTypeB'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 const HUB_IMAGES = [
   '/media/Generated Image September 11, 2026 - 2_02PM.jpg',
@@ -19,6 +20,7 @@ export default function SpecialisatiesHubPage({ page }: { page: Page }) {
       {/* SECTION 1: HERO */}
       <section className="spec-hub-hero-section" aria-label="Introductie">
         <div className="container">
+          <Breadcrumbs currentPath={page.url} title={page.title} />
           <div className="spec-hub-hero-container">
             <figure className="spec-hub-hero-media">
               <img 

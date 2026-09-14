@@ -35,7 +35,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
 
   return (
     <div className="badkamer-page">
-      <HeroSplit 
+      <HeroSplit currentPath={page.url} pageTitle={page.title}  
         ref={heroRef}
         eyebrow={hero.Eyebrow}
         title={hero.H1}

@@ -30,7 +30,7 @@ export default function TegelwerkServicePage({ page }: { page: Page }) {
 
   return (
     <div className="service-page">
-      <HeroSplit 
+      <HeroSplit currentPath={page.url} pageTitle={page.title}  
         ref={heroRef}
         eyebrow={hero.Eyebrow}
         title={hero.H1}

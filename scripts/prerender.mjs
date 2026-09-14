@@ -4,7 +4,13 @@ import { createElement } from 'react'
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import path from 'node:path'
 
-const pages = JSON.parse(await readFile('src/content/pages.json', 'utf8'))
+const pages = JSON.parse(await readFile('src/content/pages.json', 'utf8'));
+const projects = JSON.parse(await readFile('src/content/projects.json', 'utf8'));
+
+const projectRoutes = projects.map(p => ({ url: `/projecten/${p.slug}/`, title: `${p.title} | Sppat`, description: p.meta }));
+
+const allPages = [...pages, ...projectRoutes];
+
 const SITE_URL = 'https://sppat.nl'
 
 const template = await readFile('dist/index.html', 'utf8')
@@ -12,7 +18,7 @@ const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').r
 const server = await createServer({ server: { middlewareMode: true, ws: false }, appType: 'custom' })
 try {
   const { default: App } = await server.ssrLoadModule('/src/App.tsx')
-  for (const page of [...pages, { url: '/404/', title: '404 | Sppat', description: '' }]) {
+  for (const page of [...allPages, { url: '/404/', title: '404 | Sppat', description: '' }]) {
     const body = renderToString(createElement(App, { path: page.url }))
     let html = template.replace(/<title>.*?<\/title>/, `<title>${escape(page.title)}</title>`)
       .replace(/<meta name="description" content=".*?"\s*\/>/, `<meta name="description" content="${escape(page.description)}" />`)
@@ -33,5 +39,5 @@ try {
     await writeFile(target, html)
   }
   await writeFile('dist/.nojekyll', '')
-  console.log(`Prerendered ${pages.length} approved routes and a 404 page.`)
+  console.log(`Prerendered ${allPages.length} approved routes and a 404 page.`)
 } finally { await server.close() }

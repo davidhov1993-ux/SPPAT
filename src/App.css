@@ -3170,3 +3170,594 @@
     aspect-ratio: 1 / 1 !important;
   }
 }
+
+/* ==========================================================================
+   HEADER DROPDOWN FIX
+   ========================================================================== */
+.nav-desktop-item {
+  position: relative;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 240px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 200;
+  padding: var(--space-xs) 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.nav-desktop-item.has-dropdown:hover .nav-dropdown,
+.nav-desktop-item.has-dropdown:focus-within .nav-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-dropdown-link {
+  display: block;
+  padding: 8px 24px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-dropdown-link:hover,
+.nav-dropdown-link.is-active {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+.nav-dropdown-icon {
+  margin-left: 6px;
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+/* ==========================================================================
+   PORTFOLIO EDITORIAL LAYOUT (REV.5)
+   ========================================================================== */
+
+/* 1. Header Safety & Intro */
+.portfolio-page {
+  padding-bottom: var(--space-xl);
+}
+
+.portfolio-intro-section {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.portfolio-intro-text {
+  grid-column: 1 / 8;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-intro-text {
+    width: 65%; /* roughly 7 columns */
+  }
+}
+
+.portfolio-intro-text h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.portfolio-disclosure {
+  opacity: 0.7;
+  font-size: 0.875rem;
+  margin-top: var(--space-md);
+  display: block;
+}
+
+/* 2. Portfolio Items General */
+.portfolio-case-item {
+  display: block;
+}
+
+.portfolio-case-item > a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.portfolio-figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.portfolio-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.4s ease-out;
+}
+
+.portfolio-case-item:hover .portfolio-figure img {
+  transform: scale(1.03);
+}
+
+.portfolio-case-title {
+  margin-top: var(--space-sm);
+  margin-bottom: 0;
+  font-size: var(--font-h3);
+  font-weight: 500;
+}
+
+.portfolio-featured .portfolio-case-title {
+  font-size: var(--font-h2);
+}
+
+/* 3. Featured Case (CASE-01) */
+.portfolio-featured {
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+  .portfolio-featured .portfolio-case-item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gutter);
+  }
+
+  .portfolio-featured .portfolio-case-item > a {
+    grid-column: 2 / 12;
+    display: block;
+  }
+}
+
+.portfolio-figure-featured img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* 4. Editorial Grid (1440px / 1024px) */
+.portfolio-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  row-gap: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.portfolio-figure-portrait img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.portfolio-figure-landscape img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+@media (min-width: 835px) {
+  /* ROW 1 */
+  .project-layout-portrait-left {
+    grid-column: 1 / 6;
+  }
+  
+  .project-layout-landscape-right {
+    grid-column: 7 / 13;
+    margin-top: var(--space-lg);
+  }
+
+  /* ROW 2 */
+  .project-layout-landscape-left {
+    grid-column: 1 / 8;
+  }
+  
+  .project-layout-portrait-right {
+    grid-column: 9 / 13;
+    margin-top: var(--space-xl);
+  }
+
+  /* ROW 3 / FINAL */
+  .project-layout-final {
+    grid-column: 5 / 13;
+    margin-top: var(--space-lg);
+  }
+}
+
+/* 5. Tablet Strict 2-Column Grid (~834px) */
+@media (max-width: 1023px) and (min-width: 601px) {
+  .portfolio-intro-text {
+    width: 100%;
+  }
+
+  .portfolio-featured .portfolio-case-item > a {
+    grid-column: 1 / 13;
+  }
+
+  .portfolio-editorial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--grid-gutter);
+    row-gap: var(--space-lg);
+  }
+
+  .project-layout-portrait-left,
+  .project-layout-landscape-right,
+  .project-layout-landscape-left,
+  .project-layout-portrait-right,
+  .project-layout-final {
+    grid-column: span 1;
+    margin-top: 0;
+  }
+
+  .project-layout-final {
+    grid-column: 1 / -1; 
+  }
+}
+
+/* 6. Mobile 1-Column Grid (~390px) */
+@media (max-width: 600px) {
+  .portfolio-intro-section {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+
+  .portfolio-featured {
+    margin-bottom: var(--space-lg);
+  }
+
+  .portfolio-editorial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  .project-layout-portrait-left,
+  .project-layout-landscape-right,
+  .project-layout-landscape-left,
+  .project-layout-portrait-right,
+  .project-layout-final {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+}
+
+.portfolio-cta-section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+}
+
+/* ==========================================================================
+   PROJECT DETAIL PAGE (REV.5)
+   ========================================================================== */
+.project-detail-page {
+  padding-bottom: var(--space-2xl);
+}
+
+.project-hero {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.project-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  align-items: end;
+}
+
+.project-hero-text {
+  grid-column: 1 / 7;
+}
+
+.project-hero-media {
+  grid-column: 7 / 13;
+}
+
+.project-hero-media img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-body {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  margin-bottom: var(--space-2xl);
+}
+
+.project-section-text {
+  grid-column: 1 / 7;
+}
+
+.project-section-media {
+  grid-column: 7 / 13;
+}
+
+.project-section-media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-related-services {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.related-services-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+}
+
+.related-services-grid h2 {
+  grid-column: 1 / 5;
+}
+
+.related-links {
+  grid-column: 5 / 13;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.inline-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 4px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+@media (max-width: 1024px) {
+  .project-hero-grid,
+  .project-section,
+  .related-services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+}
+
+/* ==========================================================================
+   PORTFOLIO EDITORIAL LAYOUT (REV.5)
+   ========================================================================== */
+
+/* 1. Header Safety & Intro */
+.portfolio-page {
+  padding-bottom: var(--space-xl);
+}
+
+.portfolio-intro-section {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.portfolio-intro-text {
+  grid-column: 1 / 8;
+  max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-intro-text {
+    width: 65%; /* roughly 7 columns */
+  }
+}
+
+.portfolio-intro-text h1 {
+  margin-bottom: var(--space-sm);
+}
+
+.portfolio-disclosure {
+  opacity: 0.7;
+  font-size: 0.875rem;
+  margin-top: var(--space-md);
+  display: block;
+}
+
+/* 2. Portfolio Items General */
+.portfolio-case-item {
+  display: block;
+}
+
+.portfolio-case-item > a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.portfolio-figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color-surface);
+}
+
+.portfolio-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.4s ease-out;
+}
+
+.portfolio-case-item:hover .portfolio-figure img {
+  transform: scale(1.03);
+}
+
+.portfolio-case-title {
+  margin-top: var(--space-sm);
+  margin-bottom: 0;
+  font-size: var(--font-h3);
+  font-weight: 500;
+}
+
+.portfolio-featured .portfolio-case-title {
+  font-size: var(--font-h2);
+}
+
+/* 3. Featured Case (CASE-01) */
+.portfolio-featured {
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+  .portfolio-featured .portfolio-case-item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gutter);
+  }
+
+  .portfolio-featured .portfolio-case-item > a {
+    grid-column: 2 / 12; /* 10 columns, offset by 1 */
+    display: block;
+  }
+}
+
+.portfolio-figure-featured img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* 4. Editorial Grid (1440px / 1024px) */
+.portfolio-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gutter);
+  row-gap: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.portfolio-figure-portrait img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.portfolio-figure-landscape img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+@media (min-width: 835px) {
+  /* ROW 1 */
+  .project-layout-portrait-left {
+    grid-column: 1 / 6; /* 5 columns */
+  }
+  
+  .project-layout-landscape-right {
+    grid-column: 7 / 13; /* 6 columns */
+    margin-top: var(--space-lg); /* Deliberate vertical offset */
+  }
+
+  /* ROW 2 */
+  .project-layout-landscape-left {
+    grid-column: 1 / 8; /* 7 columns */
+  }
+  
+  .project-layout-portrait-right {
+    grid-column: 9 / 13; /* 4 columns */
+    margin-top: var(--space-xl); /* Deliberate vertical offset */
+  }
+
+  /* ROW 3 / FINAL */
+  .project-layout-final {
+    grid-column: 5 / 13; /* 8 columns, offset right */
+    margin-top: var(--space-lg);
+  }
+}
+
+/* 5. Tablet Strict 2-Column Grid (~834px) */
+@media (max-width: 1023px) and (min-width: 601px) {
+  .portfolio-intro-text {
+    width: 100%;
+  }
+
+  .portfolio-featured .portfolio-case-item > a {
+    grid-column: 1 / 13;
+  }
+
+  .portfolio-editorial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* STRICT TWO-COLUMN */
+    gap: var(--grid-gutter);
+    row-gap: var(--space-lg);
+  }
+
+  .project-layout-portrait-left,
+  .project-layout-landscape-right,
+  .project-layout-landscape-left,
+  .project-layout-portrait-right,
+  .project-layout-final {
+    grid-column: span 1;
+    margin-top: 0; /* Remove desktop offsets */
+  }
+
+  /* Make the final item span 2 columns to close nicely, or leave as 1 */
+  .project-layout-final {
+    grid-column: 1 / -1; 
+  }
+}
+
+/* 6. Mobile 1-Column Grid (~390px) */
+@media (max-width: 600px) {
+  .portfolio-intro-section {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
+
+  .portfolio-featured {
+    margin-bottom: var(--space-lg);
+  }
+
+  .portfolio-editorial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  .project-layout-portrait-left,
+  .project-layout-landscape-right,
+  .project-layout-landscape-left,
+  .project-layout-portrait-right,
+  .project-layout-final {
+    grid-column: 1 / -1;
+    margin-top: 0;
+  }
+}
+
+.portfolio-cta-section {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+}

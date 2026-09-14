@@ -1,26 +1,6 @@
 import business from '../content/business-input.json'
 import CtaArrow from './CtaArrow'
-
-const dienstenLinks: [string, string][] = [
-  ['Complete badkamer renovatie', '/complete-badkamer-renovatie/'],
-  ['Toilet renovatie', '/complete-toilet-renovatie/'],
-  ['Vloertegels leggen', '/tegelwerk/vloer-tegelen/'],
-  ['Wandtegels zetten', '/tegelwerk/wand-tegelen/']
-]
-
-const specialisatiesLinks: [string, string][] = [
-  ['Grootformaat tegels', '/specialisaties/grootformaat-tegels/'],
-  ['Mozaïek zetten', '/specialisaties/mozaiek-zetten/'],
-  ['Natuursteen', '/specialisaties/natuursteen/'],
-  ['Keramisch parket', '/specialisaties/keramisch-parket/']
-]
-
-const informatieLinks: [string, string][] = [
-  ['Projecten', '/projecten/'],
-  ['Over ons', '/over-ons/'],
-  ['Kennisbank', '/kennisbank/'],
-  ['Contact', '/contact/']
-]
+import { footerLinks } from '../data/navigation'
 
 export default function Footer() {
   return (
@@ -52,11 +32,16 @@ export default function Footer() {
 
           {/* Column 2: Diensten */}
           <div className="footer-col">
-            <h2 className="footer-heading">Diensten</h2>
+            <h2 className="footer-heading">Badkamers & Tegelwerk</h2>
             <ul className="footer-links">
-              {dienstenLinks.map(([label, href]) => (
-                <li key={href}>
-                  <a href={href}>{label}</a>
+              {footerLinks.badkamers.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+              {footerLinks.tegelwerk.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
@@ -66,9 +51,9 @@ export default function Footer() {
           <div className="footer-col">
             <h2 className="footer-heading">Specialisaties</h2>
             <ul className="footer-links">
-              {specialisatiesLinks.map(([label, href]) => (
-                <li key={href}>
-                  <a href={href}>{label}</a>
+              {footerLinks.specialisaties.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
@@ -78,9 +63,9 @@ export default function Footer() {
           <div className="footer-col">
             <h2 className="footer-heading">Informatie</h2>
             <ul className="footer-links">
-              {informatieLinks.map(([label, href]) => (
-                <li key={href}>
-                  <a href={href}>{label}</a>
+              {footerLinks.informatie.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>

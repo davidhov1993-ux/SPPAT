@@ -28,7 +28,7 @@ export default function ToiletRenovatiePage({ page }: { page: Page }) {
 
   return (
     <div className="service-page toilet-page">
-      <HeroSplit 
+      <HeroSplit currentPath={page.url} pageTitle={page.title}  
         ref={heroRef}
         eyebrow={hero.Eyebrow}
         title={hero.H1}

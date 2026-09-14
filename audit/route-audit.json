@@ -1,0 +1,735 @@
+{
+  "routes": [
+    {
+      "url": "/",
+      "title": "Complete Badkamer Renovatie & Professioneel Tegelwerk | Sppat",
+      "description": "Specialist in complete badkamer renovaties en hoogwaardig tegelwerk in Almere en omstreken. Van casco sloop tot zorgvuldige afmontage met oog voor elk detail.",
+      "titleLength": 61,
+      "descriptionLength": 158,
+      "sections": 2,
+      "faqs": 0,
+      "images": 10,
+      "uniqueImageBytes": 584019,
+      "htmlBytes": 17369,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 10,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/complete-badkamer-renovatie/",
+      "title": "Complete Badkamer Renovatie | Turnkey Verbouwen | Sppat",
+      "description": "Uw badkamer compleet laten verbouwen? Sppat verzorgt de hele renovatie: van sloop en leidingwerk tot uitvlakken, waterdichting en hoogwaardig tegelwerk.",
+      "titleLength": 55,
+      "descriptionLength": 152,
+      "sections": 3,
+      "faqs": 1,
+      "images": 6,
+      "uniqueImageBytes": 856724,
+      "htmlBytes": 18811,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 6,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/complete-badkamer-renovatie/almere/",
+      "title": "Badkamer Renovatie Almere | Complete Verbouwingen | Sppat",
+      "description": "Zoekt u een aannemer voor uw badkamer renovatie in Almere? Sppat levert lokaal vakmanschap, van casco sloop en leidingwerk tot hoogwaardig tegelwerk.",
+      "titleLength": 57,
+      "descriptionLength": 149,
+      "sections": 3,
+      "faqs": 2,
+      "images": 4,
+      "uniqueImageBytes": 518996,
+      "htmlBytes": 16333,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 4,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/complete-toilet-renovatie/",
+      "title": "Complete Toilet Renovatie | Inbouwreservoirs & Tegelwerk",
+      "description": "Uw toiletruimte verbouwen? Wij verzorgen demontage, leidingwerk, installatie van het inbouwreservoir, stucwerk en vakkundig tegelwerk.",
+      "titleLength": 56,
+      "descriptionLength": 134,
+      "sections": 3,
+      "faqs": 0,
+      "images": 2,
+      "uniqueImageBytes": 110136,
+      "htmlBytes": 13844,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 2,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/tegelwerk/",
+      "title": "Professioneel Tegelwerk | Vloeren, Wanden & Badkamers",
+      "description": "Uw specialist voor tegelwerk. Van het leggen van tegelvloeren en wandtegels tot de waterdichte afwerking van badkamers en hittebestendige keukens.",
+      "titleLength": 53,
+      "descriptionLength": 146,
+      "sections": 2,
+      "faqs": 0,
+      "images": 6,
+      "uniqueImageBytes": 771282,
+      "htmlBytes": 18776,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [
+        {
+          "anchor": "grootformaat tegels",
+          "url": "/specialisaties/grootformaat-tegels/",
+          "placement": "SECTION 3 Body"
+        },
+        {
+          "anchor": "natuursteen",
+          "url": "/specialisaties/natuursteen/",
+          "placement": "SECTION 3 Body"
+        },
+        {
+          "anchor": "mozaïek",
+          "url": "/specialisaties/mozaiek-zetten/",
+          "placement": "SECTION 3 Body"
+        }
+      ],
+      "imagesWithoutDimensions": 6,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/tegelwerk/badkamer-tegelen/",
+      "title": "Badkamer Laten Tegelen | Vakkundige Tegelzetter | Sppat",
+      "description": "Heeft u het loodgieterswerk al geregeld? Wij verzorgen het uitvlakken, de waterdichting en het tegelwerk in uw badkamer.",
+      "titleLength": 55,
+      "descriptionLength": 120,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 13012,
+      "h1": 1,
+      "placeholders": 1,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/tegelwerk/vloer-tegelen/",
+      "title": "Vloertegels Leggen | Woonkamer, Hal & Vloerverwarming",
+      "description": "Laat uw vloertegels leggen door een specialist. Wij zorgen voor een gladde dekvloer, correcte voorbereiding en vlak tegelwerk.",
+      "titleLength": 53,
+      "descriptionLength": 126,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 12498,
+      "h1": 1,
+      "placeholders": 1,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/tegelwerk/wand-tegelen/",
+      "title": "Wandtegels Zetten | Keukens, Toiletten & Badkamers | Sppat",
+      "description": "Professioneel wandtegels laten zetten. Van laser-uitlijning tot strakke nissen en correcte dilatatievoegen. Bespreek uw wandtegelwerk met ons.",
+      "titleLength": 58,
+      "descriptionLength": 142,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 12301,
+      "h1": 1,
+      "placeholders": 1,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/tegelwerk/keuken-tegelen/",
+      "title": "Keuken Achterwand & Vloer Tegelen | Sppat",
+      "description": "Uw keukenachterwand of keukenvloer laten tegelen? Wij leveren maatwerk rondom stopcontacten, strakke aansluitingen en adviseren over vuilafstotende voegen.",
+      "titleLength": 41,
+      "descriptionLength": 155,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 12749,
+      "h1": 1,
+      "placeholders": 1,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/tegelwerk/balkon-tegelen/",
+      "title": "Balkon Tegelen | Buitentegelwerk & Vorstbescherming | Sppat",
+      "description": "Laat uw balkon professioneel tegelen. Buitentegelwerk vereist aandacht voor temperatuurverschillen, vorst, afwatering en dilatatie.",
+      "titleLength": 59,
+      "descriptionLength": 131,
+      "sections": 1,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 11930,
+      "h1": 1,
+      "placeholders": 1,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/specialisaties/",
+      "title": "Tegel Specialisaties | Grootformaat, Mozaïek & Natuursteen",
+      "description": "Specialist in complex tegelwerk. Ontdek onze diensten voor grootformaat (XXL) tegels, glasmozaïek, natuursteen en keramisch parket.",
+      "titleLength": 58,
+      "descriptionLength": 131,
+      "sections": 1,
+      "faqs": 0,
+      "images": 5,
+      "uniqueImageBytes": 728352,
+      "htmlBytes": 14438,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [
+        "H2: Onze expertisegebieden"
+      ],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 5,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/specialisaties/grootformaat-tegels/",
+      "title": "Grootformaat Tegels Leggen | XXL Tegelzetter | Sppat",
+      "description": "Specialist in het leggen van grootformaat (XXL) tegels. Wij gebruiken dubbele verlijming en levellingsystemen om hoogteverschillen te minimaliseren.",
+      "titleLength": 52,
+      "descriptionLength": 148,
+      "sections": 2,
+      "faqs": 0,
+      "images": 1,
+      "uniqueImageBytes": 37657,
+      "htmlBytes": 11852,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 1,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/specialisaties/mozaiek-zetten/",
+      "title": "Mozaïek Tegelzetter Specialist | Perfecte Uitlijning | Sppat",
+      "description": "Mozaïek tegelwerk voor uw badkamer of nis. Wij zorgen voor een vlakke ondergrond, juiste lijmkeuze en ononderbroken mat-overgangen.",
+      "titleLength": 60,
+      "descriptionLength": 131,
+      "sections": 1,
+      "faqs": 0,
+      "images": 1,
+      "uniqueImageBytes": 114861,
+      "htmlBytes": 11150,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 1,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/specialisaties/natuursteen/",
+      "title": "Natuursteen Leggen | Marmer, Travertin & Hardsteen | Sppat",
+      "description": "Natuursteen vereist vakkennis. Wij plaatsen marmer, travertin en hardsteen met aandacht voor kalibratie, zuurvrije verlijming en onderhoud.",
+      "titleLength": 58,
+      "descriptionLength": 139,
+      "sections": 2,
+      "faqs": 0,
+      "images": 1,
+      "uniqueImageBytes": 182716,
+      "htmlBytes": 11565,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 1,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/specialisaties/keramisch-parket/",
+      "title": "Keramisch Parket Leggen | Houtlook Tegels | Sppat",
+      "description": "Keramisch parket combineren met vloerverwarming? Wij leggen houtlook tegels veelal in wildverband om natuurlijke buiging (lippage) op te vangen.",
+      "titleLength": 49,
+      "descriptionLength": 144,
+      "sections": 1,
+      "faqs": 0,
+      "images": 1,
+      "uniqueImageBytes": 155845,
+      "htmlBytes": 11126,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 1,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/kennisbank/",
+      "title": "Kennisbank | Informatie over Tegelwerk & Badkamers",
+      "description": "Lees artikelen over technische keuzes in de badkamer: waterdichting, het voorkomen van lippage, onzichtbare luiken en het verschil in voegmiddelen.",
+      "titleLength": 50,
+      "descriptionLength": 147,
+      "sections": 1,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 11078,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/kennisbank/waterdichting-badkamer-kimband/",
+      "title": "Waterdichting Badkamer: Kimband, Pasta & Membranen",
+      "description": "Hoe voorkom je lekkages? Lees over de systemen die tegelzetters gebruiken om natte cellen (douches) te beschermen tegen vochtdoorslag.",
+      "titleLength": 50,
+      "descriptionLength": 134,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 13129,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/kennisbank/tegel-lippage-voorkomen/",
+      "title": "Tegel Lippage: Oorzaken & Hoe Het Te Beperken | Kennisbank",
+      "description": "Wat is tegel lippage (hoogteverschil) en hoe zorgen vakmensen voor een zo vlak mogelijk eindresultaat? Lees over toleranties en leveling.",
+      "titleLength": 58,
+      "descriptionLength": 137,
+      "sections": 3,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 13293,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/kennisbank/onzichtbaar-luik-badkamer/",
+      "title": "Onzichtbaar Inspectieluik in de Badkamer | Kennisbank",
+      "description": "Toegang tot uw badkamertechniek behouden zonder afbreuk te doen aan het tegelwerk? Ontdek de mogelijkheden van een onzichtbaar (betegeld) inspectieluik.",
+      "titleLength": 53,
+      "descriptionLength": 152,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 12961,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/kennisbank/epoxyvoeg-vs-cementvoeg/",
+      "title": "Epoxyvoeg vs. Cementvoeg: Verschillen en Eigenschappen",
+      "description": "Wat is het verschil tussen een 2-componenten epoxyvoeg en een reguliere cementvoeg? Ontdek welke voeg geschikt is voor inloopdouches en keukens.",
+      "titleLength": 54,
+      "descriptionLength": 144,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 13077,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/projecten/",
+      "title": "Portfolio & Opgeleverde Projecten | Sppat Badkamers",
+      "description": "Bekijk onze recent opgeleverde badkamer renovaties, toilet verbouwingen en tegelwerk. Ontdek ons oog voor detail en afwerking.",
+      "titleLength": 51,
+      "descriptionLength": 126,
+      "sections": 1,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 10022,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/over-ons/",
+      "title": "Over Sppat | Specialist in Badkamers & Tegelwerk",
+      "description": "Maak kennis met Sppat. Wij hechten waarde aan technische integriteit en heldere communicatie tijdens verbouwingen van badkamers en tegelwerk.",
+      "titleLength": 48,
+      "descriptionLength": 141,
+      "sections": 1,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 9927,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    },
+    {
+      "url": "/contact/",
+      "title": "Contact & Opname Aanvragen | Sppat Badkamers",
+      "description": "Bespreek uw complete badkamer renovatie of tegelproject met ons. Vul het formulier in, deel uw wensen en wij nemen contact met u op.",
+      "titleLength": 44,
+      "descriptionLength": 132,
+      "sections": 2,
+      "faqs": 0,
+      "images": 0,
+      "uniqueImageBytes": 0,
+      "htmlBytes": 12311,
+      "h1": 1,
+      "placeholders": 0,
+      "missingContent": [],
+      "missingAnchors": [],
+      "imagesWithoutDimensions": 0,
+      "imagesWithSrcset": 0
+    }
+  ],
+  "broken": [],
+  "totalDistBytes": 11739900,
+  "imageCount": 99,
+  "imageBytes": 11037439,
+  "unreferencedImages": [
+    {
+      "path": "dist/icons.svg",
+      "bytes": 689
+    },
+    {
+      "path": "dist/favicon.svg",
+      "bytes": 9522
+    },
+    {
+      "path": "dist/special-references/WhatsApp Image 2025-05-30 at 21.24.09 (7).jpeg",
+      "bytes": 43362
+    },
+    {
+      "path": "dist/special-references/Generated Image September 10, 2026 - 7_02PM.jpg",
+      "bytes": 115756
+    },
+    {
+      "path": "dist/special-references/WhatsApp Image 2025-05-30 at 21.24.06 (9).jpeg",
+      "bytes": 134931
+    },
+    {
+      "path": "dist/special-references/WhatsApp Image 2025-05-30 at 21.24.06 (8).jpeg",
+      "bytes": 81589
+    },
+    {
+      "path": "dist/special-references/Generated Image September 10, 2026 - 6_57PM.jpg",
+      "bytes": 107336
+    },
+    {
+      "path": "dist/special-references/WhatsApp Image 2025-05-30 at 21.24.06 (6).jpeg",
+      "bytes": 106718
+    },
+    {
+      "path": "dist/special-references/Generated Image September 10, 2026 - 6_53PM.jpg",
+      "bytes": 88344
+    },
+    {
+      "path": "dist/special-references/Generated Image September 10, 2026 - 6_50PM.jpg",
+      "bytes": 106171
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.02 (5).jpeg",
+      "bytes": 64476
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.03 (5).jpeg",
+      "bytes": 54371
+    },
+    {
+      "path": "dist/references/Generated Image September 11, 2026 - 11_18AM.jpg",
+      "bytes": 177016
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.20.05.jpeg",
+      "bytes": 140370
+    },
+    {
+      "path": "dist/references/ref_1.jpeg",
+      "bytes": 110620
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.04 (2).jpeg",
+      "bytes": 26025
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.20.13.jpeg",
+      "bytes": 254915
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.08 (1).jpeg",
+      "bytes": 281247
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
+      "bytes": 54150
+    },
+    {
+      "path": "dist/references/ -5.jpg",
+      "bytes": 80495
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.05 (6).jpeg",
+      "bytes": 39311
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.04 (6).jpeg",
+      "bytes": 55619
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.20.04.jpeg",
+      "bytes": 66200
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.02 (3).jpeg",
+      "bytes": 49698
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.03 (3).jpeg",
+      "bytes": 70157
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.02 (1).jpeg",
+      "bytes": 48851
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.04 (4).jpeg",
+      "bytes": 60460
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.08 (3).jpeg",
+      "bytes": 194150
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.03 (6).jpeg",
+      "bytes": 29737
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.04 (3).jpeg",
+      "bytes": 57657
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.02 (4).jpeg",
+      "bytes": 33632
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.08 (2).jpeg",
+      "bytes": 220947
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.19.50.jpeg",
+      "bytes": 276724
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.04 (7).jpeg",
+      "bytes": 51076
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.03 (2).jpeg",
+      "bytes": 76102
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.01 (1).jpeg",
+      "bytes": 30619
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.07 (4).jpeg",
+      "bytes": 53178
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.09.jpeg",
+      "bytes": 126740
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.07 (6).jpeg",
+      "bytes": 33350
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.02 (8).jpeg",
+      "bytes": 39868
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.08.jpeg",
+      "bytes": 252225
+    },
+    {
+      "path": "dist/references/Generated Image September 10, 2026 - 7_28PM (1).jpg",
+      "bytes": 65628
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.01 (5).jpeg",
+      "bytes": 68812
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.20.16.jpeg",
+      "bytes": 159025
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.06 (7).jpeg",
+      "bytes": 104936
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.20.07.jpeg",
+      "bytes": 110353
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.07 (1).jpeg",
+      "bytes": 46638
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.20.06.jpeg",
+      "bytes": 59233
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.01 (4).jpeg",
+      "bytes": 40205
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.02.jpeg",
+      "bytes": 55924
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-05-30 at 21.24.01 (6).jpeg",
+      "bytes": 38216
+    },
+    {
+      "path": "dist/references/WhatsApp Image 2025-02-26 at 18.19.58.jpeg",
+      "bytes": 365954
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 7_26PM.jpg",
+      "bytes": 93308
+    },
+    {
+      "path": "dist/media/Generated Image September 11, 2026 - 7_11PM.jpg",
+      "bytes": 160087
+    },
+    {
+      "path": "dist/media/sppat-real-process-tiling.jpg",
+      "bytes": 281247
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 7_27PM.jpg",
+      "bytes": 70701
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 10_48PM.jpg",
+      "bytes": 93693
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 7_57PM.jpg",
+      "bytes": 105143
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 8_27PM.jpg",
+      "bytes": 223978
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 10_46PM.jpg",
+      "bytes": 136484
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 8_27PM (1).jpg",
+      "bytes": 163248
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 7_29PM.jpg",
+      "bytes": 107504
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 7_30PM.jpg",
+      "bytes": 120107
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 8_38PM.jpg",
+      "bytes": 101206
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 10_26PM.jpg",
+      "bytes": 138853
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 10_47PM.jpg",
+      "bytes": 172518
+    },
+    {
+      "path": "dist/media/SPPAT-VIS-023.jpg",
+      "bytes": 172450
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 7_28PM.jpg",
+      "bytes": 70056
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 8_39PM.jpg",
+      "bytes": 115419
+    },
+    {
+      "path": "dist/media/Generated Image September 10, 2026 - 7_31PM.jpg",
+      "bytes": 122343
+    }
+  ],
+  "assets": [
+    {
+      "path": "dist/assets/index-hgODvGKM.css",
+      "bytes": 46873,
+      "gzipBytes": 7956
+    },
+    {
+      "path": "dist/assets/index-C3cJnYjf.js",
+      "bytes": 304967,
+      "gzipBytes": 86814
+    }
+  ],
+  "referencedImageCount": 29
+}

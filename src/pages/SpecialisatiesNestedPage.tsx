@@ -2,6 +2,7 @@ import type { Page } from '../content/types'
 import CtaArrow from '../components/CtaArrow'
 import CtaTypeB from '../components/CtaTypeB'
 import RichText from '../components/RichText'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 const NESTED_IMAGES: Record<string, string> = {
   '/specialisaties/grootformaat-tegels/': '/media/Generated Image September 11, 2026 - 2_02PM.jpg',
@@ -19,6 +20,9 @@ export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
     <div className="spec-nested-page">
       {/* SECTION 1: HERO */}
       <section className="spec-nested-hero-section" aria-label="Introductie">
+        <div className="container">
+          <Breadcrumbs currentPath={page.url} title={page.title} />
+        </div>
         <div className="container-fluid" style={{ padding: 0 }}>
           <figure className="spec-nested-hero-img-wrapper">
             <img 
@@ -76,6 +80,13 @@ export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
                     ))}
                   </ul>
                 )}
+                
+                {page.links && page.links.filter(l => (l.placement === section.id || (index === page.sections.length - 1 && !page.sections.find(s => s.id === l.placement))) && !section.Body?.includes(l.anchor)).map((link, idx) => (
+                  <div key={idx} style={{ marginTop: '16px' }}>
+                    <a className="inline-link" href={link.url}>{link.anchor}</a>
+                  </div>
+                ))}
+
               </div>
             </div>
           </div>

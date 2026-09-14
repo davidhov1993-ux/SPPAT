@@ -307,6 +307,18 @@
             "Body": "Buitentegelwerk dat rekening houdt met weersinvloeden, vorst, afschot en waterafvoer.",
             "CTA": "Lees meer",
             "CTA URL": "/tegelwerk/balkon-tegelen/"
+          },
+          {
+            "Title": "Inloopdouche tegelen",
+            "Body": "Precisiewerk met watermanagement, perfect afschot en waterdichting.",
+            "CTA": "Lees meer",
+            "CTA URL": "/tegelwerk/inloopdouche-tegelen/"
+          },
+          {
+            "Title": "Vloerverwarming en tegelen",
+            "Body": "Vakkundige opbouw en afwerking van tegelwerk op vloerverwarming.",
+            "CTA": "Lees meer",
+            "CTA URL": "/tegelwerk/vloerverwarming-en-tegelen/"
           }
         ]
       },
@@ -630,7 +642,13 @@
         "Body": "Grootformaat tegels kunnen goed worden toegepast in een doucheruimte. Omdat de afvoer (drain) lager ligt, moet het water weg kunnen lopen (afschot). Als de tegel te groot is om mee te buigen met het afschot, wordt deze vaak diagonaal doorgezaagd (envelop-snede) of wordt de dekvloer zo aangepast dat een eenzijdig afschot naar een sleufgoot mogelijk is."
       }
     ],
-    "links": [],
+    "links": [
+      {
+        "placement": "SECTION 3",
+        "anchor": "Meer over tegelwerk",
+        "url": "/tegelwerk/"
+      }
+    ],
     "faq": [],
     "hero": {
       "H1": "Grootformaat Tegels (XXL) Leggen",
@@ -663,7 +681,13 @@
         ]
       }
     ],
-    "links": [],
+    "links": [
+      {
+        "placement": "SECTION 3",
+        "anchor": "Meer over tegelwerk",
+        "url": "/tegelwerk/"
+      }
+    ],
     "faq": [],
     "hero": {
       "H1": "Professioneel Mozaïek Zetten",
@@ -701,7 +725,13 @@
         "Body": "Natuursteen is prachtig, maar in natte ruimtes (zoals de inloopdouche) vereist het bewustwording. Kalkaanslag mag niet worden verwijderd met agressieve (zure) schoonmaakmiddelen, omdat dit de toplaag van bijvoorbeeld marmer aantast."
       }
     ],
-    "links": [],
+    "links": [
+      {
+        "placement": "SECTION 3",
+        "anchor": "Meer over tegelwerk",
+        "url": "/tegelwerk/"
+      }
+    ],
     "faq": [],
     "hero": {
       "H1": "Natuursteen Leggen",
@@ -984,6 +1014,80 @@
     "hero": {
       "H1": "Uw Project Bespreken",
       "Body": "Heeft u plannen voor een verbouwing of een specifiek tegelproject? Wij bespreken graag de haalbaarheid en plannen, indien gewenst, een technische opname in."
+    }
+  },
+  {
+    "url": "/tegelwerk/inloopdouche-tegelen/",
+    "title": "Inloopdouche tegelen | Sppat",
+    "description": "Nauwkeurige afwerking en waterdichting van inloopdouches.",
+    "hero": {
+      "Eyebrow": "Tegelwerk in de natte cel",
+      "H1": "Inloopdouche Tegelen",
+      "Body": "Watermanagement ontmoet esthetiek. Een inloopdouche vraagt om een doordacht legplan en perfect afschot.",
+      "Primary CTA": "Project bespreken",
+      "Primary CTA URL": "/contact/",
+      "Media URL": "/special-references/Generated Image September 10, 2026 - 6_50PM.jpg",
+      "Media Alt": "Tegelwerk in inloopdouche"
+    },
+    "sections": [
+      {
+        "H2": "Specificatie",
+        "Body": "Watermanagement, geometrie, drainage, waterdichting en een precisie-afwerking vormen de basis van de Sppat inloopdouche.",
+        "bullets": [
+          "Beoordeling en voorbereiding van de ondergrond",
+          "Aanbrengen van waterdichtingssysteem achter het tegelwerk",
+          "Geometrische uitlijning met nissen en afvoer",
+          "Vochtresistente voeg- en kitafwerking"
+        ]
+      },
+      {
+        "H2": "Aanvullende informatie",
+        "Body": "Lees meer over onze aanpak in de natte cel."
+      }
+    ],
+    "links": [],
+    "cta": {
+      "H2": "Start uw project",
+      "Body": "Neem contact op voor een technische opname.",
+      "Button": "Project bespreken",
+      "URL": "/contact/"
+    }
+  },
+  {
+    "url": "/tegelwerk/vloerverwarming-en-tegelen/",
+    "title": "Vloerverwarming & Tegelen | Sppat",
+    "description": "De juiste opbouw en afwerking van tegelwerk op vloerverwarming.",
+    "hero": {
+      "Eyebrow": "Tegelwerk over vloerverwarming",
+      "H1": "Vloerverwarming en Tegelen",
+      "Body": "Een tegelvloer over vloerverwarming vraagt om de juiste materiaalafstemming en voorbereiding.",
+      "Primary CTA": "Project bespreken",
+      "Primary CTA URL": "/contact/",
+      "Media URL": "/references/WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
+      "Media Alt": "Tegelvloer afgewerkt over vloerverwarming"
+    },
+    "sections": [
+      {
+        "H2": "Specificatie",
+        "Body": "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers.",
+        "bullets": [
+          "Beoordeling van de vloeropbouw",
+          "Afstemming op verwarmingssysteem",
+          "Gebruik van de juiste lijm- en ontkoppelingssystemen",
+          "Thermische gedragingen en dilataties"
+        ]
+      },
+      {
+        "H2": "Aanvullende informatie",
+        "Body": "Lees meer over vloeren."
+      }
+    ],
+    "links": [],
+    "cta": {
+      "H2": "Start uw project",
+      "Body": "Neem contact op voor een technische opname.",
+      "Button": "Project bespreken",
+      "URL": "/contact/"
     }
   }
 ]

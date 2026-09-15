@@ -67,36 +67,43 @@
     "description": "Uw badkamer compleet laten verbouwen? Sppat verzorgt de hele renovatie: van sloop en leidingwerk tot uitvlakken, waterdichting en hoogwaardig tegelwerk.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Het renovatieproces: Van casco tot oplevering",
-        "Body": "Een duurzame badkamer wordt laag voor laag opgebouwd. Een complete renovatie omvat doorgaans de volgende werkzaamheden:",
-        "bullets": [
-          "Demontage & Afvoer: Verwijderen van bestaand sanitair, tegels en indien nodig de dekvloer tot op het casco.",
-          "Leidingwerk & Installatie: Frezen en verleggen van koud/warm water, afvoeren en elektra. Installatie van inbouwreservoirs, inbouwdelen voor kranen en het plaatsen van de douchegoot (drain).",
-          "Bouwkundige Aanpassingen: Het verlagen van plafonds voor inbouwspots en ventilatie, het creëren van scheidingswanden of het bouwen van nissen.",
-          "Uitvlakken: Wanden loodrecht stucen of uitvlakken, de zandcement dekvloer smeren op het juiste afschot.",
-          "Waterdichting: Aanbrengen van waterdichtingssystemen (zoals kimband en kimpasta of bouwplaten) in de natte cel ter preventie van vochtschade.",
-          "Tegelwerk: Het voorbereiden, zetten en voegen van de wand- en vloerafwerking.",
-          "Afmontage: Plaatsen van het sanitair, wastafelmeubels, glazen douchewanden, kranen, verlichting en het aanbrengen van de sanitairkit."
-        ]
-      },
-      {
-        "id": "SECTION 3",
-        "Type": "Text + Internal Links",
-        "H2": "Technische mogelijkheden en keuzes",
-        "Body": "Bij een volledige renovatie is veel mogelijk, afhankelijk van de basisconstructie van uw woning. In moderne badkamers worden regelmatig technieken geïntegreerd zoals inbouwkranen in de muur, regendouches uit het plafond en onzichtbare, betegelde inspectieluiken. Voor de afwerking kunnen uiteenlopende materialen worden verwerkt, variërend van strakke grootformaat tegels tot organisch natuursteen of accenten met mozaïek."
-      },
-      {
-        "id": "SECTION 4",
+        "id": "SCOPE",
         "Type": "Text",
-        "H2": "Wat kost een badkamer renovatie? (Marktindicaties 2026)",
-        "Body": "De investering voor een badkamerverbouwing hangt af van de omvang, de staat van de huidige ruimte en de gekozen materialen. Om u een beeld te geven van de huidige Nederlandse markt (peiljaar 2026):",
-        "bullets": [
-          "Complete renovatie: Een gemiddelde badkamer kost in 2026 doorgaans tussen de € 14.000 en € 30.000, inclusief arbeid, ruwbouwmaterialen, tegels en sanitair. Bij zeer luxe projecten met exclusieve materialen (zoals XXL marmerlook platen of maatwerk meubilair) kan dit verder oplopen.",
-          "Kostenverdeling: Grofweg bestaat 45% tot 55% van het budget uit installatie, sloop en tegelzetten (arbeid en bouwmaterialen). De overige 45% tot 55% zit in de aanschaf van zichtbare elementen: de tegels, kranen, meubels en het sanitair.",
-          "Let op: Dit zijn algemene marktgemiddelden. Na een technische opname maken wij graag een gerichte raming voor uw specifieke situatie."
-        ]
+        "H2": "Complete A-Z uitvoering",
+        "Body": "Bij een complete renovatie wordt de badkamer vanaf het casco opnieuw opgebouwd. Dit omvat de vakkundige sloop, het verleggen en installeren van het leidingwerk en de afvoeren, het voorbereiden van de wanden en vloeren, de waterdichting, het tegelwerk en ten slotte de sanitaire afmontage."
+      },
+      {
+        "id": "PREP",
+        "Type": "Asymmetrical",
+        "H2": "Technische voorbereiding en installatiewerk",
+        "Body": "Een duurzame badkamer begint achter de tegels. Bestaand leidingwerk wordt vervangen of verlegd volgens de nieuwe plattegrond. Indien nodig worden sleuven gefreesd en dekvloeren gestort of geëgaliseerd. Wanden worden loodrecht uitgevlakt zodat grootformaat tegels en inbouwdelen later perfect aansluiten.",
+        "mediaId": "substrate"
+      },
+      {
+        "id": "WET_ZONE",
+        "Type": "Text",
+        "H2": "Waterdichting en de natte cel",
+        "Body": "In de doucheruimte en rondom baden is een 100% waterdichte constructie vereist. We brengen hoogwaardige kimband en waterdichtende pasta (membranen) aan op alle inwendige hoeken, naden en rondom doorvoeren. Het afschot van de douchevloer wordt met uiterste precisie gesmeerd zodat het water probleemloos richting de douchegoot vloeit, zonder risico op plassen of lekkages achter het tegelwerk."
+      },
+      {
+        "id": "CONCEALED",
+        "Type": "Asymmetrical",
+        "H2": "Inbouwdelen en verborgen techniek",
+        "Body": "Modern sanitair vraagt om naadloze integratie. Inbouwkranen, regendouches en inbouwreservoirs worden stevig verankerd en achter de wanden weggewerkt. Praktische elementen zoals betegelde nisjes voor shampoo of onzichtbare inspectieluiken voor de techniek worden in deze fase maatvast geconstrueerd.",
+        "mediaId": "ai-niche"
+      },
+      {
+        "id": "TILING",
+        "Type": "Text",
+        "H2": "Tegelwerk en afwerking",
+        "Body": "Met een perfect loodrechte basis starten we het tegelwerk. We bepalen het optimale legplan om symmetrie te waarborgen en smalle snijstukken in hoeken te voorkomen. Uitwendige hoeken zagen we in verstek voor een minimalistische look. Na het drogen van de lijm werken we het geheel af met hoogwaardig voegmateriaal en schimmelwerende sanitairkit."
+      },
+      {
+        "id": "SUPPORTING",
+        "Type": "Macro",
+        "H2": "Sanitaire afmontage",
+        "Body": "De laatste fase is het plaatsen van het zichtbare sanitair. Wastafelmeubels, glazen douchewanden, kranen en het wandcloset worden nauwkeurig gemonteerd en afgesteld. Pas nadat alle onderdelen zijn gecontroleerd op waterdichtheid en functionaliteit, wordt de badkamer turn-key opgeleverd.",
+        "mediaId": "bath-feb"
       }
     ],
     "links": [
@@ -132,8 +139,6 @@
       "H1": "Uw Complete Badkamer Renovatie",
       "Body": "Het renoveren van een badkamer is een aaneenschakeling van technische disciplines die op elkaar moeten aansluiten. Bij een complete renovatie nemen wij de uitvoering voor onze rekening. U heeft één aanspreekpunt voor het gehele traject: van het veilig demonteren van de huidige badkamer tot de afmontage en de laatste kitrand. Het resultaat is een ruimte die visueel in balans is en bouwkundig ontworpen is voor een lange levensduur.",
       "Primary CTA": "Project bespreken",
-      "Visual": "Overzichtsfoto van een compleet gerenoveerde badkamer met inloopdouche.",
-      "ALT": "Compleet gerenoveerde badkamer met inloopdouche en modern tegelwerk",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
@@ -143,10 +148,10 @@
       "URL": "/contact/"
     },
     "relatedUrls": [
+      "/complete-badkamer-renovatie/almere/",
       "/tegelwerk/badkamer-tegelen/",
       "/specialisaties/grootformaat-tegels/",
-      "/specialisaties/mozaiek-zetten/",
-      "/specialisaties/natuursteen/",
+      "/kennisbank/waterdichting-badkamer-kimband/",
       "/projecten/"
     ]
   },
@@ -157,16 +162,28 @@
     "description": "Zoekt u een aannemer voor uw badkamer renovatie in Almere? Sppat levert lokaal vakmanschap, van casco sloop en leidingwerk tot hoogwaardig tegelwerk.",
     "sections": [
       {
-        "id": "SECTION 2",
+        "id": "CONTEXT",
         "Type": "Text",
-        "H2": "Kennis van lokale installatietechniek",
-        "Body": "Wonen in Almere betekent een grote diversiteit aan bouwstijlen: van de jongere woningen in Almere Poort en Duin tot de bestaande bouw in Almere Haven en Buiten. Een relevant detail voor verbouwingen in deze regio is dat veel wijken zijn aangesloten op stadsverwarming. Dit vereist specifieke kennis bij het verleggen van leidingwerk, het installeren van watergedragen vloerverwarming en het plaatsen van radiatoren of verdelers. Bij de technische voorbereiding van uw badkamer wordt hier rekening mee gehouden."
+        "H2": "Complete A-Z dienstverlening",
+        "Body": "Sppat levert premium badkamer renovaties waarbij het gehele traject van sloop, voorbereiding, leidingwerk, waterdichting en tegelwerk vakkundig wordt uitgevoerd."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text + Internal Links",
-        "H2": "Uw project van sloop tot afwerking",
-        "Body": "Wij voeren de stappen van de verbouwing uit. Van het vakkundig slopen tot het waterdicht maken van de doucheruimte en het integreren van inbouwkranen. Voor het tegelwerk kunnen alle materialen worden verwerkt, waaronder grootformaat tegels, natuursteen en mozaïek."
+        "id": "LOCAL",
+        "Type": "Text",
+        "H2": "Kennis van regionale installatietechniek",
+        "Body": "Wonen in Almere betekent een diversiteit aan bouwstijlen: van de jongere woningen in Almere Poort en Duin tot de bestaande bouw in Almere Haven en Buiten. Een relevant detail voor verbouwingen in deze regio is dat veel wijken zijn aangesloten op stadsverwarming. Dit vereist specifieke kennis bij het verleggen van leidingwerk, het installeren van watergedragen vloerverwarming en het plaatsen van verdelers."
+      },
+      {
+        "id": "DIFFERENTIATION",
+        "Type": "Text",
+        "H2": "Premium kwaliteit als standaard",
+        "Body": "Door te focussen op de onzichtbare bouwkundige voorbereiding garanderen we een strak eindresultaat op de zichtbare vlakken. Of het nu gaat om grootformaat tegels of mozaïek, de afwerking is altijd van het hoogste niveau."
+      },
+      {
+        "id": "RELATION",
+        "Type": "Text",
+        "H2": "Onze landelijke standaard",
+        "Body": "Hoewel wij stevig verankerd zijn in Almere, voeren wij projecten uit door heel Nederland. Bezoek onze hoofdpagina over badkamer renovaties voor een volledig overzicht van onze technische werkwijze."
       }
     ],
     "links": [
@@ -188,12 +205,10 @@
     ],
     "faq": [],
     "hero": {
-      "Eyebrow": "Lokaal Vakmanschap",
+      "Eyebrow": "Lokaal Vakmanschap in de Regio",
       "H1": "Badkamer Renovatie in Almere",
-      "Body": "Gevestigd in Almere, verzorgt Sppat complete badkamer renovaties voor woningen in de hele regio. Of u nu de indeling van een bestaande woning wilt moderniseren of een nieuwbouwwoning casco krijgt opgeleverd, wij coördineren de volledige verbouwing. Wij bieden één aanspreekpunt in de buurt, heldere communicatie en een resultaat waarbij techniek en esthetiek samenkomen.",
+      "Body": "Gevestigd in Almere, verzorgt Sppat complete badkamer renovaties voor woningen in de hele regio, en de rest van Nederland. Wij coördineren de volledige verbouwing en bieden één aanspreekpunt in de buurt, heldere communicatie en een resultaat waarbij techniek en esthetiek samenkomen.",
       "Primary CTA": "Project bespreken",
-      "Visual": "Foto van een modern opgeleverd project.",
-      "ALT": "Badkamer met grootformaat tegelwerk",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
@@ -203,7 +218,8 @@
       "URL": "/contact/"
     },
     "relatedUrls": [
-      "/complete-badkamer-renovatie/"
+      "/complete-badkamer-renovatie/",
+      "/contact/"
     ]
   },
   {
@@ -213,29 +229,37 @@
     "description": "Uw toiletruimte verbouwen? Wij verzorgen demontage, leidingwerk, installatie van het inbouwreservoir, stucwerk en vakkundig tegelwerk.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
+        "id": "SCOPE",
+        "Type": "Text",
         "H2": "Wat omvat een toiletverbouwing?",
-        "Body": "De ruimte wordt vanaf de basis opnieuw opgebouwd. De werkzaamheden omvatten doorgaans:",
-        "bullets": [
-          "Sloopwerk: Verwijderen en afvoeren van de oude pot, tegels en het oude leidingwerk.",
-          "Installatiewerk: Verleggen van de riolering, het aanleggen van waterleidingen voor het reservoir en eventueel een fonteintje.",
-          "Inbouwreservoir: Plaatsen en stevig verankeren van een inbouwreservoir (merken zoals Geberit of TECE worden in de markt veelvuldig toegepast).",
-          "Voorbereiding & Tegelwerk: Wanden uitvlakken. Er kan gekozen worden voor volledige betegeling of tegels tot een bepaalde hoogte met daarboven strak stucwerk.",
-          "Afmontage: Installatie van het wandcloset (zwevend toilet), de bedieningsplaat, het fonteintje met kraan en de kitafwerking."
-        ]
+        "Body": "De ruimte wordt vanaf de basis opnieuw opgebouwd. Dit omvat vakkundig sloopwerk, het verleggen van de riolering en waterleidingen, de installatie van het inbouwreservoir, het uitvlakken van de wanden en tot slot het stucwerk, tegelwerk en de afmontage van het wandcloset en fonteintje."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text",
-        "H2": "Ruimtebesparende oplossingen",
-        "Body": "In compacte ruimtes tellen de details. Het inbouwreservoir kan zo worden afgetimmerd en bekleed dat er een planchet (plateau) of een inbouwnis boven ontstaat. Voor hygiëne en schoonmaakgemak wordt tegenwoordig vaak gekozen voor randloze toiletten (rimfree) in combinatie met smalle tegelvoegen."
+        "id": "CHALLENGES",
+        "Type": "Asymmetrical",
+        "H2": "De uitdaging van kleine ruimtes",
+        "Body": "In compacte toiletruimtes is elke afwijking direct zichtbaar. Een asymmetrisch legplan, een scheve voeg of een niet perfect in verstek gezaagde hoek trekt onmiddellijk de aandacht. Precisie in de maatvoering en uitlijning is hier net zo kritiek als in een grote badkamer.",
+        "mediaId": "ai-toilet"
       },
       {
-        "id": "SECTION 4",
+        "id": "CONCEALED",
         "Type": "Text",
-        "H2": "Kosten van een toiletrenovatie (Marktindicaties 2026)",
-        "Body": "In de huidige markt varieert de prijs van een complete toiletrenovatie gemiddeld tussen de € 3.000 en € 6.000. Dit is inclusief sloopwerk, het verleggen van leidingen, installatie, stucen, tegelen en de afmontage van reservoir, pot en fontein. De uiteindelijke prijs is afhankelijk van de complexiteit van het leidingwerk en de materiaalkeuze."
+        "H2": "Inbouwreservoirs en voorbereiding",
+        "Body": "Het stevig verankeren van een inbouwreservoir (zoals Geberit of TECE) vormt het kloppend hart van de ruimte. Het reservoir wordt zodanig afgetimmerd en bekleed dat er een planchet (plateau) of inbouwnis boven ontstaat, terwijl alle aanvoer- en afvoerleidingen onzichtbaar in de wand verdwijnen."
+      },
+      {
+        "id": "TILING",
+        "Type": "Asymmetrical",
+        "H2": "Tegelverdeling en detailuitvoering",
+        "Body": "We centreren het legplan vaak rondom de bedieningsplaat en het wandcloset voor maximale visuele balans. Er kan gekozen worden voor volledige betegeling tot aan het plafond of voor een modernere look met tegels tot een bepaalde hoogte, gecombineerd met strak stucwerk daarboven.",
+        "mediaId": "compact"
+      },
+      {
+        "id": "SUPPORTING",
+        "Type": "Macro",
+        "H2": "Hygiëne en afwerking",
+        "Body": "Voor ultiem schoonmaakgemak wordt tegenwoordig vaak gekozen voor randloze toiletten (rimfree) en antibacteriële voegen. De randen en aansluitingen worden afgewerkt met schimmelwerende kit in een kleur die naadloos op het tegelwerk aansluit.",
+        "mediaId": "ai-niche"
       }
     ],
     "links": [],
@@ -243,10 +267,8 @@
     "hero": {
       "Eyebrow": "Functioneel & Esthetisch",
       "H1": "Complete Toilet Renovatie",
-      "Body": "Een toiletruimte is vaak de kleinste kamer in huis, maar vereist technische precisie. Bij het installeren van inbouwsystemen is de beschikbare ruimte beperkt en leidingen moeten zorgvuldig worden weggewerkt. Wij renoveren uw toilet compleet: van het demonteren van de oude situatie tot de afmontage van een wandcloset en de afwerking met stuc- of tegelwerk.",
+      "Body": "Een toiletruimte is vaak de kleinste kamer in huis, maar vereist aanzienlijke technische precisie. Bij het installeren van inbouwsystemen is de beschikbare ruimte beperkt en leidingen moeten zorgvuldig worden weggewerkt. Wij renoveren uw toilet compleet: van het demonteren van de oude situatie tot de afmontage van een zwevend toilet en de afwerking met strak tegelwerk.",
       "Primary CTA": "Project bespreken",
-      "Visual": "Foto van een zwevend toilet met strak tegelwerk en een inbouwnis boven het reservoir.",
-      "ALT": "Zwevend toilet met inbouwreservoir en wandtegels",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
@@ -256,8 +278,9 @@
       "URL": "/contact/"
     },
     "relatedUrls": [
+      "/complete-badkamer-renovatie/",
       "/tegelwerk/wand-tegelen/",
-      "/specialisaties/mozaiek-zetten/",
+      "/tegelwerk/vloer-tegelen/",
       "/projecten/"
     ]
   },

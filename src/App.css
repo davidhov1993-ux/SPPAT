@@ -3635,3 +3635,52 @@ p .inline-link { display: inline; white-space: normal; }
     width: 100%;
   }
 }
+
+/* -------------------------------------------
+   RESPONSIVE OVERRIDES (max-width: 834px)
+   ------------------------------------------- */
+@media (max-width: 834px) {
+  /* Complete Bathroom Hero Overlap */
+  .home-hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+  .home-hero-text {
+    order: 2 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+  .home-hero-media {
+    order: 1 !important;
+    width: 100% !important;
+  }
+  .home-hero-img {
+    aspect-ratio: 4 / 5 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* Service Split Hero (Toilet) */
+  .service-hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+  .service-hero-text {
+    order: 2 !important;
+  }
+  .service-hero-media {
+    order: 1 !important;
+    width: 100% !important;
+  }
+  .almere-hero-img {
+    aspect-ratio: 4 / 5 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+}

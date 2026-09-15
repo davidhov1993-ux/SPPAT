@@ -9,7 +9,6 @@ interface CtaTypeBProps {
 }
 
 export default function CtaTypeB({
-  sectionNum = '03 / CONTACT',
   title,
   body,
   ctaUrl = '/contact/',

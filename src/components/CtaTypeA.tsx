@@ -16,7 +16,6 @@ interface CtaTypeAProps {
 }
 
 export default function CtaTypeA({
-  sectionNum = '04 / CONTACT',
   title,
   subtitle,
   lead,

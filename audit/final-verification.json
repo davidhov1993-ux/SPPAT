@@ -1,10 +1,10 @@
 {
-  "routes": 28,
+  "routes": 27,
   "records": [
     {
       "id": "IA-01",
-      "status": "PASS",
-      "message": "Exactly 28 approved routes"
+      "status": "FAIL",
+      "message": "Expected values to be strictly equal:\n\n27 !== 28\n"
     },
     {
       "id": "SEO:/",
@@ -547,26 +547,6 @@
       "message": "All content images registered and labeled; no masters public"
     },
     {
-      "id": "SEO:/projecten/complete-toiletrenovatie/",
-      "status": "PASS",
-      "message": "Rendered SEO, canonical, one exact H1"
-    },
-    {
-      "id": "CONTENT:/projecten/complete-toiletrenovatie/",
-      "status": "PASS",
-      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
-    },
-    {
-      "id": "LINKS:/projecten/complete-toiletrenovatie/",
-      "status": "PASS",
-      "message": "All local routes and fragments resolve; no leaked placeholders"
-    },
-    {
-      "id": "MEDIA:/projecten/complete-toiletrenovatie/",
-      "status": "PASS",
-      "message": "All content images registered and labeled; no masters public"
-    },
-    {
       "id": "CASE-1:COPY",
       "status": "PASS",
       "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
@@ -603,16 +583,6 @@
     },
     {
       "id": "CASE-4:MEDIA",
-      "status": "PASS",
-      "message": "Source identity, distinct galleries, grouping and AI isolation"
-    },
-    {
-      "id": "CASE-5:COPY",
-      "status": "PASS",
-      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
-    },
-    {
-      "id": "CASE-5:MEDIA",
       "status": "PASS",
       "message": "Source identity, distinct galleries, grouping and AI isolation"
     },

@@ -1,9 +1,10 @@
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
-import Placeholder from '../components/Placeholder'
-import KennisbankNav from '../components/KennisbankNav'
-import { CtaTypeB, CtaTypeC } from '../components/CtaSection'
+import CtaTypeB from '../components/CtaTypeB'
+import BreadcrumbsKennisbank from '../components/BreadcrumbsKennisbank'
 import CtaArrow from '../components/CtaArrow'
+
+const hasBusinessInput = (text?: string) => text && text.includes('[BUSINESS INPUT REQUIRED]')
 
 export default function KennisbankPage({ page }: { page: Page }) {
   const isHub = page.url === '/kennisbank/'
@@ -11,194 +12,157 @@ export default function KennisbankPage({ page }: { page: Page }) {
 
   if (isHub) {
     return (
-      <>
+      <div className="kb-hub-page">
         {/* Hub Hero */}
-        <section className="hero page-hero" aria-label="Kennisbank introductie">
+        <section className="kb-hub-hero" aria-label="Kennisbank introductie">
           <div className="container">
-            <div className="article-hero-content">
-              {hero.Eyebrow && (
-                <p className="eyebrow">
-                  <span aria-hidden="true">—</span>
-                  {hero.Eyebrow}
-                </p>
-              )}
-              <h1>{hero.H1}</h1>
-              {hero.Body && <p className="lead">{hero.Body}</p>}
+            <div className="kb-hub-hero-grid">
+              <div className="kb-hub-hero-text">
+                <h1>{hero.H1}</h1>
+                {!hasBusinessInput(hero.Body) && hero.Body && <p className="lead">{hero.Body}</p>}
+              </div>
+              <figure className="kb-hub-hero-img-wrapper">
+                <picture>
+                  <source media="(max-width: 640px)" srcSet="/production/SPPAT-KB-LASER-hero-mobile.webp" />
+                  <source media="(max-width: 960px)" srcSet="/production/SPPAT-KB-LASER-hero-tablet.webp" />
+                  <img 
+                    src="/production/SPPAT-KB-LASER-hero-desktop.webp" 
+                    alt="Sppat Kennisbank Laser" 
+                    className="kb-hub-hero-img"
+                    fetchPriority="high"
+                    width={1440}
+                    height={1800}
+                  />
+                </picture>
+              </figure>
             </div>
           </div>
         </section>
 
-        {/* Hub Sections */}
+        {/* Hub Article Index */}
         {page.sections.map((block, index) => {
-          const sectionLinks = page.links.filter(link =>
-            link.placement.toUpperCase().startsWith(block.id || 'NONE')
-          )
-          const hasCards = Boolean(block.cards && block.cards.length > 0)
-
+          if (!block.cards || block.cards.length === 0) return null
           return (
             <section
               key={block.id || `section-${index}`}
-              className="content-section"
-              aria-label={block.H2}
+              className="kb-hub-index"
+              aria-label={block.H2 || 'Artikelen'}
             >
               <div className="container">
-                <div className="section-grid-editorial">
-                  <div className="editorial-header-col">
-                    <span className="section-num" aria-hidden="true">
-                      {String(index + 1).padStart(2, '0')} /
-                    </span>
-                    {block.H2 && <h2>{block.H2}</h2>}
-                  </div>
-
-                  <div className="editorial-body-col">
-                    {block.Body && (
-                      <p>
-                        <RichText text={block.Body} links={sectionLinks} />
-                      </p>
-                    )}
-
-                    {/* 4 Knowledge Article Cards */}
-                    {hasCards && (
-                      <div className="sub-cards-grid">
-                        {block.cards!.map((card, cIdx) => (
-                          <article key={card.Title} className="sub-card">
-                            <div>
-                              <span className="card-order-num" aria-hidden="true">
-                                {String(cIdx + 1).padStart(2, '0')}
-                              </span>
-                              <h3>
-                                <a href={card['CTA URL']}>{card.Title}</a>
-                              </h3>
-                              {card.Body && <p>{card.Body}</p>}
-                            </div>
-                            <a href={card['CTA URL']} className="text-link">
-                              {card.CTA || 'Lees artikel'}
-                              <CtaArrow />
-                            </a>
-                          </article>
-                        ))}
-                      </div>
-                    )}
-
-                    {block['CTA URL'] && (
-                      <div style={{ marginTop: '16px' }}>
-                        <a href={block['CTA URL']} className="text-link">
-                          {block.CTA}
+                <div className="kb-hub-index-grid">
+                  {block.cards.map((card) => {
+                    if (hasBusinessInput(card.Title) || hasBusinessInput(card.Body)) return null
+                    return (
+                      <article key={card.Title} className="kb-hub-article-item">
+                        <h3>{card.Title}</h3>
+                        <a href={card['CTA URL']} className="inline-link kb-inline-link">
+                          <span>{card.CTA || 'Lees artikel'}</span>
                           <CtaArrow />
                         </a>
-                      </div>
-                    )}
-                  </div>
+                      </article>
+                    )
+                  })}
                 </div>
               </div>
             </section>
           )
         })}
-
-        {/* Hub CTA: Type B */}
-        {page.cta && <CtaTypeB block={page.cta} />}
-      </>
+      </div>
     )
   }
 
-  // Article Page: Editorial Reading System
+  // Article Page System
   return (
-    <>
-      {/* Article Hero */}
-      <section className="hero article-hero" aria-label="Artikel introductie">
+    <div className="kb-article-page">
+      <div className="container">
+        <BreadcrumbsKennisbank title={page.title} />
+      </div>
+
+      <article className="kb-article-content">
         <div className="container">
-          <div className="article-hero-content">
-            <p className="eyebrow">
-              <span aria-hidden="true">—</span>
-              Kennisbank &amp; Techniek
-            </p>
-            <h1>{hero.H1}</h1>
-            {hero.Body && <p className="lead">{hero.Body}</p>}
-          </div>
-        </div>
-      </section>
+          <header className="kb-article-hero">
+            <div className="kb-article-hero-grid">
+              <h1>{hero.H1}</h1>
+              {!hasBusinessInput(hero.Body) && hero.Body && <p className="lead">{hero.Body}</p>}
+            </div>
+          </header>
 
-      {/* Editorial Reading Layout */}
-      <section className="kennisbank-reading-section" aria-label="Artikel inhoud">
-        <div className="container">
-          {/* Mobile / Tablet: Inline navigation BEFORE main article */}
-          <div className="kennisbank-inline-nav">
-            <KennisbankNav currentUrl={page.url} />
-          </div>
+          <div className="kb-article-body">
+            {page.sections.map((block, index) => {
+              const sectionLinks = page.links?.filter(link =>
+                link.placement.toUpperCase().startsWith(block.id || 'NONE')
+              ) || []
+              
+              const showBody = !hasBusinessInput(block.Body) && block.Body;
+              const bullets = block.bullets?.filter(b => !hasBusinessInput(b)) || [];
 
-          <div className="kennisbank-layout">
-            {/* Main Reading Column */}
-            <article className="kennisbank-reading-col">
-              {page.sections.map((block, index) => {
-                const sectionLinks = page.links.filter(link =>
-                  link.placement.toUpperCase().startsWith(block.id || 'NONE')
-                )
-                const hasBullets = Boolean(block.bullets && block.bullets.length > 0)
+              if (!showBody && bullets.length === 0 && !block.H2 && !block.H3) return null;
 
-                return (
-                  <section
-                    key={block.id || `article-section-${index}`}
-                    className="kennisbank-article-block"
-                  >
-                    {block.H2 && <h2>{block.H2}</h2>}
-                    {block.H3 && <h3>{block.H3}</h3>}
+              return (
+                <section
+                  key={block.id || `article-section-${index}`}
+                  className="kb-article-section"
+                >
+                  {block.H2 && <h2>{block.H2}</h2>}
+                  {block.H3 && <h3>{block.H3}</h3>}
 
-                    {block.Body && (
-                      <p style={{ marginTop: '16px' }}>
-                        <RichText text={block.Body} links={sectionLinks} />
-                      </p>
-                    )}
+                  {showBody && (
+                    <p>
+                      <RichText text={block.Body!} links={sectionLinks} />
+                    </p>
+                  )}
 
-                    {/* Fallback for unplaced approved internal anchors */}
-                    {sectionLinks
+                  {bullets.length > 0 && (
+                    <ul>
+                      {bullets.map((bullet, idx) => (
+                        <li key={idx}>
+                          <RichText text={bullet} links={sectionLinks} />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* Render unplaced inline links at bottom of section if needed */}
+                  {sectionLinks
                       .filter(
                         link =>
                           ![block.Body || '', ...(block.bullets || [])]
                             .join(' ')
                             .includes(link.anchor)
                       )
-                      .map(link => (
-                        <p key={link.url}>
-                          <a href={link.url}>{link.anchor}</a>
-                        </p>
+                      .map((link, idx) => (
+                        <div key={idx} style={{ marginTop: '16px' }}>
+                          <a href={link.url} className="inline-link kb-inline-link">
+                            <span>{link.anchor}</span>
+                            <CtaArrow />
+                          </a>
+                        </div>
                       ))}
-
-                    {/* Bullet Points */}
-                    {hasBullets && (
-                      <ul className="spec-list" style={{ marginTop: '20px' }}>
-                        {block.bullets!.map(bullet => (
-                          <li key={bullet} className="spec-item">
-                            <RichText text={bullet} links={sectionLinks} />
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-
-                    {/* Approved Diagram Slot (Placeholder) if specified */}
-                    {block.Visual && (
-                      <div style={{ marginTop: '24px' }}>
-                        <Placeholder
-                          aspectRatio="16 / 9"
-                          alt={block.ALT || block.H2 || 'Technisch diagram'}
-                        />
-                      </div>
-                    )}
-                  </section>
-                )
-              })}
-            </article>
-
-            {/* Desktop Sidebar: Contextual Navigation & Micro CTA */}
-            <aside className="kennisbank-sidebar-col" aria-label="Gerelateerde dossiers">
-              <KennisbankNav currentUrl={page.url} />
-              <CtaTypeC />
-            </aside>
+                </section>
+              )
+            })}
           </div>
         </div>
-      </section>
+      </article>
 
-      {/* Article Ending CTA: Type B Technical Asymmetric */}
-      {page.cta && <CtaTypeB block={page.cta} />}
-    </>
+      {/* Article Ending CTA */}
+      {page.cta && !hasBusinessInput(page.cta.Body) && !hasBusinessInput(page.cta.H2) && (
+        <section className="kb-article-cta-wrapper">
+          <div className="container">
+            <div className="kb-article-cta-grid">
+              <div className="kb-article-cta-container">
+                <CtaTypeB 
+                  sectionNum=""
+                  title={page.cta.H2 || ''}
+                  body={page.cta.Body}
+                  ctaUrl={page.cta.URL}
+                  ctaText={page.cta.Button}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+    </div>
   )
 }

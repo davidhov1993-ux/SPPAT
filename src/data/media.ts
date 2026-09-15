@@ -1,0 +1,17 @@
+export const serviceMedia: Record<string, { hero?: string; detail?: string; macro?: string }> = {
+  '/complete-badkamer-renovatie/': { hero: 'ai-bathroom', detail: undefined, macro: 'ai-macro' },
+  '/complete-badkamer-renovatie/almere/': { hero: 'ai-bathroom', detail: undefined },
+  '/complete-toilet-renovatie/': { hero: 'ai-toilet' },
+  '/tegelwerk/': { hero: undefined },
+  '/tegelwerk/vloer-tegelen/': { hero: undefined, detail: undefined },
+  '/tegelwerk/wand-tegelen/': { hero: undefined, detail: undefined },
+  '/tegelwerk/badkamer-tegelen/': { hero: undefined, detail: undefined },
+  '/tegelwerk/inloopdouche-tegelen/': { hero: undefined, macro: 'ai-macro' },
+  '/tegelwerk/keuken-tegelen/': { hero: undefined, detail: undefined },
+  '/tegelwerk/balkon-tegelen/': {},
+  '/tegelwerk/vloerverwarming-en-tegelen/': { hero: undefined, detail: undefined },
+  '/specialisaties/grootformaat-tegels/': { hero: undefined, detail: undefined },
+  '/specialisaties/mozaiek-zetten/': { hero: 'ai-niche' },
+  '/specialisaties/natuursteen/': { hero: 'ai-stone' },
+  '/specialisaties/keramisch-parket/': { hero: 'ai-woodlook' },
+}

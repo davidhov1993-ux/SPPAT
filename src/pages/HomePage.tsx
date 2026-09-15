@@ -1,41 +1,12 @@
+import MediaImage from '../components/MediaImage'
+import MediaCaption from '../components/MediaCaption'
 import { useState } from 'react'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
 import { CtaTypeA } from '../components/CtaSection'
 import CtaArrow from '../components/CtaArrow'
 
-const heroMedia = {
-  src: '/media/SPPAT-VIS-001.jpg',
-  alt: 'Strak afgewerkte badkamer met grootformaat tegels en inbouwdetails'
-}
-
-const serviceMedia = [
-  {
-    src: '/media/SPPAT-VIS-002.jpg',
-    alt: 'Complete Badkamer Renovatie nisdetail en wandafwerking',
-    objectPosition: 'center center'
-  },
-  {
-    src: '/media/SPPAT-VIS-003.jpg',
-    alt: 'Toilet Renovatie met symmetrische tegelvoegen en inbouwelement',
-    objectPosition: 'center center'
-  },
-  {
-    src: '/media/SPPAT-VIS-004.jpg',
-    alt: 'Professioneel Tegelwerk met scherpe 45 graden verstekrand',
-    objectPosition: 'left center'
-  },
-  {
-    src: '/media/SPPAT-VIS-005.jpg',
-    alt: 'Tegel Specialisaties natuursteen textuur en drain detail',
-    objectPosition: 'center bottom'
-  }
-]
-
-const proofMedia = {
-  src: '/media/SPPAT-VIS-006.jpg',
-  alt: 'Detail van strak tegelwerk en voegprecisie'
-}
+const serviceMedia = ['ai-bathroom', 'ai-toilet', 'ai-macro', 'ai-stone']
 
 export default function HomePage({ page }: { page: Page }) {
   const [activeService, setActiveService] = useState(0)
@@ -76,12 +47,7 @@ export default function HomePage({ page }: { page: Page }) {
 
             <div className="home-hero-media">
               <figure className="home-hero-figure">
-                <img
-                  src={heroMedia.src}
-                  alt={hero.ALT || heroMedia.alt}
-                  fetchPriority="high"
-                  className="home-hero-img"
-                />
+                <MediaImage mediaId="ai-bathroom" role="hero" priority className="home-hero-img" /><MediaCaption mediaId="ai-bathroom" />
               </figure>
             </div>
           </div>
@@ -121,7 +87,6 @@ export default function HomePage({ page }: { page: Page }) {
                     className={`service-interactive-item ${activeService === idx ? 'is-active' : ''}`}
                     onMouseEnter={() => setActiveService(idx)}
                     onFocus={() => setActiveService(idx)}
-                    tabIndex={0}
                   >
                     <div className="service-item-content">
                       <span className="card-order-num" aria-hidden="true">
@@ -134,14 +99,9 @@ export default function HomePage({ page }: { page: Page }) {
                     </div>
 
                     {/* Tablet/Mobile Inline Image (displayed directly underneath heading/body) */}
-                    <div className="service-inline-media">
-                      <img
-                        src={mediaItem.src}
-                        alt={mediaItem.alt}
-                        loading="lazy"
-                        style={{ objectPosition: mediaItem.objectPosition }}
-                      />
-                    </div>
+                    <figure className="service-inline-media">
+                      <MediaImage mediaId={mediaItem} role="card" /><MediaCaption mediaId={mediaItem} />
+                    </figure>
 
                     <a href={card['CTA URL']} className="text-link">
                       {card.CTA || 'Lees meer'}
@@ -156,14 +116,7 @@ export default function HomePage({ page }: { page: Page }) {
             <div className="services-desktop-media" aria-hidden="true">
               <div className="services-media-frame">
                 {serviceMedia.map((media, idx) => (
-                  <img
-                    key={media.src}
-                    src={media.src}
-                    alt={media.alt}
-                    loading="lazy"
-                    className={`services-media-slide ${activeService === idx ? 'is-visible' : ''}`}
-                    style={{ objectPosition: media.objectPosition }}
-                  />
+                  <MediaImage key={media} mediaId={media} role="hero" className={`services-media-slide ${activeService === idx ? "is-visible" : ""}`} />
                 ))}
               </div>
             </div>
@@ -179,12 +132,7 @@ export default function HomePage({ page }: { page: Page }) {
               {/* Spans 4 of 12 columns on desktop (1:1 square with 1px border) */}
               <div className="proof-media-col">
                 <figure className="proof-macro-figure">
-                  <img
-                    src={proofMedia.src}
-                    alt={proofBlock.ALT || proofMedia.alt}
-                    loading="lazy"
-                    className="proof-macro-img"
-                  />
+                  <MediaImage mediaId="ai-macro" role="macro" className="proof-macro-img" /><MediaCaption mediaId="ai-macro" />
                 </figure>
               </div>
 

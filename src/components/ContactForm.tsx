@@ -54,6 +54,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    if (!business.formEndpoint || !business.privacyApproved) return
     const form = event.currentTarget
 
     if (!consent) {
@@ -66,19 +67,8 @@ export default function ContactForm() {
       return
     }
 
-    setStatus('sending')
-    const data = new FormData(form)
-    if (file) {
-      data.set('reference', file)
-    }
-
-    const payload = Object.fromEntries(data.entries())
-    console.log('Form Payload:', payload)
-
-    // Simulate dummy endpoint success state
-    setTimeout(() => {
-      setStatus('success')
-    }, 1500)
+    // Delivery and privacy approval are explicit business gates.
+    setStatus('error')
   }
 
   return (
@@ -203,6 +193,7 @@ export default function ContactForm() {
           tabIndex={0}
           role="button"
           aria-labelledby="upload-label"
+          aria-describedby={fileError ? "upload-error" : undefined}
         >
           <span className="upload-icon" aria-hidden="true">↑</span>
           <div className="upload-text">
@@ -213,6 +204,9 @@ export default function ContactForm() {
             ref={fileInputRef}
             type="file"
             id="form-file"
+            aria-labelledby="upload-label"
+            aria-invalid={!!fileError}
+            aria-describedby={fileError ? "upload-error" : undefined}
             name="reference"
             className="sr-only"
             onChange={handleFileInputChange}
@@ -225,7 +219,7 @@ export default function ContactForm() {
             Geselecteerd bestand: <strong>{file.name}</strong> ({(file.size / 1024 / 1024).toFixed(2)} MB)
           </p>
         )}
-        {fileError && <p className="form-field-error" role="alert">{fileError}</p>}
+        {fileError && <p id="upload-error" className="form-field-error" role="alert">{fileError}</p>}
       </div>
 
       <div className="form-group form-consent-group">
@@ -236,12 +230,14 @@ export default function ContactForm() {
             name="consent"
             required
             checked={consent}
+            aria-invalid={privacyError}
+            aria-describedby={privacyError ? "consent-error" : undefined}
             onChange={e => setConsent(e.target.checked)}
             className="form-checkbox"
           />
           <span className="consent-text">
             Ik ga akkoord met de verwerking van mijn gegevens conform de privacyverklaring.
-            {privacyError && <span style={{ color: "var(--color-error, #D32F2F)", display: "block", marginTop: "4px" }}>U dient akkoord te gaan met de privacyverklaring.</span>}
+            {privacyError && <span id="consent-error" role="alert" style={{ color: "var(--color-error, #D32F2F)", display: "block", marginTop: "4px" }}>U dient akkoord te gaan met de privacyverklaring.</span>}
           </span>
         </label>
       </div>
@@ -262,7 +258,7 @@ export default function ContactForm() {
         <button
           className="btn btn-submit"
           type="submit"
-          disabled={!business.formEndpoint || status === 'sending'}
+          disabled={!business.formEndpoint || !business.privacyApproved || status === 'sending'}
         >
           {status === 'sending' ? 'Verzenden…' : 'Project bespreken'}
           <CtaArrow />

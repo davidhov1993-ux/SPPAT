@@ -1,10 +1,10 @@
+import RelatedLinks from '../components/RelatedLinks'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
 import { CtaTypeB } from '../components/CtaSection'
 
 export default function AboutPage({ page }: { page: Page }) {
   const hero = page.hero
-  const section = page.sections[0]
 
   return (
     <>
@@ -23,12 +23,12 @@ export default function AboutPage({ page }: { page: Page }) {
       </section>
 
       {/* 2. SECTION 2 */}
-      {section && (
-        <section className="content-section" aria-label={section.H2}>
+      {page.sections.map((section, index) => (
+        <section key={section.id || index} className="content-section" aria-label={section.H2}>
           <div className="container">
             <div className="section-grid-editorial">
               <div className="editorial-header-col">
-                <span className="section-num">01 / FILOSOFIE</span>
+                <span className="section-num">{String(index + 1).padStart(2, "0")} / SPPAT</span>
                 <h2>{section.H2}</h2>
               </div>
               <div className="editorial-body-col">
@@ -41,9 +41,10 @@ export default function AboutPage({ page }: { page: Page }) {
             </div>
           </div>
         </section>
-      )}
+      ))}
 
       {/* 3. TYPE B CTA */}
+      <RelatedLinks urls={page.relatedUrls} />
       {page.cta && <CtaTypeB block={page.cta} />}
     </>
   )

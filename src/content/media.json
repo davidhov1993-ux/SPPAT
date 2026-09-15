@@ -1,0 +1,782 @@
+[
+  {
+    "id": "bath08",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.08.jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.08.jpeg",
+    "exportName": "SPPAT-PROJ-01-bath08",
+    "width": 1200,
+    "height": 1600,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-01",
+    "groupingConfirmed": true,
+    "alt": "Badkamer met grijze wandtegels, bad en douchezone",
+    "focus": {
+      "desktop": "50% 50%",
+      "mobile": "50% 50%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "bath08-1",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.08 (1).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.08 (1).jpeg",
+    "exportName": "SPPAT-PROJ-01-bath08-1",
+    "width": 1200,
+    "height": 1600,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-01",
+    "groupingConfirmed": true,
+    "alt": "Wandtegelwerk en radiator in een badkamer",
+    "focus": {
+      "desktop": "50% 45%",
+      "mobile": "50% 45%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "bath08-2",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.08 (2).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.08 (2).jpeg",
+    "exportName": "SPPAT-PROJ-01-bath08-2",
+    "width": 1200,
+    "height": 1600,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-01",
+    "groupingConfirmed": true,
+    "alt": "Grote grijze wandtegels en douchearmaturen",
+    "focus": {
+      "desktop": "50% 55%",
+      "mobile": "50% 55%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "bath08-3",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.08 (3).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.08 (3).jpeg",
+    "exportName": "SPPAT-PROJ-01-bath08-3",
+    "width": 1200,
+    "height": 1600,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-01",
+    "groupingConfirmed": true,
+    "alt": "Tegelverdeling rondom een badkamerdeur",
+    "focus": {
+      "desktop": "50% 50%",
+      "mobile": "50% 50%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "compact",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.01 (5).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.01 (5).jpeg",
+    "exportName": "SPPAT-SVC-compact",
+    "width": 718,
+    "height": 957,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "BATH-04",
+    "groupingConfirmed": true,
+    "alt": "Compacte sanitaire ruimte met douchewand en toilet",
+    "focus": {
+      "desktop": "50% 55%",
+      "mobile": "50% 55%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "floor07-9",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
+    "exportName": "SPPAT-PROJ-03-floor07-9",
+    "width": 854,
+    "height": 640,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-02",
+    "groupingConfirmed": true,
+    "alt": "Doorlopende tegelvloer in een eetruimte",
+    "focus": {
+      "desktop": "50% 80%",
+      "mobile": "50% 80%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "floor07-1",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (1).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.07 (1).jpeg",
+    "exportName": "SPPAT-PROJ-03-floor07-1",
+    "width": 640,
+    "height": 854,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-02",
+    "groupingConfirmed": true,
+    "alt": "Tegelvloer rondom een gebogen trap",
+    "focus": {
+      "desktop": "50% 65%",
+      "mobile": "50% 65%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "floor07-4",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (4).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.07 (4).jpeg",
+    "exportName": "SPPAT-PROJ-03-floor07-4",
+    "width": 640,
+    "height": 854,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-02",
+    "groupingConfirmed": true,
+    "alt": "Zichtlijn over een tegelvloer in een woonruimte",
+    "focus": {
+      "desktop": "50% 65%",
+      "mobile": "50% 65%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "floor07-6",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (6).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.07 (6).jpeg",
+    "exportName": "SPPAT-PROJ-03-floor07-6",
+    "width": 854,
+    "height": 640,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-02",
+    "groupingConfirmed": true,
+    "alt": "Tegelvloer en aansluiting bij een gebogen trap",
+    "focus": {
+      "desktop": "50% 70%",
+      "mobile": "50% 70%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "bath-feb",
+    "source": "media/source/references/WhatsApp Image 2025-02-26 at 18.19.50.jpeg",
+    "sourceFilename": "WhatsApp Image 2025-02-26 at 18.19.50.jpeg",
+    "exportName": "SPPAT-SVC-bath-feb",
+    "width": 1280,
+    "height": 1600,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "BATH-01",
+    "groupingConfirmed": true,
+    "alt": "Badkamer met douchezone en steenlook wandtegels",
+    "focus": {
+      "desktop": "50% 55%",
+      "mobile": "50% 55%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "wall-feb",
+    "source": "media/source/references/WhatsApp Image 2025-02-26 at 18.20.06.jpeg",
+    "sourceFilename": "WhatsApp Image 2025-02-26 at 18.20.06.jpeg",
+    "exportName": "SPPAT-SVC-wall-feb",
+    "width": 898,
+    "height": 678,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "BATH-03",
+    "groupingConfirmed": true,
+    "alt": "Wandtegelverdeling en nis in een badkamer",
+    "focus": {
+      "desktop": "55% 50%",
+      "mobile": "55% 50%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "kitchen",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.02 (3).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.02 (3).jpeg",
+    "exportName": "SPPAT-SVC-kitchen",
+    "width": 694,
+    "height": 955,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "KITCHEN-01",
+    "groupingConfirmed": true,
+    "alt": "Tegelvloer en achterwand in een keukencontext",
+    "focus": {
+      "desktop": "50% 60%",
+      "mobile": "50% 60%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "res04-4",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.04 (4).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.04 (4).jpeg",
+    "exportName": "SPPAT-PROJ-06-res04-4",
+    "width": 736,
+    "height": 1000,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-03-pending",
+    "groupingConfirmed": false,
+    "alt": "Lichte tegelvloer in een open leefruimte",
+    "focus": {
+      "desktop": "50% 60%",
+      "mobile": "50% 60%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "res03-6",
+    "source": "media/source/references/WhatsApp Image 2025-05-30 at 21.24.03 (6).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.03 (6).jpeg",
+    "exportName": "SPPAT-PROJ-06-res03-6",
+    "width": 718,
+    "height": 539,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PRJ-03-pending",
+    "groupingConfirmed": false,
+    "alt": "Tegelvloer langs een keukenopstelling",
+    "focus": {
+      "desktop": "55% 70%",
+      "mobile": "55% 70%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "substrate",
+    "source": "media/source/special-references/WhatsApp Image 2025-05-30 at 21.24.06 (6).jpeg",
+    "sourceFilename": "WhatsApp Image 2025-05-30 at 21.24.06 (6).jpeg",
+    "exportName": "SPPAT-SVC-substrate",
+    "width": 1121,
+    "height": 1431,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "PROC-01",
+    "groupingConfirmed": true,
+    "alt": "Voorbereiding van de ondergrond in een hal",
+    "focus": {
+      "desktop": "50% 60%",
+      "mobile": "50% 60%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "ai-bathroom",
+    "source": "media/source/special-references/Generated Image September 10, 2026 - 6_50PM.jpg",
+    "sourceFilename": "Generated Image September 10, 2026 - 6_50PM.jpg",
+    "exportName": "SPPAT-SVC-ai-bathroom",
+    "width": 1200,
+    "height": 896,
+    "provenance": "illustrative-ai",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": true,
+    "group": "AI-01",
+    "groupingConfirmed": true,
+    "alt": "Illustratie van een badkamer met open douchezone",
+    "focus": {
+      "desktop": "35% 55%",
+      "mobile": "35% 55%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "ai-toilet",
+    "source": "media/source/special-references/Generated Image September 10, 2026 - 6_53PM.jpg",
+    "sourceFilename": "Generated Image September 10, 2026 - 6_53PM.jpg",
+    "exportName": "SPPAT-SVC-ai-toilet",
+    "width": 896,
+    "height": 1200,
+    "provenance": "illustrative-ai",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": true,
+    "group": "AI-02",
+    "groupingConfirmed": true,
+    "alt": "Illustratie van een toiletruimte",
+    "focus": {
+      "desktop": "50% 55%",
+      "mobile": "50% 55%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "ai-macro",
+    "source": "media/source/special-references/Generated Image September 10, 2026 - 6_57PM.jpg",
+    "sourceFilename": "Generated Image September 10, 2026 - 6_57PM.jpg",
+    "exportName": "SPPAT-SVC-ai-macro",
+    "width": 896,
+    "height": 1200,
+    "provenance": "illustrative-ai",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": true,
+    "group": "AI-03",
+    "groupingConfirmed": true,
+    "alt": "Illustratie van een tegelhoek en lijnafvoer",
+    "focus": {
+      "desktop": "65% 75%",
+      "mobile": "65% 75%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "ai-niche",
+    "source": "media/source/special-references/Generated Image September 10, 2026 - 7_02PM.jpg",
+    "sourceFilename": "Generated Image September 10, 2026 - 7_02PM.jpg",
+    "exportName": "SPPAT-SVC-ai-niche",
+    "width": 896,
+    "height": 1200,
+    "provenance": "illustrative-ai",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": true,
+    "group": "AI-04",
+    "groupingConfirmed": true,
+    "alt": "Illustratie van een nis met mozaïekafwerking",
+    "focus": {
+      "desktop": "50% 50%",
+      "mobile": "50% 50%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "ai-stone",
+    "source": "media/source/media/Generated Image September 11, 2026 - 2_05PM.jpg",
+    "sourceFilename": "Generated Image September 11, 2026 - 2_05PM.jpg",
+    "exportName": "SPPAT-SVC-ai-stone",
+    "width": 1376,
+    "height": 768,
+    "provenance": "illustrative-ai",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": true,
+    "group": "AI-STONE",
+    "groupingConfirmed": true,
+    "alt": "Illustratieve materiaaltextuur",
+    "focus": {
+      "desktop": "50% 50%",
+      "mobile": "50% 50%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "ai-woodlook",
+    "source": "media/source/media/Generated Image September 11, 2026 - 2_07PM.jpg",
+    "sourceFilename": "Generated Image September 11, 2026 - 2_07PM.jpg",
+    "exportName": "SPPAT-SVC-ai-woodlook",
+    "width": 1376,
+    "height": 768,
+    "provenance": "illustrative-ai",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": true,
+    "group": "AI-WOODLOOK",
+    "groupingConfirmed": true,
+    "alt": "Illustratie van een vloer met houtlook; geen materiaalbewijs",
+    "focus": {
+      "desktop": "50% 70%",
+      "mobile": "50% 70%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "card": {
+        "desktop": "4 / 3",
+        "mobile": "4 / 5"
+      },
+      "detail": {
+        "desktop": "3 / 2",
+        "mobile": "4 / 5"
+      },
+      "macro": {
+        "desktop": "1 / 1",
+        "mobile": "1 / 1"
+      }
+    }
+  },
+  {
+    "id": "kennisbank-laser",
+    "source": "media/source/references/AEAB080F-23E5-4856-8806-039B4F1FEF85.JPG",
+    "sourceFilename": "AEAB080F-23E5-4856-8806-039B4F1FEF85.JPG",
+    "exportName": "SPPAT-KB-LASER",
+    "width": 3840,
+    "height": 2160,
+    "provenance": "licensed-reference",
+    "ownerVerified": false,
+    "publicationRightsConfirmed": false,
+    "group": "KB",
+    "groupingConfirmed": true,
+    "alt": "Laser alignment in bathroom",
+    "focus": {
+      "desktop": "50% 50%",
+      "mobile": "50% 50%"
+    },
+    "crops": {
+      "hero": {
+        "desktop": "4 / 5",
+        "mobile": "4 / 5"
+      }
+    }
+  }
+]

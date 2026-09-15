@@ -1,11 +1,14 @@
 import { forwardRef } from 'react'
 import CtaArrow from './CtaArrow'
-import Breadcrumbs from './Breadcrumbs'
+import MediaImage from './MediaImage'
+import MediaCaption from './MediaCaption'
+import { serviceMedia } from '../data/media'
 
 interface HeroSplitProps {
   eyebrow?: string
   title?: string
   body?: string
+  mediaId?: string
   imageSrc?: string
   imageAlt?: string
   imageClassName?: string
@@ -19,19 +22,17 @@ const HeroSplit = forwardRef<HTMLElement, HeroSplitProps>(({
   eyebrow,
   title,
   body,
-  imageSrc,
-  imageAlt,
+  mediaId,
   ctaText,
   ctaUrl,
   imageClassName = "almere-hero-img",
-  currentPath,
-  pageTitle
+  currentPath
 }, ref) => {
+  const selectedMedia = mediaId || serviceMedia[currentPath || '']?.hero
   return (
     <section ref={ref} className="service-hero-section" aria-label="Introductie">
       <div className="container">
-        {currentPath && <Breadcrumbs currentPath={currentPath} title={pageTitle || title} />}
-        <div className="service-hero-grid">
+        <div className={`service-hero-grid ${selectedMedia ? "" : "text-only-hero"}`}>
           <div className="service-hero-text">
             {eyebrow && (
               <p className="eyebrow">
@@ -50,17 +51,10 @@ const HeroSplit = forwardRef<HTMLElement, HeroSplitProps>(({
               </div>
             )}
           </div>
-          <div className="service-hero-media almere-hero-media">
-            {imageSrc ? (
-              <img
-                src={imageSrc}
-                alt={imageAlt || title}
-                className={imageClassName}
-              />
-            ) : (
-              <div className="hero-image-placeholder" aria-hidden="true" />
-            )}
-          </div>
+          {selectedMedia && <figure className="service-hero-media almere-hero-media">
+            <MediaImage mediaId={selectedMedia} role="hero" priority className={imageClassName} />
+            <MediaCaption mediaId={selectedMedia} />
+          </figure>}
         </div>
       </div>
     </section>

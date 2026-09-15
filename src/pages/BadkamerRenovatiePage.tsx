@@ -1,3 +1,6 @@
+import MediaImage from '../components/MediaImage'
+import MediaCaption from '../components/MediaCaption'
+import RelatedLinks from '../components/RelatedLinks'
 import { useState, useEffect, useRef } from 'react'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
@@ -42,7 +45,6 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
         body={hero.Body}
         ctaUrl={hero['Primary CTA URL']}
         ctaText={hero['Primary CTA']}
-        imageSrc="/media/Generated Image September 10, 2026 - 7_57PM(1).jpg"
         imageAlt={hero.ALT || 'Overzichtsfoto van een compleet gerenoveerde badkamer met inloopdouche'}
       />
 
@@ -68,12 +70,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
             <div className="phase-1-grid">
               <div className="phase-1-media">
                 <figure className="phase-media-figure">
-                  <img
-                    src="/media/Generated Image September 10, 2026 - 9_17PM.jpg"
-                    alt="Demontage en leidingwerk in casco badkamer"
-                    loading="lazy"
-                    className="phase-1-img"
-                  />
+                  <MediaImage mediaId={undefined} role="detail" /><MediaCaption mediaId={undefined} />
                 </figure>
               </div>
 
@@ -130,12 +127,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
 
               <div className="phase-2-media">
                 <figure className="phase-media-figure">
-                  <img
-                    src="/media/Generated Image September 10, 2026 - 8_27PM(1).jpg"
-                    alt="Waterdichtingssysteem en uitvlakken van natte cel"
-                    loading="lazy"
-                    className="phase-2-img"
-                  />
+                  <MediaImage mediaId="ai-macro" role="macro" /><MediaCaption mediaId="ai-macro" />
                 </figure>
               </div>
             </div>
@@ -168,12 +160,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
 
               <div className="phase-3-media">
                 <figure className="phase-media-figure">
-                  <img
-                    src="/media/Generated Image September 10, 2026 - 8_27PM (1)(1).jpg"
-                    alt="Hoogwaardig tegelwerk en nauwkeurige sanitaire afmontage"
-                    loading="lazy"
-                    className="phase-3-img"
-                  />
+                  <MediaImage mediaId="ai-niche" role="detail" /><MediaCaption mediaId="ai-niche" />
                 </figure>
               </div>
             </div>
@@ -188,12 +175,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
             <div className="standard-grid">
               <div className="standard-media">
                 <figure className="standard-media-figure">
-                  <img
-                    src="/media/Generated Image September 10, 2026 - 8_38PM(1).jpg"
-                    alt="Architectonisch tegeldetail met ingebouwde nis en strakke verstekken"
-                    loading="lazy"
-                    className="standard-img"
-                  />
+                  <MediaImage mediaId={undefined} role="detail" /><MediaCaption mediaId={undefined} />
                 </figure>
               </div>
 
@@ -253,13 +235,13 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
         </section>
       )}
 
+      <RelatedLinks urls={page.relatedUrls} />
       <CtaTypeA 
         sectionNum="04 / CONTACT"
         title={cta?.H2 || 'Start uw renovatie'}
         lead={cta?.Body || 'Neem contact op voor een technische opname.'}
         ctaUrl={cta?.URL || '/contact/'}
         ctaText={cta?.Button || 'Project bespreken'}
-        imageSrc="/media/Generated Image September 10, 2026 - 8_39PM(1).jpg"
         imageAlt="Sppat afgerond badkamerproject gereed voor gebruik"
       />
 

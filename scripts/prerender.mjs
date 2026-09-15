@@ -7,7 +7,7 @@ import path from 'node:path'
 const pages = JSON.parse(await readFile('src/content/pages.json', 'utf8'));
 const projects = JSON.parse(await readFile('src/content/projects.json', 'utf8'));
 
-const projectRoutes = projects.map(p => ({ url: `/projecten/${p.slug}/`, title: `${p.title} | Sppat`, description: p.meta }));
+const projectRoutes = projects.map(p => ({ url: `/projecten/${p.slug}/`, title: p.seoTitle, description: p.meta }));
 
 const allPages = [...pages, ...projectRoutes];
 

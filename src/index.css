@@ -45,6 +45,8 @@
   --space-lg: 80px;
   --space-xl: 120px;
   --space-2xl: 160px;
+  --space-3xl: 120px;
+  --space-4xl: 120px;
 
   
   
@@ -84,8 +86,8 @@
     --space-lg: 48px;
     --space-xl: 64px;
     --space-2xl: 80px;
-    --space-3xl: 120px;
-    --space-4xl: 160px;
+    --space-3xl: 60px;
+    --space-4xl: 64px;
     --header-height: 72px;
   }
 }
@@ -113,7 +115,6 @@ body {
   min-height: 100vh;
   background-color: var(--color-bg);
   color: var(--color-text);
-  overflow-x: hidden;
 }
 
 /* Headings */

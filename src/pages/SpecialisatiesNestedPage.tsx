@@ -1,61 +1,24 @@
+import RelatedLinks from '../components/RelatedLinks'
 import type { Page } from '../content/types'
-import CtaArrow from '../components/CtaArrow'
+import HeroSplit from '../components/HeroSplit'
 import CtaTypeB from '../components/CtaTypeB'
 import RichText from '../components/RichText'
-import Breadcrumbs from '../components/Breadcrumbs'
 
-const NESTED_IMAGES: Record<string, string> = {
-  '/specialisaties/grootformaat-tegels/': '/media/Generated Image September 11, 2026 - 2_02PM.jpg',
-  '/specialisaties/mozaiek-zetten/': '/media/Generated Image September 11, 2026 - 2_04PM.jpg',
-  '/specialisaties/natuursteen/': '/media/Generated Image September 11, 2026 - 2_05PM.jpg',
-  '/specialisaties/keramisch-parket/': '/media/Generated Image September 11, 2026 - 2_07PM.jpg'
+const NESTED_IMAGES: Record<string, string | undefined> = {
+  '/specialisaties/grootformaat-tegels/': undefined,
+  '/specialisaties/mozaiek-zetten/': 'ai-niche',
+  '/specialisaties/natuursteen/': 'ai-stone',
+  '/specialisaties/keramisch-parket/': 'ai-woodlook'
 }
 
 export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
   const hero = page.hero
-  const imageSrc = NESTED_IMAGES[page.url] || '/media/Generated Image September 11, 2026 - 2_02PM.jpg'
+  const imageSrc = NESTED_IMAGES[page.url] || undefined
   const cta = page.cta
 
   return (
     <div className="spec-nested-page">
-      {/* SECTION 1: HERO */}
-      <section className="spec-nested-hero-section" aria-label="Introductie">
-        <div className="container">
-          <Breadcrumbs currentPath={page.url} title={page.title} />
-        </div>
-        <div className="container-fluid" style={{ padding: 0 }}>
-          <figure className="spec-nested-hero-img-wrapper">
-            <img 
-              src={imageSrc}
-              alt={hero.ALT || hero.H1}
-              fetchPriority="high"
-              className="spec-nested-hero-img"
-            />
-          </figure>
-        </div>
-        <div className="container">
-          <div className="spec-nested-hero-text-grid">
-            <div className="spec-nested-hero-text">
-              {hero.Eyebrow && (
-                <p className="eyebrow">
-                  <span aria-hidden="true">—</span>
-                  {hero.Eyebrow}
-                </p>
-              )}
-              <h1>{hero.H1}</h1>
-              {hero.Body && <p className="lead">{hero.Body}</p>}
-              {hero['Primary CTA URL'] && (
-                <div style={{ marginTop: '16px' }}>
-                  <a href={hero['Primary CTA URL']} className="btn btn-primary">
-                    {hero['Primary CTA'] || 'Project bespreken'}
-                    <CtaArrow />
-                  </a>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSplit currentPath={page.url} mediaId={imageSrc} title={hero.H1} eyebrow={hero.Eyebrow} body={hero.Body} ctaUrl={hero['Primary CTA URL']} ctaText={hero['Primary CTA']} />
 
       {/* SECTION 2 & 3: CONTENT */}
       {page.sections.map((section, index) => (
@@ -116,6 +79,7 @@ export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
       )}
 
       {/* SECTION 4: FINAL CTA */}
+      <RelatedLinks urls={page.relatedUrls} />
       {cta && (
         <CtaTypeB 
           sectionNum="03 / CONTACT"

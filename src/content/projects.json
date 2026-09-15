@@ -3,159 +3,265 @@
     "id": "CASE-01",
     "slug": "complete-badkamer-inloopdouche",
     "title": "Complete badkamer met inloopdouche",
-    "meta": "Representatieve case: renovatie van een complete badkamer, met focus op de inloopdouche en waterdichtingsdetails.",
-    "h1": "Complete badkamer met focus op de inloopdouche",
-    "intro": "Bij een complete renovatie vormt de inloopdouche vaak het technische zwaartepunt. Zowel de waterdichting achter het tegelwerk als het afschot naar de drain vragen om precisie voordat de eerste tegel wordt gezet.",
-    "heroImage": "/references/WhatsApp Image 2025-05-30 at 21.24.08.jpeg",
+    "seoTitle": "Complete Badkamer met Inloopdouche | Sppat Projectcase",
+    "meta": "Representatieve projectcase van een complete badkamer met inloopdouche, grootformaat tegelwerk, waterdichting, afschot en strakke maatvoering.",
+    "h1": "Complete badkamer met rustige lijnen en inloopdouche",
+    "intro": "Bij een complete badkamer is de tegel niet het beginpunt maar het eindpunt van een technische opbouw. Deze projectcase draait om een moderne badkamer waarin grote oppervlakken, een open douchezone en geïntegreerde elementen als één geheel moeten lezen.\n\nDe uitdaging zit in de samenhang: de wanden moeten voldoende vlak en loodrecht zijn, de douchezone moet technisch waterdicht worden opgebouwd en de tegelverdeling moet vooraf worden afgestemd op hoeken, sanitair en uitsparingen.",
     "sections": [
       {
-        "h2": "Voorbereiding en waterdichting",
-        "body": "De levensduur van de badkamer hangt af van wat er achter de tegel gebeurt. Een deugdelijk kimband- of membraansysteem in de natte cel voorkomt vochtproblemen in de toekomst.",
-        "image": "/references/WhatsApp Image 2025-05-30 at 21.24.08 (2).jpeg"
+        "h2": "Eerst de geometrie, daarna de afwerking",
+        "body": "Een rustig tegelbeeld ontstaat door vóór het verlijmen de verdeling uit te zetten. Zichtlijnen, hoeken, nissen en sanitaire aansluitingen worden meegenomen in het legplan, zodat smalle reststroken en onrustige onderbrekingen zo veel mogelijk worden voorkomen."
       },
       {
-        "h2": "Detaillering en afschot",
-        "body": "Het tegelwerk in de inloopdouche is zo ingedeeld dat het afschot naadloos aansluit op de drain, met minimale snijstukken. Vaste elementen zoals nissen worden uitgelijnd op het tegelraster."
-      }
-    ],
-    "relatedServices": [
-      {
-        "title": "Complete badkamer renovatie",
-        "url": "/complete-badkamer-renovatie/"
+        "h2": "Waterdichte opbouw van de douchezone",
+        "body": "In de directe waterbelasting is alleen een mooie voeg niet voldoende. Hoeken, wand-vloeraansluitingen, doorvoeren en de aansluiting rond de douchegoot vragen om een samenhangend afdichtingssysteem. De tegelafwerking beschermt en verfraait, maar de waterdichting zit daarachter."
       },
       {
-        "title": "Inloopdouche tegelen",
-        "url": "/tegelwerk/inloopdouche-tegelen/"
+        "h2": "Afschot zonder visuele onrust",
+        "body": "De douchevloer moet water gecontroleerd naar de afvoer leiden. Tegelformaat, positie van de goot en snijlijnen worden daarom samen beoordeeld. Bij grotere formaten vraagt dit extra aandacht om zowel de waterafvoer als een strak beeld te behouden."
+      },
+      {
+        "h2": "Grootformaat als onderdeel van het ontwerp",
+        "body": "Grote tegels verminderen het aantal voegen en geven de ruimte rust. Daar staat tegenover dat vlakheid van de ondergrond, lijmcontact en onderlinge hoogteverschillen veel kritischer worden. Het resultaat is dus sterk afhankelijk van de voorbereiding."
       }
     ],
-    "tier": "A"
+    "technicalPoints": [
+      "tegelverdeling vooraf uitzetten;",
+      "vlakheid en haaksheid controleren;",
+      "geschikte primer / voorbehandeling;",
+      "waterdicht membraansysteem in natte zone;",
+      "kimband en aanvullende afdichting bij hoeken/doorvoeren;",
+      "afschot en aansluiting op douchegoot controleren;",
+      "passende lijm voor tegel, formaat en ondergrond;",
+      "flexibele aansluitingen op bouwkundige overgangen."
+    ],
+    "relatedServiceUrls": [
+      "/complete-badkamer-renovatie/",
+      "/tegelwerk/inloopdouche-tegelen/",
+      "/specialisaties/grootformaat-tegels/"
+    ],
+    "cta": {
+      "label": "Ook een complete badkamer realiseren?",
+      "url": "/complete-badkamer-renovatie/"
+    },
+    "tier": "A",
+    "heroMedia": "bath08",
+    "galleryMedia": [
+      "bath08-1",
+      "bath08-2",
+      "bath08-3"
+    ],
+    "referenceMedia": [],
+    "groupingConfirmed": true
   },
   {
     "id": "CASE-02",
     "slug": "compacte-badkamer-maatwerk",
     "title": "Compacte badkamer met maatwerkdetails",
-    "meta": "Representatieve case: slimme indeling en precisie tegelwerk in een compacte badkamer.",
-    "h1": "Ruimtewerking en maatwerk in de compacte badkamer",
-    "intro": "In een compacte badkamer luistert de tegelverdeling extra nauw. Slim gebruik van nissen en grote formaten kunnen de ruimte rustiger en groter doen lijken.",
-    "heroImage": "/references/WhatsApp Image 2025-05-30 at 21.24.01 (5).jpeg",
+    "seoTitle": "Compacte Badkamer met Maatwerk | Sppat Projectcase",
+    "meta": "Representatieve compacte badkamer waarin maatvoering, nissen, wandtegels en slimme aansluitdetails centraal staan.",
+    "h1": "Maximale precisie in een compacte badkamer",
+    "intro": "Hoe kleiner de ruimte, hoe minder fouten het ontwerp kan verbergen. In een compacte badkamer komen wand, vloer, sanitair, deurzone en installaties dicht bij elkaar. Daardoor worden tegelverdeling en maatvoering extra bepalend.\n\nDeze case laat zien hoe een kleine ruimte visueel rustig kan blijven door keuzes niet afzonderlijk, maar als één totaalbeeld te behandelen.",
     "sections": [
       {
-        "h2": "Visuele rust",
-        "body": "Door wand en vloer op elkaar af te stemmen en te werken met minimale, strakke voegen (geen onnodige strookjes), behoudt ook een kleine ruimte zijn rustige uitstraling."
-      }
-    ],
-    "relatedServices": [
+        "h2": "Elke centimeter telt",
+        "body": "De maatvoering wordt opgebouwd vanaf de vaste elementen. Zo wordt voorkomen dat bij een nis, reservoir, wandmeubel of deuropening een onlogische smalle tegelstrook ontstaat."
+      },
       {
-        "title": "Complete badkamer renovatie",
-        "url": "/complete-badkamer-renovatie/"
+        "h2": "Nissen en uitsparingen als onderdeel van het tegelplan",
+        "body": "Een nis is geen los accessoire. De hoogte, breedte en binnenafwerking worden afgestemd op de tegelverdeling. Bij mozaïek of kleine formaten wordt bovendien gecontroleerd of de mat-overgangen optisch verdwijnen."
+      },
+      {
+        "h2": "Rust in wand en vloer",
+        "body": "In een kleine badkamer kan te veel visuele onderbreking de ruimte kleiner laten lijken. Door hoofdlijnen van het tegelwerk, voegen en sanitair op elkaar af te stemmen ontstaat een rustiger totaalbeeld."
       }
     ],
-    "tier": "B"
+    "technicalPoints": [
+      "maatvoering vanuit vaste installaties;",
+      "gecontroleerde wandvlakheid;",
+      "logische tegelverdeling;",
+      "detailafwerking rond nis/doorvoer;",
+      "flexibele hoekaansluitingen;",
+      "waterdichting in directe natte zone."
+    ],
+    "relatedServiceUrls": [
+      "/complete-badkamer-renovatie/",
+      "/tegelwerk/badkamer-tegelen/",
+      "/specialisaties/mozaiek-zetten/"
+    ],
+    "cta": {
+      "label": "Badkamer laten tegelen",
+      "url": "/tegelwerk/badkamer-tegelen/"
+    },
+    "tier": "B",
+    "heroMedia": "compact",
+    "galleryMedia": [],
+    "referenceMedia": [],
+    "groupingConfirmed": true
   },
   {
     "id": "CASE-03",
     "slug": "grootformaat-tegelvloer-woonruimte",
     "title": "Grootformaat tegelvloer in woonruimte",
-    "meta": "Representatieve case: installatie van een grootformaat tegelvloer over de gehele woonruimte.",
-    "h1": "Een ononderbroken basis voor de leefruimte",
-    "intro": "Een grootformaat vloer vereist een extreem vlakke ondervloer en een doordacht legplan om tot zijn recht te komen. Het eindresultaat is een rustig, nagenoeg voegloos oppervlak.",
-    "heroImage": "/references/WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
+    "seoTitle": "Grootformaat Tegelvloer in Woonruimte | Sppat Projectcase",
+    "meta": "Representatieve tegelvloer met grootformaat keramiek, doorlopende zichtlijnen, ondergrondvoorbereiding en aandacht voor vloerverwarming.",
+    "h1": "Een doorlopende tegelvloer als basis van het interieur",
+    "intro": "Bij een grote woonvloer wordt iedere afwijking zichtbaar. Lange zichtlijnen maken hoogteverschillen, scheve voegen en onlogische snijlijnen direct merkbaar. Daarom begint het werk met de ondergrond en een zorgvuldig uitgezet legplan.",
     "sections": [
       {
-        "h2": "Vlakheid en lijmtechniek",
-        "body": "Grootformaat tegels tolereren geen oneffenheden in de ondergrond. Het juiste lijmsysteem en dubbele verlijming garanderen volledige hechting.",
-        "image": "/references/WhatsApp Image 2025-05-30 at 21.24.07 (1).jpeg"
+        "h2": "Vlakheid bepaalt het eindresultaat",
+        "body": "Hoe groter de tegel, hoe minder de afwerking kan corrigeren. De ondergrond wordt daarom beoordeeld op vlakheid, stabiliteit en geschiktheid voor het gekozen formaat."
       },
       {
-        "h2": "Aansluiting en afwerking",
-        "body": "Vloeiende aansluitingen op kozijnen, plinten of een trappartij bepalen het kwaliteitsgevoel. Het tegelraster wordt vooraf uitgerekend om overal goed uit te komen.",
-        "image": "/references/WhatsApp Image 2025-05-30 at 21.24.07 (4).jpeg"
-      }
-    ],
-    "relatedServices": [
-      {
-        "title": "Grootformaat tegels",
-        "url": "/specialisaties/grootformaat-tegels/"
+        "h2": "Zichtlijnen door meerdere zones",
+        "body": "Een vloer die doorloopt van hal naar woonkamer en keuken vraagt om één logisch raster. De tegelverdeling wordt niet per kamer opnieuw begonnen, maar afgestemd op de belangrijkste zichtassen en overgangen."
       },
       {
-        "title": "Vloer tegelen",
-        "url": "/tegelwerk/vloer-tegelen/"
+        "h2": "Tegels en vloerverwarming",
+        "body": "Keramiek is geschikt als vloerafwerking bij vloerverwarming, maar de complete vloeropbouw moet als systeem worden bekeken. Temperatuurbelasting, aanwezige voegen en eventuele scheurrisico's in de dekvloer mogen niet worden genegeerd."
       }
     ],
-    "tier": "A"
+    "technicalPoints": [
+      "ondergrond inspecteren;",
+      "primer/voorbehandeling passend bij systeem;",
+      "legplan op zichtassen;",
+      "rand- en bewegingsvoegen respecteren;",
+      "materiaal/formaat passende lijm;",
+      "gecontroleerde ingebruikname van vloerverwarming conform actuele vloeropbouw en voorschriften."
+    ],
+    "relatedServiceUrls": [
+      "/tegelwerk/vloer-tegelen/",
+      "/specialisaties/grootformaat-tegels/",
+      "/tegelwerk/vloerverwarming-en-tegelen/"
+    ],
+    "cta": {
+      "label": "Vloertegels laten leggen",
+      "url": "/tegelwerk/vloer-tegelen/"
+    },
+    "tier": "A",
+    "heroMedia": "floor07-9",
+    "galleryMedia": [
+      "floor07-1",
+      "floor07-4",
+      "floor07-6"
+    ],
+    "referenceMedia": [],
+    "groupingConfirmed": true
   },
   {
     "id": "CASE-04",
     "slug": "inloopdouche-technische-detaillering",
     "title": "Inloopdouche met technische detaillering",
-    "meta": "Representatieve case: bouwkundige en afwerkingsdetails van een inloopdouche.",
-    "h1": "De techniek achter een strakke inloopdouche",
-    "intro": "De inloopdouche is meer dan tegelwerk. Het is een samenhangend systeem van afschot, afdichting en afwerking dat jarenlang intensief gebruikt moet kunnen worden.",
-    "heroImage": "/references/WhatsApp Image 2025-02-26 at 18.19.50.jpeg",
+    "seoTitle": "Inloopdouche met Afschot & Waterdichting | Sppat Projectcase",
+    "meta": "Representatieve inloopdouche waarin afschot, douchegoot, waterdichting, tegelverdeling en aansluitdetails technisch samenkomen.",
+    "h1": "Inloopdouche waarin het detail het verschil maakt",
+    "intro": "Een inloopdouche lijkt visueel eenvoudig: een open vloer, weinig obstakels en strakke lijnen. Bouwkundig is het juist een van de meest kritische zones van de badkamer. Waterbelasting, afschot, doorvoeren en meerdere materiaalaansluitingen komen op een kleine oppervlakte samen.",
     "sections": [
       {
-        "h2": "Onder de oppervlakte",
-        "body": "Voordat het tegelwerk begint, worden kritieke zones voorzien van de vereiste afdichting. Dit voorkomt dat water via voegen de constructie bereikt.",
-        "image": "/special-references/Generated Image September 10, 2026 - 6_57PM.jpg"
-      }
-    ],
-    "relatedServices": [
+        "h2": "Water moet een voorspelbare route hebben",
+        "body": "De vloer wordt opgebouwd zodat water naar de afvoer wordt geleid en niet in hoeken of tegen aansluitingen blijft staan. De positie van de goot en het tegelformaat bepalen mede hoe de snijlijnen worden opgelost."
+      },
       {
-        "title": "Inloopdouche tegelen",
-        "url": "/tegelwerk/inloopdouche-tegelen/"
+        "h2": "Waterdichting achter de tegel",
+        "body": "In een douchezone worden hoeken en aansluitingen onderdeel van een waterdicht systeem. Rond goot, leidingdoorvoeren en andere kritische punten zijn aanvullende afdichtingsdetails nodig."
+      },
+      {
+        "h2": "Voegverdeling rondom de douche",
+        "body": "Een technisch goede douche kan visueel alsnog onrustig ogen wanneer de voegverdeling niet klopt. Daarom worden vloer, wand, nis en sanitaire elementen als één compositie uitgezet."
       }
     ],
-    "tier": "B"
+    "technicalPoints": [],
+    "relatedServiceUrls": [
+      "/tegelwerk/inloopdouche-tegelen/",
+      "/specialisaties/grootformaat-tegels/",
+      "/specialisaties/mozaiek-zetten/"
+    ],
+    "cta": {
+      "label": "Meer over inloopdouches",
+      "url": "/tegelwerk/inloopdouche-tegelen/"
+    },
+    "tier": "B",
+    "heroMedia": "bath-feb",
+    "galleryMedia": [],
+    "referenceMedia": [
+      "ai-macro"
+    ],
+    "groupingConfirmed": true
   },
   {
     "id": "CASE-05",
     "slug": "complete-toiletrenovatie",
     "title": "Complete toiletrenovatie",
-    "meta": "Representatieve case: complete vernieuwing van een toiletruimte met strakke maatwerk details.",
-    "h1": "Maximale afwerking op minimale vierkante meters",
-    "intro": "Het toilet is de kleinste ruimte, maar met de hoogste dichtheid aan details en aansluitingen. Het inbouwreservoir, het fontein en het leidingwerk vereisen nauwkeurig maatwerk in de voorbereiding.",
-    "heroImage": "/special-references/Generated Image September 10, 2026 - 6_53PM.jpg",
+    "seoTitle": "Complete Toiletrenovatie | Sppat Projectcase",
+    "meta": "Representatieve complete toiletrenovatie met inbouwreservoir, wandtegels, maatwerkafwerking en een rustig voegbeeld.",
+    "h1": "Een kleine ruimte die technisch volledig opnieuw is opgebouwd",
+    "intro": "Een toiletruimte heeft weinig vierkante meters, maar relatief veel technische aansluitingen. Het inbouwreservoir, leidingwerk, wandafwerking, vloer en eventuele fontein moeten binnen een compacte maatvoering op elkaar aansluiten.",
     "sections": [
       {
-        "h2": "Afwerking van randen en overgangen",
-        "body": "De kwaliteit zit vaak in de laatste centimeters: tegelranden, hoeken, kitnaden en de overgang naar stuc- of schilderwerk.",
-        "image": "/references/WhatsApp Image 2025-05-30 at 21.24.01 (5).jpeg"
-      }
-    ],
-    "relatedServices": [
+        "h2": "Inbouwtechniek als basis",
+        "body": "De voorzetwand rond het reservoir bepaalt de maatvoering van het uiteindelijke tegelvlak. Daarom worden positie, diepte en aansluitingen eerst technisch vastgelegd."
+      },
       {
-        "title": "Complete toilet renovatie",
-        "url": "/complete-toilet-renovatie/"
+        "h2": "Tegelwerk dat de ruimte groter laat lezen",
+        "body": "In compacte ruimtes is een rustige verdeling belangrijk. Voegbreedtes, tegelhoogtes en aansluitingen rond de bedieningsplaat en fontein worden als één geheel bekeken."
+      },
+      {
+        "h2": "Afwerking van randen en overgangen",
+        "body": "De kwaliteit zit vaak in de laatste centimeters: tegelranden, hoeken, kitnaden en de overgang naar stuc- of schilderwerk."
       }
     ],
-    "tier": "B"
+    "technicalPoints": [],
+    "relatedServiceUrls": [
+      "/complete-toilet-renovatie/",
+      "/tegelwerk/wand-tegelen/"
+    ],
+    "cta": {
+      "label": "Complete toilet renovatie",
+      "url": "/complete-toilet-renovatie/"
+    },
+    "tier": "B",
+    "heroMedia": "ai-toilet",
+    "galleryMedia": [],
+    "referenceMedia": [],
+    "groupingConfirmed": true
   },
   {
     "id": "CASE-06",
     "slug": "keuken-leefruimte-tegelvloer",
     "title": "Keuken en leefruimte met doorlopende tegelvloer",
-    "meta": "Representatieve case: keuken- en woonruimte met doorlopende tegelvloer, nauwkeurige uitsnedes en aansluitingen.",
+    "seoTitle": "Keuken & Leefruimte met Tegelvloer | Sppat Projectcase",
+    "meta": "Representatieve keuken- en woonruimte met doorlopende tegelvloer, nauwkeurige uitsnedes, aansluitingen en consistente zichtlijnen.",
     "h1": "Eén vloerbeeld door keuken en leefruimte",
     "intro": "Wanneer dezelfde tegelvloer door meerdere functies loopt, wordt continuïteit belangrijker dan de afzonderlijke ruimte. De vloer moet visueel doorlopen, terwijl hij technisch rekening houdt met wanden, keukenopstelling, kozijnen en andere aansluitpunten.",
-    "heroImage": "/references/WhatsApp Image 2025-05-30 at 21.24.04 (4).jpeg",
     "sections": [
       {
         "h2": "Het raster wordt vóór de keuken gelezen",
-        "body": "De positie van zichtlijnen en snijstukken wordt vooraf bepaald. Zo worden storende smalle stroken langs een keukenblok of entree waar mogelijk voorkomen.",
-        "image": "/references/WhatsApp Image 2025-05-30 at 21.24.03 (6).jpeg"
+        "body": "De positie van zichtlijnen en snijstukken wordt vooraf bepaald. Zo worden storende smalle stroken langs een keukenblok of entree waar mogelijk voorkomen."
       },
       {
         "h2": "Maatwerk rond vaste elementen",
-        "body": "Rond kozijnen, leidingen en vaste keukenonderdelen zijn nauwkeurige uitsnedes nodig. De tegelvloer moet aansluiten zonder dat het voegbeeld onnodig wordt onderbroken.",
-        "image": "/references/WhatsApp Image 2025-05-30 at 21.24.04 (6).jpeg"
-      }
-    ],
-    "relatedServices": [
+        "body": "Rond kozijnen, leidingen en vaste keukenonderdelen zijn nauwkeurige uitsnedes nodig. De tegelvloer moet aansluiten zonder dat het voegbeeld onnodig wordt onderbroken."
+      },
       {
-        "title": "Keuken tegelen",
-        "url": "/tegelwerk/keuken-tegelen/"
+        "h2": "Achterwand als afzonderlijk precisiewerk",
+        "body": "Wanneer ook de keukenachterwand wordt betegeld, wordt de verdeling afgestemd op werkblad, bovenkasten en elektrapunten. Aansluitingen aan het werkblad worden flexibel afgewerkt."
       }
     ],
-    "tier": "A"
+    "technicalPoints": [],
+    "relatedServiceUrls": [
+      "/tegelwerk/keuken-tegelen/",
+      "/tegelwerk/vloer-tegelen/"
+    ],
+    "cta": {
+      "label": "Keuken tegelen",
+      "url": "/tegelwerk/keuken-tegelen/"
+    },
+    "tier": "B",
+    "heroMedia": "res04-4",
+    "galleryMedia": [],
+    "referenceMedia": [
+      "res03-6"
+    ],
+    "groupingConfirmed": false
   }
 ]

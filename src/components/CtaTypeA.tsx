@@ -1,4 +1,6 @@
 import CtaArrow from './CtaArrow'
+import MediaImage from './MediaImage'
+import MediaCaption from './MediaCaption'
 
 interface CtaTypeAProps {
   sectionNum?: string
@@ -8,6 +10,7 @@ interface CtaTypeAProps {
   body?: string
   ctaUrl?: string
   ctaText?: string
+  mediaId?: string
   imageSrc?: string
   imageAlt?: string
 }
@@ -20,13 +23,12 @@ export default function CtaTypeA({
   body,
   ctaUrl = '/contact/',
   ctaText = 'Project bespreken',
-  imageSrc,
-  imageAlt
+  mediaId
 }: CtaTypeAProps) {
   return (
     <section className="cta-type-a-section cta-type-a" aria-label={title}>
       <div className="container">
-        <div className="cta-type-a-grid almere-cta-grid">
+        <div className={`cta-type-a-grid almere-cta-grid ${mediaId ? "" : "text-only-cta"}`}>
           <div className="cta-type-a-text almere-cta-text">
             {sectionNum && <span className="section-num" aria-hidden="true">{sectionNum}</span>}
             <h2>{title}</h2>
@@ -40,14 +42,10 @@ export default function CtaTypeA({
               </a>
             </div>
           </div>
-          <figure className="cta-type-a-media almere-cta-media">
-            <img
-              src={imageSrc}
-              alt={imageAlt || title}
-              loading="lazy"
-              className="cta-type-a-img almere-cta-img"
-            />
-          </figure>
+          {mediaId && <figure className="cta-type-a-media almere-cta-media">
+            <MediaImage mediaId={mediaId} role="detail" />
+            <MediaCaption mediaId={mediaId} />
+          </figure>}
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import RelatedLinks from '../components/RelatedLinks'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
 import Placeholder from '../components/Placeholder'
@@ -186,6 +187,7 @@ export default function CommercialPage({ page }: { page: Page }) {
       )}
 
       {/* 4. TYPE A FINAL CTA */}
+      <RelatedLinks urls={page.relatedUrls} />
       {page.cta && <CtaTypeA block={page.cta} />}
     </>
   )

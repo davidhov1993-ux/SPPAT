@@ -63,7 +63,8 @@
       "Body": "Heeft u een ontwerp, referentiebeelden of zoekt u technisch advies voor uw verbouwing? Wij denken met u mee en vertalen uw plannen naar een bouwbare realiteit.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": []
   },
   {
     "name": "Complete Badkamer Renovatie",
@@ -80,7 +81,7 @@
           "Demontage & Afvoer: Verwijderen van bestaand sanitair, tegels en indien nodig de dekvloer tot op het casco.",
           "Leidingwerk & Installatie: Frezen en verleggen van koud/warm water, afvoeren en elektra. Installatie van inbouwreservoirs, inbouwdelen voor kranen en het plaatsen van de douchegoot (drain).",
           "Bouwkundige Aanpassingen: Het verlagen van plafonds voor inbouwspots en ventilatie, het creëren van scheidingswanden of het bouwen van nissen.",
-          "Uitvlakken & Vloerverwarming: Wanden loodrecht stucen of uitvlakken, de zandcement dekvloer smeren op het juiste afschot en installatie van vloerverwarming indien gewenst.",
+          "Uitvlakken: Wanden loodrecht stucen of uitvlakken, de zandcement dekvloer smeren op het juiste afschot.",
           "Waterdichting: Aanbrengen van waterdichtingssystemen (zoals kimband en kimpasta of bouwplaten) in de natte cel ter preventie van vochtschade.",
           "Tegelwerk: Het voorbereiden, zetten en voegen van de wand- en vloerafwerking.",
           "Afmontage: Plaatsen van het sanitair, wastafelmeubels, glazen douchewanden, kranen, verlichting en het aanbrengen van de sanitairkit."
@@ -146,7 +147,15 @@
       "Body": "Deel uw plannen, plattegrond of referentiebeelden met ons. Wij bespreken graag de technische haalbaarheid en de uitvoering.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/badkamer-tegelen/",
+      "/tegelwerk/inloopdouche-tegelen/",
+      "/specialisaties/grootformaat-tegels/",
+      "/specialisaties/mozaiek-zetten/",
+      "/specialisaties/natuursteen/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Badkamer Renovatie Almere",
@@ -158,20 +167,13 @@
         "id": "SECTION 2",
         "Type": "Text",
         "H2": "Kennis van lokale installatietechniek",
-        "Body": "Wonen in Almere betekent een grote diversiteit aan bouwstijlen: van de jongere woningen in Almere Poort en Duin tot de bestaande bouw in Almere Haven en Buiten. Een relevant detail voor verbouwingen in deze regio is dat veel wijken zijn aangesloten op stadsverwarming. Dit vereist specifieke kennis bij het verleggen van leidingwerk, het installeren van watergedragen vloerverwarming en het plaatsen van radiatoren of verdelers. Bij de technische voorbereiding van uw badkamer wordt hier rekening mee gehouden.",
-        "Lead": "Of u nu woont in Almere Poort, Duin of Haven, wij kennen de lokale bouwstijlen. Wij onderscheiden ons door niet te kiezen voor de makkelijkste weg, maar voor de technisch beste oplossing. Rechte wanden, perfect afschot in uw inloopdouche en tegelwerk zonder hoogteverschillen."
+        "Body": "Wonen in Almere betekent een grote diversiteit aan bouwstijlen: van de jongere woningen in Almere Poort en Duin tot de bestaande bouw in Almere Haven en Buiten. Een relevant detail voor verbouwingen in deze regio is dat veel wijken zijn aangesloten op stadsverwarming. Dit vereist specifieke kennis bij het verleggen van leidingwerk, het installeren van watergedragen vloerverwarming en het plaatsen van radiatoren of verdelers. Bij de technische voorbereiding van uw badkamer wordt hier rekening mee gehouden."
       },
       {
         "id": "SECTION 3",
         "Type": "Text + Internal Links",
         "H2": "Uw project van sloop tot afwerking",
-        "Body": "Wij voeren de stappen van de verbouwing uit. Van het vakkundig slopen tot het waterdicht maken van de doucheruimte en het integreren van inbouwkranen. Voor het tegelwerk kunnen alle materialen worden verwerkt, waaronder grootformaat tegels, natuursteen en mozaïek.",
-        "Lead": "Het tegelwerk bepaalt de uiteindelijke uitstraling van de ruimte. Wij zijn gespecialiseerd in het verwerken van complexe materialen. Of u nu kiest voor de naadloze look van [grootformaat tegels](/specialisaties/grootformaat-tegels/), de detaillering van [mozaïek](/specialisaties/mozaiek-zetten/), of de organische uitstraling van [natuursteen](/specialisaties/natuursteen/), wij streven naar een technisch en visueel hoogwaardige verwerking."
-      },
-      {
-        "id": "SECTION 4",
-        "H2": "Technische Precisie & Veelgestelde Vragen",
-        "Body": "De bouwkundige kwaliteit van een badkamer zit in het onzichtbare werk. Wij werken met gecertificeerde waterdichtingssystemen: kimband in alle aansluitingen, afdichtingspasta rondom doorvoeren en een uiterst vlakke voorbereiding van wand en vloer. Douchedrains en inbouwkranen worden op de millimeter nauwkeurig gepositioneerd zodat het tegelwerk naadloos aansluit op het afwateringssysteem."
+        "Body": "Wij voeren de stappen van de verbouwing uit. Van het vakkundig slopen tot het waterdicht maken van de doucheruimte en het integreren van inbouwkranen. Voor het tegelwerk kunnen alle materialen worden verwerkt, waaronder grootformaat tegels, natuursteen en mozaïek."
       }
     ],
     "links": [
@@ -191,23 +193,14 @@
         "placement": "SECTION 3 Body"
       }
     ],
-    "faq": [
-      {
-        "question": "Installeren jullie ook inbouwkranen en nissen?",
-        "answer": "Ja. Inbouwkranen, regendouches uit het plafond en op maat gemaakte nissen (eventueel met LED-profielen) behoren tot onze standaard werkzaamheden bij luxe renovaties."
-      },
-      {
-        "question": "Regelen jullie ook het leidingwerk?",
-        "answer": "Ja, bij een complete renovatie passen wij al het benodigde leidingwerk en de afvoeren aan op het nieuwe ontwerp."
-      }
-    ],
+    "faq": [],
     "hero": {
       "Eyebrow": "Lokaal Vakmanschap",
       "H1": "Badkamer Renovatie in Almere",
       "Body": "Gevestigd in Almere, verzorgt Sppat complete badkamer renovaties voor woningen in de hele regio. Of u nu de indeling van een bestaande woning wilt moderniseren of een nieuwbouwwoning casco krijgt opgeleverd, wij coördineren de volledige verbouwing. Wij bieden één aanspreekpunt in de buurt, heldere communicatie en een resultaat waarbij techniek en esthetiek samenkomen.",
       "Primary CTA": "Project bespreken",
       "Visual": "Foto van een modern opgeleverd project.",
-      "ALT": "Badkamer renovatie uitgevoerd in Almere",
+      "ALT": "Badkamer met grootformaat tegelwerk",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
@@ -215,7 +208,10 @@
       "Body": "Wij denken technisch met u mee. Neem contact op voor een opname.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/complete-badkamer-renovatie/"
+    ]
   },
   {
     "name": "Complete Toilet Renovatie",
@@ -265,7 +261,12 @@
       "Body": "Wij verzorgen de technische en visuele upgrade van uw wc.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/wand-tegelen/",
+      "/specialisaties/mozaiek-zetten/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Tegelwerk Hub",
@@ -367,7 +368,11 @@
       "Body": "Wij beoordelen de ondergrond en bespreken de mogelijkheden qua formaten en legverbanden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/specialisaties/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Badkamer Tegelen",
@@ -412,7 +417,14 @@
       "H2": "Uw badkamer afwerken met hoogwaardig tegelwerk?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/complete-badkamer-renovatie/",
+      "/tegelwerk/inloopdouche-tegelen/",
+      "/specialisaties/grootformaat-tegels/",
+      "/specialisaties/mozaiek-zetten/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Vloer Tegelen",
@@ -427,7 +439,7 @@
         "Body": "Een vloer die lang meegaat, vereist een stabiele basis.",
         "bullets": [
           "Egaliseren: Als de zandcement- of anhydrietdekvloer sterke onregelmatigheden vertoont, wordt deze eerst geprimed en geëgaliseerd.",
-          "Vloerverwarming: Tegels geleiden warmte zeer efficiënt. Bij het tegelen over gefreesde vloerverwarming is het correct dichten van de sleuven belangrijk. Het naleven van een opstook- en afkoelprotocol (zowel voor als na het tegelen) is cruciaal om krimpscheuren te voorkomen.",
+          "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers.",
           "Ontkoppeling: Bij zwevende dekvloeren, bepaalde houten ondervloeren of risico's op werking van de vloer, kan het gebruik van ontkoppelingsmatten (zoals veelgebruikt in de markt) nodig zijn om de tegel te scheiden van een krimpende ondervloer."
         ]
       },
@@ -450,7 +462,13 @@
       "H2": "Een nieuwe tegelvloer realiseren?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/vloerverwarming-en-tegelen/",
+      "/specialisaties/grootformaat-tegels/",
+      "/specialisaties/keramisch-parket/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Wand Tegelen",
@@ -487,7 +505,13 @@
       "H2": "Uw wanden professioneel laten tegelen?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/badkamer-tegelen/",
+      "/tegelwerk/keuken-tegelen/",
+      "/specialisaties/mozaiek-zetten/",
+      "/specialisaties/grootformaat-tegels/"
+    ]
   },
   {
     "name": "Keuken Tegelen",
@@ -531,7 +555,12 @@
       "H2": "Uw keuken voorzien van nieuw tegelwerk?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/wand-tegelen/",
+      "/tegelwerk/vloer-tegelen/",
+      "/projecten/keuken-leefruimte-tegelvloer/"
+    ]
   },
   {
     "name": "Balkon Tegelen",
@@ -564,7 +593,8 @@
       "H2": "Uw balkon voorzien van duurzaam tegelwerk?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": []
   },
   {
     "name": "Specialisaties Hub",
@@ -617,7 +647,8 @@
       "Body": "Wij beoordelen graag welk legplan en welke lijmsoort het beste bij uw gekozen materiaal passen.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": []
   },
   {
     "name": "Grootformaat Tegels",
@@ -642,13 +673,7 @@
         "Body": "Grootformaat tegels kunnen goed worden toegepast in een doucheruimte. Omdat de afvoer (drain) lager ligt, moet het water weg kunnen lopen (afschot). Als de tegel te groot is om mee te buigen met het afschot, wordt deze vaak diagonaal doorgezaagd (envelop-snede) of wordt de dekvloer zo aangepast dat een eenzijdig afschot naar een sleufgoot mogelijk is."
       }
     ],
-    "links": [
-      {
-        "placement": "SECTION 3",
-        "anchor": "Meer over tegelwerk",
-        "url": "/tegelwerk/"
-      }
-    ],
+    "links": [],
     "faq": [],
     "hero": {
       "H1": "Grootformaat Tegels (XXL) Leggen",
@@ -660,7 +685,14 @@
       "H2": "Grootformaat tegels in uw project?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/badkamer-tegelen/",
+      "/tegelwerk/inloopdouche-tegelen/",
+      "/tegelwerk/vloer-tegelen/",
+      "/projecten/",
+      "/kennisbank/tegel-lippage-voorkomen/"
+    ]
   },
   {
     "name": "Mozaïek Zetten",
@@ -681,13 +713,7 @@
         ]
       }
     ],
-    "links": [
-      {
-        "placement": "SECTION 3",
-        "anchor": "Meer over tegelwerk",
-        "url": "/tegelwerk/"
-      }
-    ],
+    "links": [],
     "faq": [],
     "hero": {
       "H1": "Professioneel Mozaïek Zetten",
@@ -699,7 +725,12 @@
       "H2": "Details van mozaïek integreren?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/badkamer-tegelen/",
+      "/tegelwerk/inloopdouche-tegelen/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Natuursteen",
@@ -725,13 +756,7 @@
         "Body": "Natuursteen is prachtig, maar in natte ruimtes (zoals de inloopdouche) vereist het bewustwording. Kalkaanslag mag niet worden verwijderd met agressieve (zure) schoonmaakmiddelen, omdat dit de toplaag van bijvoorbeeld marmer aantast."
       }
     ],
-    "links": [
-      {
-        "placement": "SECTION 3",
-        "anchor": "Meer over tegelwerk",
-        "url": "/tegelwerk/"
-      }
-    ],
+    "links": [],
     "faq": [],
     "hero": {
       "H1": "Natuursteen Leggen",
@@ -743,7 +768,12 @@
       "H2": "Natuursteen in uw project integreren?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/badkamer-tegelen/",
+      "/tegelwerk/vloer-tegelen/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Keramisch Parket",
@@ -761,6 +791,11 @@
           "Legpatroon: Om te voorkomen dat het bolle middenstuk van de ene tegel naast het platte uiteinde van de volgende tegel komt (wat zorgt voor structuurverschillen of randen), worden deze tegels bij voorkeur gelegd in een willekeurig wildverband met maximaal 1/3 verschuiving, in plaats van een strak halfsteensverband.",
           "Voegkleur: Door de voegkleur af te stemmen op de donkerste of meest dominante tint in de tegel, valt de lijn visueel weg en lijkt de vloer meer op een authentieke plankenvloer."
         ]
+      },
+      {
+        "id": "VISGRAAT",
+        "H2": "Visgraat",
+        "Body": "Houtlook tegels gelegd in patronen zoals wildverband of visgraat, met aandacht voor de natuurlijke buiging van lange tegels."
       }
     ],
     "links": [],
@@ -775,7 +810,12 @@
       "H2": "Houtlook tegels professioneel laten leggen?",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/vloer-tegelen/",
+      "/tegelwerk/vloerverwarming-en-tegelen/",
+      "/projecten/"
+    ]
   },
   {
     "name": "Kennisbank Hub",
@@ -811,7 +851,8 @@
     "hero": {
       "H1": "Kennisbank: Techniek achter de afwerking",
       "Body": "Een duurzaam resultaat vraagt om de juiste constructieve keuzes. Hier leggen we enkele belangrijke technische concepten rondom badkamerbouw en tegelwerk uit."
-    }
+    },
+    "relatedUrls": []
   },
   {
     "name": "Kennisbank - Waterdichting",
@@ -841,7 +882,12 @@
     "faq": [],
     "hero": {
       "H1": "Waterdichting: Voorkomen van vochtdoorslag"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/badkamer-tegelen/",
+      "/tegelwerk/inloopdouche-tegelen/",
+      "/complete-badkamer-renovatie/"
+    ]
   },
   {
     "name": "Kennisbank - Lippage",
@@ -877,7 +923,11 @@
     "faq": [],
     "hero": {
       "H1": "Tegel Lippage: Hoogteverschillen beperken"
-    }
+    },
+    "relatedUrls": [
+      "/specialisaties/grootformaat-tegels/",
+      "/tegelwerk/vloer-tegelen/"
+    ]
   },
   {
     "name": "Kennisbank - Onzichtbaar Luik",
@@ -907,7 +957,11 @@
     "faq": [],
     "hero": {
       "H1": "Het onzichtbare, betegelde inspectieluik"
-    }
+    },
+    "relatedUrls": [
+      "/complete-badkamer-renovatie/",
+      "/complete-toilet-renovatie/"
+    ]
   },
   {
     "name": "Kennisbank - Epoxyvoeg vs Cementvoeg",
@@ -936,34 +990,33 @@
     "faq": [],
     "hero": {
       "H1": "Epoxyvoeg vs. Cementvoeg"
-    }
+    },
+    "relatedUrls": [
+      "/tegelwerk/keuken-tegelen/",
+      "/tegelwerk/badkamer-tegelen/"
+    ]
   },
   {
     "name": "Projecten",
     "url": "/projecten/",
-    "title": "Portfolio & Opgeleverde Projecten | Sppat Badkamers",
-    "description": "Bekijk onze recent opgeleverde badkamer renovaties, toilet verbouwingen en tegelwerk. Ontdek ons oog voor detail en afwerking.",
-    "sections": [
-      {
-        "id": "SECTION 2",
-        "Type": "Dynamic Grid",
-        "H2": "Recent opgeleverd",
-        "Filters": "Alle | Badkamers | Tegelwerk | Specialisaties"
-      }
-    ],
+    "title": "Badkamer- & Tegelprojecten | Vakmanschap van Sppat",
+    "description": "Bekijk representatieve badkamer- en tegelprojecten van Sppat: complete renovaties, inloopdouches, grootformaat tegelwerk, vloeren en technische details.",
+    "sections": [],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Gerealiseerde Projecten",
-      "Body": "In ons portfolio vindt u straks een selectie van opgeleverde badkamers, toiletruimtes en tegelprojecten. De beelden geven een indruk van de voeguitlijning, hoekafwerkingen en de integratie van inbouwtechniek die wij hanteren in onze projecten.",
-      "Primary CTA": "Zelf een project starten?",
+      "H1": "Projecten die techniek en afwerking samenbrengen",
+      "Body": "Sppat staat voor een aanpak waarbij het eindbeeld pas klopt als ook de onderliggende techniek klopt. Met meer dan vier decennia praktijkervaring en ruim duizend uitgevoerde projecten is vrijwel iedere situatie al eens voorbijgekomen: van compacte toiletruimtes tot complete badkamers, grote tegelvloeren en technisch veeleisende natte zones.\n\nDe cases hieronder laten verschillende typen projecten zien. Niet alleen het zichtbare tegelwerk staat centraal, maar juist ook de voorbereiding: maatvoering, vlakheid, waterdichting, afschot, materiaalkeuze, voegverdeling en de aansluiting op andere bouwdelen.",
+      "Primary CTA": "Bespreek uw project",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Een vergelijkbaar resultaat voor uw woning?",
-      "Button": "Project bespreken",
+      "Button": "Bespreek uw project",
       "URL": "/contact/"
-    }
+    },
+    "disclosure": "Meer dan vier decennia vakervaring, vertaald naar uiteenlopende badkamer- en tegelprojecten. Hieronder tonen we een selectie van representatieve projectcases die laten zien welke technische vraagstukken, materialen en afwerkingen binnen het werk van Sppat centraal staan.",
+    "mediaDisclosure": "De getoonde beelden dienen als visuele referentie bij het projecttype; de technische beschrijvingen zijn gebaseerd op terugkerende werkzaamheden uit de praktijk.",
+    "relatedUrls": []
   },
   {
     "name": "Over Ons",
@@ -976,6 +1029,11 @@
         "Type": "Text",
         "H2": "Verantwoordelijkheid voor het totaalplaatje",
         "Body": "Wij overbruggen de stap tussen uw ontwerpidee en de daadwerkelijke installatie. Dat betekent meedenken over de onzichtbare componenten: de leidingtracés, het juiste type lijm voor uw tegel, de plaatsing van inspectieluiken en de belasting van de ondervloer. Door regie te houden over deze factoren, bewaken we de kwaliteit."
+      },
+      {
+        "id": "EXPERIENCE",
+        "H2": "Vier decennia ervaring in het vak",
+        "Body": "Meer dan veertig jaar praktijkervaring betekent niet alleen dat er veel vierkante meters zijn gelegd. Het betekent vooral dat uiteenlopende ondergronden, materialen, verbouwingen en probleemdetails al in de praktijk zijn tegengekomen. Met meer dan duizend uitgevoerde projecten is die ervaring de basis voor de manier waarop Sppat naar nieuw werk kijkt: eerst begrijpen hoe de constructie en maatvoering in elkaar zitten, daarna pas afwerken."
       }
     ],
     "links": [],
@@ -988,7 +1046,8 @@
       "H2": "Kennismaken of advies inwinnen?",
       "Button": "Neem contact op",
       "URL": "/contact/"
-    }
+    },
+    "relatedUrls": []
   },
   {
     "name": "Contact",
@@ -1014,35 +1073,46 @@
     "hero": {
       "H1": "Uw Project Bespreken",
       "Body": "Heeft u plannen voor een verbouwing of een specifiek tegelproject? Wij bespreken graag de haalbaarheid en plannen, indien gewenst, een technische opname in."
-    }
+    },
+    "relatedUrls": []
   },
   {
     "url": "/tegelwerk/inloopdouche-tegelen/",
-    "title": "Inloopdouche tegelen | Sppat",
-    "description": "Nauwkeurige afwerking en waterdichting van inloopdouches.",
+    "title": "Inloopdouche Tegelen | Afschot, Waterdichting & Afwerking | Sppat",
+    "description": "Laat uw inloopdouche vakkundig tegelen met aandacht voor waterdichting, afschot, douchegoot, voegverdeling en strakke wand-vloeraansluitingen.",
     "hero": {
-      "Eyebrow": "Tegelwerk in de natte cel",
-      "H1": "Inloopdouche Tegelen",
-      "Body": "Watermanagement ontmoet esthetiek. Een inloopdouche vraagt om een doordacht legplan en perfect afschot.",
+      "H1": "Inloopdouche Vakkundig Tegelen",
       "Primary CTA": "Project bespreken",
-      "Primary CTA URL": "/contact/",
-      "Media URL": "/special-references/Generated Image September 10, 2026 - 6_50PM.jpg",
-      "Media Alt": "Tegelwerk in inloopdouche"
+      "Primary CTA URL": "/contact/"
     },
     "sections": [
       {
-        "H2": "Specificatie",
-        "Body": "Watermanagement, geometrie, drainage, waterdichting en een precisie-afwerking vormen de basis van de Sppat inloopdouche.",
+        "id": "SHOWER-1",
+        "H2": "Waterdichting onder het tegelwerk",
+        "Body": "In een douchezone worden hoeken en aansluitingen onderdeel van een waterdicht systeem. Rond goot, leidingdoorvoeren en andere kritische punten zijn aanvullende afdichtingsdetails nodig."
+      },
+      {
+        "id": "SHOWER-2",
+        "H2": "Afschot naar de douchegoot",
+        "Body": "De vloer wordt opgebouwd zodat water naar de afvoer wordt geleid en niet in hoeken of tegen aansluitingen blijft staan. De positie van de goot en het tegelformaat bepalen mede hoe de snijlijnen worden opgelost."
+      },
+      {
+        "id": "SHOWER-3",
+        "H2": "Tegelverdeling, nissen en aansluitingen",
+        "Body": "Een technisch goede douche kan visueel alsnog onrustig ogen wanneer de voegverdeling niet klopt. Daarom worden vloer, wand, nis en sanitaire elementen als één compositie uitgezet."
+      },
+      {
+        "id": "SHOWER-4",
+        "H2": "Grootformaat of mozaïek in de douche",
+        "Body": "Grootformaat tegels kunnen goed worden toegepast in een doucheruimte. Omdat de afvoer (drain) lager ligt, moet het water weg kunnen lopen (afschot). Als de tegel te groot is om mee te buigen met het afschot, wordt deze vaak diagonaal doorgezaagd (envelop-snede) of wordt de dekvloer zo aangepast dat een eenzijdig afschot naar een sleufgoot mogelijk is.",
         "bullets": [
-          "Beoordeling en voorbereiding van de ondergrond",
-          "Aanbrengen van waterdichtingssysteem achter het tegelwerk",
-          "Geometrische uitlijning met nissen en afvoer",
-          "Vochtresistente voeg- en kitafwerking"
+          "Mozaïek wordt vaak gebruikt voor het accentueren van nissen of inloopdouches. Omdat mozaïek uit kleine steentjes op een flexibel netje of papier bestaat, volgt het de wand exact. Dit vereist een strakke hand en ervaring om een rustig en doorlopend resultaat te bereiken."
         ]
       },
       {
-        "H2": "Aanvullende informatie",
-        "Body": "Lees meer over onze aanpak in de natte cel."
+        "id": "SHOWER-5",
+        "H2": "Een inloopdouche als onderdeel van een complete renovatie",
+        "Body": "Wilt u liever dat één partij zowel het loodgieterswerk als het tegelwerk verzorgt? Bekijk dan onze dienst voor een complete badkamer renovatie."
       }
     ],
     "links": [],
@@ -1051,35 +1121,52 @@
       "Body": "Neem contact op voor een technische opname.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "name": "Inloopdouche Tegelen",
+    "faq": [],
+    "relatedUrls": [
+      "/tegelwerk/badkamer-tegelen/",
+      "/complete-badkamer-renovatie/",
+      "/specialisaties/grootformaat-tegels/",
+      "/specialisaties/mozaiek-zetten/",
+      "/kennisbank/waterdichting-badkamer-kimband/",
+      "/projecten/"
+    ]
   },
   {
     "url": "/tegelwerk/vloerverwarming-en-tegelen/",
-    "title": "Vloerverwarming & Tegelen | Sppat",
-    "description": "De juiste opbouw en afwerking van tegelwerk op vloerverwarming.",
+    "title": "Vloerverwarming & Tegels | Voorbereiding en Tegelvloer | Sppat",
+    "description": "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers.",
     "hero": {
-      "Eyebrow": "Tegelwerk over vloerverwarming",
-      "H1": "Vloerverwarming en Tegelen",
-      "Body": "Een tegelvloer over vloerverwarming vraagt om de juiste materiaalafstemming en voorbereiding.",
+      "H1": "Tegels op Vloerverwarming",
       "Primary CTA": "Project bespreken",
-      "Primary CTA URL": "/contact/",
-      "Media URL": "/references/WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
-      "Media Alt": "Tegelvloer afgewerkt over vloerverwarming"
+      "Primary CTA URL": "/contact/"
     },
     "sections": [
       {
-        "H2": "Specificatie",
-        "Body": "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers.",
-        "bullets": [
-          "Beoordeling van de vloeropbouw",
-          "Afstemming op verwarmingssysteem",
-          "Gebruik van de juiste lijm- en ontkoppelingssystemen",
-          "Thermische gedragingen en dilataties"
-        ]
+        "id": "HEAT-1",
+        "H2": "Waarom tegels goed combineren met vloerverwarming",
+        "Body": "Keramiek is geschikt als vloerafwerking bij vloerverwarming, maar de complete vloeropbouw moet als systeem worden bekeken. Temperatuurbelasting, aanwezige voegen en eventuele scheurrisico's in de dekvloer mogen niet worden genegeerd."
       },
       {
-        "H2": "Aanvullende informatie",
-        "Body": "Lees meer over vloeren."
+        "id": "HEAT-2",
+        "H2": "Een stabiele en vlakke ondergrond",
+        "Body": "Hoe groter de tegel, hoe minder de afwerking kan corrigeren. De ondergrond wordt daarom beoordeeld op vlakheid, stabiliteit en geschiktheid voor het gekozen formaat."
+      },
+      {
+        "id": "HEAT-3",
+        "H2": "Sleuven, lijm en spanningen in de vloer",
+        "Body": "Ontkoppeling: Bij zwevende dekvloeren, bepaalde houten ondervloeren of risico's op werking van de vloer, kan het gebruik van ontkoppelingsmatten (zoals veelgebruikt in de markt) nodig zijn om de tegel te scheiden van een krimpende ondervloer."
+      },
+      {
+        "id": "HEAT-4",
+        "H2": "Het moment en de wijze van ingebruikname",
+        "Body": "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers."
+      },
+      {
+        "id": "HEAT-5",
+        "H2": "Tegelformaat en legplan",
+        "Body": "Een vloer die doorloopt van hal naar woonkamer en keuken vraagt om één logisch raster. De tegelverdeling wordt niet per kamer opnieuw begonnen, maar afgestemd op de belangrijkste zichtassen en overgangen."
       }
     ],
     "links": [],
@@ -1088,6 +1175,14 @@
       "Body": "Neem contact op voor een technische opname.",
       "Button": "Project bespreken",
       "URL": "/contact/"
-    }
+    },
+    "name": "Vloerverwarming & Tegelen",
+    "faq": [],
+    "relatedUrls": [
+      "/tegelwerk/vloer-tegelen/",
+      "/specialisaties/grootformaat-tegels/",
+      "/specialisaties/keramisch-parket/",
+      "/projecten/grootformaat-tegelvloer-woonruimte/"
+    ]
   }
 ]

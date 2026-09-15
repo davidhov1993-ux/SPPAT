@@ -1,3 +1,4 @@
+import RelatedLinks from '../components/RelatedLinks'
 import { useState, useEffect, useRef } from 'react'
 import type { Page } from '../content/types'
 import RichText from '../components/RichText'
@@ -11,7 +12,6 @@ export default function ToiletRenovatiePage({ page }: { page: Page }) {
 
   const hero = page.hero
   const cta = page.cta
-  const imageSrc = '/media/Generated Image September 11, 2026 - 2_09PM.jpg'
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -35,7 +35,6 @@ export default function ToiletRenovatiePage({ page }: { page: Page }) {
         body={hero.Body}
         ctaUrl={hero['Primary CTA URL']}
         ctaText={hero['Primary CTA']}
-        imageSrc={imageSrc}
         imageAlt={hero.ALT || hero.H1}
         imageClassName="toilet-hero-img"
       />
@@ -68,6 +67,7 @@ export default function ToiletRenovatiePage({ page }: { page: Page }) {
         </section>
       ))}
 
+      <RelatedLinks urls={page.relatedUrls} />
       {cta && (
         <CtaTypeA 
           sectionNum={`0${page.sections.length + 1} / CONTACT`}
@@ -75,8 +75,7 @@ export default function ToiletRenovatiePage({ page }: { page: Page }) {
           body={cta.Body}
           ctaUrl={cta.URL}
           ctaText={cta.Button}
-          imageSrc={imageSrc}
-          imageAlt={hero.ALT || hero.H1}
+            imageAlt={hero.ALT || hero.H1}
         />
       )}
 

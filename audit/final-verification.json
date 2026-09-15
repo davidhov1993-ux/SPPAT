@@ -1,0 +1,2110 @@
+{
+  "routes": 31,
+  "records": [
+    {
+      "id": "IA-01",
+      "status": "PASS",
+      "message": "Exactly 31 approved routes"
+    },
+    {
+      "id": "SEO:/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/complete-badkamer-renovatie/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/complete-badkamer-renovatie/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/complete-badkamer-renovatie/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/complete-badkamer-renovatie/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/complete-badkamer-renovatie/almere/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/complete-badkamer-renovatie/almere/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/complete-badkamer-renovatie/almere/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/complete-badkamer-renovatie/almere/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/complete-toilet-renovatie/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/complete-toilet-renovatie/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/complete-toilet-renovatie/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/complete-toilet-renovatie/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/badkamer-tegelen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/badkamer-tegelen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/badkamer-tegelen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/badkamer-tegelen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/vloer-tegelen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/vloer-tegelen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/vloer-tegelen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/vloer-tegelen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/wand-tegelen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/wand-tegelen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/wand-tegelen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/wand-tegelen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/keuken-tegelen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/keuken-tegelen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/keuken-tegelen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/keuken-tegelen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/balkon-tegelen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/balkon-tegelen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/balkon-tegelen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/balkon-tegelen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/specialisaties/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/specialisaties/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/specialisaties/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/specialisaties/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/specialisaties/grootformaat-tegels/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/specialisaties/grootformaat-tegels/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/specialisaties/grootformaat-tegels/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/specialisaties/grootformaat-tegels/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/specialisaties/mozaiek-zetten/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/specialisaties/mozaiek-zetten/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/specialisaties/mozaiek-zetten/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/specialisaties/mozaiek-zetten/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/specialisaties/natuursteen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/specialisaties/natuursteen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/specialisaties/natuursteen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/specialisaties/natuursteen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/specialisaties/keramisch-parket/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/specialisaties/keramisch-parket/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/specialisaties/keramisch-parket/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/specialisaties/keramisch-parket/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/kennisbank/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/kennisbank/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/kennisbank/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/kennisbank/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/kennisbank/waterdichting-badkamer-kimband/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/kennisbank/waterdichting-badkamer-kimband/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/kennisbank/waterdichting-badkamer-kimband/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/kennisbank/waterdichting-badkamer-kimband/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/kennisbank/tegel-lippage-voorkomen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/kennisbank/tegel-lippage-voorkomen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/kennisbank/tegel-lippage-voorkomen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/kennisbank/tegel-lippage-voorkomen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/kennisbank/onzichtbaar-luik-badkamer/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/kennisbank/onzichtbaar-luik-badkamer/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/kennisbank/onzichtbaar-luik-badkamer/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/kennisbank/onzichtbaar-luik-badkamer/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/kennisbank/epoxyvoeg-vs-cementvoeg/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/kennisbank/epoxyvoeg-vs-cementvoeg/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/kennisbank/epoxyvoeg-vs-cementvoeg/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/kennisbank/epoxyvoeg-vs-cementvoeg/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/projecten/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/projecten/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/projecten/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/projecten/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/over-ons/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/over-ons/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/over-ons/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/over-ons/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/contact/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/contact/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/contact/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/contact/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/inloopdouche-tegelen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/inloopdouche-tegelen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/inloopdouche-tegelen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/inloopdouche-tegelen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/tegelwerk/vloerverwarming-en-tegelen/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/tegelwerk/vloerverwarming-en-tegelen/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/tegelwerk/vloerverwarming-en-tegelen/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/tegelwerk/vloerverwarming-en-tegelen/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/projecten/complete-badkamer-inloopdouche/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/projecten/complete-badkamer-inloopdouche/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/projecten/complete-badkamer-inloopdouche/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/projecten/complete-badkamer-inloopdouche/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/projecten/compacte-badkamer-maatwerk/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/projecten/compacte-badkamer-maatwerk/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/projecten/compacte-badkamer-maatwerk/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/projecten/compacte-badkamer-maatwerk/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/projecten/grootformaat-tegelvloer-woonruimte/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/projecten/grootformaat-tegelvloer-woonruimte/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/projecten/grootformaat-tegelvloer-woonruimte/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/projecten/grootformaat-tegelvloer-woonruimte/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/projecten/inloopdouche-technische-detaillering/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/projecten/inloopdouche-technische-detaillering/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/projecten/inloopdouche-technische-detaillering/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/projecten/inloopdouche-technische-detaillering/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/projecten/complete-toiletrenovatie/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/projecten/complete-toiletrenovatie/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/projecten/complete-toiletrenovatie/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/projecten/complete-toiletrenovatie/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "SEO:/projecten/keuken-leefruimte-tegelvloer/",
+      "status": "PASS",
+      "message": "Rendered SEO, canonical, one exact H1"
+    },
+    {
+      "id": "CONTENT:/projecten/keuken-leefruimte-tegelvloer/",
+      "status": "PASS",
+      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
+    },
+    {
+      "id": "LINKS:/projecten/keuken-leefruimte-tegelvloer/",
+      "status": "PASS",
+      "message": "All local routes and fragments resolve; no leaked placeholders"
+    },
+    {
+      "id": "MEDIA:/projecten/keuken-leefruimte-tegelvloer/",
+      "status": "PASS",
+      "message": "All content images registered and labeled; no masters public"
+    },
+    {
+      "id": "CASE-1:COPY",
+      "status": "PASS",
+      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
+    },
+    {
+      "id": "CASE-1:MEDIA",
+      "status": "PASS",
+      "message": "Source identity, distinct galleries, grouping and AI isolation"
+    },
+    {
+      "id": "CASE-2:COPY",
+      "status": "PASS",
+      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
+    },
+    {
+      "id": "CASE-2:MEDIA",
+      "status": "PASS",
+      "message": "Source identity, distinct galleries, grouping and AI isolation"
+    },
+    {
+      "id": "CASE-3:COPY",
+      "status": "PASS",
+      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
+    },
+    {
+      "id": "CASE-3:MEDIA",
+      "status": "PASS",
+      "message": "Source identity, distinct galleries, grouping and AI isolation"
+    },
+    {
+      "id": "CASE-4:COPY",
+      "status": "PASS",
+      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
+    },
+    {
+      "id": "CASE-4:MEDIA",
+      "status": "PASS",
+      "message": "Source identity, distinct galleries, grouping and AI isolation"
+    },
+    {
+      "id": "CASE-5:COPY",
+      "status": "PASS",
+      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
+    },
+    {
+      "id": "CASE-5:MEDIA",
+      "status": "PASS",
+      "message": "Source identity, distinct galleries, grouping and AI isolation"
+    },
+    {
+      "id": "CASE-6:COPY",
+      "status": "PASS",
+      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
+    },
+    {
+      "id": "CASE-6:MEDIA",
+      "status": "PASS",
+      "message": "Source identity, distinct galleries, grouping and AI isolation"
+    },
+    {
+      "id": "NAV-01",
+      "status": "PASS",
+      "message": "Canonical 3 / 7 / 4 category children and correct approved route names"
+    },
+    {
+      "id": "PROVENANCE-01",
+      "status": "PASS",
+      "message": "Registry classification and source integrity"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.08.jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.08 (1).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.08 (2).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.08 (3).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.01 (5).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (1).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (4).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.07 (6).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-02-26 at 18.19.50.jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-02-26 at 18.20.06.jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.02 (3).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.04 (4).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/WhatsApp Image 2025-05-30 at 21.24.03 (6).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/special-references/WhatsApp Image 2025-05-30 at 21.24.06 (6).jpeg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/special-references/Generated Image September 10, 2026 - 6_50PM.jpg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/special-references/Generated Image September 10, 2026 - 6_53PM.jpg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/special-references/Generated Image September 10, 2026 - 6_57PM.jpg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/special-references/Generated Image September 10, 2026 - 7_02PM.jpg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/media/Generated Image September 11, 2026 - 2_05PM.jpg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/media/Generated Image September 11, 2026 - 2_07PM.jpg",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "MASTER:media/source/references/AEAB080F-23E5-4856-8806-039B4F1FEF85.JPG",
+      "status": "PASS",
+      "message": "Immutable source checksum"
+    },
+    {
+      "id": "CROP:bath08:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-1:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-2:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath08-3:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:compact:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-9:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-1:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-4:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:floor07-6:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:bath-feb:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:wall-feb:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kitchen:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res04-4:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:res03-6:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:substrate:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-bathroom:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-toilet:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-macro:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-niche:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-stone:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:card:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:card:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:card:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:detail:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:detail:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:detail:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:macro:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:macro:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:ai-woodlook:macro:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kennisbank-laser:hero:desktop",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kennisbank-laser:hero:tablet",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "CROP:kennisbank-laser:hero:mobile",
+      "status": "PASS",
+      "message": "Required crop ratio within rounding tolerance; never upscale"
+    },
+    {
+      "id": "PRODUCTION-01",
+      "status": "PASS",
+      "message": "Only processed media deployed"
+    },
+    {
+      "id": "PRODUCTION-02",
+      "status": "PASS",
+      "message": "No source master directories in dist"
+    },
+    {
+      "id": "HEAT-01",
+      "status": "PASS",
+      "message": "Final technical override replaces universal protocol"
+    },
+    {
+      "id": "FORM-01",
+      "status": "PASS",
+      "message": "Unavailable transport cannot report success; privacy gate enforced"
+    },
+    {
+      "id": "404-02",
+      "status": "PASS",
+      "message": "Prerendered 404 has noindex"
+    }
+  ]
+}

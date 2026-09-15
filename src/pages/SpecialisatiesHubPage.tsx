@@ -1,13 +1,15 @@
+import MediaImage from '../components/MediaImage'
+import MediaCaption from '../components/MediaCaption'
+import RelatedLinks from '../components/RelatedLinks'
 import type { Page } from '../content/types'
 import CtaArrow from '../components/CtaArrow'
 import CtaTypeB from '../components/CtaTypeB'
-import Breadcrumbs from '../components/Breadcrumbs'
 
 const HUB_IMAGES = [
-  '/media/Generated Image September 11, 2026 - 2_02PM.jpg',
-  '/media/Generated Image September 11, 2026 - 2_04PM.jpg',
-  '/media/Generated Image September 11, 2026 - 2_05PM.jpg',
-  '/media/Generated Image September 11, 2026 - 2_07PM.jpg'
+  undefined,
+  'ai-niche',
+  'ai-stone',
+  'ai-woodlook'
 ]
 
 export default function SpecialisatiesHubPage({ page }: { page: Page }) {
@@ -20,15 +22,9 @@ export default function SpecialisatiesHubPage({ page }: { page: Page }) {
       {/* SECTION 1: HERO */}
       <section className="spec-hub-hero-section" aria-label="Introductie">
         <div className="container">
-          <Breadcrumbs currentPath={page.url} title={page.title} />
           <div className="spec-hub-hero-container">
             <figure className="spec-hub-hero-media">
-              <img 
-                src="/media/Generated Image September 11, 2026 - 2_00PM.jpg" 
-                alt={hero.ALT || hero.H1}
-                fetchPriority="high"
-                className="spec-hub-hero-img"
-              />
+              <MediaImage mediaId={undefined} role="hero" priority /><MediaCaption mediaId={undefined} />
             </figure>
             <div className="spec-hub-hero-text">
               {hero.Eyebrow && (
@@ -55,26 +51,22 @@ export default function SpecialisatiesHubPage({ page }: { page: Page }) {
       {/* SECTION 2: EXPERTISE GEBIEDEN (Alternating Split Cards) */}
       <section className="spec-hub-expertise-section" aria-label="Expertise gebieden">
         <div className="container">
+          <h2 className="expertise-heading">{page.sections[0]?.H2}</h2>
           <div className="spec-hub-expertise-grid">
             {cards.map((card, index) => (
               <article key={card.Title} className="spec-row">
                 <figure className="spec-row-media-wrapper">
                   <a href={card['CTA URL']} aria-label={card.Title}>
-                    <img 
-                      src={HUB_IMAGES[index] || HUB_IMAGES[0]}
-                      alt={card.Title}
-                      loading="lazy"
-                      className="spec-row-img"
-                    />
+                    <MediaImage mediaId={HUB_IMAGES[index] || HUB_IMAGES[0]} role="card" /><MediaCaption mediaId={HUB_IMAGES[index] || HUB_IMAGES[0]} />
                   </a>
                 </figure>
                 <div className="spec-row-text">
                   <span className="section-num" aria-hidden="true">
                     0{index + 1} / {card.Title.toUpperCase().split(' ')[0]}
                   </span>
-                  <h2>
+                  <h3>
                     <a href={card['CTA URL']}>{card.Title}</a>
-                  </h2>
+                  </h3>
                   <p className="lead">
                     {card.Body}
                   </p>
@@ -90,6 +82,7 @@ export default function SpecialisatiesHubPage({ page }: { page: Page }) {
       </section>
 
       {/* SECTION 3: FINAL CTA */}
+      <RelatedLinks urls={page.relatedUrls} />
       {cta && (
         <CtaTypeB 
           sectionNum="03 / CONTACT"

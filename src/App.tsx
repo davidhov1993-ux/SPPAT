@@ -3,6 +3,7 @@ import pageData from './content/pages.json'
 import projectsData from './content/projects.json'
 import type { Page } from './content/types'
 import Header from './components/Header'
+import Breadcrumbs from './components/Breadcrumbs'
 import Footer from './components/Footer'
 import CtaArrow from './components/CtaArrow'
 import HomePage from './pages/HomePage'
@@ -82,7 +83,7 @@ export default function App({
   
   useEffect(() => {
     if (projectCase) {
-      document.title = `${projectCase.title} | Sppat`
+      document.title = projectCase.seoTitle
       document.querySelector('meta[name="description"]')?.setAttribute('content', projectCase.meta)
     } else if (page) {
       document.title = page.title
@@ -113,7 +114,8 @@ export default function App({
   return (
     <div className="site-wrapper">
       <Header path={normalized} />
-      <main id="main" className="site-main">
+      <main id="main" className="site-main" tabIndex={-1}>
+        {normalized !== "/" && (page || projectCase) && <div className="container"><Breadcrumbs currentPath={normalized} /></div>}
         {projectCase ? (
           <ProjectDetailPage project={projectCase} />
         ) : page ? (

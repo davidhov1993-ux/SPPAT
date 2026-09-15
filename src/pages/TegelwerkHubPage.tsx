@@ -1,3 +1,7 @@
+import MediaImage from '../components/MediaImage'
+import MediaCaption from '../components/MediaCaption'
+import { serviceMedia } from '../data/media'
+import RelatedLinks from '../components/RelatedLinks'
 import RichText from "../components/RichText"
 import { useState, useEffect, useRef } from 'react'
 import type { Page } from '../content/types'
@@ -12,13 +16,6 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
   
   const routingSection = page.sections.find(s => s.H2 === 'Onze tegelwerk diensten') || page.sections[0]
   
-  const CARD_IMAGES = [
-    '/media/Generated Image September 11, 2026 - 11_36AM.jpg',
-    '/media/README.jpg',
-    '/media/Generated Image September 11, 2026 - 11_16AM.jpg',
-    '/media/Generated Image September 11, 2026 - 11_18AM.jpg',
-    '/media/Generated Image September 11, 2026 - 11_38AM.jpg'
-  ]
 
 
   const hero = page.hero
@@ -49,7 +46,6 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
         body={hero.Body}
         ctaUrl={hero['Primary CTA URL']}
         ctaText={hero['Primary CTA'] || 'Project bespreken'}
-        imageSrc="/media/Generated Image September 11, 2026 - 11_48AM.jpg"
         imageAlt={hero.ALT || 'Getegelde vloer in moderne woonruimte'}
       />
 
@@ -69,20 +65,15 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
             <div className="tegel-routing-grid">
               {routingSection.cards?.map((card, index) => (
                 <article key={card['CTA URL']} className={`tegel-grid-item tegel-grid-item-${index + 1}`}>
-                  <a
+                  {serviceMedia[card['CTA URL']]?.hero && <a
                     href={card['CTA URL']}
                     className="tegel-grid-media-link"
                     aria-label={card.Title}
                   >
                     <figure className="tegel-grid-figure">
-                      <img
-                        src={CARD_IMAGES[index] || '/media/README.jpg'}
-                        alt={card.Title}
-                        loading={index === 0 ? 'eager' : 'lazy'}
-                        className={`tegel-grid-img ${index === 0 ? 'tegel-img-16-9' : 'tegel-img-1-1'}`}
-                      />
+                      {serviceMedia[card['CTA URL']]?.hero && <><MediaImage mediaId={serviceMedia[card['CTA URL']].hero!} role="card" /><MediaCaption mediaId={serviceMedia[card['CTA URL']].hero!} /></>}
                     </figure>
-                  </a>
+                  </a>}
                   <div className="tegel-grid-content">
                     <span className="tegel-item-num" aria-hidden="true">0{index + 1} / {card.Title.split(' ')[0].toUpperCase()}</span>
                     <h3 className="tegel-item-title">
@@ -141,6 +132,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
         </section>
       )}
 
+      <RelatedLinks urls={page.relatedUrls} />
       <CtaTypeB 
         sectionNum="03 / CONTACT"
         title={cta?.H2 || 'Uw tegelproject bespreken?'}

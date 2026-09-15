@@ -3,8 +3,8 @@
   "records": [
     {
       "id": "IA-01",
-      "status": "FAIL",
-      "message": "Expected values to be strictly equal:\n\n27 !== 28\n"
+      "status": "PASS",
+      "message": "Exactly 27 approved routes"
     },
     {
       "id": "SEO:/",

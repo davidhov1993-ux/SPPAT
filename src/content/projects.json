@@ -184,42 +184,5 @@
       "ai-macro"
     ],
     "groupingConfirmed": true
-  },
-  {
-    "id": "CASE-05",
-    "slug": "complete-toiletrenovatie",
-    "title": "Complete toiletrenovatie",
-    "seoTitle": "Complete Toiletrenovatie | Sppat Projectcase",
-    "meta": "Representatieve complete toiletrenovatie met inbouwreservoir, wandtegels, maatwerkafwerking en een rustig voegbeeld.",
-    "h1": "Een kleine ruimte die technisch volledig opnieuw is opgebouwd",
-    "intro": "Een toiletruimte heeft weinig vierkante meters, maar relatief veel technische aansluitingen. Het inbouwreservoir, leidingwerk, wandafwerking, vloer en eventuele fontein moeten binnen een compacte maatvoering op elkaar aansluiten.",
-    "sections": [
-      {
-        "h2": "Inbouwtechniek als basis",
-        "body": "De voorzetwand rond het reservoir bepaalt de maatvoering van het uiteindelijke tegelvlak. Daarom worden positie, diepte en aansluitingen eerst technisch vastgelegd."
-      },
-      {
-        "h2": "Tegelwerk dat de ruimte groter laat lezen",
-        "body": "In compacte ruimtes is een rustige verdeling belangrijk. Voegbreedtes, tegelhoogtes en aansluitingen rond de bedieningsplaat en fontein worden als één geheel bekeken."
-      },
-      {
-        "h2": "Afwerking van randen en overgangen",
-        "body": "De kwaliteit zit vaak in de laatste centimeters: tegelranden, hoeken, kitnaden en de overgang naar stuc- of schilderwerk."
-      }
-    ],
-    "technicalPoints": [],
-    "relatedServiceUrls": [
-      "/complete-toilet-renovatie/",
-      "/tegelwerk/wand-tegelen/"
-    ],
-    "cta": {
-      "label": "Complete toilet renovatie",
-      "url": "/complete-toilet-renovatie/"
-    },
-    "tier": "B",
-    "heroMedia": "ai-toilet",
-    "galleryMedia": [],
-    "referenceMedia": [],
-    "groupingConfirmed": true
   }
 ]

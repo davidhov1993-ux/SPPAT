@@ -1,7 +1,7 @@
 import CtaArrow from './CtaArrow'
 
 interface CtaTypeBProps {
-  sectionNum?: string
+  
   title?: string
   body?: string
   ctaUrl?: string
@@ -19,7 +19,6 @@ export default function CtaTypeB({
     <section className="service-cta-section" aria-label="Afsluiting & Contact">
       <div className="container">
         <div className="cta-type-b">
-          {sectionNum && <span className="section-num" aria-hidden="true">{sectionNum}</span>}
           <h2>{title}</h2>
           {body && <p className="lead cta-lead">{body}</p>}
           <div className="cta-action">

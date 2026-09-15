@@ -234,7 +234,7 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
 
       <RelatedLinks urls={page.relatedUrls} />
       <CtaTypeA 
-        sectionNum="04 / CONTACT"
+        
         title={cta?.H2 || 'Start uw renovatie'}
         lead={cta?.Body || 'Neem contact op voor een technische opname.'}
         ctaUrl={cta?.URL || '/contact/'}

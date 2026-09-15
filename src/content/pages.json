@@ -17,22 +17,16 @@
             "CTA URL": "/complete-badkamer-renovatie/"
           },
           {
-            "Title": "Toilet Renovatie",
-            "Body": "Uw toiletruimte vakkundig vernieuwd. Inclusief het verleggen van leidingen, installatie van inbouwreservoirs en de integratie van strak tegel- of stucwerk.",
-            "CTA": "Lees meer",
-            "CTA URL": "/complete-toilet-renovatie/"
-          },
-          {
-            "Title": "Professioneel Tegelwerk",
+            "Title": "Tegelwerk",
             "Body": "Vloeren, wanden en keukens. Voor een strakke, duurzame afwerking is nauwkeurigheid in de voorbereiding en uitvoering essentieel.",
             "CTA": "Lees meer",
             "CTA URL": "/tegelwerk/"
           },
           {
-            "Title": "Tegel Specialisaties",
+            "Title": "Technisch & Premium Uitvoering",
             "Body": "De technische verwerking van veeleisende materialen zoals XXL-platen, natuursteen, keramisch parket en gedetailleerd mozaïekwerk.",
             "CTA": "Lees meer",
-            "CTA URL": "/specialisaties/"
+            "CTA URL": "/tegelwerk/"
           }
         ]
       },
@@ -601,29 +595,24 @@
       {
         "id": "SECTION 2",
         "Type": "Cards",
-        "H2": "Onze expertisegebieden",
         "cards": [
           {
             "Title": "Grootformaat Tegels (XXL)",
-            "Body": "Verwerking van grote keramische platen. Toepassing van technieken om hoogteverschillen te minimaliseren en breuk tijdens installatie te voorkomen.",
             "CTA": "Lees meer",
             "CTA URL": "/specialisaties/grootformaat-tegels/"
           },
           {
             "Title": "Mozaïek Zetten",
-            "Body": "Detailwerk voor nissen of afwijkende vormen, met aandacht voor naadloze mat-overgangen en uitlijning.",
             "CTA": "Lees meer",
             "CTA URL": "/specialisaties/mozaiek-zetten/"
           },
           {
             "Title": "Natuursteen Leggen",
-            "Body": "Vakkundige plaatsing van materialen zoals marmer en travertin, rekening houdend met de poreusheid en dikteverschillen van het materiaal.",
             "CTA": "Lees meer",
             "CTA URL": "/specialisaties/natuursteen/"
           },
           {
             "Title": "Keramisch Parket",
-            "Body": "Houtlook tegels gelegd in patronen zoals wildverband of visgraat, met aandacht voor de natuurlijke buiging van lange tegels.",
             "CTA": "Lees meer",
             "CTA URL": "/specialisaties/keramisch-parket/"
           }

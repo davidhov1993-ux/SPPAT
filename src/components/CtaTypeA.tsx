@@ -3,7 +3,7 @@ import MediaImage from './MediaImage'
 import MediaCaption from './MediaCaption'
 
 interface CtaTypeAProps {
-  sectionNum?: string
+  
   title?: string
   subtitle?: string
   lead?: string
@@ -30,7 +30,6 @@ export default function CtaTypeA({
       <div className="container">
         <div className={`cta-type-a-grid almere-cta-grid ${mediaId ? "" : "text-only-cta"}`}>
           <div className="cta-type-a-text almere-cta-text">
-            {sectionNum && <span className="section-num" aria-hidden="true">{sectionNum}</span>}
             <h2>{title}</h2>
             {subtitle && <h3 className="cta-subheading">{subtitle}</h3>}
             {lead && <p className="lead cta-lead">{lead}</p>}

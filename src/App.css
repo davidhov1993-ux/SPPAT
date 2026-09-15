@@ -547,13 +547,13 @@
   margin-top: var(--space-xs);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .cta-type-b {
     max-width: 100%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .cta-type-b {
     padding: 80px 0;
   }
@@ -1369,7 +1369,7 @@
 /* --------------------------------------------------
    13. RESPONSIVE BREAKPOINTS (1024px, 768px, 480px)
    -------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .nav-desktop,
   .header-action-desktop {
     display: none;
@@ -1429,17 +1429,17 @@
   }
 
   .home-hero-text {
-    order: 1;
-    width: 100%;
-  }
-
-  .home-hero-media {
     order: 2;
     width: 100%;
   }
 
+  .home-hero-media {
+    order: 1;
+    width: 100%;
+  }
+
   .home-hero-img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 5;
     width: 100%;
     object-fit: cover;
     object-position: 70% center;
@@ -1497,7 +1497,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   /* Mobile Split Heroes (standard subpages): text first, image second */
   .hero-split-grid {
     display: flex;
@@ -1637,7 +1637,7 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .badkamer-phase-section,
   .badkamer-intro-section,
   .badkamer-standard-section,
@@ -1694,7 +1694,7 @@
   overflow-wrap: normal;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .badkamer-hero-section {
     padding-bottom: 80px;
   }
@@ -1712,7 +1712,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .badkamer-hero-section {
     padding-top: var(--space-xs);
     padding-bottom: 60px;
@@ -1752,7 +1752,7 @@
   letter-spacing: -0.01em;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .badkamer-intro-container {
     grid-column: 1 / -1;
   }
@@ -1831,7 +1831,7 @@
   gap: var(--space-sm);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .phase-1-grid {
     display: flex;
     flex-direction: column;
@@ -1853,7 +1853,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .phase-1-img {
     aspect-ratio: 1 / 1;
   }
@@ -1888,7 +1888,7 @@
   border: 1px solid var(--color-border);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .phase-2-grid {
     display: flex;
     flex-direction: column;
@@ -1896,7 +1896,7 @@
   }
 
   .phase-2-text {
-    order: 1;
+    order: 2;
     width: 100%;
   }
 
@@ -1911,7 +1911,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .phase-2-img {
     aspect-ratio: 4 / 3;
   }
@@ -1946,7 +1946,7 @@
   border: 1px solid var(--color-border);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .phase-3-text {
     grid-column: 1 / -1;
     width: 100%;
@@ -1962,7 +1962,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .phase-3-media {
     margin-left: calc(-1 * var(--grid-margin));
     margin-right: calc(-1 * var(--grid-margin));
@@ -2008,7 +2008,7 @@
   gap: var(--space-sm);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .standard-grid {
     display: flex;
     flex-direction: column;
@@ -2030,7 +2030,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .standard-img {
     aspect-ratio: 4 / 5;
   }
@@ -2070,7 +2070,7 @@
   color: var(--color-text);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .pricing-cards-grid {
     grid-template-columns: 1fr;
     gap: var(--space-sm);
@@ -2114,7 +2114,7 @@
   border: 1px solid var(--color-border);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .badkamer-conclusion-grid {
     display: flex;
     flex-direction: column;
@@ -2122,12 +2122,12 @@
   }
 
   .badkamer-conclusion-text {
-    order: 1;
+    order: 2;
     width: 100%;
   }
 
   .badkamer-conclusion-media {
-    order: 2;
+    order: 1;
     width: 100%;
   }
 
@@ -2136,7 +2136,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .badkamer-conclusion-img {
     aspect-ratio: 1 / 1;
   }
@@ -2265,7 +2265,7 @@
   letter-spacing: -0.03em;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .tegel-hub-hero-section {
     padding-bottom: 80px; /* spacing-xl mobile */
   }
@@ -2284,7 +2284,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .tegel-hub-hero-section {
     padding-top: var(--space-xs);
     padding-bottom: 80px;
@@ -2440,7 +2440,7 @@
 }
 
 /* Tablet (768–1024px): 2-column grid. Images crop to 4:3. Item 5 spans full width at the bottom. */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 431px) and (max-width: 834px) {
   .tegel-routing-section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -2469,7 +2469,7 @@
 }
 
 /* Mobile (<768px): 1-column stack. All images crop to 4:3. IMAGE FIRST / TEXT SECOND for every item. */
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .tegel-routing-section {
     padding-top: 64px; /* spacing-lg mobile */
     padding-bottom: 64px;
@@ -2575,13 +2575,13 @@
   color: var(--color-accent);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .tegel-pricing-container {
     grid-column: 1 / -1;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .tegel-pricing-section {
     padding-top: 64px; /* spacing-lg mobile */
     padding-bottom: 64px;
@@ -2631,13 +2631,13 @@
   margin-top: var(--space-xs);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .tegel-hub-cta-block {
     grid-column: 1 / -1;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .tegel-hub-cta-section.cta-type-b {
     padding-top: 80px; /* spacing-xl mobile */
     padding-bottom: 80px;
@@ -2709,7 +2709,7 @@
   height: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .service-hero-section {
     padding-bottom: 80px;
   }
@@ -2723,7 +2723,7 @@
 }
 
 /* Mobile: Stacked, TEXT FIRST / PLACEHOLDER SECOND */
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .service-hero-section {
     padding-top: var(--space-xs);
     padding-bottom: 80px;
@@ -2734,11 +2734,11 @@
     gap: var(--space-md);
   }
   .service-hero-text {
-    order: 1;
+    order: 2;
   }
   .service-hero-media {
   width: 100%;
-    order: 2;
+    order: 1;
   }
 }
 
@@ -2803,13 +2803,13 @@
   color: var(--color-text);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .service-content-block {
     max-width: 100%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .service-content-section {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -2854,13 +2854,13 @@
   margin-top: var(--space-xs);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .service-links-block {
     grid-column: 1 / -1;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   .service-links-section {
     padding-top: 64px;
     padding-bottom: 64px;
@@ -3040,7 +3040,7 @@
   max-width: 800px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .spec-nested-hero-text {
     grid-column: 1 / -1;
   }
@@ -3099,7 +3099,7 @@
   color: var(--color-accent);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .spec-nested-content-block {
     grid-column: 1 / -1;
   }
@@ -3134,7 +3134,7 @@
 /* ==================================================
    HOTFIX: ARCHITECTURAL OVERLAP MEDIA QUERIES
    ================================================== */
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .home-hero-grid,
   .service-hero-grid {
     display: flex !important;
@@ -3543,7 +3543,7 @@ p .inline-link { display: inline; white-space: normal; }
 .breadcrumbs-current { color: var(--color-primary, #000); opacity: 0.5; }
 
 /* RESPONSIVE: TABLET LANDSCAPE (~1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 834px) {
   .kb-hub-hero-text { grid-column: 1 / 7; }
   .kb-hub-hero-img-wrapper { grid-column: 7 / 13; }
   
@@ -3620,12 +3620,3 @@ p .inline-link { display: inline; white-space: normal; }
   width: 1px;
 }
 
-/* HOTFIX: IMAGE THEN TEXT ORDERING FOR ALL MOBILE SECTIONS (EXCEPT KENNISBANK) */
-@media (max-width: 1024px) {
-  .home-hero-text, .service-hero-text, .phase-2-text, .phase-5-text, .approach-text, .quality-text {
-    order: 2 !important;
-  }
-  .home-hero-media, .service-hero-media, .phase-2-media, .phase-5-media, .approach-media, .quality-media {
-    order: 1 !important;
-  }
-}

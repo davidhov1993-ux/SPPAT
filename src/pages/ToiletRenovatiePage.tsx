@@ -69,7 +69,7 @@ export default function ToiletRenovatiePage({ page }: { page: Page }) {
       <RelatedLinks urls={page.relatedUrls} />
       {cta && (
         <CtaTypeA 
-          sectionNum={`0${page.sections.length + 1} / CONTACT`}
+          
           title={cta.H2 || 'Start uw renovatie'}
           body={cta.Body}
           ctaUrl={cta.URL}

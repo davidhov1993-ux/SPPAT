@@ -59,17 +59,6 @@ export default function HomePage({ page }: { page: Page }) {
         <div className="container">
           <div className="home-services-header">
             <h2>{servicesBlock.H2}</h2>
-            <nav className="home-jump-nav" aria-label="Diensten navigatie">
-              <a href="#werkzaamheden" className="home-jump-link">
-                Werkzaamheden <span className="btn-arrow" aria-hidden="true">↓</span>
-              </a>
-              <a href="#tegelwerk" className="home-jump-link">
-                Tegelwerk <span className="btn-arrow" aria-hidden="true">↓</span>
-              </a>
-              <a href="#specialisaties" className="home-jump-link">
-                Specialisaties <span className="btn-arrow" aria-hidden="true">↓</span>
-              </a>
-            </nav>
           </div>
 
           <div className="services-interactive-layout">
@@ -88,9 +77,6 @@ export default function HomePage({ page }: { page: Page }) {
                     onFocus={() => setActiveService(idx)}
                   >
                     <div className="service-item-content">
-                      <span className="card-order-num" aria-hidden="true">
-                        {String(idx + 1).padStart(2, '0')}
-                      </span>
                       <h3 className="card-title">
                         <a href={card['CTA URL']}>{card.Title}</a>
                       </h3>

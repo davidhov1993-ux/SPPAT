@@ -93,7 +93,7 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
 
       <RelatedLinks urls={page.relatedUrls} />
       <CtaTypeA 
-        sectionNum="04 / CONTACT"
+        
         title={cta?.H2 || 'Uw badkamer in Almere renoveren?'}
         body={cta?.Body || 'Wij denken technisch met u mee. Neem contact op voor een opname.'}
         ctaUrl={cta?.URL || '/contact/'}

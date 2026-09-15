@@ -74,7 +74,6 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
                     </figure>
                   </a>}
                   <div className="tegel-grid-content">
-                    <span className="tegel-item-num" aria-hidden="true">0{index + 1} / {card.Title.split(' ')[0].toUpperCase()}</span>
                     <h3 className="tegel-item-title">
                       <a href={card['CTA URL']}>{card.Title}</a>
                     </h3>
@@ -132,7 +131,7 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
 
       <RelatedLinks urls={page.relatedUrls} />
       <CtaTypeB 
-        sectionNum="03 / CONTACT"
+        
         title={cta?.H2 || 'Uw tegelproject bespreken?'}
         body={cta?.Body || 'Wij beoordelen de ondergrond en bespreken de mogelijkheden qua formaten en legverbanden.'}
         ctaUrl={cta?.URL || '/contact/'}

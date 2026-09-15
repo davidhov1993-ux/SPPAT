@@ -7,7 +7,6 @@ import Breadcrumbs from './components/Breadcrumbs'
 import Footer from './components/Footer'
 import CtaArrow from './components/CtaArrow'
 import HomePage from './pages/HomePage'
-import CommercialPage from './pages/CommercialPage'
 import BadkamerRenovatiePage from './pages/BadkamerRenovatiePage'
 import BadkamerRenovatieAlmerePage from './pages/BadkamerRenovatieAlmerePage'
 import TegelwerkHubPage from './pages/TegelwerkHubPage'
@@ -38,9 +37,6 @@ function renderPage(page: Page) {
   }
   if (page.url === '/complete-toilet-renovatie/') {
     return <ToiletRenovatiePage page={page} />
-  }
-  if (page.url.startsWith('/complete-badkamer-renovatie')) {
-    return <CommercialPage page={page} />
   }
   if (page.url === '/tegelwerk/') {
     return <TegelwerkHubPage page={page} />

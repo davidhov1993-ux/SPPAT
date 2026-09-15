@@ -152,7 +152,7 @@ export default function KennisbankPage({ page }: { page: Page }) {
             <div className="kb-article-cta-grid">
               <div className="kb-article-cta-container">
                 <CtaTypeB 
-                  sectionNum=""
+                  
                   title={page.cta.H2 || ''}
                   body={page.cta.Body}
                   ctaUrl={page.cta.URL}

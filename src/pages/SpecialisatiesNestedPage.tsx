@@ -80,7 +80,7 @@ export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
       <RelatedLinks urls={page.relatedUrls} />
       {cta && (
         <CtaTypeB 
-          sectionNum="03 / CONTACT"
+          
           title={cta.H2 || 'Klaar voor de volgende stap?'}
           body={cta.Body}
           ctaUrl={cta.URL}

@@ -30,14 +30,6 @@ export default function SpecialisatiesHubPage({ page }: { page: Page }) {
           </ul>
         </div>
       </section>
-      
-      <div style={{ display: 'none' }}>
-        {/* Render body content of cards to satisfy verify.mjs without presenting them visually in the hub */}
-        {cards.map((card) => (
-          <div key={card.Body}>{card.Body}</div>
-        ))}
-        {page.sections[0]?.H2}
-      </div>
 
       <RelatedLinks urls={page.relatedUrls} />
       {cta && (

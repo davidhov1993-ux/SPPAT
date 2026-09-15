@@ -2927,7 +2927,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 834px) {
   .spec-hub-hero-img {
     aspect-ratio: 4 / 5;
   }
@@ -3620,3 +3620,18 @@ p .inline-link { display: inline; white-space: normal; }
   width: 1px;
 }
 
+
+@media (max-width: 834px) {
+  .service-content-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-content-layout .service-detail-media {
+    order: 1;
+    width: 100%;
+  }
+  .service-content-layout .service-content-block {
+    order: 2;
+    width: 100%;
+  }
+}

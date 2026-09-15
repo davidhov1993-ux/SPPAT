@@ -1,92 +1,113 @@
-import RelatedLinks from '../components/RelatedLinks'
+import { useState, useEffect, useRef } from 'react'
 import type { Page } from '../content/types'
-import HeroSplit from '../components/HeroSplit'
-import CtaTypeB from '../components/CtaTypeB'
 import RichText from '../components/RichText'
-
-const NESTED_IMAGES: Record<string, string | undefined> = {
-  '/specialisaties/grootformaat-tegels/': undefined,
-  '/specialisaties/mozaiek-zetten/': 'ai-niche',
-  '/specialisaties/natuursteen/': 'ai-stone',
-  '/specialisaties/keramisch-parket/': 'ai-woodlook'
-}
+import HeroSplit from '../components/HeroSplit'
+import StickyMobileCta from '../components/StickyMobileCta'
+import CtaTypeB from '../components/CtaTypeB'
+import RelatedLinks from '../components/RelatedLinks'
+import MediaImage from '../components/MediaImage'
+import MediaCaption from '../components/MediaCaption'
 
 export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
+  const [pastHero, setPastHero] = useState(false)
+  const heroRef = useRef<HTMLElement>(null)
   const hero = page.hero
-  const imageSrc = NESTED_IMAGES[page.url] || undefined
-  const cta = page.cta
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const observer = new IntersectionObserver(([entry]) => setPastHero(!entry.isIntersecting && entry.boundingClientRect.top < 0))
+    if (heroRef.current) observer.observe(heroRef.current)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <div className="spec-nested-page">
-      <HeroSplit currentPath={page.url} mediaId={imageSrc} title={hero.H1} eyebrow={hero.Eyebrow} body={hero.Body} ctaUrl={hero['Primary CTA URL']} ctaText={hero['Primary CTA']} />
-
-      {/* SECTION 2 & 3: CONTENT */}
-      {page.sections.map((section, index) => (
-        <section key={index} className="spec-nested-content-section" aria-label={section.H2 || 'Details'}>
-          <div className="container">
-            <div className="spec-nested-content-grid">
-              <div className="spec-nested-content-block">
-                {section.H2 && <h2>{section.H2}</h2>}
-                {section.Body && (
-                  <p className="lead">
-                    <RichText text={section.Body} links={page.links} />
-                  </p>
-                )}
-                
-                {section.bullets && section.bullets.length > 0 && (
-                  <ul>
-                    {section.bullets.map((bullet, bIdx) => (
-                      <li key={bIdx}>
-                        <RichText text={bullet} links={page.links} />
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                
-                {page.links && page.links.filter(l => (l.placement === section.id || (index === page.sections.length - 1 && !page.sections.find(s => s.id === l.placement))) && !section.Body?.includes(l.anchor)).map((link, idx) => (
-                  <div key={idx} style={{ marginTop: '16px' }}>
-                    <a className="inline-link" href={link.url}>{link.anchor}</a>
-                  </div>
-                ))}
-
-              </div>
-            </div>
-          </div>
-        </section>
-      ))}
-
-      {/* FAQ IF EXISTS */}
-      {page.faq && page.faq.length > 0 && (
-        <section className="spec-nested-content-section" aria-label="FAQ">
-          <div className="container">
-            <div className="spec-nested-content-grid">
-              <div className="spec-nested-content-block">
-                <h2>Veelgestelde vragen</h2>
-                <div className="almere-faq-list" style={{ textAlign: 'left', marginTop: '32px' }}>
-                  {page.faq.map((item, index) => (
-                    <div className="almere-faq-item" key={index}>
-                      <h3 className="almere-faq-question">{item.question}</h3>
-                      <p className="almere-faq-answer">{item.answer}</p>
-                    </div>
-                  ))}
+    <div className="service-page">
+      <HeroSplit 
+        currentPath={page.url} 
+        ref={heroRef} 
+        eyebrow={hero.Eyebrow} 
+        title={hero.H1} 
+        body={hero.Body} 
+        ctaUrl={hero['Primary CTA URL']} 
+        ctaText={hero['Primary CTA']} 
+      />
+      
+      {page.sections.map((section, index) => {
+        if (section.Type === 'Text') {
+          return (
+            <section key={section.id || index} className="service-content-section" aria-label={section.H2}>
+              <div className="container">
+                <div className="service-content-block">
+                  <h2>{section.H2}</h2>
+                  {section.Body?.split('\n\n').map((text, i) => <p key={i}><RichText text={text} links={page.links} /></p>)}
+                  {!!section.bullets?.length && <ul className="service-spec-list">{section.bullets.map((bullet, i) => <li key={i}><RichText text={bullet} links={page.links} /></li>)}</ul>}
                 </div>
               </div>
-            </div>
+            </section>
+          )
+        }
+        if (section.Type === 'Asymmetrical') {
+          return (
+            <section key={section.id || index} className="service-content-section" aria-label={section.H2}>
+              <div className="container service-content-layout">
+                <div className="service-content-block">
+                  <h2>{section.H2}</h2>
+                  {section.Body?.split('\n\n').map((text, i) => <p key={i}><RichText text={text} links={page.links} /></p>)}
+                </div>
+                {section.mediaId! && (
+                  <figure className="service-detail-media">
+                    <MediaImage mediaId={section.mediaId as string} role="detail" />
+                    <MediaCaption mediaId={section.mediaId as string} />
+                  </figure>
+                )}
+              </div>
+            </section>
+          )
+        }
+        if (section.Type === 'Macro') {
+          return (
+            <section key={section.id || index} className="service-content-section" aria-label={section.H2}>
+              <div className="container service-content-layout">
+                <div className="service-content-block">
+                  <h2>{section.H2}</h2>
+                  {section.Body?.split('\n\n').map((text, i) => <p key={i}><RichText text={text} links={page.links} /></p>)}
+                </div>
+                {section.mediaId! && (
+                  <aside className="explanatory-media" aria-label="Illustratieve technische toelichting">
+                    <figure>
+                      <MediaImage mediaId={section.mediaId as string} role="macro" />
+                      <MediaCaption mediaId={section.mediaId as string} />
+                    </figure>
+                  </aside>
+                )}
+              </div>
+            </section>
+          )
+        }
+        return null
+      })}
+
+      {!!page.faq?.length && (
+        <section className="container faq-section" aria-label="Veelgestelde vragen">
+          <h2 className="faq-header">Veelgestelde vragen</h2>
+          <div className="faq-list">
+            {page.faq.map(faq => (
+              <details key={faq.question} className="faq-item">
+                <summary className="faq-summary">
+                  <span>{faq.question}</span><span className="faq-icon" aria-hidden="true">+</span>
+                </summary>
+                <p className="faq-body">{faq.answer}</p>
+              </details>
+            ))}
           </div>
         </section>
       )}
 
-      {/* SECTION 4: FINAL CTA */}
       <RelatedLinks urls={page.relatedUrls} />
-      {cta && (
-        <CtaTypeB 
-          
-          title={cta.H2 || 'Klaar voor de volgende stap?'}
-          body={cta.Body}
-          ctaUrl={cta.URL}
-          ctaText={cta.Button}
-        />
-      )}
+      
+      {page.cta && <CtaTypeB title={page.cta.H2} body={page.cta.Body} ctaUrl={page.cta.URL} ctaText={page.cta.Button} />}
+      
+      <StickyMobileCta isVisible={pastHero} label={hero.H1} />
     </div>
   )
 }

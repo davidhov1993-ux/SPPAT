@@ -268,53 +268,78 @@
     "description": "Uw specialist voor tegelwerk. Van het leggen van tegelvloeren en wandtegels tot de waterdichte afwerking van badkamers en hittebestendige keukens.",
     "sections": [
       {
+        "id": "INTRO",
+        "Type": "Text",
+        "H2": "Meer dan alleen tegels zetten",
+        "Body": "Onze aanpak richt zich op het complete traject: van het beoordelen en voorbereiden van de ondergrond, tot het uitdenken van het legplan en de naadloze verwerking van grootformaat tegels, natuursteen of keramisch parket."
+      },
+      {
         "id": "SECTION 2",
         "Type": "Cards",
         "H2": "Onze tegelwerk diensten",
         "cards": [
           {
-            "Title": "Vloertegels leggen",
-            "Body": "Vlakke, robuuste vloeren voor woonkamers en hallen. Inclusief voorbereiding en rekening houdend met vloerverwarming.",
-            "CTA": "Lees meer",
+            "Title": "Badkamer tegelen",
+            "Body": "Complete betegeling van uw badkamer inclusief inloopdouche.",
+            "CTA URL": "/tegelwerk/badkamer-tegelen/"
+          },
+          {
+            "Title": "Vloertegels",
+            "Body": "Vakkundige plaatsing van tegelvloeren, met of zonder vloerverwarming.",
             "CTA URL": "/tegelwerk/vloer-tegelen/"
           },
           {
-            "Title": "Wandtegels zetten",
-            "Body": "Uitgelijnde wanden voor keukens, toiletten en badkamers. Aandacht voor een logisch en rustig voegenspel.",
-            "CTA": "Lees meer",
+            "Title": "Wandtegels",
+            "Body": "Strakke wandafwerking voor een naadloos en duurzaam resultaat.",
             "CTA URL": "/tegelwerk/wand-tegelen/"
           },
           {
-            "Title": "Badkamer tegelen",
-            "Body": "Heeft u het loodgieterswerk al geregeld? Wij verzorgen het uitvlakken, de waterdichting en het tegelwerk.",
-            "CTA": "Lees meer",
-            "CTA URL": "/tegelwerk/badkamer-tegelen/"
+            "Title": "Grootformaat / XXL",
+            "Body": "Gespecialiseerde verwerking van naadloze XXL-tegels en platen.",
+            "CTA URL": "/specialisaties/grootformaat-tegels/"
+          },
+          {
+            "Title": "Mozaïek",
+            "Body": "Gedetailleerd mozaïekwerk voor accenten, nissen of vloeren.",
+            "CTA URL": "/specialisaties/mozaiek-zetten/"
+          },
+          {
+            "Title": "Natuursteen",
+            "Body": "Vakmanschap voor het leggen en onderhouden van natuursteen.",
+            "CTA URL": "/specialisaties/natuursteen/"
+          },
+          {
+            "Title": "Keramisch parket",
+            "Body": "De warme uitstraling van hout met het gemak van keramiek.",
+            "CTA URL": "/specialisaties/keramisch-parket/"
           },
           {
             "Title": "Keuken tegelen",
-            "Body": "Hitte- en vuilbestendige achterwanden en robuuste keukenvloeren, netjes afgewerkt rondom stopcontacten.",
-            "CTA": "Lees meer",
+            "Body": "Praktische en strakke betegeling voor achterwanden en keukenvloeren.",
             "CTA URL": "/tegelwerk/keuken-tegelen/"
           },
           {
-            "Title": "Balkon tegelen",
-            "Body": "Buitentegelwerk dat rekening houdt met weersinvloeden, vorst, afschot en waterafvoer.",
-            "CTA": "Lees meer",
+            "Title": "Buiten / balkon",
+            "Body": "Vorstbestendige tegeloplossingen voor balkons en terrassen.",
             "CTA URL": "/tegelwerk/balkon-tegelen/"
-          },
-          {
-            "Title": "Inloopdouche tegelen",
-            "Body": "Precisiewerk met watermanagement, perfect afschot en waterdichting.",
-            "CTA": "Lees meer",
-            "CTA URL": "/tegelwerk/badkamer-tegelen/"
-          },
-          {
-            "Title": "Vloerverwarming en tegelen",
-            "Body": "Vakkundige opbouw en afwerking van tegelwerk op vloerverwarming.",
-            "CTA": "Lees meer",
-            "CTA URL": "/tegelwerk/vloer-tegelen/"
           }
         ]
+      },
+      {
+        "id": "TECHNICAL_PROOF",
+        "Type": "Macro",
+        "H2": "Precisie in uitvoering",
+        "Body": "Voor een strak eindresultaat controleren wij altijd de vlakheid van de ondervloer of wanden. Bij renovaties verwijderen wij losse delen, frezen wij leidingen in en brengen we de vereiste waterdichtingssystemen aan in natte zones, voordat er ook maar één tegel wordt geplaatst.",
+        "CTA": "Onze werkwijze",
+        "CTA URL": "/over-ons/",
+        "mediaId": "ai-macro"
+      },
+      {
+        "id": "ASYMMETRICAL",
+        "Type": "Asymmetrical",
+        "H2": "De basis voor een duurzaam interieur",
+        "Body": "Een tegelvloer of wand is een permanente toevoeging aan uw woning. Door te kiezen voor hoogwaardige materialen en een correcte bouwkundige verwerking, voorkomt u problemen zoals scheurvorming of loslatende tegels in de toekomst. Wij adviseren u graag over de juiste materialen en formaten voor uw specifieke situatie.",
+        "mediaId": "bath08"
       },
       {
         "id": "SECTION 3",
@@ -348,12 +373,9 @@
     ],
     "faq": [],
     "hero": {
-      "Eyebrow": "Precisie in elke ruimte",
-      "H1": "Professioneel Tegelwerk & Installatie",
-      "Body": "Tegelzetten vraagt om ruimtelijk inzicht en een hoge mate van nauwkeurigheid. Onze expertise beslaat diverse tegeltoepassingen: van vloertegels in de woonkamer tot een strakke achterwand in de keuken en de zorgvuldige afwerking van een inloopdouche. Met de juiste voorbereiding van de ondergrond, passende lijmsystemen en nivelleertechnieken wordt de basis gelegd voor een duurzaam resultaat.",
-      "Primary CTA": "Project bespreken",
-      "Visual": "Overzichtsfoto van een ruime, getegelde woonkamervloer die doorloopt naar de keuken.",
-      "ALT": "Getegelde vloer in moderne woonruimte",
+      "H1": "Specialistisch Tegelwerk",
+      "Body": "Sppat levert en plaatst tegelwerk voor veeleisende particuliere en zakelijke projecten. Wij geloven dat de levensduur van elke vloer en wand wordt bepaald door de bouwkundige voorbereiding onder de tegels.",
+      "Primary CTA": "Bespreek uw project",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
@@ -370,26 +392,28 @@
   {
     "name": "Badkamer Tegelen",
     "url": "/tegelwerk/badkamer-tegelen/",
-    "title": "Badkamer Laten Tegelen | Vakkundige Tegelzetter | Sppat",
-    "description": "Heeft u het loodgieterswerk al geregeld? Wij verzorgen het uitvlakken, de waterdichting en het tegelwerk in uw badkamer.",
+    "title": "Badkamer Tegelen | Vakkundig en Waterdicht | Sppat",
+    "description": "Specialist in badkamer tegelwerk. Van strakke voorbereiding en kimband tot naadloze afwerking in de natte cel.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Aandachtspunten in natte ruimtes",
-        "Body": "Naast het visuele aspect, ligt de focus in badkamers op vochtregulering en hechting.",
-        "bullets": [
-          "Ondergrond en Hechting: Controle en voorbehandeling van de wanden (gips, beton, of stucwerk). Waar nodig worden de wanden uitgevlakt.",
-          "Waterdichting: Het aanbrengen van kimband in de hoeken en waterdichte pasta (of het werken met bouwplaten) in de douchehoek om vochtdoorslag richting de constructie te beperken.",
-          "Afschot (Hellingsgraad): Het op afschot smeren van de ondervloer zodat water natuurlijk naar de drain stroomt. Bij grootformaat tegels en een puntput wordt de tegel vaak diagonaal doorgezaagd (envelop zagen).",
-          "Hoekafwerking: Gebruik van in verstek gezaagde tegelranden of het plaatsen van hoogwaardige tegelprofielen bij externe hoeken en nissen."
-        ]
+        "id": "TECHNICAL",
+        "Type": "Text",
+        "H2": "Een solide en waterdichte basis",
+        "Body": "Voordat er een tegel wordt gezet, beoordelen wij de ondergrond. Het is cruciaal dat wanden loodrecht en vloeren vlak zijn. In de natte zones brengen wij altijd de vereiste kimband en waterdichtende pasta aan om lekkages in de toekomst te voorkomen. Een stabiele basis garandeert een strak en duurzaam tegelresultaat, ongeacht het gekozen formaat."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text + Internal Links",
-        "H2": "De gehele ruimte verbouwen?",
-        "Body": "Wilt u liever dat één partij zowel het loodgieterswerk als het tegelwerk verzorgt? Bekijk dan onze dienst voor een complete badkamer renovatie."
+        "id": "WET_ROOM",
+        "Type": "Asymmetrical",
+        "H2": "Cruciale details in de inloopdouche",
+        "Body": "De inloopdouche is het meest kritieke onderdeel van de badkamer. Het afschot moet perfect naar de douchegoot lopen, zonder dat tegels 'schotelen' of ontsierende snijlijnen vertonen. Wij besteden extra aandacht aan de overgang tussen wand en vloer, strak afgewerkte inbouwnissen en het in verstek zagen van uitwendige hoeken, zodat het tegelwerk naadloos doorloopt.",
+        "mediaId": "ai-niche"
+      },
+      {
+        "id": "PROOF",
+        "Type": "Macro",
+        "H2": "Afwerking en voegwerk",
+        "Body": "Het voegwerk bepaalt de uiteindelijke uitstraling van uw badkamer. Wij adviseren u over de juiste voegbreedte en -kleur voor een harmonieus geheel. Bovendien werken wij de inwendige hoeken en sanitaire aansluitingen strak af met schimmelwerende kit in een bijpassende kleur.",
+        "mediaId": "ai-macro"
       }
     ],
     "links": [
@@ -401,13 +425,15 @@
     ],
     "faq": [],
     "hero": {
-      "H1": "Badkamer Vakkundig Laten Tegelen",
-      "Body": "Beheert u zelf uw verbouwing en heeft u het leidingwerk en de installatie al geregeld, maar zoekt u een specialist puur voor de afwerking? Het tegelen van een natte ruimte vereist specifieke aandacht. Het vraagt om gerichte waterdichtingsmaatregelen, het correct creëren van afschot voor de douchegoot en een doordacht tegelplan. Wij verzorgen dit kritieke onderdeel van uw project.",
-      "Primary CTA": "Project bespreken",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Badkamer Vakkundig Tegelen",
+      "Body": "Het tegelen van een badkamer vereist meer dan alleen een vaste hand. Het draait om de juiste opbouw: waterdichting, afschot naar de goot en perfect uitgelijnde hoeken. Wij verzorgen het complete tegelwerk, of u nu kiest voor strakke XXL-panelen of gedetailleerd mozaïek.",
+      "Primary CTA": "Bespreek uw badkamer",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Uw badkamer afwerken met hoogwaardig tegelwerk?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
@@ -415,43 +441,48 @@
       "/complete-badkamer-renovatie/",
       "/specialisaties/grootformaat-tegels/",
       "/specialisaties/mozaiek-zetten/",
-      "/projecten/"
+      "/specialisaties/natuursteen/"
     ]
   },
   {
     "name": "Vloer Tegelen",
     "url": "/tegelwerk/vloer-tegelen/",
-    "title": "Vloertegels Leggen | Woonkamer, Hal & Vloerverwarming",
+    "title": "Vloertegels Leggen | Woonkamer, Hal & Vloerverwarming | Sppat",
     "description": "Laat uw vloertegels leggen door een specialist. Wij zorgen voor een gladde dekvloer, correcte voorbereiding en vlak tegelwerk.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Voorbereiding, egalisatie en vloerverwarming",
-        "Body": "Een vloer die lang meegaat, vereist een stabiele basis.",
-        "bullets": [
-          "Egaliseren: Als de zandcement- of anhydrietdekvloer sterke onregelmatigheden vertoont, wordt deze eerst geprimed en geëgaliseerd.",
-          "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers.",
-          "Ontkoppeling: Bij zwevende dekvloeren, bepaalde houten ondervloeren of risico's op werking van de vloer, kan het gebruik van ontkoppelingsmatten (zoals veelgebruikt in de markt) nodig zijn om de tegel te scheiden van een krimpende ondervloer."
-        ]
+        "id": "PREPARATION",
+        "Type": "Text",
+        "H2": "Voorbereiding en vloeropbouw",
+        "Body": "Een duurzame tegelvloer begint met een stabiele basis. Wij beoordelen de zandcement- of anhydrietdekvloer op vlakheid, sterkte en restvocht. Waar nodig primen en egaliseren we de vloer. Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text",
-        "H2": "Aansluiting en plinten",
-        "Body": "Een strakke vloer is afhankelijk van de afwerking langs de randen. Er wordt gezorgd voor nette uitsnedes rondom kozijnen en buizen. Als randafwerking kan gekozen worden voor tegelplinten (uit dezelfde tegel gezaagd of speciaal besteld) of een open rand die wordt afgekit wanneer u later zelf houten plinten plaatst."
+        "id": "LAYOUT",
+        "Type": "Asymmetrical",
+        "H2": "Vlakheid en het perfecte legplan",
+        "Body": "Voordat de eerste tegel wordt gelijmd, maken wij een gedetailleerd legplan. Dit voorkomt smalle snijstukken langs de wanden en zorgt voor een visuele balans, zeker bij grote formaten. Tijdens de verwerking gebruiken wij moderne leveling-systemen om 'lippage' (hoogteverschillen tussen aangrenzende tegels) tot een absoluut minimum te beperken.",
+        "mediaId": "substrate"
+      },
+      {
+        "id": "DETAIL",
+        "Type": "Macro",
+        "H2": "Dilataties en randafwerking",
+        "Body": "Om scheurvorming in grote vloeroppervlakken te voorkomen, integreren wij noodzakelijke dilatatievoegen netjes in het voegenspel. Langs de wanden zorgen we voor strakke uitsnedes en een correcte aansluiting, klaar voor een tegelplint of het plaatsen van houten plinten.",
+        "mediaId": "ai-macro"
       }
     ],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Vloertegels Leggen",
-      "Body": "Een tegelvloer in uw woonkamer, hal of keuken is een fundament voor de rest van uw interieur. De uitstraling van de vloer wordt sterk bepaald door de vlakheid en het gekozen voegenspel. Vloertegels kunnen in diverse legverbanden (zoals kruisverband, halfsteens of wildverband) worden gelegd, waarbij methoden (zoals leveling systemen) worden gehanteerd om hoogteverschillen tussen tegels te minimaliseren.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Vloertegels Strak Gelegd",
+      "Body": "Een tegelvloer in uw woonkamer, hal of keuken vormt de basis van uw interieur. De strakheid van de vloer wordt direct bepaald door de vlakheid van de ondervloer en het zorgvuldig geplande legverband.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Een nieuwe tegelvloer realiseren?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
@@ -464,36 +495,42 @@
   {
     "name": "Wand Tegelen",
     "url": "/tegelwerk/wand-tegelen/",
-    "title": "Wandtegels Zetten | Keukens, Toiletten & Badkamers | Sppat",
-    "description": "Professioneel wandtegels laten zetten. Van laser-uitlijning tot strakke nissen en correcte dilatatievoegen. Bespreek uw wandtegelwerk met ons.",
+    "title": "Wandtegels Zetten | Badkamer, Keuken & Woonkamer | Sppat",
+    "description": "Strakke wandafwerking vereist meetwerk en perfect loodrechte muren. Sppat verzorgt het complete wandtegelwerk voor een naadloos eindresultaat.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Uitlijning en laserprecisie",
-        "Body": "Wanden zijn in de praktijk zelden perfect loodrecht. Professionals werken met kruislijnlasers om een kaarsrechte startlijn te bepalen. Dit is belangrijk om te voorkomen dat het tegelwerk schuin oploopt, wat vooral opvalt bij het plafond of langs raamkozijnen.",
-        "bullets": [
-          "Tegelverdeling: Vooraf wordt berekend hoe de tegels uitkomen. Dit voorkomt zeer smalle, storende snijstukjes in de hoeken.",
-          "Wand- vs. Vloertegels: Keramische wandtegels zijn vaak iets zachter en poreuzer dan vloertegels. Dit beïnvloedt de keuze van de lijm. Vloertegels kunnen op de wand geplaatst worden, maar dit vereist extra hechtingskracht (en soms ondersteuning tijdens het drogen) vanwege het gewicht."
-        ]
+        "id": "PREP",
+        "Type": "Text",
+        "H2": "Voorbereiding en stucwerk",
+        "Body": "Wanden moeten loodrecht, vlak en draagkrachtig zijn. We controleren de hechting van de huidige stuclaag en vlakken muren waar nodig opnieuw uit. Alleen op een perfect voorbereide wand kunnen tegels strak en zonder hinderlijke schaduwwerking worden geplaatst."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text",
-        "H2": "Inwendige hoeken en dilatatie",
-        "Body": "Waar twee wanden samenkomen (inwendige hoeken) of waar de wand de vloer raakt, mag in de meeste gevallen niet hard gevoegd worden. Omdat gebouwen en muren licht ten opzichte van elkaar werken, worden deze naden voorzien van een flexibele sanitairkit (dilatatie). Dit vangt de spanning op en helpt scheuren in de tegels of voegen te voorkomen."
+        "id": "ALIGNMENT",
+        "Type": "Asymmetrical",
+        "H2": "Geometrie en uitlijning",
+        "Body": "Het lijnenspel van wandtegels moet exact kloppen, vooral wanneer ze aansluiten op vloervoegen, kozijnen of sanitaire elementen. We meten de ruimte zorgvuldig uit met kruislijnlasers om een gecentreerd legplan te creëren zonder kleine strookjes in de hoeken.",
+        "mediaId": "wall-feb"
+      },
+      {
+        "id": "DETAILS",
+        "Type": "Macro",
+        "H2": "Hoeken, nissen en doorvoeren",
+        "Body": "Uitwendige hoeken zagen we bij voorkeur in verstek voor een minimalistische look zonder kunststof hoekprofielen. Doorvoeren voor inbouwkranen en stopcontacten worden exact rond uitgefreesd. Dit niveau van detailafwerking bepaalt de premium uitstraling van uw wand.",
+        "mediaId": "ai-niche"
       }
     ],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Wandtegels Zetten",
-      "Body": "Het tegelen van wanden vraagt om een strakke planning en een zorgvuldige uitlijning. Zwaartekracht, ongelijkmatige muren en hoeken maken dit tot gespecialiseerd werk. Wij verzorgen wandtegelwerk waarbij het voegenspel logisch doorloopt, symmetrie behouden blijft en het eindresultaat visueel in balans is.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Wandtegels Loodrecht Zetten",
+      "Body": "Een strak betegelde wand vraagt om absolute precisie. Elke afwijking in de ondergrond of het uitlijnwerk is direct zichtbaar, vooral bij strijklicht of het gebruik van grootformaat tegels met smalle voegen.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Uw wanden professioneel laten tegelen?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
@@ -507,25 +544,27 @@
   {
     "name": "Keuken Tegelen",
     "url": "/tegelwerk/keuken-tegelen/",
-    "title": "Keuken Achterwand & Vloer Tegelen | Sppat",
-    "description": "Uw keukenachterwand of keukenvloer laten tegelen? Wij leveren maatwerk rondom stopcontacten, strakke aansluitingen en adviseren over vuilafstotende voegen.",
+    "title": "Keuken Tegelen | Vloer & Achterwand | Sppat",
+    "description": "Laat de achterwand of vloer van uw keuken strak betegelen. Duurzame en makkelijk te reinigen oplossingen die aansluiten bij uw keukenontwerp.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Maatwerk rondom uw apparatuur",
-        "Body": "Het tegelen van een achterwand tussen het werkblad en de bovenkastjes vereist maatwerk. De ruimte wordt vaak onderbroken door inbouwdozen en stopcontacten.",
-        "bullets": [
-          "Uitsnedes: Dit vereist exacte gaten voor elektrapunten zodat afdekramen netjes over de tegel vallen.",
-          "Aansluiting: Een strakke, flexibele kitvoeg tussen de onderste tegel en het werkblad is nodig, zodat vocht niet achter de kasten kan lopen.",
-          "Planning: Meestal wordt geadviseerd om de achterwand te tegelen nadat de keuken en het werkblad volledig zijn gemonteerd, om de aansluiting zo precies mogelijk te krijgen."
-        ]
+        "id": "APPLICATIONS",
+        "Type": "Text",
+        "H2": "Achterwanden en keukenvloeren",
+        "Body": "Voor de achterwand kiezen klanten vaak voor onderhoudsvriendelijke keramische tegels, subtiel mozaïek of juist een naadloze XXL-plaat die het aanrechtblad volgt. De keukenvloer moet daarnaast bestand zijn tegen zware belasting en vocht, waarvoor robuuste vloertegels of keramisch parket uitermate geschikt zijn."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text + Internal Links",
-        "H2": "Het belang van de juiste voeg",
-        "Body": "In een keuken krijgen de voegen veel te verduren door opspattend vet, olie en hitte. Waar een standaard cementvoeg na verloop van tijd vet kan opnemen en verkleuren, is een epoxyvoeg veel beter bestand tegen vuil en chemicaliën, omdat dit materiaal nagenoeg niet poreus is."
+        "id": "ALIGNMENT",
+        "Type": "Asymmetrical",
+        "H2": "Aansluiting op het keukenontwerp",
+        "Body": "Keukentegelwerk vergt afstemming. De vloer moet mooi aansluiten onder de kookeilanden, en de voegen van de achterwand moeten harmoniëren met de kasten en het werkblad. Wij zorgen ervoor dat uitsparingen voor stopcontacten en schakelaars exact in het tegelpatroon worden geïntegreerd.",
+        "mediaId": "kitchen"
+      },
+      {
+        "id": "DETAILS",
+        "Type": "Macro",
+        "H2": "Onderhoud en voegwerk",
+        "Body": "Boven het fornuis en achter de spoelbak krijgt voegwerk veel te verduren door vet en vocht. Door te werken met hoogwaardige, gesloten voegmiddelen zorgen we ervoor dat uw keuken niet alleen prachtig oogt, maar ook jarenlang eenvoudig schoon te houden is."
       }
     ],
     "links": [
@@ -537,13 +576,15 @@
     ],
     "faq": [],
     "hero": {
-      "H1": "Keuken Achterwand & Vloer Tegelen",
-      "Body": "De keuken is een intensief gebruikte ruimte. Of het nu gaat om een robuuste tegelvloer of een hitte- en spatbestendige achterwand: wij verzorgen tegelwerk dat goed aansluit op uw keukenopstelling en praktisch is in het onderhoud.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Praktisch en Strak Keukentegelwerk",
+      "Body": "De keuken is de meest intensief gebruikte ruimte in huis. Tegelwerk biedt hier de ideale combinatie van duurzaamheid, hygiëne en esthetiek, of het nu gaat om een robuuste vloer of een strak afgewerkte achterwand.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Uw keuken voorzien van nieuw tegelwerk?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
@@ -555,36 +596,47 @@
   {
     "name": "Balkon Tegelen",
     "url": "/tegelwerk/balkon-tegelen/",
-    "title": "Balkon Tegelen | Buitentegelwerk & Vorstbescherming | Sppat",
-    "description": "Laat uw balkon professioneel tegelen. Buitentegelwerk vereist aandacht voor temperatuurverschillen, vorst, afwatering en dilatatie.",
+    "title": "Balkon & Terras Tegelen | Vorstbestendig Buitenwerk | Sppat",
+    "description": "Hoogwaardig tegelwerk voor uw balkon of buitenruimte. Vorstbestendige materialen, afschot voor afwatering en duurzame verlijming.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Bescherming tegen de elementen",
-        "Body": "Buitentegelwerk vereist een technische opbouw:",
-        "bullets": [
-          "Waterafvoer en Afschot: Er moet een lichte helling aanwezig zijn zodat oppervlaktewater richting de rand of dakgoot loopt.",
-          "Capillaire werking voorkomen: Vocht mag niet in het lijmbed zuigen. Een zo hoog mogelijke lijmdekking (streven naar een vol en zat lijmbed zonder holle ruimtes) is hierbij essentieel.",
-          "Drainage en Ontkoppeling: In veel buitensituaties wordt gewerkt met speciale drainagematten onder het lijmbed. Dit zorgt ervoor dat vocht dat onverhoopt binnendringt, kan weglopen.",
-          "Uitzetvoegen (Dilatatie): Temperatuurverschillen door de zon zorgen voor krimp en uitzetting. Het opdelen van het tegelvlak met flexibele dilatatievoegen is essentieel om scheurvorming in de tegels te voorkomen."
-        ]
+        "id": "EXTERIOR",
+        "Type": "Text",
+        "H2": "Extreme weersinvloeden",
+        "Body": "Zon, regen en vorst zorgen voor constante werking van het materiaal. Als vocht onder de tegels bevriest, kunnen tegels losvriezen of scheuren. Wij gebruiken uitsluitend vorstbestendige keramische of natuursteen tegels en hoog-flexibele lijmsystemen die bestand zijn tegen deze krimp en uitzetting."
+      },
+      {
+        "id": "WATER",
+        "Type": "Asymmetrical",
+        "H2": "Afschot en waterafvoer",
+        "Body": "Stilstaand water is de grootste vijand van buitentegelwerk. Het balkon of terras moet voorzien zijn van het juiste afschot (hellingsgraad) richting de afvoer of goot. Indien nodig egaliseren wij de ondergrond onder afschot en passen we ontkoppelings- en drainagematten toe om ophoping van vocht te voorkomen."
+      },
+      {
+        "id": "DETAILS",
+        "Type": "Macro",
+        "H2": "Randafwerking en dilataties",
+        "Body": "De randen van een balkon vragen om een strakke afwerking waarbij vocht niet in de constructie kan trekken. Daarnaast integreren we dilatatievoegen om de spanningen van thermische werking veilig op te vangen. Dit voorkomt dat het tegelwerk bol gaat staan tijdens hete zomers."
       }
     ],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Balkon Tegelen",
-      "Body": "Tegelwerk op een balkon of dakterras staat bloot aan regen, vorst en zon. Buitentegelwerk is fundamenteel anders dan binnenwerk. Als de opbouw niet klopt, kan vocht onder de tegels bevriezen, uitzetten en ervoor zorgen dat tegels loslaten. Specifieke verlijming en constructiemethoden zijn nodig om dit risico te beperken.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Balkon en Terras Duurzaam Betegelen",
+      "Body": "Buitentegelwerk staat bloot aan extreme temperatuurschommelingen, regen en vorst. Een standaard binnentoepassing volstaat hier niet; een balkon vereist specifieke bouwtechnische oplossingen om schade in de winter te voorkomen.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Uw balkon voorzien van duurzaam tegelwerk?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
-    "relatedUrls": []
+    "relatedUrls": [
+      "/tegelwerk/vloer-tegelen/",
+      "/specialisaties/grootformaat-tegels/"
+    ]
   },
   {
     "name": "Specialisaties Hub",
@@ -638,165 +690,187 @@
   {
     "name": "Grootformaat Tegels",
     "url": "/specialisaties/grootformaat-tegels/",
-    "title": "Grootformaat Tegels Leggen | XXL Tegelzetter | Sppat",
-    "description": "Specialist in het leggen van grootformaat (XXL) tegels. Wij gebruiken dubbele verlijming en levellingsystemen om hoogteverschillen te minimaliseren.",
+    "title": "Grootformaat & XXL Tegels | Naadloze Afwerking | Sppat",
+    "description": "Laat grootformaat en XXL tegels vakkundig plaatsen. Specialistisch gereedschap, perfecte uitvlakking en een strak, nagenoeg naadloos eindresultaat.",
     "sections": [
       {
-        "id": "SECTION 2",
+        "id": "WHY",
         "Type": "Text",
-        "H2": "Dubbele verlijming en vlakheid",
-        "Body": "Hoe groter de tegel, hoe kritischer de vlakheid van de ondergrond. Tijdens het bakproces in de fabriek ontstaat er bij grote tegels vaak een lichte, natuurlijke kromming.",
-        "bullets": [
-          "Leveling: Om hoogteverschillen (lippage) tussen de randen te minimaliseren, worden vaak leveling-clips en keggen gebruikt die de tegels tijdens de uitharding van de lijm in positie houden.",
-          "Buttering-floating: In de professionele tegelzetterij wordt hierbij dubbele verlijming toegepast: zowel de ondergrond als de achterzijde van de tegel wordt ingesmeerd. Dit zorgt voor een zo hoog mogelijk lijmcontact en minimaliseert de kans op luchtbellen of holle plekken, wat de kans op breuk verkleint."
-        ]
+        "H2": "Waarom grootformaat anders is",
+        "Body": "Door het gebrek aan voegen is er geen ruimte om onregelmatigheden in de ondergrond op te vangen. Elke millimeter afwijking in de wand of vloer vertaalt zich direct in hinderlijke 'lippage' of, erger nog, breuk van de tegel door loze ruimtes onder het materiaal. Absolute vlakheid is een harde eis."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text",
-        "H2": "XXL tegels in de inloopdouche",
-        "Body": "Grootformaat tegels kunnen goed worden toegepast in een doucheruimte. Omdat de afvoer (drain) lager ligt, moet het water weg kunnen lopen (afschot). Als de tegel te groot is om mee te buigen met het afschot, wordt deze vaak diagonaal doorgezaagd (envelop-snede) of wordt de dekvloer zo aangepast dat een eenzijdig afschot naar een sleufgoot mogelijk is."
+        "id": "EXECUTION",
+        "Type": "Asymmetrical",
+        "H2": "Technische uitvoering en handling",
+        "Body": "Het transporteren en plaatsen van XXL-tegels vereist specialistisch aanzuiggereedschap en ervaren vakmensen. Wij bereiden de ondergrond minutieus voor, hanteren de 'buttering floating' verlijmingstechniek (dubbele verlijming) voor 100% contactoppervlak, en gebruiken leveling-systemen om de tegels perfect in één vlak te trekken.",
+        "mediaId": "bath08"
+      },
+      {
+        "id": "DETAILS",
+        "Type": "Macro",
+        "H2": "Randafwerking en zaagsnedes",
+        "Body": "Het snijden, boren en in verstek zagen van XXL-keramiek vereist gekoeld diamantgereedschap. Details zoals inbouwkranen, nisjes en afvoerputten worden met uiterste precisie uitgefreesd. Het resultaat is een minimalistisch, architectonisch oppervlak."
       }
     ],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Grootformaat Tegels (XXL) Leggen",
-      "Body": "Grootformaat tegels (zoals platen van 120x120cm of groter) creëren een ruimtelijke uitstraling met relatief weinig voeglijnen. Het verwerken van XXL-tegels vereist een strikte voorbereiding van de ondergrond, specifieke lijmtechnieken en gereedschap om het gewicht en het formaat te hanteren.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Verwerking van Grootformaat en XXL Tegels",
+      "Body": "Grootformaat tegels en XXL-keramiekplaten creëren een rustige, nagenoeg naadloze uitstraling in uw badkamer of woonkamer. Het plaatsen van deze indrukwekkende formaten is echter een specialisme dat geen enkele marge voor fouten toelaat.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Grootformaat tegels in uw project?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
     "relatedUrls": [
       "/tegelwerk/badkamer-tegelen/",
       "/tegelwerk/vloer-tegelen/",
-      "/projecten/",
-      "/kennisbank/tegel-lippage-voorkomen/"
+      "/tegelwerk/wand-tegelen/"
     ]
   },
   {
     "name": "Mozaïek Zetten",
     "url": "/specialisaties/mozaiek-zetten/",
-    "title": "Mozaïek Tegelzetter Specialist | Perfecte Uitlijning | Sppat",
-    "description": "Mozaïek tegelwerk voor uw badkamer of nis. Wij zorgen voor een vlakke ondergrond, juiste lijmkeuze en ononderbroken mat-overgangen.",
+    "title": "Mozaïek Zetten | Precisie en Oog voor Detail | Sppat",
+    "description": "Mozaïek vereist vakmanschap en perfecte uitlijning. Wij verwerken glasmozaïek, natuursteen en keramisch mozaïek strak en zonder hinderlijke matovergangen.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Aandachtspunten bij mozaïek",
-        "Body": "De verwerking van mozaïek is op diverse punten anders dan regulier tegelwerk:",
-        "bullets": [
-          "Ondergrond: De wand moet spiegelglad zijn. Elke bobbel of oneffenheid zie je direct terug in het mozaïekoppervlak.",
-          "Mat-overgangen: Slecht gezet mozaïek toont een 'blok-effect', waarbij zichtbaar is waar het ene matje stopt en het andere begint. De vakman corrigeert de steentjes handmatig zodat het voegenspel overal even breed is.",
-          "Lijmkeuze: Bij transparant of licht glasmozaïek is het gebruik van witte lijm essentieel. Grijze tegellijm schijnt anders door de steentjes of de lichte voegen heen.",
-          "Voegen: Mozaïek bevat veel voegwerk. In natte ruimtes is het belangrijk een hoogwaardig, vuilafstotend voegmiddel te gebruiken."
-        ]
+        "id": "PATTERN",
+        "Type": "Text",
+        "H2": "Lijnen, patronen en uitlijning",
+        "Body": "Het grootste risico bij mozaïek is dat de naden tussen de afzonderlijke matjes zichtbaar blijven. Wij zorgen ervoor dat de voegafstand tussen de matjes exact gelijk is aan de voegafstand binnen het matje zelf, waardoor een ononderbroken en doorlopend patroon ontstaat."
+      },
+      {
+        "id": "SUBSTRATE",
+        "Type": "Asymmetrical",
+        "H2": "Ondergrond en lijmkeuze",
+        "Body": "Mozaïek volgt elke glooiing van de ondergrond. De wand of vloer moet daarom superstrak zijn uitgevlakt. Daarnaast vereist glasmozaïek specifieke (vaak witte) epoxylijm om doorschijnen te voorkomen en krimp te minimaliseren, zodat het mozaïek niet wegzakt tijdens het uitharden."
+      },
+      {
+        "id": "DETAILS",
+        "Type": "Macro",
+        "H2": "Hoeken en rondingen",
+        "Body": "De ware schoonheid van mozaïek toont zich in de details: de bekleding van een inbouwnis, de afwerking rondom kranen, of het soepel meelopen met een gebogen douchescherm. Wij besteden maximale aandacht aan deze complexe overgangen.",
+        "mediaId": "ai-niche"
       }
     ],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Professioneel Mozaïek Zetten",
-      "Body": "Mozaïek wordt vaak gebruikt voor het accentueren van nissen of inloopdouches. Omdat mozaïek uit kleine steentjes op een flexibel netje of papier bestaat, volgt het de wand exact. Dit vereist een strakke hand en ervaring om een rustig en doorlopend resultaat te bereiken.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Specialistisch Mozaïek Zetten",
+      "Body": "Mozaïek is de ultieme manier om ronde vormen, nisjes of wellness-ruimtes te accentueren. Omdat de voegverhouding in mozaïek enorm hoog is, is de visuele impact van de uitvoering cruciaal. Een slechte plaatsing is direct zichtbaar.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Details van mozaïek integreren?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
     "relatedUrls": [
       "/tegelwerk/badkamer-tegelen/",
-      "/projecten/"
+      "/tegelwerk/wand-tegelen/"
     ]
   },
   {
     "name": "Natuursteen",
     "url": "/specialisaties/natuursteen/",
-    "title": "Natuursteen Leggen | Marmer, Travertin & Hardsteen | Sppat",
-    "description": "Natuursteen vereist vakkennis. Wij plaatsen marmer, travertin en hardsteen met aandacht voor kalibratie, zuurvrije verlijming en onderhoud.",
+    "title": "Natuursteen Leggen & Zetten | Marmer, Travertin & Hardsteen | Sppat",
+    "description": "Het verwerken van echt natuursteen is maatwerk. Wij selecteren, sorteren en plaatsen marmer en kalksteen met oog voor de unieke adering.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Verwerking en Kalibratie",
-        "Body": "Natuursteen vraagt om een aangepaste legmethode:",
-        "bullets": [
-          "Dikteverschillen (Kalibratie): Niet elke tegel is exact even dik. Deze toleranties worden opgevangen door te werken met een dikbedlijm of de lijm per tegel te doseren.",
-          "Gevoeligheid (Bleeding): Veel soorten natuursteen zijn gevoelig voor zuren of verkleuring door de verkeerde chemie. Hiervoor is speciale zuurvrije lijm en natuursteenkit nodig. Verkeerde materialen kunnen donkere, onomkeerbare vlekken langs de randen veroorzaken.",
-          "Legplan: Het vooraf uitleggen van de tegels is aanbevolen om een mooi verloop van de natuurlijke aderen te creëren."
-        ]
+        "id": "CHARACTER",
+        "Type": "Text",
+        "H2": "De eigenschappen van natuursteen",
+        "Body": "Natuursteen is poreus, gevoelig voor zuren en vatbaar voor vochtdoorslag. Dit betekent dat niet elke soort zomaar geschikt is voor de natte cel. Bij de installatie moet rekening gehouden worden met kalibratieverschillen (dikteverschillen) die eigen zijn aan het natuurproduct."
       },
       {
-        "id": "SECTION 3",
-        "Type": "Text",
-        "H2": "Onderhoud van natuursteen",
-        "Body": "Natuursteen is prachtig, maar in natte ruimtes (zoals de inloopdouche) vereist het bewustwording. Kalkaanslag mag niet worden verwijderd met agressieve (zure) schoonmaakmiddelen, omdat dit de toplaag van bijvoorbeeld marmer aantast."
+        "id": "LAYOUT",
+        "Type": "Asymmetrical",
+        "H2": "Sorteerwerk en legplan",
+        "Body": "De organische variatie in kleur en aderpatronen (veining) vereist dat we de tegels vooraf 'droog' uitleggen en sorteren. Zo creëren we een gebalanceerd en rustig beeld in de ruimte, waarbij opvallende aders mooi doorlopen en kleurschakeringen gelijkmatig worden verdeeld.",
+        "mediaId": "ai-stone"
+      },
+      {
+        "id": "DETAILS",
+        "Type": "Macro",
+        "H2": "Lijm, voeg en afwerking",
+        "Body": "Om vlekvorming of het verkleuren (doorbloeden) van licht marmer te voorkomen, gebruiken wij speciale, sneldrogende witte natuursteenlijm en -voeg. Waar nodig worden hoeken vakkundig gepolijst of in verstek gezaagd om het massieve karakter van het materiaal te benadrukken."
       }
     ],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Natuursteen Leggen",
-      "Body": "Natuursteen (zoals marmer, travertin of Belgisch hardsteen) geeft een ruimte een organisch karakter. Omdat het een ongeglazuurd natuurproduct is, reageert het anders op vocht en lijm dan keramiek. Het verwerken hiervan vereist specifieke materiaalkennis.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Natuursteen Vakkundig Verwerken",
+      "Body": "Echt natuursteen, zoals marmer, travertin of hardsteen, brengt een ongeëvenaarde luxe en organische warmte in uw woning. In tegenstelling tot keramiek is elke steen uniek, wat specifieke eisen stelt aan de voorbereiding, de lijm en het legplan.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Natuursteen in uw project integreren?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
     "relatedUrls": [
-      "/tegelwerk/badkamer-tegelen/",
+      "/specialisaties/grootformaat-tegels/",
       "/tegelwerk/vloer-tegelen/",
-      "/projecten/"
+      "/tegelwerk/badkamer-tegelen/"
     ]
   },
   {
     "name": "Keramisch Parket",
     "url": "/specialisaties/keramisch-parket/",
-    "title": "Keramisch Parket Leggen | Houtlook Tegels | Sppat",
-    "description": "Keramisch parket combineren met vloerverwarming? Wij leggen houtlook tegels veelal in wildverband om natuurlijke buiging (lippage) op te vangen.",
+    "title": "Keramisch Parket Leggen | Visgraat & Wildverband | Sppat",
+    "description": "Keramisch parket in wildverband of visgraat leggen. Een warme houtlook met de duurzaamheid en vloerverwarming-geschiktheid van tegels.",
     "sections": [
       {
-        "id": "SECTION 2",
-        "Type": "List",
-        "H2": "Wildverband en Buiging",
-        "Body": "Langwerpige tegels hebben specifieke eigenschappen waar tijdens het leggen rekening mee gehouden moet worden:",
-        "bullets": [
-          "Bolling van de tegel: Lange keramische planken hebben vanuit de fabriek vaak een lichte bolling (ze zijn iets dikker in het midden dan aan de uiteinden).",
-          "Legpatroon: Om te voorkomen dat het bolle middenstuk van de ene tegel naast het platte uiteinde van de volgende tegel komt (wat zorgt voor structuurverschillen of randen), worden deze tegels bij voorkeur gelegd in een willekeurig wildverband met maximaal 1/3 verschuiving, in plaats van een strak halfsteensverband.",
-          "Voegkleur: Door de voegkleur af te stemmen op de donkerste of meest dominante tint in de tegel, valt de lijn visueel weg en lijkt de vloer meer op een authentieke plankenvloer."
-        ]
+        "id": "LAYOUT",
+        "Type": "Text",
+        "H2": "Legrichting, wildverband en visgraat",
+        "Body": "De legrichting beïnvloedt de optische grootte van de ruimte en de lichtinval. Populaire patronen zijn wildverband (waarbij de naden verspringen voor een natuurlijk effect) en de klassieke visgraat. Een doordacht legplan is essentieel om repetitie in het houtdecor te voorkomen en de ruimtelijkheid te benadrukken."
       },
       {
-        "id": "VISGRAAT",
-        "H2": "Visgraat",
-        "Body": "Houtlook tegels gelegd in patronen zoals wildverband of visgraat, met aandacht voor de natuurlijke buiging van lange tegels."
+        "id": "EXECUTION",
+        "Type": "Asymmetrical",
+        "H2": "Kromming en vlakheid",
+        "Body": "Lange keramische tegels hebben door het bakproces tijdens de productie vaak een lichte, natuurlijke kromming. Bij een wildverband of halfsteensverband kan deze bolling leiden tot 'lippage', waarbij het midden van de ene tegel hoger ligt dan het uiteinde van de volgende.",
+        "mediaId": "ai-woodlook"
+      },
+      {
+        "id": "DETAILS",
+        "Type": "Macro",
+        "H2": "Leveling en voegbreedte",
+        "Body": "Wij gebruiken zware leveling-systemen om de planken strak naast elkaar in één vlak te dwingen. Gecombineerd met een zo smal mogelijke voeg in een bijpassende houtkleur, creëren we een vloer die nagenoeg niet van echt parket te onderscheiden is."
       }
     ],
     "links": [],
     "faq": [],
     "hero": {
-      "H1": "Keramisch Parket Leggen",
-      "Body": "Keramisch parket (houtlook tegels) biedt de warme uitstraling van hout, gecombineerd met de slijtvastheid van tegels en een uitstekende warmtegeleiding bij vloerverwarming. Voor een realistisch effect is de legwijze bepalend.",
+      "Eyebrow": "Specialistisch Tegelwerk",
+      "H1": "Strak en Vlak Keramisch Parket",
+      "Body": "Keramisch parket combineert de warme, authentieke uitstraling van een houten vloer met het onderhoudsgemak en de krasvastheid van keramiek. Het is bovendien de ultieme geleider voor vloerverwarming. De verwerking van deze lange, smalle tegels is echter technisch uitdagend.",
       "Primary CTA": "Project bespreken",
       "Primary CTA URL": "/contact/"
     },
     "cta": {
-      "H2": "Houtlook tegels professioneel laten leggen?",
+      "H2": "Klaar voor de volgende stap?",
+      "Body": "Neem contact op voor een technische opname en bespreek de mogelijkheden.",
       "Button": "Project bespreken",
       "URL": "/contact/"
     },
     "relatedUrls": [
       "/tegelwerk/vloer-tegelen/",
-      "/projecten/"
+      "/tegelwerk/badkamer-tegelen/"
     ]
   },
   {

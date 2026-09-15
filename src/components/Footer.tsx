@@ -1,5 +1,4 @@
 import business from '../content/business-input.json'
-import CtaArrow from './CtaArrow'
 import { footerLinks } from '../data/navigation'
 
 export default function Footer() {
@@ -30,15 +29,22 @@ export default function Footer() {
             {business.btw && <p className="footer-meta">BTW: {business.btw}</p>}
           </div>
 
-          {/* Column 2: Diensten */}
+          {/* Column 2: DIENSTEN */}
           <div className="footer-col">
-            <h2 className="footer-heading">Badkamers & Tegelwerk</h2>
+            <h2 className="footer-heading">DIENSTEN</h2>
             <ul className="footer-links">
-              {footerLinks.badkamers.map((item) => (
+              {footerLinks.diensten.map((item) => (
                 <li key={item.href}>
                   <a href={item.href}>{item.label}</a>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          {/* Column 3: TEGELWERK */}
+          <div className="footer-col">
+            <h2 className="footer-heading">TEGELWERK</h2>
+            <ul className="footer-links">
               {footerLinks.tegelwerk.map((item) => (
                 <li key={item.href}>
                   <a href={item.href}>{item.label}</a>
@@ -47,23 +53,11 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Specialisaties */}
+          {/* Column 4: SPPAT */}
           <div className="footer-col">
-            <h2 className="footer-heading">Specialisaties</h2>
+            <h2 className="footer-heading">SPPAT</h2>
             <ul className="footer-links">
-              {footerLinks.specialisaties.map((item) => (
-                <li key={item.href}>
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4: Informatie */}
-          <div className="footer-col">
-            <h2 className="footer-heading">Informatie</h2>
-            <ul className="footer-links">
-              {footerLinks.informatie.map((item) => (
+              {footerLinks.sppat.map((item) => (
                 <li key={item.href}>
                   <a href={item.href}>{item.label}</a>
                 </li>
@@ -74,10 +68,6 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copy">Sppat — Almere &amp; Nederland</p>
-          <a href="/complete-badkamer-renovatie/almere/" className="footer-almere-link">
-            Badkamer Renovatie in Almere
-            <CtaArrow />
-          </a>
         </div>
       </div>
     </footer>

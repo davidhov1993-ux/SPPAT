@@ -28,7 +28,6 @@ export default function AboutPage({ page }: { page: Page }) {
           <div className="container">
             <div className="section-grid-editorial">
               <div className="editorial-header-col">
-                <span className="section-num">{String(index + 1).padStart(2, "0")} / SPPAT</span>
                 <h2>{section.H2}</h2>
               </div>
               <div className="editorial-body-col">

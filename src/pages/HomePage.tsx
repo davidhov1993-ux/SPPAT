@@ -58,7 +58,6 @@ export default function HomePage({ page }: { page: Page }) {
       <section id="werkzaamheden" className="home-services-section" aria-label="Diensten">
         <div className="container">
           <div className="home-services-header">
-            <span className="section-num">01 / OVERZICHT</span>
             <h2>{servicesBlock.H2}</h2>
             <nav className="home-jump-nav" aria-label="Diensten navigatie">
               <a href="#werkzaamheden" className="home-jump-link">
@@ -138,7 +137,6 @@ export default function HomePage({ page }: { page: Page }) {
 
               {/* Spans 8 of 12 columns adjacent to macro photo */}
               <div className="proof-text-col">
-                <span className="section-num">02 / TECHNIEK</span>
                 <h2>{proofBlock.H2}</h2>
                 {proofBlock.Body && (
                   <p>

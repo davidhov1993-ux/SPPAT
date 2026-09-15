@@ -38,23 +38,14 @@
   --font-eyebrow: 12px;
   --ls-eyebrow: 0.05em;
 
-  /* Spacing Tokens (Revision 1) */
+  /* Spacing Tokens — LOCKED CONTRACT §10 */
   --space-xs: 16px;
-  --space-sm: 24px;
-  --space-md: 48px;
-  --space-lg: 80px;
-  --space-xl: 120px;
-  --space-2xl: 160px;
-  --space-3xl: 120px;
-  --space-4xl: 120px;
+  --space-sm: 32px;
+  --space-md: 64px;
+  --space-lg: 120px;
+  --space-xl: 160px;
 
-  
-  
-  
-  
-  
-
-  /* Grid Tokens */
+  /* Grid Tokens — LOCKED CONTRACT §9 */
   --grid-max-width: 1440px;
   --grid-gutter: 24px;
   --grid-margin: 48px;
@@ -64,31 +55,33 @@
   --header-height: 80px;
 }
 
+/* 1024px — Contract §9: 12 cols / 24px gap */
 @media (max-width: 1024px) {
   :root {
     --grid-margin: 32px;
-    --grid-gutter: 20px;
-    --grid-cols: 8;
-    --space-md: 36px;
-    --space-lg: 60px;
-    --space-xl: 80px;
-    --space-2xl: 100px;
+    --space-lg: 80px;
+    --space-xl: 100px;
   }
 }
 
-@media (max-width: 768px) {
+/* 834px — Contract §9: 8 cols / 16px gap */
+@media (max-width: 834px) {
   :root {
     --grid-margin: 20px;
     --grid-gutter: 16px;
-    --grid-cols: 4;
-    --space-sm: 20px;
-    --space-md: 32px;
-    --space-lg: 48px;
-    --space-xl: 64px;
-    --space-2xl: 80px;
-    --space-3xl: 60px;
-    --space-4xl: 64px;
+    --grid-cols: 8;
+    --space-lg: 64px;
+    --space-xl: 80px;
     --header-height: 72px;
+  }
+}
+
+/* 390px — Contract §9: 4 cols / 16px gap */
+@media (max-width: 430px) {
+  :root {
+    --grid-cols: 4;
+    --space-lg: 64px;
+    --space-xl: 80px;
   }
 }
 

@@ -26,7 +26,6 @@ export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
           <div className="container">
             <div className="spec-nested-content-grid">
               <div className="spec-nested-content-block">
-                <span className="section-num" aria-hidden="true">0{index + 1} / OVERZICHT</span>
                 {section.H2 && <h2>{section.H2}</h2>}
                 {section.Body && (
                   <p className="lead">
@@ -62,7 +61,6 @@ export default function SpecialisatiesNestedPage({ page }: { page: Page }) {
           <div className="container">
             <div className="spec-nested-content-grid">
               <div className="spec-nested-content-block">
-                <span className="section-num" aria-hidden="true">FAQ</span>
                 <h2>Veelgestelde vragen</h2>
                 <div className="almere-faq-list" style={{ textAlign: 'left', marginTop: '32px' }}>
                   {page.faq.map((item, index) => (

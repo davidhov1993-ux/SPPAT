@@ -24,7 +24,6 @@ export default function TegelwerkServicePage({ page }: { page: Page }) {
     {page.sections.map((section, index) => <section key={section.id || section.H2} className="service-content-section" aria-label={section.H2}>
       <div className="container service-content-layout">
         <div className="service-content-block">
-          <span className="section-num" aria-hidden="true">{String(index + 1).padStart(2, '0')} / TECHNIEK</span>
           <h2>{section.H2}</h2>
           {section.Body?.split('\n\n').map(text => <p key={text}><RichText text={text} links={page.links} /></p>)}
           {!!section.bullets?.length && <ul className="service-spec-list">{section.bullets.map(bullet => <li key={bullet}><RichText text={bullet} links={page.links} /></li>)}</ul>}

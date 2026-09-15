@@ -1,10 +1,10 @@
 {
-  "routes": 31,
+  "routes": 28,
   "records": [
     {
       "id": "IA-01",
       "status": "PASS",
-      "message": "Exactly 31 approved routes"
+      "message": "Exactly 28 approved routes"
     },
     {
       "id": "SEO:/",
@@ -467,46 +467,6 @@
       "message": "All content images registered and labeled; no masters public"
     },
     {
-      "id": "SEO:/tegelwerk/inloopdouche-tegelen/",
-      "status": "PASS",
-      "message": "Rendered SEO, canonical, one exact H1"
-    },
-    {
-      "id": "CONTENT:/tegelwerk/inloopdouche-tegelen/",
-      "status": "PASS",
-      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
-    },
-    {
-      "id": "LINKS:/tegelwerk/inloopdouche-tegelen/",
-      "status": "PASS",
-      "message": "All local routes and fragments resolve; no leaked placeholders"
-    },
-    {
-      "id": "MEDIA:/tegelwerk/inloopdouche-tegelen/",
-      "status": "PASS",
-      "message": "All content images registered and labeled; no masters public"
-    },
-    {
-      "id": "SEO:/tegelwerk/vloerverwarming-en-tegelen/",
-      "status": "PASS",
-      "message": "Rendered SEO, canonical, one exact H1"
-    },
-    {
-      "id": "CONTENT:/tegelwerk/vloerverwarming-en-tegelen/",
-      "status": "PASS",
-      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
-    },
-    {
-      "id": "LINKS:/tegelwerk/vloerverwarming-en-tegelen/",
-      "status": "PASS",
-      "message": "All local routes and fragments resolve; no leaked placeholders"
-    },
-    {
-      "id": "MEDIA:/tegelwerk/vloerverwarming-en-tegelen/",
-      "status": "PASS",
-      "message": "All content images registered and labeled; no masters public"
-    },
-    {
       "id": "SEO:/projecten/complete-badkamer-inloopdouche/",
       "status": "PASS",
       "message": "Rendered SEO, canonical, one exact H1"
@@ -607,26 +567,6 @@
       "message": "All content images registered and labeled; no masters public"
     },
     {
-      "id": "SEO:/projecten/keuken-leefruimte-tegelvloer/",
-      "status": "PASS",
-      "message": "Rendered SEO, canonical, one exact H1"
-    },
-    {
-      "id": "CONTENT:/projecten/keuken-leefruimte-tegelvloer/",
-      "status": "PASS",
-      "message": "Every supplied body, heading, bullet, card and FAQ rendered"
-    },
-    {
-      "id": "LINKS:/projecten/keuken-leefruimte-tegelvloer/",
-      "status": "PASS",
-      "message": "All local routes and fragments resolve; no leaked placeholders"
-    },
-    {
-      "id": "MEDIA:/projecten/keuken-leefruimte-tegelvloer/",
-      "status": "PASS",
-      "message": "All content images registered and labeled; no masters public"
-    },
-    {
       "id": "CASE-1:COPY",
       "status": "PASS",
       "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
@@ -673,16 +613,6 @@
     },
     {
       "id": "CASE-5:MEDIA",
-      "status": "PASS",
-      "message": "Source identity, distinct galleries, grouping and AI isolation"
-    },
-    {
-      "id": "CASE-6:COPY",
-      "status": "PASS",
-      "message": "Exact R1 title, meta, H1, intro, H2/body, proof list and CTA"
-    },
-    {
-      "id": "CASE-6:MEDIA",
       "status": "PASS",
       "message": "Source identity, distinct galleries, grouping and AI isolation"
     },

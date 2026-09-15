@@ -65,7 +65,7 @@ No filters are required.
 **Internal ID:** `CASE-01`  
 **Suggested slug:** `/projecten/complete-badkamer-inloopdouche/`  
 **Primary related service:** `/complete-badkamer-renovatie/`  
-**Secondary:** `/tegelwerk/inloopdouche-tegelen/`, `/specialisaties/grootformaat-tegels/`
+**Secondary:** `/tegelwerk/badkamer-tegelen/`, `/specialisaties/grootformaat-tegels/`
 
 ### SEO
 
@@ -164,7 +164,7 @@ Card crop: 4:3, focus op totaalruimte.
 
 **Internal ID:** `CASE-03`  
 **Suggested slug:** `/projecten/grootformaat-tegelvloer-woonruimte/`  
-**Related:** `/tegelwerk/vloer-tegelen/`, `/specialisaties/grootformaat-tegels/`, `/tegelwerk/vloerverwarming-en-tegelen/`
+**Related:** `/tegelwerk/vloer-tegelen/`, `/specialisaties/grootformaat-tegels/`, `/tegelwerk/vloer-tegelen/`
 
 ### SEO
 **Title:** `Grootformaat Tegelvloer in Woonruimte | Sppat Projectcase`  
@@ -211,7 +211,7 @@ Mobile: verticale crop met zichtlijn in vloer.
 
 **Internal ID:** `CASE-04`  
 **Suggested slug:** `/projecten/inloopdouche-technische-detaillering/`  
-**Related:** `/tegelwerk/inloopdouche-tegelen/`, `/specialisaties/grootformaat-tegels/`, `/specialisaties/mozaiek-zetten/`
+**Related:** `/tegelwerk/badkamer-tegelen/`, `/specialisaties/grootformaat-tegels/`, `/specialisaties/mozaiek-zetten/`
 
 ### SEO
 **Title:** `Inloopdouche met Afschot & Waterdichting | Sppat Projectcase`  
@@ -239,7 +239,7 @@ Detail: kim-/hoekzone, nis, doorvoer, aansluiting glaswand.
 No fake construction-stage photo if unavailable.
 
 ### CTA
-`Meer over inloopdouches` → `/tegelwerk/inloopdouche-tegelen/`
+`Meer over inloopdouches` → `/tegelwerk/badkamer-tegelen/`
 
 ---
 

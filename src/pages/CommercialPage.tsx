@@ -84,9 +84,6 @@ export default function CommercialPage({ page }: { page: Page }) {
             <div className="container">
               <div className="section-grid-editorial">
                 <div className="editorial-header-col">
-                  <span className="section-num" aria-hidden="true">
-                    {String(index + 1).padStart(2, '0')} /
-                  </span>
                   {block.H2 && <h2>{block.H2}</h2>}
                   {block.H3 && <h3>{block.H3}</h3>}
                 </div>

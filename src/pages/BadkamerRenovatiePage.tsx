@@ -54,7 +54,6 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
           <div className="container">
             <div className="badkamer-intro-grid">
               <div className="badkamer-intro-container">
-                <span className="section-num">01 / PROCES</span>
                 <h2>{sections[0].H2}</h2>
                 <p className="lead manifesto-lead">{sections[0].Body}</p>
               </div>
@@ -180,7 +179,6 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
               </div>
 
               <div className="standard-text">
-                <span className="section-num">02 / TECHNIEK</span>
                 <h2>{sections[1].H2}</h2>
                 <p className="lead">
                   <RichText text={sections[1].Body!} links={section3Links} />
@@ -196,7 +194,6 @@ export default function BadkamerRenovatiePage({ page }: { page: Page }) {
         <section className="badkamer-pricing-section" aria-label="Kosten & Investering">
           <div className="container">
             <div className="pricing-header">
-              <span className="section-num">03 / INVESTERING</span>
               <h2>{sections[2].H2}</h2>
               <p className="lead">{sections[2].Body}</p>
             </div>

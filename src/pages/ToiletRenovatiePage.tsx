@@ -44,7 +44,6 @@ export default function ToiletRenovatiePage({ page }: { page: Page }) {
           <div className="container">
             <div className="spec-nested-content-grid">
               <div className="spec-nested-content-block">
-                <span className="section-num" aria-hidden="true">0{index + 1} / OVERZICHT</span>
                 {section.H2 && <h2>{section.H2}</h2>}
                 {section.Body && (
                   <p className="lead">

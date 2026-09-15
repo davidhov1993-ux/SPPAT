@@ -29,7 +29,6 @@ export default function ContactPage({ page }: { page: Page }) {
           <div className="contact-layout">
             {/* Form Column: Cols 2–7 on desktop */}
             <div className="contact-form-col">
-              <span className="section-num">01 / AANVRAAG</span>
               {formSection?.H2 && <h2>{formSection.H2}</h2>}
               {formSection?.Body && <p className="lead">{formSection.Body}</p>}
 
@@ -40,7 +39,6 @@ export default function ContactPage({ page }: { page: Page }) {
             {infoSection && (
               <aside className="contact-info-col" aria-label="Contactgegevens">
                 <div className="contact-info-block">
-                  <span className="section-num">02 / REGIO</span>
                   {infoSection.H3 && <h3>{infoSection.H3}</h3>}
                   {infoSection.Body && <p>{infoSection.Body}</p>}
 

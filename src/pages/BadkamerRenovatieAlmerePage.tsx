@@ -47,7 +47,6 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
           <div className="container">
             <div className="almere-intro-grid">
               <div className="almere-intro-container">
-                <span className="section-num" aria-hidden="true">01 / LOKAAL</span>
                 <h2>{sections[0].H2}</h2>
                 {sections[0].Lead && (
                   <p className="lead manifesto-lead">
@@ -77,7 +76,6 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
                 <MediaImage mediaId={undefined} /><MediaCaption mediaId={undefined} />
               </figure>
               <div className="almere-craft-text">
-                <span className="section-num" aria-hidden="true">02 / UITVOERING</span>
                 <h2>{sections[1].H2}</h2>
                 {sections[1].Lead && (
                   <p className="lead">

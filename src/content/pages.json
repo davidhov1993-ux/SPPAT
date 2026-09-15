@@ -150,7 +150,6 @@
     },
     "relatedUrls": [
       "/tegelwerk/badkamer-tegelen/",
-      "/tegelwerk/inloopdouche-tegelen/",
       "/specialisaties/grootformaat-tegels/",
       "/specialisaties/mozaiek-zetten/",
       "/specialisaties/natuursteen/",
@@ -313,13 +312,13 @@
             "Title": "Inloopdouche tegelen",
             "Body": "Precisiewerk met watermanagement, perfect afschot en waterdichting.",
             "CTA": "Lees meer",
-            "CTA URL": "/tegelwerk/inloopdouche-tegelen/"
+            "CTA URL": "/tegelwerk/badkamer-tegelen/"
           },
           {
             "Title": "Vloerverwarming en tegelen",
             "Body": "Vakkundige opbouw en afwerking van tegelwerk op vloerverwarming.",
             "CTA": "Lees meer",
-            "CTA URL": "/tegelwerk/vloerverwarming-en-tegelen/"
+            "CTA URL": "/tegelwerk/vloer-tegelen/"
           }
         ]
       },
@@ -420,7 +419,6 @@
     },
     "relatedUrls": [
       "/complete-badkamer-renovatie/",
-      "/tegelwerk/inloopdouche-tegelen/",
       "/specialisaties/grootformaat-tegels/",
       "/specialisaties/mozaiek-zetten/",
       "/projecten/"
@@ -464,7 +462,6 @@
       "URL": "/contact/"
     },
     "relatedUrls": [
-      "/tegelwerk/vloerverwarming-en-tegelen/",
       "/specialisaties/grootformaat-tegels/",
       "/specialisaties/keramisch-parket/",
       "/projecten/"
@@ -558,8 +555,7 @@
     },
     "relatedUrls": [
       "/tegelwerk/wand-tegelen/",
-      "/tegelwerk/vloer-tegelen/",
-      "/projecten/keuken-leefruimte-tegelvloer/"
+      "/tegelwerk/vloer-tegelen/"
     ]
   },
   {
@@ -688,7 +684,6 @@
     },
     "relatedUrls": [
       "/tegelwerk/badkamer-tegelen/",
-      "/tegelwerk/inloopdouche-tegelen/",
       "/tegelwerk/vloer-tegelen/",
       "/projecten/",
       "/kennisbank/tegel-lippage-voorkomen/"
@@ -728,7 +723,6 @@
     },
     "relatedUrls": [
       "/tegelwerk/badkamer-tegelen/",
-      "/tegelwerk/inloopdouche-tegelen/",
       "/projecten/"
     ]
   },
@@ -813,7 +807,6 @@
     },
     "relatedUrls": [
       "/tegelwerk/vloer-tegelen/",
-      "/tegelwerk/vloerverwarming-en-tegelen/",
       "/projecten/"
     ]
   },
@@ -885,7 +878,6 @@
     },
     "relatedUrls": [
       "/tegelwerk/badkamer-tegelen/",
-      "/tegelwerk/inloopdouche-tegelen/",
       "/complete-badkamer-renovatie/"
     ]
   },
@@ -1075,114 +1067,5 @@
       "Body": "Heeft u plannen voor een verbouwing of een specifiek tegelproject? Wij bespreken graag de haalbaarheid en plannen, indien gewenst, een technische opname in."
     },
     "relatedUrls": []
-  },
-  {
-    "url": "/tegelwerk/inloopdouche-tegelen/",
-    "title": "Inloopdouche Tegelen | Afschot, Waterdichting & Afwerking | Sppat",
-    "description": "Laat uw inloopdouche vakkundig tegelen met aandacht voor waterdichting, afschot, douchegoot, voegverdeling en strakke wand-vloeraansluitingen.",
-    "hero": {
-      "H1": "Inloopdouche Vakkundig Tegelen",
-      "Primary CTA": "Project bespreken",
-      "Primary CTA URL": "/contact/"
-    },
-    "sections": [
-      {
-        "id": "SHOWER-1",
-        "H2": "Waterdichting onder het tegelwerk",
-        "Body": "In een douchezone worden hoeken en aansluitingen onderdeel van een waterdicht systeem. Rond goot, leidingdoorvoeren en andere kritische punten zijn aanvullende afdichtingsdetails nodig."
-      },
-      {
-        "id": "SHOWER-2",
-        "H2": "Afschot naar de douchegoot",
-        "Body": "De vloer wordt opgebouwd zodat water naar de afvoer wordt geleid en niet in hoeken of tegen aansluitingen blijft staan. De positie van de goot en het tegelformaat bepalen mede hoe de snijlijnen worden opgelost."
-      },
-      {
-        "id": "SHOWER-3",
-        "H2": "Tegelverdeling, nissen en aansluitingen",
-        "Body": "Een technisch goede douche kan visueel alsnog onrustig ogen wanneer de voegverdeling niet klopt. Daarom worden vloer, wand, nis en sanitaire elementen als één compositie uitgezet."
-      },
-      {
-        "id": "SHOWER-4",
-        "H2": "Grootformaat of mozaïek in de douche",
-        "Body": "Grootformaat tegels kunnen goed worden toegepast in een doucheruimte. Omdat de afvoer (drain) lager ligt, moet het water weg kunnen lopen (afschot). Als de tegel te groot is om mee te buigen met het afschot, wordt deze vaak diagonaal doorgezaagd (envelop-snede) of wordt de dekvloer zo aangepast dat een eenzijdig afschot naar een sleufgoot mogelijk is.",
-        "bullets": [
-          "Mozaïek wordt vaak gebruikt voor het accentueren van nissen of inloopdouches. Omdat mozaïek uit kleine steentjes op een flexibel netje of papier bestaat, volgt het de wand exact. Dit vereist een strakke hand en ervaring om een rustig en doorlopend resultaat te bereiken."
-        ]
-      },
-      {
-        "id": "SHOWER-5",
-        "H2": "Een inloopdouche als onderdeel van een complete renovatie",
-        "Body": "Wilt u liever dat één partij zowel het loodgieterswerk als het tegelwerk verzorgt? Bekijk dan onze dienst voor een complete badkamer renovatie."
-      }
-    ],
-    "links": [],
-    "cta": {
-      "H2": "Start uw project",
-      "Body": "Neem contact op voor een technische opname.",
-      "Button": "Project bespreken",
-      "URL": "/contact/"
-    },
-    "name": "Inloopdouche Tegelen",
-    "faq": [],
-    "relatedUrls": [
-      "/tegelwerk/badkamer-tegelen/",
-      "/complete-badkamer-renovatie/",
-      "/specialisaties/grootformaat-tegels/",
-      "/specialisaties/mozaiek-zetten/",
-      "/kennisbank/waterdichting-badkamer-kimband/",
-      "/projecten/"
-    ]
-  },
-  {
-    "url": "/tegelwerk/vloerverwarming-en-tegelen/",
-    "title": "Vloerverwarming & Tegels | Voorbereiding en Tegelvloer | Sppat",
-    "description": "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers.",
-    "hero": {
-      "H1": "Tegels op Vloerverwarming",
-      "Primary CTA": "Project bespreken",
-      "Primary CTA URL": "/contact/"
-    },
-    "sections": [
-      {
-        "id": "HEAT-1",
-        "H2": "Waarom tegels goed combineren met vloerverwarming",
-        "Body": "Keramiek is geschikt als vloerafwerking bij vloerverwarming, maar de complete vloeropbouw moet als systeem worden bekeken. Temperatuurbelasting, aanwezige voegen en eventuele scheurrisico's in de dekvloer mogen niet worden genegeerd."
-      },
-      {
-        "id": "HEAT-2",
-        "H2": "Een stabiele en vlakke ondergrond",
-        "Body": "Hoe groter de tegel, hoe minder de afwerking kan corrigeren. De ondergrond wordt daarom beoordeeld op vlakheid, stabiliteit en geschiktheid voor het gekozen formaat."
-      },
-      {
-        "id": "HEAT-3",
-        "H2": "Sleuven, lijm en spanningen in de vloer",
-        "Body": "Ontkoppeling: Bij zwevende dekvloeren, bepaalde houten ondervloeren of risico's op werking van de vloer, kan het gebruik van ontkoppelingsmatten (zoals veelgebruikt in de markt) nodig zijn om de tegel te scheiden van een krimpende ondervloer."
-      },
-      {
-        "id": "HEAT-4",
-        "H2": "Het moment en de wijze van ingebruikname",
-        "Body": "Bij tegelwerk op vloerverwarming wordt de vloeropbouw vooraf beoordeeld. Het moment en de wijze van ingebruikname worden afgestemd op het type dekvloer, het verwarmingssysteem en de voorschriften van de betrokken systeem- en materiaalleveranciers."
-      },
-      {
-        "id": "HEAT-5",
-        "H2": "Tegelformaat en legplan",
-        "Body": "Een vloer die doorloopt van hal naar woonkamer en keuken vraagt om één logisch raster. De tegelverdeling wordt niet per kamer opnieuw begonnen, maar afgestemd op de belangrijkste zichtassen en overgangen."
-      }
-    ],
-    "links": [],
-    "cta": {
-      "H2": "Start uw project",
-      "Body": "Neem contact op voor een technische opname.",
-      "Button": "Project bespreken",
-      "URL": "/contact/"
-    },
-    "name": "Vloerverwarming & Tegelen",
-    "faq": [],
-    "relatedUrls": [
-      "/tegelwerk/vloer-tegelen/",
-      "/specialisaties/grootformaat-tegels/",
-      "/specialisaties/keramisch-parket/",
-      "/projecten/grootformaat-tegelvloer-woonruimte/"
-    ]
   }
 ]

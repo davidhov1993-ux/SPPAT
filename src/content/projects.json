@@ -37,7 +37,6 @@
     ],
     "relatedServiceUrls": [
       "/complete-badkamer-renovatie/",
-      "/tegelwerk/inloopdouche-tegelen/",
       "/specialisaties/grootformaat-tegels/"
     ],
     "cta": {
@@ -131,8 +130,7 @@
     ],
     "relatedServiceUrls": [
       "/tegelwerk/vloer-tegelen/",
-      "/specialisaties/grootformaat-tegels/",
-      "/tegelwerk/vloerverwarming-en-tegelen/"
+      "/specialisaties/grootformaat-tegels/"
     ],
     "cta": {
       "label": "Vloertegels laten leggen",
@@ -172,13 +170,12 @@
     ],
     "technicalPoints": [],
     "relatedServiceUrls": [
-      "/tegelwerk/inloopdouche-tegelen/",
       "/specialisaties/grootformaat-tegels/",
       "/specialisaties/mozaiek-zetten/"
     ],
     "cta": {
       "label": "Meer over inloopdouches",
-      "url": "/tegelwerk/inloopdouche-tegelen/"
+      "url": "/tegelwerk/badkamer-tegelen/"
     },
     "tier": "B",
     "heroMedia": "bath-feb",
@@ -224,44 +221,5 @@
     "galleryMedia": [],
     "referenceMedia": [],
     "groupingConfirmed": true
-  },
-  {
-    "id": "CASE-06",
-    "slug": "keuken-leefruimte-tegelvloer",
-    "title": "Keuken en leefruimte met doorlopende tegelvloer",
-    "seoTitle": "Keuken & Leefruimte met Tegelvloer | Sppat Projectcase",
-    "meta": "Representatieve keuken- en woonruimte met doorlopende tegelvloer, nauwkeurige uitsnedes, aansluitingen en consistente zichtlijnen.",
-    "h1": "Eén vloerbeeld door keuken en leefruimte",
-    "intro": "Wanneer dezelfde tegelvloer door meerdere functies loopt, wordt continuïteit belangrijker dan de afzonderlijke ruimte. De vloer moet visueel doorlopen, terwijl hij technisch rekening houdt met wanden, keukenopstelling, kozijnen en andere aansluitpunten.",
-    "sections": [
-      {
-        "h2": "Het raster wordt vóór de keuken gelezen",
-        "body": "De positie van zichtlijnen en snijstukken wordt vooraf bepaald. Zo worden storende smalle stroken langs een keukenblok of entree waar mogelijk voorkomen."
-      },
-      {
-        "h2": "Maatwerk rond vaste elementen",
-        "body": "Rond kozijnen, leidingen en vaste keukenonderdelen zijn nauwkeurige uitsnedes nodig. De tegelvloer moet aansluiten zonder dat het voegbeeld onnodig wordt onderbroken."
-      },
-      {
-        "h2": "Achterwand als afzonderlijk precisiewerk",
-        "body": "Wanneer ook de keukenachterwand wordt betegeld, wordt de verdeling afgestemd op werkblad, bovenkasten en elektrapunten. Aansluitingen aan het werkblad worden flexibel afgewerkt."
-      }
-    ],
-    "technicalPoints": [],
-    "relatedServiceUrls": [
-      "/tegelwerk/keuken-tegelen/",
-      "/tegelwerk/vloer-tegelen/"
-    ],
-    "cta": {
-      "label": "Keuken tegelen",
-      "url": "/tegelwerk/keuken-tegelen/"
-    },
-    "tier": "B",
-    "heroMedia": "res04-4",
-    "galleryMedia": [],
-    "referenceMedia": [
-      "res03-6"
-    ],
-    "groupingConfirmed": false
   }
 ]

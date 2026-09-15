@@ -54,7 +54,6 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
         <section className="tegel-routing-section" aria-label="Waar kunnen wij u mee helpen?">
           <div className="container">
             <div className="tegel-routing-header">
-              <span className="section-num" aria-hidden="true">01 / OVERZICHT</span>
               <p className="eyebrow">
                 <span aria-hidden="true">—</span>
                 Waar kunnen wij u mee helpen?
@@ -100,7 +99,6 @@ export default function TegelwerkHubPage({ page }: { page: Page }) {
           <div className="container">
             <div className="tegel-pricing-grid">
               <div className="tegel-pricing-container">
-                <span className="section-num" aria-hidden="true">02 / TARIEVEN</span>
                 <h2>{pricingSection.H2}</h2>
                 <p className="lead tegel-pricing-lead">
                   {pricingSection.Body}

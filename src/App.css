@@ -519,7 +519,7 @@
   max-width: calc(100% / 12 * 8); /* 8 columns max */
   margin: 0 auto;
   text-align: center;
-  padding: var(--space-4xl) 0;
+  padding: var(--space-lg) 0;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
   display: flex;
@@ -951,7 +951,7 @@
    -------------------------------------------------- */
 .contact-section {
   padding-top: var(--space-xl);
-  padding-bottom: var(--space-2xl);
+  padding-bottom: var(--space-xl);
 }
 
 .contact-layout {
@@ -1351,8 +1351,8 @@
   justify-content: center;
   align-items: flex-start;
   gap: var(--space-sm);
-  padding-top: var(--space-2xl);
-  padding-bottom: var(--space-2xl);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
 }
 
 .not-found-section h1 {
@@ -2672,7 +2672,7 @@
 /* SECTION 1 (HERO): Asymmetrical Split. Text left (6 cols), Placeholder right (5 cols, offset by 1). */
 .service-hero-section {
   padding-top: var(--space-md);
-  padding-bottom: var(--space-4xl);
+  padding-bottom: var(--space-lg);
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -2744,8 +2744,8 @@
 
 /* SECTION 2 (CONTENT/LIST): Typography-led, centered alignment. Max-width 8 columns. Apply spacing-lg top and bottom. */
 .service-content-section {
-  padding-top: var(--space-3xl);
-  padding-bottom: var(--space-3xl);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -2818,8 +2818,8 @@
 
 /* SECTION 3 (TEXT + INTERNAL LINK): Left-aligned, spanning 6 columns. Apply spacing-lg top and bottom. Use the .inline-link class for the internal link. */
 .service-links-section {
-  padding-top: var(--space-3xl);
-  padding-bottom: var(--space-3xl);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
   border-bottom: 1px solid #E5E5E5;
 }
 
@@ -3144,12 +3144,12 @@
   
   .home-hero-media,
   .service-hero-media {
-    order: 2 !important; 
+    order: 1 !important;
   }
   
   .home-hero-text,
   .service-hero-text {
-    order: 1 !important;
+    order: 2 !important;
     width: 100% !important;
     padding: var(--space-md) !important;
   }
@@ -3618,4 +3618,14 @@ p .inline-link { display: inline; white-space: normal; }
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* HOTFIX: IMAGE THEN TEXT ORDERING FOR ALL MOBILE SECTIONS (EXCEPT KENNISBANK) */
+@media (max-width: 1024px) {
+  .home-hero-text, .service-hero-text, .phase-2-text, .phase-5-text, .approach-text, .quality-text {
+    order: 2 !important;
+  }
+  .home-hero-media, .service-hero-media, .phase-2-media, .phase-5-media, .approach-media, .quality-media {
+    order: 1 !important;
+  }
 }

@@ -945,7 +945,7 @@ infrezen/leggen van de vloerverwarming én het afwerken met (XXL/houtlook)
 vloertegels, om discussies over droogtijden en verantwoordelijkheden tussen twee
 aparte partijen (installateur vs. tegelzetter) te vermijden. Aanbevolen actie:
 Indien Sppat dit (in eigen beheer of met vaste partner) totaalpakket aanbiedt,
-voeg een pagina toe: /tegelwerk/vloerverwarming-en-tegelen/. Biedt Sppat alleen
+voeg een pagina toe: /tegelwerk/vloer-tegelen/. Biedt Sppat alleen
 de voorbereiding/tegelwerk aan op een reeds door de klant geregelde
 vloerverwarming, dan is de huidige architectuur voldoende en is geen wijziging
 nodig.

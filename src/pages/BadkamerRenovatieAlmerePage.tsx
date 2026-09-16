@@ -37,7 +37,7 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
         body={hero.Body}
         ctaUrl={hero['Primary CTA URL']}
         ctaText={hero['Primary CTA']}
-        imageSrc="/media/SPPAT-VIS-013.jpg"
+        imageSrc="/media/Generated Image September 10, 2026 - 7_57PM(1).jpg"
         imageAlt="Gedetailleerde weergave van strak tegelwerk met ingebouwde nis"
       />
 
@@ -75,7 +75,7 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
             <div className="almere-craft-grid">
               <figure className="almere-craft-media">
                 <img
-                  src="/media/Generated Image September 10, 2026 - 11_53PM.jpg"
+                  src="/media/SPPAT-VIS-002.jpg"
                   alt="Tegelzetter brengt met getande spaan lijmbed aan met millimeterprecisie"
                   loading="lazy"
                   className="almere-craft-img"
@@ -105,7 +105,7 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
             <div className="almere-precision-grid">
               <figure className="almere-precision-media">
                 <img
-                  src="/media/SPPAT-VIS-015.jpg"
+                  src="/media/SPPAT-VIS-006.jpg"
                   alt="Naadloze afwerking van tegelinleg drain en voegen"
                   loading="lazy"
                   className="almere-precision-img"
@@ -139,7 +139,7 @@ export default function BadkamerRenovatieAlmerePage({ page }: { page: Page }) {
         body={cta?.Body || 'Wij denken technisch met u mee. Neem contact op voor een opname.'}
         ctaUrl={cta?.URL || '/contact/'}
         ctaText={cta?.Button || 'Project bespreken'}
-        imageSrc="/media/SPPAT-VIS-016.jpg"
+        imageSrc="/media/Generated Image September 10, 2026 - 8_39PM(1).jpg"
         imageAlt="Voltooide badkamer met hoogwaardig sanitair en wandafwerking"
       />
 

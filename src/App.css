@@ -3170,3 +3170,45 @@
     aspect-ratio: 1 / 1 !important;
   }
 }
+
+/* New Responsive Grid Classes */
+.grid-12 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 834px) {
+  .grid-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.col-span-12 { grid-column: span 12; }
+.col-span-10 { grid-column: span 10; }
+.col-span-8 { grid-column: span 8; }
+.col-span-7 { grid-column: span 7; }
+.col-span-6 { grid-column: span 6; }
+.col-span-5 { grid-column: span 5; }
+.col-span-4 { grid-column: span 4; }
+
+.col-start-2 { grid-column-start: 2; }
+.col-start-5 { grid-column-start: 5; }
+.col-start-6 { grid-column-start: 6; }
+.col-start-7 { grid-column-start: 7; }
+.col-start-9 { grid-column-start: 9; }
+
+@media (max-width: 833px) {
+  .col-span-12, .col-span-10, .col-span-8, .col-span-7, .col-span-6, .col-span-5, .col-span-4 {
+    grid-column: span 1;
+  }
+  .col-start-2, .col-start-5, .col-start-6, .col-start-7, .col-start-9 {
+    grid-column-start: 1;
+  }
+  .order-md-2 { order: 0 !important; }
+}
+
+.order-md-2 {
+  order: 2;
+}
+

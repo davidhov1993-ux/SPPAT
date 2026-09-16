@@ -5,18 +5,13 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import CtaArrow from './components/CtaArrow'
 import HomePage from './pages/HomePage'
-import CommercialPage from './pages/CommercialPage'
 import BadkamerRenovatiePage from './pages/BadkamerRenovatiePage'
 import BadkamerRenovatieAlmerePage from './pages/BadkamerRenovatieAlmerePage'
-import TegelwerkHubPage from './pages/TegelwerkHubPage'
-import TegelwerkServicePage from './pages/TegelwerkServicePage'
-import SpecialisatiesHubPage from './pages/SpecialisatiesHubPage'
-import SpecialisatiesNestedPage from './pages/SpecialisatiesNestedPage'
-import ToiletRenovatiePage from './pages/ToiletRenovatiePage'
 import KennisbankPage from './pages/KennisbankPage'
 import ProjectsPage from './pages/ProjectsPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
+import TegelwerkPage from './pages/TegelwerkPage'
 import './App.css'
 
 const SITE_URL = "https://sppat.nl"
@@ -32,24 +27,14 @@ function renderPage(page: Page) {
   if (page.url === '/complete-badkamer-renovatie/almere/') {
     return <BadkamerRenovatieAlmerePage page={page} />
   }
-  if (page.url === '/complete-toilet-renovatie/') {
-    return <ToiletRenovatiePage page={page} />
-  }
-  if (page.url.startsWith('/complete-badkamer-renovatie')) {
-    return <CommercialPage page={page} />
-  }
+  
+  
   if (page.url === '/tegelwerk/') {
-    return <TegelwerkHubPage page={page} />
+    return <TegelwerkPage page={page} />
   }
-  if (page.url.startsWith('/tegelwerk/')) {
-    return <TegelwerkServicePage page={page} />
-  }
-  if (page.url === '/specialisaties/') {
-    return <SpecialisatiesHubPage page={page} />
-  }
-  if (page.url.startsWith('/specialisaties/')) {
-    return <SpecialisatiesNestedPage page={page} />
-  }
+  
+  
+  
   if (page.url.startsWith('/kennisbank/')) {
     return <KennisbankPage page={page} />
   }
@@ -85,6 +70,15 @@ export default function App({
       }
       robots.setAttribute('content', 'noindex')
       return
+    }
+
+    let robots = document.querySelector('meta[name="robots"]')
+    if (robots) {
+      if ((page as any).robots) {
+        robots.setAttribute('content', (page as any).robots)
+      } else {
+        robots.remove()
+      }
     }
 
     document.title = page.title

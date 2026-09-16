@@ -1,53 +1,11 @@
-import { useState } from 'react'
+
 import type { Page } from '../content/types'
-import RichText from '../components/RichText'
-import { CtaTypeA } from '../components/CtaSection'
 import CtaArrow from '../components/CtaArrow'
-
-const heroMedia = {
-  src: '/media/SPPAT-VIS-001.jpg',
-  alt: 'Strak afgewerkte badkamer met grootformaat tegels en inbouwdetails'
-}
-
-const serviceMedia = [
-  {
-    src: '/media/SPPAT-VIS-002.jpg',
-    alt: 'Complete Badkamer Renovatie nisdetail en wandafwerking',
-    objectPosition: 'center center'
-  },
-  {
-    src: '/media/SPPAT-VIS-003.jpg',
-    alt: 'Toilet Renovatie met symmetrische tegelvoegen en inbouwelement',
-    objectPosition: 'center center'
-  },
-  {
-    src: '/media/SPPAT-VIS-004.jpg',
-    alt: 'Professioneel Tegelwerk met scherpe 45 graden verstekrand',
-    objectPosition: 'left center'
-  },
-  {
-    src: '/media/SPPAT-VIS-005.jpg',
-    alt: 'Tegel Specialisaties natuursteen textuur en drain detail',
-    objectPosition: 'center bottom'
-  }
-]
-
-const proofMedia = {
-  src: '/media/SPPAT-VIS-006.jpg',
-  alt: 'Detail van strak tegelwerk en voegprecisie'
-}
+import { CtaTypeA } from '../components/CtaSection'
 
 export default function HomePage({ page }: { page: Page }) {
-  const [activeService, setActiveService] = useState(0)
-
   const hero = page.hero
-  const servicesBlock = page.sections[0] // SECTION 2: Waarvoor schakelt u ons in?
-  const proofBlock = page.sections[1] // SECTION 3: Kwaliteit begint onder de tegels
   const cta = page.cta
-
-  const proofLinks = page.links.filter(l =>
-    l.placement.toUpperCase().startsWith(proofBlock?.id || 'NONE')
-  )
 
   return (
     <>
@@ -77,10 +35,11 @@ export default function HomePage({ page }: { page: Page }) {
             <div className="home-hero-media">
               <figure className="home-hero-figure">
                 <img
-                  src={heroMedia.src}
-                  alt={hero.ALT || heroMedia.alt}
+                  src="/media/SPPAT-VIS-001.jpg"
+                  alt={hero.ALT || "Strak afgewerkte badkamer"}
                   fetchPriority="high"
                   className="home-hero-img"
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
               </figure>
             </div>
@@ -88,138 +47,120 @@ export default function HomePage({ page }: { page: Page }) {
         </div>
       </section>
 
-      {/* 2. SERVICES (Process: Interactive discovery on Desktop, linear on Tablet/Mobile) */}
+      {/* 2. CORE CAPABILITIES (2-column layout) */}
       <section id="werkzaamheden" className="home-services-section" aria-label="Diensten">
         <div className="container">
           <div className="home-services-header">
             <span className="section-num">01 / OVERZICHT</span>
-            <h2>{servicesBlock.H2}</h2>
-            <nav className="home-jump-nav" aria-label="Diensten navigatie">
-              <a href="#werkzaamheden" className="home-jump-link">
-                Werkzaamheden <span className="btn-arrow" aria-hidden="true">↓</span>
-              </a>
-              <a href="#tegelwerk" className="home-jump-link">
-                Tegelwerk <span className="btn-arrow" aria-hidden="true">↓</span>
-              </a>
-              <a href="#specialisaties" className="home-jump-link">
-                Specialisaties <span className="btn-arrow" aria-hidden="true">↓</span>
-              </a>
-            </nav>
+            <h2>Waarvoor schakelt u ons in?</h2>
           </div>
 
-          <div className="services-interactive-layout">
-            {/* Left: Services Text List (spans 7 of 12 columns on desktop) */}
-            <div className="services-text-col">
-              {servicesBlock.cards?.map((card, idx) => {
-                const cardId = idx === 2 ? 'tegelwerk' : idx === 3 ? 'specialisaties' : undefined
-                const mediaItem = serviceMedia[idx] || serviceMedia[0]
-
-                return (
-                  <article
-                    key={card.Title}
-                    id={cardId}
-                    className={`service-interactive-item ${activeService === idx ? 'is-active' : ''}`}
-                    onMouseEnter={() => setActiveService(idx)}
-                    onFocus={() => setActiveService(idx)}
-                    tabIndex={0}
-                  >
-                    <div className="service-item-content">
-                      <span className="card-order-num" aria-hidden="true">
-                        {String(idx + 1).padStart(2, '0')}
-                      </span>
-                      <h3 className="card-title">
-                        <a href={card['CTA URL']}>{card.Title}</a>
-                      </h3>
-                      {card.Body && <p className="card-body">{card.Body}</p>}
-                    </div>
-
-                    {/* Tablet/Mobile Inline Image (displayed directly underneath heading/body) */}
-                    <div className="service-inline-media">
-                      <img
-                        src={mediaItem.src}
-                        alt={mediaItem.alt}
-                        loading="lazy"
-                        style={{ objectPosition: mediaItem.objectPosition }}
-                      />
-                    </div>
-
-                    <a href={card['CTA URL']} className="text-link">
-                      {card.CTA || 'Lees meer'}
-                      <CtaArrow />
-                    </a>
-                  </article>
-                )
-              })}
-            </div>
-
-            {/* Right: Dedicated Media Container (spans 5 of 12 columns on desktop, fixed 3:4 aspect ratio) */}
-            <div className="services-desktop-media" aria-hidden="true">
-              <div className="services-media-frame">
-                {serviceMedia.map((media, idx) => (
-                  <img
-                    key={media.src}
-                    src={media.src}
-                    alt={media.alt}
-                    loading="lazy"
-                    className={`services-media-slide ${activeService === idx ? 'is-visible' : ''}`}
-                    style={{ objectPosition: media.objectPosition }}
-                  />
-                ))}
+          <div className="core-capabilities-grid grid-12">
+            <article className="capability-item col-span-6">
+              <div style={{ aspectRatio: '4/5', marginBottom: 'var(--space-sm)' }}>
+                <img
+                  src="/media/SPPAT-VIS-002.jpg"
+                  alt="Complete Badkamer Renovatie"
+                  loading="lazy"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
-            </div>
+              <h3 className="card-title">Complete Badkamer Renovatie</h3>
+              <p className="card-body">Turnkey uitvoering van uw project. Wij coördineren en realiseren het sloopwerk, de installatietechniek, waterdichting, het tegelwerk en de afmontage van uw sanitair.</p>
+              <a href="/complete-badkamer-renovatie/" className="text-link">
+                Ontdek de mogelijkheden <CtaArrow />
+              </a>
+            </article>
+
+            <article className="capability-item col-span-6">
+              <div style={{ aspectRatio: '4/5', marginBottom: 'var(--space-sm)' }}>
+                <img
+                  src="/media/SPPAT-VIS-003.jpg"
+                  alt="Professioneel Tegelwerk"
+                  loading="lazy"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </div>
+              <h3 className="card-title">Professioneel Tegelwerk</h3>
+              <p className="card-body">Vloeren, wanden en keukens. Voor een strakke, duurzame afwerking is nauwkeurigheid in de voorbereiding en uitvoering essentieel.</p>
+              <a href="/tegelwerk/" className="text-link">
+                Bekijk onze expertise <CtaArrow />
+              </a>
+            </article>
           </div>
         </div>
       </section>
 
-      {/* 3. TECHNICAL PROOF (Precision: 4-column Square Macro Grout Shot + 8-column text) */}
-      {proofBlock && (
-        <section className="technical-proof-section" aria-label="Technische Kwaliteit">
-          <div className="container">
-            <div className="technical-proof-grid">
-              {/* Spans 4 of 12 columns on desktop (1:1 square with 1px border) */}
-              <div className="proof-media-col">
-                <figure className="proof-macro-figure">
-                  <img
-                    src={proofMedia.src}
-                    alt={proofBlock.ALT || proofMedia.alt}
-                    loading="lazy"
-                    className="proof-macro-img"
-                  />
-                </figure>
-              </div>
-
-              {/* Spans 8 of 12 columns adjacent to macro photo */}
-              <div className="proof-text-col">
-                <span className="section-num">02 / TECHNIEK</span>
-                <h2>{proofBlock.H2}</h2>
-                {proofBlock.Body && (
-                  <p>
-                    <RichText text={proofBlock.Body} links={proofLinks} />
-                  </p>
-                )}
-                {proofLinks
-                  .filter(link => !(proofBlock.Body || '').includes(link.anchor))
-                  .map(link => (
-                    <p key={link.url}>
-                      <a href={link.url}>{link.anchor}</a>
-                    </p>
-                  ))}
-                {proofBlock['CTA URL'] && (
-                  <div style={{ marginTop: '16px' }}>
-                    <a href={proofBlock['CTA URL']} className="text-link">
-                      {proofBlock.CTA}
-                      <CtaArrow />
-                    </a>
-                  </div>
-                )}
-              </div>
-            </div>
+      {/* 3. TECHNICAL PROOF */}
+      <section className="technical-proof-section" aria-label="Technische Kwaliteit" style={{ marginTop: 'var(--space-xl)' }}>
+        <div className="container">
+          <div className="technical-proof-intro col-span-8">
+            <span className="section-num">02 / TECHNIEK</span>
+            <h2>Kwaliteit begint onder de tegels</h2>
+            <p>Een tegelwand of inloopdouche ziet er na oplevering vaak mooi uit, maar de levensduur wordt bepaald door onzichtbare techniek. Een professionele uitvoering vereist maximale aandacht voor de voorbereiding. Dit omvat het loodrecht uitvlakken van wanden, het correct frezen van installaties, het berekenen van het juiste afschot naar de douchegoot en het toepassen van robuuste waterdichtingssystemen in natte zones.</p>
           </div>
-        </section>
-      )}
+          
+          <div className="technical-proof-media col-start-2 col-span-10" style={{ marginTop: 'var(--space-md)' }}>
+            <figure className="proof-figure" style={{ aspectRatio: '16/9' }}>
+              <img
+                src="/media/SPPAT-VIS-006.jpg"
+                alt="Detail van strak tegelwerk rondom een inbouwkraan"
+                loading="lazy"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
 
-      {/* 4. TYPE A FINAL CTA (Action: Clean typography-driven conversion without image distraction) */}
-      {cta && <CtaTypeA block={cta} />}
+      {/* 4. SELECTED PROJECTS */}
+      <section className="selected-projects-section" aria-label="Geselecteerde Projecten" style={{ marginTop: 'var(--space-xl)' }}>
+        <div className="container">
+          <div className="home-services-header">
+            <span className="section-num">03 / PROJECTEN</span>
+            <h2>Recent Werk</h2>
+          </div>
+          
+          <div className="projects-grid grid-12">
+            {/* PRJ-01 */}
+            <article className="col-span-6">
+              <a href="/projecten/">
+                <div style={{ aspectRatio: '4/5', marginBottom: 'var(--space-sm)' }}>
+                  <picture>
+                    <source srcSet="/production/SPPAT-PROJ-01-bath08-1-hero-desktop.webp" media="(min-width: 1024px)" />
+                    <source srcSet="/production/SPPAT-PROJ-01-bath08-1-hero-tablet.webp" media="(min-width: 834px)" />
+                    <img src="/production/SPPAT-PROJ-01-bath08-1-hero-mobile.webp" alt="PRJ-01" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                  </picture>
+                </div>
+                <h3 className="card-title">Project 01 — Complete Badkamer</h3>
+                <p className="card-body">Grootformaat tegelwerk & inloopdouche.</p>
+              </a>
+            </article>
+
+            {/* PRJ-02 */}
+            <article className="col-span-6">
+              <a href="/projecten/">
+                <div style={{ aspectRatio: '4/5', marginBottom: 'var(--space-sm)' }}>
+                  <picture>
+                    <source srcSet="/production/SPPAT-PROJ-03-floor07-9-hero-desktop.webp" media="(min-width: 1024px)" />
+                    <source srcSet="/production/SPPAT-PROJ-03-floor07-9-hero-tablet.webp" media="(min-width: 834px)" />
+                    <img src="/production/SPPAT-PROJ-03-floor07-9-hero-mobile.webp" alt="PRJ-02" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                  </picture>
+                </div>
+                <h3 className="card-title">Project 02 — Vloer & Woonruimte</h3>
+                <p className="card-body">Grote tegelvloer en afwerking.</p>
+              </a>
+            </article>
+          </div>
+          
+          <div style={{ marginTop: 'var(--space-md)' }}>
+             <a href="/projecten/" className="text-link">Bekijk alle projecten <CtaArrow /></a>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. TYPE A FINAL CTA */}
+      {cta && <CtaTypeA block={{...cta, Visual: '/media/SPPAT-VIS-002.jpg'}} />}
     </>
   )
 }

@@ -8,7 +8,6 @@ export default function AboutPage({ page }: { page: Page }) {
 
   return (
     <>
-      {/* 1. HERO */}
       <section className="hero page-hero" aria-label="Over Sppat">
         <div className="container">
           <div className="article-hero-content">
@@ -19,19 +18,23 @@ export default function AboutPage({ page }: { page: Page }) {
             <h1>{hero.H1}</h1>
             {hero.Body && <p className="lead">{hero.Body}</p>}
           </div>
+          
+          {/* Workmanship visual 16:9 */}
+          <div style={{ marginTop: 'var(--space-md)' }}>
+             <img src="/media/sppat-real-process-tiling.jpg" alt="Vakmanschap en precisie bij Sppat" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} loading="lazy" />
+          </div>
         </div>
       </section>
 
-      {/* 2. SECTION 2 */}
       {section && (
-        <section className="content-section" aria-label={section.H2}>
+        <section className="content-section" aria-label={section.H2} style={{ marginTop: 'var(--space-xl)' }}>
           <div className="container">
-            <div className="section-grid-editorial">
-              <div className="editorial-header-col">
+            <div className="section-grid-editorial grid-12">
+              <div className="editorial-header-col col-span-4">
                 <span className="section-num">01 / FILOSOFIE</span>
                 <h2>{section.H2}</h2>
               </div>
-              <div className="editorial-body-col">
+              <div className="editorial-body-col col-start-5 col-span-8">
                 {section.Body && (
                   <p>
                     <RichText text={section.Body} links={page.links} />
@@ -43,8 +46,11 @@ export default function AboutPage({ page }: { page: Page }) {
         </section>
       )}
 
-      {/* 3. TYPE B CTA */}
-      {page.cta && <CtaTypeB block={page.cta} />}
+      {page.cta && (
+         <div style={{ marginTop: 'var(--space-xl)' }}>
+            <CtaTypeB block={page.cta} />
+         </div>
+      )}
     </>
   )
 }

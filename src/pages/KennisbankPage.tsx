@@ -13,6 +13,7 @@ export default function KennisbankPage({ page }: { page: Page }) {
     return (
       <>
         {/* Hub Hero */}
+        
         <section className="hero page-hero" aria-label="Kennisbank introductie">
           <div className="container">
             <div className="article-hero-content">
@@ -25,8 +26,16 @@ export default function KennisbankPage({ page }: { page: Page }) {
               <h1>{hero.H1}</h1>
               {hero.Body && <p className="lead">{hero.Body}</p>}
             </div>
+            <div style={{ marginTop: 'var(--space-md)' }}>
+              <picture>
+                <source srcSet="/production/SPPAT-KB-LASER-hero-desktop.webp" media="(min-width: 1024px)" />
+                <source srcSet="/production/SPPAT-KB-LASER-hero-tablet.webp" media="(min-width: 834px)" />
+                <img src="/production/SPPAT-KB-LASER-hero-mobile.webp" alt="Precisie met laseruitlijning" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} loading="lazy" />
+              </picture>
+            </div>
           </div>
         </section>
+
 
         {/* Hub Sections */}
         {page.sections.map((block, index) => {

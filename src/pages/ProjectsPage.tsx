@@ -1,101 +1,98 @@
-import { useState } from 'react'
-import type { Page, Project } from '../content/types'
-import business from '../content/business-input.json'
+import type { Page } from '../content/types'
 import { CtaTypeA } from '../components/CtaSection'
-import CtaArrow from '../components/CtaArrow'
 
 export default function ProjectsPage({ page }: { page: Page }) {
-  const [filter, setFilter] = useState('Alle')
   const hero = page.hero
-  const gridSection = page.sections[0]
-  const projects: Project[] = business.projects || []
-  const hasProjects = projects.length > 0
-
-  const visibleProjects = projects.filter(
-    project => filter === 'Alle' || project.category === filter
-  )
-
-  const filterOptions = gridSection.Filters ? gridSection.Filters.split(' | ') : []
+  const cta = page.cta
 
   return (
     <>
-      {/* 1. HERO */}
       <section className="hero page-hero" aria-label="Projecten introductie">
         <div className="container">
           <div className="article-hero-content">
             <p className="eyebrow">
               <span aria-hidden="true">—</span>
-              Portfolio &amp; Vakmanschap
+              Portfolio & Vakmanschap
             </p>
             <h1>{hero.H1}</h1>
             {hero.Body && <p className="lead">{hero.Body}</p>}
-            {hero['Primary CTA URL'] && (
-              <div style={{ marginTop: '16px' }}>
-                <a href={hero['Primary CTA URL']} className="btn">
-                  {hero['Primary CTA']}
-                  <CtaArrow />
-                </a>
-              </div>
-            )}
           </div>
         </div>
       </section>
 
-      {/* 2. DYNAMIC GRID / PORTFOLIO */}
       <section className="content-section" aria-label="Gerealiseerd werk">
         <div className="container">
-          <span className="section-num">01 / PORTFOLIO</span>
-          <h2>{gridSection.H2}</h2>
+          
+          {/* PRJ-01 */}
+          <article className="project-series" style={{ marginBottom: 'var(--space-xl)' }}>
+            <span className="section-num">PROJECT 01</span>
+            <h2>Grootformaat Badkamer & Inloopdouche</h2>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 'var(--space-md)', marginTop: 'var(--space-md)' }}>
+              <div className="col-span-8">
+                <picture>
+                  <source srcSet="/production/SPPAT-PROJ-01-bath08-1-hero-desktop.webp" media="(min-width: 1024px)" />
+                  <source srcSet="/production/SPPAT-PROJ-01-bath08-1-hero-tablet.webp" media="(min-width: 834px)" />
+                  <img src="/production/SPPAT-PROJ-01-bath08-1-hero-mobile.webp" alt="Grootformaat badkamer overzicht" style={{ width: '100%', objectFit: 'cover' }} loading="lazy" />
+                </picture>
+              </div>
+              <div className="col-start-9 col-span-4" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+                <picture>
+                  <source srcSet="/production/SPPAT-PROJ-01-bath08-2-detail-desktop.webp" media="(min-width: 1024px)" />
+                  <img src="/production/SPPAT-PROJ-01-bath08-2-detail-tablet.webp" alt="Detail 1" style={{ width: '100%', objectFit: 'cover' }} loading="lazy" />
+                </picture>
+                <picture>
+                  <source srcSet="/production/SPPAT-PROJ-01-bath08-3-detail-desktop.webp" media="(min-width: 1024px)" />
+                  <img src="/production/SPPAT-PROJ-01-bath08-3-detail-tablet.webp" alt="Detail 2" style={{ width: '100%', objectFit: 'cover' }} loading="lazy" />
+                </picture>
+              </div>
+            </div>
+          </article>
 
-          {/* If projects exist and categories are available, render sharp architectural tabs */}
-          {hasProjects && filterOptions.length > 0 && (
-            <div className="project-filters" role="group" aria-label="Filter projecten op discipline">
-              {filterOptions.map(option => (
-                <button
-                  key={option}
-                  type="button"
-                  className={`filter-tab ${filter === option ? 'is-active' : ''}`}
-                  aria-pressed={filter === option}
-                  onClick={() => setFilter(option)}
-                >
-                  {option}
-                </button>
-              ))}
+          {/* PRJ-02 */}
+          <article className="project-series" style={{ marginBottom: 'var(--space-xl)' }}>
+            <span className="section-num">PROJECT 02</span>
+            <h2>Woonkamervloer & Trapopgang</h2>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 'var(--space-md)', marginTop: 'var(--space-md)' }}>
+              <div className="col-span-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
+                <picture>
+                  <source srcSet="/production/SPPAT-PROJ-03-floor07-1-hero-desktop.webp" media="(min-width: 1024px)" />
+                  <img src="/production/SPPAT-PROJ-03-floor07-1-hero-tablet.webp" alt="Detail tegelvloer" style={{ width: '100%', objectFit: 'cover' }} loading="lazy" />
+                </picture>
+              </div>
+              <div className="col-start-7 col-span-6">
+                <picture>
+                  <source srcSet="/production/SPPAT-PROJ-03-floor07-9-hero-desktop.webp" media="(min-width: 1024px)" />
+                  <source srcSet="/production/SPPAT-PROJ-03-floor07-9-hero-tablet.webp" media="(min-width: 834px)" />
+                  <img src="/production/SPPAT-PROJ-03-floor07-9-hero-mobile.webp" alt="Overzicht tegelvloer" style={{ width: '100%', objectFit: 'cover' }} loading="lazy" />
+                </picture>
+              </div>
             </div>
-          )}
+          </article>
 
-          {/* Project Grid */}
-          {hasProjects ? (
-            <div className="projects-portfolio-grid" aria-live="polite">
-              {visibleProjects.map(project => (
-                <article key={project.title} className="project-item">
-                  <figure>
-                    <img src={project.image} alt={project.alt || project.title} loading="lazy" />
-                    <figcaption>
-                      <h3 className="project-title">{project.title}</h3>
-                      {project.location && <p className="project-meta">{project.location}</p>}
-                      {project.services && project.services.length > 0 && (
-                        <p className="project-meta">{project.services.join(' · ')}</p>
-                      )}
-                    </figcaption>
-                  </figure>
-                </article>
-              ))}
+          {/* PRJ-03 */}
+          <article className="project-series" style={{ marginBottom: 'var(--space-xl)' }}>
+            <span className="section-num">PROJECT 03</span>
+            <h2>Hal & Entree Vloer</h2>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 'var(--space-md)', marginTop: 'var(--space-md)' }}>
+              <div className="col-span-12">
+                <picture>
+                  <source srcSet="/production/SPPAT-PROJ-06-res04-4-hero-desktop.webp" media="(min-width: 1024px)" />
+                  <source srcSet="/production/SPPAT-PROJ-06-res04-4-hero-tablet.webp" media="(min-width: 834px)" />
+                  <img src="/production/SPPAT-PROJ-06-res04-4-hero-mobile.webp" alt="Hal tegelwerk" style={{ width: '100%', objectFit: 'cover' }} loading="lazy" />
+                </picture>
+              </div>
             </div>
-          ) : (
-            <div className="project-empty-state" style={{ marginTop: '32px' }}>
-              <h3>Projectdocumentatie in voorbereiding</h3>
-              <p>
-                Wij fotograferen en documenteren momenteel onze recent opgeleverde badkamers, toiletruimtes
-                en specialistische tegelprojecten. Nieuwe opleveringen worden binnenkort aan dit overzicht toegevoegd.
-              </p>
-            </div>
-          )}
+          </article>
+
         </div>
       </section>
 
-      {/* 3. TYPE A FINAL CTA */}
-      {page.cta && <CtaTypeA block={page.cta} />}
+      {cta && (
+        <CtaTypeA block={cta} />
+      )}
     </>
   )
 }

@@ -21,7 +21,7 @@ export default function AboutPage({ page }: { page: Page }) {
           
           {/* Workmanship visual 16:9 */}
           <div style={{ marginTop: 'var(--space-md)' }}>
-             <img src="/media/sppat-real-process-tiling.jpg" alt="Vakmanschap en precisie bij Sppat" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} loading="lazy" />
+             <img src="/media/sppat-real-process-tiling.jpg" alt="Vakmanschap in tegelwerk" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} loading="lazy" />
           </div>
         </div>
       </section>
@@ -34,7 +34,7 @@ export default function AboutPage({ page }: { page: Page }) {
                 <span className="section-num">01 / FILOSOFIE</span>
                 <h2>{section.H2}</h2>
               </div>
-              <div className="editorial-body-col col-start-5 col-span-8">
+              <div className="editorial-body-col col-start-5 col-span-6">
                 {section.Body && (
                   <p>
                     <RichText text={section.Body} links={page.links} />

@@ -64,14 +64,16 @@ export default function TegelwerkPage({ page }: { page: Page }) {
           
           {/* Premium A: XXL / Grootformaat + Natural Stone */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 'var(--space-md)', marginBottom: 'var(--space-xl)' }}>
+            
             <div className="col-span-6">
               <img 
-                src="/production/SPPAT-PROJ-01-bath08-1-hero-desktop.webp" 
-                alt="Grootformaat tegels en natuursteen verwerking"
+                src="/references/e5168e84-d907-4e2e-ad01-71bf3ecb6bcf.JPG" 
+                alt="Grootformaat tegels 1.5 x 3m (referentiebeeld)"
                 style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover' }}
                 loading="lazy"
               />
             </div>
+
             <div className="col-start-7 col-span-6" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <span className="section-num">02 / SPECIALISATIE</span>
               <h2>Grootformaat & Natuursteen</h2>
@@ -86,14 +88,16 @@ export default function TegelwerkPage({ page }: { page: Page }) {
               <h2>Mozaïek & Keramisch Parket</h2>
               <p>Fijne detaillering zoals mozaïek voegt diepte en karakter toe aan inloopdouches en wanden, en vraagt om exacte uitlijning. Keramisch parket (wood-look) biedt de warme uitstraling van hout met het onderhoudsgemak van tegels, ideaal voor toepassingen met vloerverwarming.</p>
             </div>
+            
             <div className="col-start-7 col-span-6">
               <img 
-                src="/media/Generated Image September 11, 2026 - 11_36AM.jpg" 
+                src="/special-references/Generated Image September 10, 2026 - 7_02PM.jpg" 
                 alt="Precisie in mozaïek en keramisch parket"
                 style={{ width: '100%', aspectRatio: '4/5', objectFit: 'cover' }}
                 loading="lazy"
               />
             </div>
+
           </div>
         </div>
       </section>

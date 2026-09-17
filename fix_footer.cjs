@@ -1,4 +1,6 @@
-import business from '../content/business-input.json'
+const fs = require('fs');
+
+const code = `import business from '../content/business-input.json'
 
 const dienstenLinks: [string, string][] = [
   ['Complete badkamer renovatie', '/complete-badkamer-renovatie/'],
@@ -90,3 +92,5 @@ export default function Footer() {
     </footer>
   )
 }
+`
+fs.writeFileSync('src/components/Footer.tsx', code);

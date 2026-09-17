@@ -1,5 +1,5 @@
 import type { Page } from '../content/types'
-import { CtaTypeA } from '../components/CtaSection'
+import { CtaTypeB } from '../components/CtaSection'
 
 export default function ProjectsPage({ page }: { page: Page }) {
   const hero = page.hero
@@ -91,7 +91,7 @@ export default function ProjectsPage({ page }: { page: Page }) {
       </section>
 
       {cta && (
-        <CtaTypeA block={cta} />
+        <CtaTypeB block={cta} />
       )}
     </>
   )

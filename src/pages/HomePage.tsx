@@ -121,38 +121,49 @@ export default function HomePage({ page }: { page: Page }) {
             <h2>Recent Werk</h2>
           </div>
           
-          <div className="projects-grid grid-12">
+          
+          <div className="projects-grid">
             {/* PRJ-01 */}
-            <article className="col-span-6">
-              <a href="/projecten/">
-                <div style={{ aspectRatio: '4/5', marginBottom: 'var(--space-sm)' }}>
+            <article className="project-preview grid-12" style={{ marginBottom: 'var(--space-xl)', alignItems: 'center' }}>
+              <div className="col-span-7">
+                <a href="/projecten/#project-01">
                   <picture>
                     <source srcSet="/production/SPPAT-PROJ-01-bath08-1-hero-desktop.webp" media="(min-width: 1024px)" />
                     <source srcSet="/production/SPPAT-PROJ-01-bath08-1-hero-tablet.webp" media="(min-width: 834px)" />
-                    <img src="/production/SPPAT-PROJ-01-bath08-1-hero-mobile.webp" alt="PRJ-01" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                    <img src="/production/SPPAT-PROJ-01-bath08-1-hero-mobile.webp" alt="Grootformaat badkamer project" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} loading="lazy" />
                   </picture>
-                </div>
-                <h3 className="card-title">Project 01 — Complete Badkamer</h3>
+                </a>
+              </div>
+              <div className="col-start-9 col-span-4">
+                <h3 className="card-title" style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Project 01 — Complete Badkamer</h3>
                 <p className="card-body">Grootformaat tegelwerk & inloopdouche.</p>
-              </a>
+                <a href="/projecten/#project-01" className="text-link" style={{ marginTop: '1rem' }}>
+                  Bekijk project <CtaArrow />
+                </a>
+              </div>
             </article>
 
             {/* PRJ-02 */}
-            <article className="col-span-6">
-              <a href="/projecten/">
-                <div style={{ aspectRatio: '4/5', marginBottom: 'var(--space-sm)' }}>
+            <article className="project-preview grid-12" style={{ marginBottom: 'var(--space-xl)', alignItems: 'center' }}>
+              <div className="col-span-4 order-md-2" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <h3 className="card-title" style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Project 02 — Vloer & Woonruimte</h3>
+                <p className="card-body">Grote tegelvloer en afwerking van de trapopgang.</p>
+                <a href="/projecten/#project-02" className="text-link" style={{ marginTop: '1rem' }}>
+                  Bekijk project <CtaArrow />
+                </a>
+              </div>
+              <div className="col-start-6 col-span-7">
+                <a href="/projecten/#project-02">
                   <picture>
                     <source srcSet="/production/SPPAT-PROJ-03-floor07-9-hero-desktop.webp" media="(min-width: 1024px)" />
                     <source srcSet="/production/SPPAT-PROJ-03-floor07-9-hero-tablet.webp" media="(min-width: 834px)" />
-                    <img src="/production/SPPAT-PROJ-03-floor07-9-hero-mobile.webp" alt="PRJ-02" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                    <img src="/production/SPPAT-PROJ-03-floor07-9-hero-mobile.webp" alt="Tegelvloer project" style={{ width: '100%', aspectRatio: '16/9', objectFit: 'cover' }} loading="lazy" />
                   </picture>
-                </div>
-                <h3 className="card-title">Project 02 — Vloer & Woonruimte</h3>
-                <p className="card-body">Grote tegelvloer en afwerking.</p>
-              </a>
+                </a>
+              </div>
             </article>
           </div>
-          
+
           <div style={{ marginTop: 'var(--space-md)' }}>
              <a href="/projecten/" className="text-link">Bekijk alle projecten <CtaArrow /></a>
           </div>

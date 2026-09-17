@@ -48,7 +48,7 @@ export default function ContactPage({ page }: { page: Page }) {
             </div>
             
             {/* Form: 7 columns */}
-            <div className="col-start-6 col-span-7">
+            <div className="col-start-7 col-span-6">
               <span className="section-num">01 / AANVRAAG</span>
               {formSection?.H2 && <h2>{formSection.H2}</h2>}
               {formSection?.Body && <p style={{ marginBottom: 'var(--space-md)' }}>{formSection.Body}</p>}

@@ -21,7 +21,7 @@ export function CtaAnchor({ href, link, title, mediaId, children }: CtaProps & {
           className="w-full aspect-[4/5] md:aspect-[21/9]" 
         />
       ) : (
-        <div className="w-full bg-[#E5E5E5] aspect-[4/5] md:aspect-[21/9] -mx-[20px] md:mx-0 w-[100vw] md:w-auto"></div>
+        <div className="w-full bg-[#E5E5E5] aspect-[4/5] md:aspect-[21/9] -mx-[20px] md:mx-0 w-[calc(100%+40px)] md:w-auto"></div>
       )}
       <div className="bg-[#F7F7F5] p-space-md border border-blueprint w-[90%] md:w-auto md:max-w-[400px] -mt-16 md:-mt-0 md:absolute md:bottom-space-lg md:left-space-lg mx-auto md:mx-0 z-10 relative shadow-sm">
          <H2 className="mb-space-sm">{title || "Project bespreken"}</H2>

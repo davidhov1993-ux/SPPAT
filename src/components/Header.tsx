@@ -58,7 +58,6 @@ export function Header() {
     { label: "Specialisaties", href: "/specialisaties/" },
     { label: "Projecten", href: "/projecten/" },
     { label: "Over ons", href: "/over-ons/" },
-    { label: "Kennisbank", href: "/kennisbank/" },
     { label: "Contact", href: "/contact/" },
   ];
 
@@ -77,7 +76,7 @@ export function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-6">
           {links.map((link) => {
-             const isActive = pathname === link.href || pathname.startsWith(link.href) && link.href !== '/';
+             const isActive = pathname === link.href || (pathname.startsWith(link.href) && link.href !== '/');
              return (
                <Link
                  key={link.href}
@@ -88,6 +87,9 @@ export function Header() {
                </Link>
              );
           })}
+          <Link href="/contact/" className="ml-4 font-space text-[14px] uppercase tracking-[0.05em] bg-[#1A1A1A] text-[#F7F7F5] px-4 py-2 hover:bg-[#333] transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]">
+            Project bespreken
+          </Link>
         </nav>
 
         {/* Mobile Toggle */}

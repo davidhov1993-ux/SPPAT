@@ -32,7 +32,6 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-inter bg-[#F7F7F5] text-[#1A1A1A]">
         <Header />
         <Breadcrumbs />
-        <Breadcrumbs />
         <div id="main-content" className="flex-grow">{children}</div>
         
 

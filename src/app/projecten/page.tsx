@@ -5,13 +5,12 @@ import { Metadata } from "next";
 import { mediaMapping } from "@/config/mediaData";
 
 export const metadata: Metadata = {
-  title: "Gerealiseerde Projecten | SPPAT",
-  description: "Bekijk gerealiseerde SPPAT projecten. Van complete badkamerrenovaties tot grootformaat tegelvloeren en strak maatwerk.",
-  alternates: { canonical: "https://www.sppat.nl/projecten/" },
+  title: 'Gerealiseerde Projecten | Badkamers & Tegelwerk | SPPAT',
+  description: 'Bekijk een selectie van gerealiseerde SPPAT-projecten: badkamers, tegelvloeren en details van uitgevoerd tegelwerk.',
 };
 
 export default function Projecten() {
-  const showProject06 = process.env.NODE_ENV === 'development' || mediaMapping["PROJECT-06-TEMP-01"]?.status === "approved";
+  const showProject06 = false;
 
   return (
     <main className="grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl">
@@ -55,7 +54,7 @@ export default function Projecten() {
               Een selectie beelden van één gerealiseerd SPPAT-project, met aandacht voor het totale vlak en zichtbare detaillering.
             </p>
           </div>
-          <div className="col-span-1 md:col-span-5 flex flex-row overflow-x-auto snap-x snap-mandatory hide-scrollbar md:grid md:grid-cols-2 gap-4 w-[100vw] -mx-5 px-5 md:w-auto md:mx-0 md:px-0 pb-4 md:pb-0">
+          <div className="col-span-1 md:col-span-5 flex flex-row overflow-x-auto snap-x snap-mandatory hide-scrollbar md:grid md:grid-cols-2 gap-4 w-[calc(100%+40px)] -mx-5 px-5 md:w-auto md:mx-0 md:px-0 pb-4 md:pb-0">
             <div className="flex-none w-[75vw] md:w-auto snap-center"><MediaSlot mediaId="PROJECT-02-02" className="w-full aspect-[4/5] object-cover" /></div>
             <div className="flex-none w-[75vw] md:w-auto snap-center"><MediaSlot mediaId="PROJECT-02-03" className="w-full aspect-[4/5] object-cover" /></div>
             <div className="flex-none w-[75vw] md:w-auto snap-center"><MediaSlot mediaId="PROJECT-02-04" className="w-full aspect-[4/5] object-cover" /></div>
@@ -84,7 +83,7 @@ export default function Projecten() {
         </div>
         
         {/* Mobile scroll snap for secondary images */}
-        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 mt-space-md md:mt-32 md:grid md:grid-cols-12 w-[100vw] -mx-5 px-5 md:w-auto md:mx-0 md:px-0 pb-4 md:pb-0 hide-scrollbar">
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 mt-space-md md:mt-32 md:grid md:grid-cols-12 w-[calc(100%+40px)] -mx-5 px-5 md:w-auto md:mx-0 md:px-0 pb-4 md:pb-0 hide-scrollbar">
           <div className="snap-center min-w-[80vw] md:min-w-0 md:col-span-4 md:hidden">
             <MediaSlot mediaId="PROJECT-03-02" className="w-full aspect-square object-cover" />
           </div>
@@ -101,10 +100,10 @@ export default function Projecten() {
           <div className="col-span-1 md:col-span-8 w-full mb-space-md md:mb-0">
             <MediaSlot mediaId="PROJECT-04-01" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
             <p className="mt-space-sm text-base text-[#1A1A1A] max-w-lg hidden md:block">
-              Uitgebreide projectserie met vloer- en interieurwerk.
+              Een compacte projectserie uit het gerealiseerde werk van SPPAT.
             </p>
           </div>
-          <div className="col-span-1 md:col-span-4 md:row-span-2 flex flex-row overflow-x-auto snap-x snap-mandatory hide-scrollbar md:flex-col gap-4 w-[100vw] -mx-5 px-5 md:w-auto md:mx-0 md:px-0 pb-4 md:pb-0 h-full">
+          <div className="col-span-1 md:col-span-4 md:row-span-2 flex flex-row overflow-x-auto snap-x snap-mandatory hide-scrollbar md:flex-col gap-4 w-[calc(100%+40px)] -mx-5 px-5 md:w-auto md:mx-0 md:px-0 pb-4 md:pb-0 h-full">
             <div className="flex-none w-[70vw] md:w-full snap-center"><MediaSlot mediaId="PROJECT-04-02" className="w-full aspect-[4/5] object-cover" /></div>
             <div className="flex-none w-[70vw] md:w-full snap-center"><MediaSlot mediaId="PROJECT-04-03" className="w-full aspect-[4/5] object-cover" /></div>
             <div className="flex-none w-[70vw] md:w-full snap-center"><MediaSlot mediaId="PROJECT-04-04" className="w-full aspect-[4/5] object-cover" /></div>
@@ -130,11 +129,11 @@ export default function Projecten() {
           <div className="col-span-1 md:col-span-5 flex flex-col justify-start order-first md:order-last w-full mb-space-md md:mb-0">
             <MediaSlot mediaId="PROJECT-05-01" className="w-full aspect-[3/4] object-cover" />
             <p className="mt-space-sm text-base text-[#1A1A1A]">
-              Een projectserie uit het gerealiseerde werk van SPPAT.
+              Een compacte projectserie uit het gerealiseerde werk van SPPAT.
             </p>
           </div>
           
-          <div className="col-span-1 flex overflow-x-auto snap-x snap-mandatory gap-4 mt-space-md md:hidden w-[100vw] -mx-5 px-5 pb-4 hide-scrollbar order-last">
+          <div className="col-span-1 flex overflow-x-auto snap-x snap-mandatory gap-4 mt-space-md md:hidden w-[calc(100%+40px)] -mx-5 px-5 pb-4 hide-scrollbar order-last">
              <div className="flex-none w-[75vw] snap-center"><MediaSlot mediaId="PROJECT-05-02" className="w-full aspect-[4/5] object-cover" /></div>
              <div className="flex-none w-[75vw] snap-center"><MediaSlot mediaId="PROJECT-05-03" className="w-full aspect-[4/5] object-cover" /></div>
              <div className="flex-none w-[75vw] snap-center"><MediaSlot mediaId="PROJECT-05-04" className="w-full aspect-[4/5] object-cover" /></div>
@@ -158,8 +157,25 @@ export default function Projecten() {
       )}
 
       {/* CTA */}
+      <section className="col-span-1 md:col-span-12 mt-space-xl px-5 md:px-0 text-center w-full max-w-2xl mx-auto">
+        <H2>Meer werk en details</H2>
+        <p className="mt-space-sm font-inter text-[#1A1A1A] mb-4">
+          Losse geverifieerde SPPAT-foto&apos;s mogen in één aanvullende beeldsectie worden opgenomen. Deze worden niet als afzonderlijk &quot;project&quot; benoemd wanneer de projectcontext ontbreekt.
+        </p>
+        <p className="mt-space-xs font-inter text-[#1A1A1A]">
+          Illustratieve of stockbeelden horen niet in deze bewijssectie.
+        </p>
+      </section>
+
+      <section className="col-span-1 md:col-span-12 mt-space-xl px-5 md:px-0 text-center w-full border-t border-[#E5E5E5] pt-space-xl">
+        <H2>Een vergelijkbaar niveau voor uw project?</H2>
+        <p className="mt-space-sm font-inter text-[#1A1A1A] max-w-2xl mx-auto">
+          Vertel ons wat u wilt realiseren en stuur eventueel referentiebeelden mee.
+        </p>
+      </section>
+
       <section className="col-span-1 md:col-span-12 w-full mt-space-xl">
-        <CtaMonument title="PROJECT BESPREKEN" link="/contact/" />
+        <CtaMonument title="Project bespreken" link="/contact/" />
       </section>
     </main>
   );

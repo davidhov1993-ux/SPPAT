@@ -1,4 +1,4 @@
-import { H1, H2, H3 } from "@/components/Typography";
+import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
 import { CtaAnchor } from "@/components/CtaComponents"
 import Link from "next/link"
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="w-full relative px-0">
           <MediaSlot mediaId="HOME-01" className="w-full aspect-[4/5] md:aspect-[16/9] object-cover" bleedMobile={true} />
         </div>
-        <div className="absolute bottom-0 left-0 md:bottom-[-2rem] md:left-4 lg:left-8 bg-[#F7F7F5] p-space-md md:col-span-8 lg:col-span-6 max-w-3xl border-t border-r border-[#E5E5E5] z-10">
+        <div className="relative -mt-4 md:mt-0 mx-5 md:mx-0 md:absolute md:bottom-[-2rem] md:left-4 md:bottom-[-2rem] md:left-4 lg:left-8 bg-[#F7F7F5] p-space-md w-auto md:col-span-8 lg:col-span-6 max-w-full md:max-w-3xl border-t border-r border-[#E5E5E5] z-10">
           <span className="block text-sm uppercase tracking-widest mb-space-xs font-space text-[#1A1A1A]">SPPAT — Nederland</span>
           <H1>Complete Badkamerrenovaties & Technisch Tegelwerk</H1>
           <p className="mt-space-sm text-base md:text-lg text-[#1A1A1A] font-inter max-w-xl">
@@ -77,25 +77,25 @@ export default function Home() {
 
       </section>
 
-      {/* Technical Proof */}
-      <section className="col-span-1 md:col-span-12 mt-space-xl mb-space-xl">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-md px-5 md:px-0">
-          <div className="col-span-1 md:col-span-8 md:col-start-3 text-center">
-            <H2>Kwaliteit begint onder de tegels</H2>
-            <p className="mt-space-xs font-inter text-[#1A1A1A]">
-              Een strak eindresultaat wordt voor een groot deel bepaald voordat de tegel wordt geplaatst. De vlakheid en stabiliteit van de ondergrond, aansluitingen, afschot in natte zones en een passende waterdichting hebben direct invloed op het uiteindelijke tegelwerk.
-            </p>
-            <p className="mt-space-xs font-inter text-[#1A1A1A]">
-              Daarom kijkt SPPAT niet alleen naar wat zichtbaar wordt, maar naar het complete technische geheel waarop de afwerking moet worden gebouwd.
-            </p>
-            <div className="mt-space-sm flex flex-col md:flex-row justify-center gap-4 md:gap-6 font-space uppercase text-sm tracking-wider">
-              <Link href="/kennisbank/#waterdichting" className="hover:underline">Waterdichting in de badkamer →</Link>
-              <Link href="/kennisbank/#lippage" className="hover:underline">Lippage bij tegelwerk →</Link>
+      {/* Technical Proof - 12-column short horizontal interruption */}
+      <section className="col-span-1 md:col-span-12 my-space-xl px-5 md:px-0 max-w-[1440px] mx-auto w-full">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-4">
+          <div className="col-span-1 md:col-span-12 relative w-full aspect-[4/3] md:aspect-[21/9] flex items-center justify-center overflow-hidden">
+            <MediaSlot mediaId="HOME-04" className="absolute inset-0 w-full h-full object-cover" bleedMobile={true} />
+            <div className="relative z-10 bg-[#F7F7F5] p-space-md max-w-2xl text-center shadow-sm m-5 md:m-0 border border-[#E5E5E5]">
+              <H2>Kwaliteit begint onder de tegels</H2>
+              <p className="mt-space-xs font-inter text-[#1A1A1A] mb-2">
+                Een strak eindresultaat wordt voor een groot deel bepaald voordat de tegel wordt geplaatst. De vlakheid en stabiliteit van de ondergrond, aansluitingen, afschot in natte zones en een passende waterdichting hebben direct invloed op het uiteindelijke tegelwerk.
+              </p>
+              <p className="mt-space-xs font-inter text-[#1A1A1A]">
+                Daarom kijkt SPPAT niet alleen naar wat zichtbaar wordt, maar naar het complete technische geheel waarop de afwerking moet worden gebouwd.
+              </p>
+              <div className="mt-space-sm flex flex-col md:flex-row justify-center gap-4 md:gap-6 font-space uppercase text-sm tracking-wider">
+                <Link href="/kennisbank/#waterdichting" className="hover:underline">Waterdichting in de badkamer →</Link>
+                <Link href="/kennisbank/#lippage" className="hover:underline">Lippage bij tegelwerk →</Link>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="w-full relative px-5 md:px-0">
-          <MediaSlot mediaId="HOME-04" className="w-full aspect-[16/9] md:aspect-[21/9] object-cover" bleedMobile={true} />
         </div>
       </section>
 
@@ -126,28 +126,30 @@ export default function Home() {
       </section>
 
       {/* Selected Projects */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0 overflow-hidden">
-        <div className="col-span-1 md:col-span-8 md:col-start-3 text-center border-t border-[#E5E5E5] pt-space-lg mb-space-lg">
-          <H2>Gerealiseerde Projecten</H2>
-          <p className="mt-space-xs font-inter text-[#1A1A1A]">
-            Het eindresultaat moet niet alleen worden beschreven, maar ook zichtbaar zijn. Bekijk een selectie van echte SPPAT-projecten en afzonderlijke details van uitgevoerd tegel- en renovatiewerk.
-          </p>
+      <section className="col-span-1 md:col-span-12 mb-space-xl max-w-[1440px] mx-auto w-full px-5 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-4 border-t border-[#E5E5E5] pt-space-lg mb-space-md">
+          <div className="col-span-1 md:col-span-8 md:col-start-3 text-center">
+            <H2>Gerealiseerde Projecten</H2>
+            <p className="mt-space-xs font-inter text-[#1A1A1A]">
+              Het eindresultaat moet niet alleen worden beschreven, maar ook zichtbaar zijn. Bekijk een selectie van echte SPPAT-projecten en afzonderlijke details van uitgevoerd tegel- en renovatiewerk.
+            </p>
+          </div>
         </div>
         
-        {/* Project Cards (Horizontal Scroll on Mobile) */}
-        <div className="col-span-1 md:col-span-12 flex md:grid md:grid-cols-3 gap-4 overflow-x-auto snap-x snap-mandatory pb-4 md:pb-0 -mx-5 px-5 md:mx-0 md:px-0 w-[100vw] md:w-auto">
-          <div className="flex-none w-[80vw] md:w-auto snap-center group">
-            <MediaSlot mediaId="HOME-PROJECT-A" className="w-full aspect-[4/5] object-cover mb-4" />
+        {/* Horizontal scroll on mobile, 3 cols on desktop */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 md:grid md:grid-cols-3 -mx-5 px-5 md:mx-0 md:px-0 w-[calc(100%+40px)] md:w-full pb-4 md:pb-0 hide-scrollbar">
+          <div className="flex-none w-[85vw] md:w-auto snap-center">
+            <MediaSlot mediaId="HOME-PROJECT-A" className="w-full aspect-[4/5] object-cover" />
           </div>
-          <div className="flex-none w-[80vw] md:w-auto snap-center group">
-            <MediaSlot mediaId="HOME-PROJECT-B" className="w-full aspect-[4/5] object-cover mb-4" />
+          <div className="flex-none w-[85vw] md:w-auto snap-center">
+            <MediaSlot mediaId="HOME-PROJECT-B" className="w-full aspect-[4/5] object-cover" />
           </div>
-          <div className="flex-none w-[80vw] md:w-auto snap-center group">
-            <MediaSlot mediaId="HOME-PROJECT-C" className="w-full aspect-[4/5] object-cover mb-4" />
+          <div className="flex-none w-[85vw] md:w-auto snap-center">
+            <MediaSlot mediaId="HOME-PROJECT-C" className="w-full aspect-[4/5] object-cover" />
           </div>
         </div>
 
-        <div className="col-span-1 md:col-span-12 text-center mt-space-md">
+        <div className="text-center mt-space-md">
            <Link href="/projecten/" className="inline-block bg-transparent border border-[#1A1A1A] text-[#1A1A1A] px-6 py-3 font-space uppercase tracking-wider text-sm hover:bg-[#E5E5E5] transition-colors">
             Bekijk projecten
           </Link>

@@ -1,6 +1,6 @@
 import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
-import { CtaMonument } from "@/components/CtaComponents";
+import { CtaBrief } from "@/components/CtaComponents";
 
 import { Metadata } from "next";
 
@@ -78,7 +78,7 @@ export default function OverOnsPage() {
       {/* CTA */}
       <section className="col-span-1 md:col-span-12 w-full mt-space-xl">
         
-          <CtaMonument title="Kennismaken met SPPAT?" link="/contact/" />
+          <CtaBrief title="Kennismaken met SPPAT?" link="/contact/" />
       </section>
     </main>
   );

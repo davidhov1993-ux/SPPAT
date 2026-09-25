@@ -28,7 +28,7 @@ export function MediaSlot({
   }
 
   const insetClass = inset ? "px-[20px] border-y border-[#E5E5E5] py-0" : "";
-  const bleedClass = bleedMobile ? "w-full max-w-[100vw] -mx-[20px] md:mx-0 md:max-w-none md:w-auto" : "";
+  const bleedClass = bleedMobile ? "w-[calc(100%+40px)] max-w-[100vw] -mx-[20px] md:mx-0 md:max-w-none md:w-auto" : "";
 
   const media = mediaMapping[mediaId];
 

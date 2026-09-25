@@ -208,10 +208,10 @@ export const mediaMapping: Record<string, MediaAsset> = {
     src: "/images/curated/knowledge/kb-inspectieluik-temp.jpg",
     alt: "KB-INSPECTIELUIK visual",
     origin: "media",
-    status: "provisional"
+    status: "gap"
   },
-  "KB-EPOXY-CEMENT": {
-    mediaId: "KB-EPOXY-CEMENT",
+  "KB-EPOXY": {
+    mediaId: "KB-EPOXY",
     src: "/images/curated/knowledge/kb-epoxy-cement.jpg",
     alt: "KB-EPOXY-CEMENT visual",
     origin: "media",

@@ -1,0 +1,37 @@
+# SPPAT — MEDIA INTEGRATION PASS V2
+
+You are integrating the owner-curated media selection into the existing approved SPPAT implementation.
+
+Use the attached `SPPAT_MEDIA_REVIEW_MAPPING_V2.md` and `media-map.json` as the only media-selection authority for this pass.
+
+Do not select images yourself. Do not redesign anything. Do not alter copy, routes, page architecture, typography, grid, CTA system or responsive art direction.
+
+## Critical source rule
+Every single visual rendered on the Home page must have `origin: "media"`. This includes hero, capability images, technical proof, selected-work visuals and CTA imagery. Nothing from `references/`, `special-references/`, project folders or KB/reference assets may render on Home.
+
+## Integration
+1. Copy the supplied `assets/` into the project's public image directory.
+2. Replace the existing centralized MEDIA-ID mapping with the exact mapping in `media-map.json`.
+3. If the current code uses different IDs for equivalent positions, alias the IDs centrally. Do not hardcode paths inside pages.
+4. Keep `KB-INSPECTIELUIK` and Project 06 explicitly `provisional`.
+5. Project folders 01–05 are grouped real project series. Preserve each folder as one project; never mix images between project series.
+6. Project 06 is missing. Use the supplied temporary single image for local visual review only, with `NOT FOR PRODUCTION — PROJECT 06 SERIES MISSING`.
+7. Do not add a hero image to Specialisaties; the approved intro is typography-led.
+8. Do not add images to the Tegelwerk application index if it is currently typographic-only.
+9. Technical `special-references` assets are illustrative/process media only, not portfolio evidence.
+10. Use responsive crops/object-position to make the assigned image work. Do not replace an assigned image because the crop is inconvenient.
+
+## CTA images
+If the current CTA-Anchor implementation supports an image, use the mapped HOME-CTA / BADK-CTA. If it currently does not support imagery even though the approved design calls for an integrated architectural image, add only the MediaSlot needed inside the existing CTA-Anchor composition. Do not redesign the CTA.
+
+## Development QA
+Add a dev-only media status marker for provisional slots, not visible in production. Add a dev warning if any HOME-* item has origin other than `media`.
+
+## Final checks
+Run build and lint. Launch locally and visually inspect all 9 pages at 1440, 1024, 834 and 390.
+
+Return only:
+- final resolved MEDIA-ID → file mapping;
+- any ID aliases you had to create;
+- provisional IDs;
+- build/lint result.

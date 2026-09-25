@@ -1,159 +1,145 @@
-import { useEffect, useRef, useState } from 'react'
-import CtaArrow from './CtaArrow'
+"use client";
 
-const navItems: [string, string][] = [
-  ['Badkamers', '/complete-badkamer-renovatie/'],
-  ['Tegelwerk', '/tegelwerk/'],
-  ['Projecten', '/projecten/'],
-  ['Over ons', '/over-ons/'],
-  ['Contact', '/contact/']
-]
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
-export default function Header({ path }: { path: string }) {
-  const [open, setOpen] = useState(false)
+export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    const mainEl = document.getElementById('main')
-    const footerEl = document.querySelector('.site-footer')
-    if (open) {
-      if (mainEl) mainEl.setAttribute('inert', '')
-      if (footerEl) footerEl.setAttribute('inert', '')
-      document.body.style.overflow = 'hidden'
-    } else {
-      if (mainEl) mainEl.removeAttribute('inert')
-      if (footerEl) footerEl.removeAttribute('inert')
-      document.body.style.overflow = ''
-    }
-    
-    return () => {
-      if (mainEl) mainEl.removeAttribute('inert')
-      if (footerEl) footerEl.removeAttribute('inert')
-      document.body.style.overflow = ''
-    }
-  }, [open])
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') setIsOpen(false);
+        
+        // Focus trap
+        if (e.key === 'Tab' && modalRef.current) {
+          const focusableElements = modalRef.current.querySelectorAll(
+            'a[href], button, textarea, input, select'
+          );
+          const firstElement = focusableElements[0] as HTMLElement;
+          const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
 
-
-  const toggleRef = useRef<HTMLButtonElement>(null)
-
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = 'hidden'
-      const handleKeyDown = (event: KeyboardEvent) => {
-        if (event.key === 'Escape') {
-          setOpen(false)
-          toggleRef.current?.focus()
+          if (e.shiftKey) {
+            if (document.activeElement === firstElement) {
+              lastElement.focus();
+              e.preventDefault();
+            }
+          } else {
+            if (document.activeElement === lastElement) {
+              firstElement.focus();
+              e.preventDefault();
+            }
+          }
         }
-      }
-      document.addEventListener('keydown', handleKeyDown)
+      };
+      
+      document.addEventListener('keydown', handleKeyDown);
       return () => {
-        document.body.style.overflow = ''
-        document.removeEventListener('keydown', handleKeyDown)
-      }
+        document.removeEventListener('keydown', handleKeyDown);
+        document.body.style.overflow = "unset";
+      };
     } else {
-      document.body.style.overflow = ''
+      document.body.style.overflow = "unset";
     }
-  }, [open])
+  }, [isOpen]);
 
-  const handleClose = () => {
-    setOpen(false)
-    toggleRef.current?.focus()
-  }
+  const links = [
+    { label: "Badkamers", href: "/complete-badkamer-renovatie/" },
+    { label: "Tegelwerk", href: "/tegelwerk/" },
+    { label: "Specialisaties", href: "/specialisaties/" },
+    { label: "Projecten", href: "/projecten/" },
+    { label: "Over ons", href: "/over-ons/" },
+    { label: "Contact", href: "/contact/" },
+  ];
 
   return (
-    <header className="site-header">
-      <div className="container header-container">
-        <a href="/" className="wordmark" aria-label="Sppat homepage">
-          Sppat
-        </a>
+    <header className="sticky top-0 z-50 bg-[#F7F7F5] border-b border-[#E5E5E5]">
+      {/* Skip to content link */}
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-[#1A1A1A] focus:text-[#F7F7F5] z-[100]">
+        Ga naar hoofdinhoud
+      </a>
+      
+      <div className="max-w-[1440px] w-full mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
+        <Link href="/" className="font-space font-bold uppercase tracking-[0.05em] text-[#1A1A1A] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]">
+          SPPAT
+        </Link>
 
-        <nav className="nav-desktop" aria-label="Hoofdnavigatie">
-          {navItems.map(([label, href]) => {
-            const isActive = path === href
-            return (
-              <a
-                key={href}
-                href={href}
-                className={`nav-link ${isActive ? 'is-active' : ''}`}
-                aria-current={isActive ? 'page' : undefined}
-              >
-                {label}
-              </a>
-            )
-          })}
+        {/* Desktop Nav */}
+        <nav className="hidden lg:flex items-center gap-6">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="font-space text-[14px] uppercase tracking-[0.05em] text-[#1A1A1A] hover:underline decoration-1 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link
+            href="/contact/"
+            className="font-space text-[14px] uppercase tracking-[0.05em] text-[#1A1A1A] hover:underline decoration-1 underline-offset-4 font-bold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
+          >
+            [Project bespreken]
+          </Link>
         </nav>
 
-        <div className="header-action-desktop">
-          <a href="/contact/" className="btn btn-header">
-            Project bespreken
-            <CtaArrow />
-          </a>
-        </div>
-
+        {/* Mobile Toggle */}
         <button
-          ref={toggleRef}
-          type="button"
-          className={`menu-toggle ${open ? 'is-open' : ''}`}
-          aria-expanded={open}
+          className="lg:hidden p-2 -mr-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+          aria-expanded={isOpen}
           aria-controls="mobile-menu"
-          aria-label={open ? 'Menu sluiten' : 'Menu openen'}
-          onClick={() => setOpen(!open)}
         >
-          <span className="toggle-bar"></span>
-          <span className="toggle-bar"></span>
+          <Menu className="w-6 h-6 text-[#1A1A1A]" />
         </button>
       </div>
 
-      {/* Full-screen Mobile Menu */}
-      <div
-        id="mobile-menu"
-        className={`mobile-menu-overlay ${open ? 'is-visible' : ''}`}
-        aria-hidden={!open}
-        role="dialog"
-        aria-modal="true"
-        aria-label="Mobiel menu"
-      >
-        <div className="mobile-menu-header container">
-          <a href="/" className="wordmark wordmark-light" onClick={handleClose} aria-label="Sppat homepage">
-            Sppat
-          </a>
-          <button
-            type="button"
-            className="menu-close-btn"
-            aria-label="Menu sluiten"
-            onClick={handleClose}
-          >
-            <span aria-hidden="true">✕</span>
-          </button>
-        </div>
-
-        <div className="mobile-menu-content container">
-          <nav className="mobile-nav" aria-label="Mobiele navigatie">
-            {navItems.map(([label, href]) => {
-              const isActive = path === href
-              return (
-                <a
-                  key={href}
-                  href={href}
-                  className={`mobile-nav-link ${isActive ? 'is-active' : ''}`}
-                  aria-current={isActive ? 'page' : undefined}
-                  onClick={handleClose}
-                >
-                  <span className="mobile-nav-label">{label}</span>
-                  <CtaArrow />
-                </a>
-              )
-            })}
-          </nav>
-
-          <div className="mobile-menu-footer">
-            <a href="/contact/" className="btn btn-mobile-cta" onClick={handleClose}>
-              Project bespreken
-              <CtaArrow />
-            </a>
-            <p className="mobile-location-notice">Sppat — Almere &amp; Nederland</p>
+      {/* Mobile Modal Nav */}
+      {isOpen && (
+        <div 
+          id="mobile-menu"
+          ref={modalRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Navigatie menu"
+          className="fixed inset-0 z-[100] bg-[#F7F7F5] flex flex-col p-5 overflow-y-auto"
+        >
+          <div className="flex justify-between items-center h-16 mb-8 shrink-0">
+            <Link href="/" onClick={toggleMenu} className="font-space font-bold uppercase tracking-[0.05em] text-[#1A1A1A] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]">
+              SPPAT
+            </Link>
+            <button onClick={toggleMenu} className="p-2 -mr-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]" aria-label="Sluit menu">
+              <X className="w-6 h-6 text-[#1A1A1A]" />
+            </button>
           </div>
+          <nav className="flex flex-col gap-6">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={toggleMenu}
+                className="font-space text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-[-0.02em] text-[#1A1A1A] word-break-keep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Link
+              href="/contact/"
+              onClick={toggleMenu}
+              className="font-space text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-[-0.02em] text-[#1A1A1A] font-bold mt-4 word-break-keep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
+            >
+              PROJECT BESPREKEN
+            </Link>
+          </nav>
         </div>
-      </div>
+      )}
     </header>
-  )
+  );
 }

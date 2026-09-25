@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-space: var(--font-space-grotesk), "Space Grotesk", sans-serif;
+  --font-inter: var(--font-inter), "Inter", sans-serif;
+
+  --color-primary-bg: #F7F7F5;
+  --color-primary-text: #1A1A1A;
+  --color-blueprint: #E5E5E5;
+
+  --spacing-space-xs: 8px;
+  --spacing-space-sm: 24px;
+  --spacing-space-md: clamp(48px, 5vw, 64px);
+  --spacing-space-lg: clamp(80px, 8vw, 120px);
+  --spacing-space-xl: clamp(100px, 10vw, 160px);
+
+  --text-h1: clamp(2.5rem, 5vw, 4.5rem);
+  --text-h2: clamp(2rem, 4vw, 3.5rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --text-body: clamp(1rem, 1.1vw, 1.125rem);
+  --text-meta: 0.875rem;
+}
+
+@utility word-break-keep {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+:root {
+  --background: #F7F7F5;
+  --foreground: #1A1A1A;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

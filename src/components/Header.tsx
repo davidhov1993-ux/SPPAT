@@ -2,11 +2,13 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -22,11 +24,12 @@ export function Header() {
           const focusableElements = modalRef.current.querySelectorAll(
             'a[href], button, textarea, input, select'
           );
+          if (focusableElements.length === 0) return;
           const firstElement = focusableElements[0] as HTMLElement;
           const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
 
           if (e.shiftKey) {
-            if (document.activeElement === firstElement) {
+            if (document.activeElement === firstElement || document.activeElement === document.body) {
               lastElement.focus();
               e.preventDefault();
             }
@@ -55,6 +58,7 @@ export function Header() {
     { label: "Specialisaties", href: "/specialisaties/" },
     { label: "Projecten", href: "/projecten/" },
     { label: "Over ons", href: "/over-ons/" },
+    { label: "Kennisbank", href: "/kennisbank/" },
     { label: "Contact", href: "/contact/" },
   ];
 
@@ -72,21 +76,18 @@ export function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-6">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="font-space text-[14px] uppercase tracking-[0.05em] text-[#1A1A1A] hover:underline decoration-1 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link
-            href="/contact/"
-            className="font-space text-[14px] uppercase tracking-[0.05em] text-[#1A1A1A] hover:underline decoration-1 underline-offset-4 font-bold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
-          >
-            [Project bespreken]
-          </Link>
+          {links.map((link) => {
+             const isActive = pathname === link.href || pathname.startsWith(link.href) && link.href !== '/';
+             return (
+               <Link
+                 key={link.href}
+                 href={link.href}
+                 className={`font-space text-[14px] uppercase tracking-[0.05em] text-[#1A1A1A] hover:underline decoration-1 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A] ${isActive ? 'underline' : ''}`}
+               >
+                 {link.label}
+               </Link>
+             );
+          })}
         </nav>
 
         {/* Mobile Toggle */}
@@ -120,23 +121,19 @@ export function Header() {
             </button>
           </div>
           <nav className="flex flex-col gap-6">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={toggleMenu}
-                className="font-space text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-[-0.02em] text-[#1A1A1A] word-break-keep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              href="/contact/"
-              onClick={toggleMenu}
-              className="font-space text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-[-0.02em] text-[#1A1A1A] font-bold mt-4 word-break-keep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
-            >
-              PROJECT BESPREKEN
-            </Link>
+            {links.map((link) => {
+               const isActive = pathname === link.href || pathname.startsWith(link.href) && link.href !== '/';
+               return (
+                 <Link
+                   key={link.href}
+                   href={link.href}
+                   onClick={toggleMenu}
+                   className={`font-space text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-[-0.02em] text-[#1A1A1A] word-break-keep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A] ${isActive ? 'underline decoration-1 underline-offset-4' : ''}`}
+                 >
+                   {link.label}
+                 </Link>
+               );
+            })}
           </nav>
         </div>
       )}

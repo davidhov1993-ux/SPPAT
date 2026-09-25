@@ -1,6 +1,6 @@
 import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
-import { CtaBrief } from "@/components/CtaComponents";
+import { CtaMonument } from "@/components/CtaComponents";
 
 import { Metadata } from "next";
 
@@ -14,7 +14,7 @@ export default function OverOnsPage() {
   return (
     <main className="w-full">
       {/* Hero Overlap */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-4 md:px-0 pt-space-xl relative mb-space-xl">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-5 md:px-0 pt-space-xl relative mb-space-xl">
         <div className="col-span-1 md:col-span-8 md:col-start-5 relative z-0">
           <MediaSlot mediaId="ABOUT-01" className="w-full aspect-[4/5] md:aspect-[16/9] object-cover" />
         </div>
@@ -30,7 +30,7 @@ export default function OverOnsPage() {
       </section>
 
       {/* Company Content */}
-      <section className="px-4 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4">
+      <section className="px-5 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4">
         <div className="col-span-1 md:col-span-8 md:col-start-3 text-[#1A1A1A] space-y-space-md">
           
           <div>
@@ -55,7 +55,7 @@ export default function OverOnsPage() {
         <MediaSlot mediaId="ABOUT-02" className="w-full aspect-[4/3] md:aspect-[21/9] object-cover" />
       </section>
 
-      <section className="px-4 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl">
+      <section className="px-5 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl">
         <div className="col-span-1 md:col-span-8 md:col-start-3 text-[#1A1A1A] space-y-space-md">
           
           <div>
@@ -76,10 +76,9 @@ export default function OverOnsPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 md:px-0 pb-space-xl flex justify-center">
-        <div className="w-full md:w-auto min-w-[300px]">
-          <CtaBrief title="Kennismaken met SPPAT?" link="/contact/" />
-        </div>
+      <section className="col-span-1 md:col-span-12 w-full mt-space-xl">
+        
+          <CtaMonument title="Kennismaken met SPPAT?" link="/contact/" />
       </section>
     </main>
   );

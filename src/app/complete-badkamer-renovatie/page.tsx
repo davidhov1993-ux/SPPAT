@@ -28,7 +28,7 @@ export default function Badkamers() {
             SPPAT kan de complete uitvoering van A tot Z verzorgen, zodat het project als één samenhangende verbouwing wordt aangepakt.
           </p>
           <div className="mt-space-md">
-            <Link href="/contact/" className="bg-[#1A1A1A] text-white px-6 py-3 font-space-grotesk uppercase tracking-wider text-sm hover:bg-black transition-colors inline-block">
+            <Link href="/contact/" className="bg-[#1A1A1A] text-white px-6 py-3 font-space uppercase tracking-wider text-sm hover:bg-black transition-colors inline-block">
               Project bespreken
             </Link>
           </div>
@@ -36,7 +36,7 @@ export default function Badkamers() {
       </section>
 
       {/* Intro Section: Eén gecoördineerde uitvoering */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
         <div className="col-span-1 md:col-span-8 md:col-start-3">
           <H2>Eén gecoördineerde uitvoering voor uw complete verbouwing</H2>
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
@@ -63,7 +63,7 @@ export default function Badkamers() {
       </section>
 
       {/* Process Timeline */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl relative px-4 md:px-0">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl relative px-5 md:px-0">
         <div className="col-span-1 md:col-span-10 md:col-start-2 relative">
           <H2 className="mb-space-lg text-center">Onze A tot Z werkwijze</H2>
           
@@ -122,7 +122,7 @@ export default function Badkamers() {
       </section>
 
       {/* Intro Grid: Technical Construction */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
         <div className="col-span-1 md:col-span-5 md:col-start-3">
           <H2>De onzichtbare techniek bepaalt de levensduur</H2>
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
@@ -132,8 +132,8 @@ export default function Badkamers() {
             SPPAT behandelt die onderdelen niet als bijzaak. Ze vormen de basis waarop de zichtbare afwerking moet functioneren.
           </p>
           <div className="mt-space-md flex flex-col gap-2">
-            <Link href="/kennisbank/#waterdichting" className="font-space-grotesk uppercase text-sm tracking-wider underline hover:no-underline">Waterdichting uitgelegd →</Link>
-            <Link href="/tegelwerk/#badkamer" className="font-space-grotesk uppercase text-sm tracking-wider underline hover:no-underline">Badkamer alleen laten tegelen →</Link>
+            <Link href="/kennisbank/#waterdichting" className="font-space uppercase text-sm tracking-wider underline hover:no-underline">Waterdichting uitgelegd →</Link>
+            <Link href="/tegelwerk/#badkamer" className="font-space uppercase text-sm tracking-wider underline hover:no-underline">Badkamer alleen laten tegelen →</Link>
           </div>
         </div>
         
@@ -148,7 +148,7 @@ export default function Badkamers() {
       </section>
 
       {/* Details Grid */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
         <div className="col-span-1 md:col-span-6 md:col-start-1 order-first md:order-first">
           <div className="aspect-[3/2] relative w-full md:mx-0 border-y border-[#E5E5E5] md:border-none mb-space-md md:mb-0">
              <MediaSlot mediaId="BADK-03" className="w-full h-full object-cover aspect-[3/2]" />
@@ -187,7 +187,7 @@ export default function Badkamers() {
       </section>
 
       {/* Toiletrenovatie Grid */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0" id="toiletrenovatie">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0" id="toiletrenovatie">
         <div className="col-span-1 md:col-span-8 md:col-start-3">
           <H2>Complete Toiletrenovatie</H2>
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
@@ -224,29 +224,55 @@ export default function Badkamers() {
           </p>
           
           <div className="mt-space-md">
-            <Link href="/contact/" className="bg-[#1A1A1A] text-white px-6 py-3 font-space-grotesk uppercase tracking-wider text-sm hover:bg-black transition-colors inline-block">
+            <Link href="/contact/" className="bg-[#1A1A1A] text-white px-6 py-3 font-space uppercase tracking-wider text-sm hover:bg-black transition-colors inline-block">
               Project bespreken
             </Link>
           </div>
         </div>
       </section>
 
+      
+      {/* FAQ Section */}
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
+        <div className="col-span-1 md:col-span-8 md:col-start-3">
+          <H2>Veelgestelde vragen</H2>
+          <div className="mt-space-md flex flex-col gap-space-sm">
+            <div className="border-b border-[#E5E5E5] pb-space-sm">
+              <H3>Kan SPPAT de complete badkamer uitvoeren?</H3>
+              <p className="mt-2 font-inter text-[#1A1A1A]">Ja. Complete badkamerrenovatie wordt als A-Z-dienst aangeboden. De exacte werkzaamheden worden per project bepaald.</p>
+            </div>
+            <div className="border-b border-[#E5E5E5] pb-space-sm">
+              <H3>Kan ik mijn eigen tegels en sanitair kopen?</H3>
+              <p className="mt-2 font-inter text-[#1A1A1A]">Ja. Materialen kunnen door SPPAT worden verzorgd, door u worden aangeschaft of gecombineerd worden ingekocht.</p>
+            </div>
+            <div className="border-b border-[#E5E5E5] pb-space-sm">
+              <H3>Doet SPPAT ook alleen het tegelwerk?</H3>
+              <p className="mt-2 font-inter text-[#1A1A1A]">Ja. Voor tegelwerk zonder complete renovatie is er de aparte dienst Badkamer tegelen.</p>
+            </div>
+            <div className="border-b border-[#E5E5E5] pb-space-sm">
+              <H3>Werkt SPPAT alleen in Almere?</H3>
+              <p className="mt-2 font-inter text-[#1A1A1A]">Nee. SPPAT voert projecten uit in heel Nederland.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
         <div className="col-span-1 md:col-span-8 md:col-start-3 text-center border-y border-[#E5E5E5] py-space-xl">
           <H2>Gerealiseerde Badkamers</H2>
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             Bekijk echte SPPAT-projecten voor een beeld van de afwerking en verschillende toepassingen.
           </p>
           <div className="mt-space-md">
-            <Link href="/projecten/" className="font-space-grotesk uppercase text-sm tracking-wider underline hover:no-underline">Bekijk projecten →</Link>
+            <Link href="/projecten/" className="font-space uppercase text-sm tracking-wider underline hover:no-underline">Bekijk projecten →</Link>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="col-span-1 md:col-span-12 mb-space-xl">
-        <CtaAnchor title="Start uw badkamerrenovatie" link="/contact/">
+        <CtaAnchor title="Start uw badkamerrenovatie" mediaId="BADK-CTA" link="/contact/">
           <p>
             Stuur foto&apos;s van de huidige badkamer, globale maten of een plattegrond en voorbeelden van wat u mooi vindt. Daarmee kan het eerste gesprek direct over uw eigen situatie gaan.
           </p>

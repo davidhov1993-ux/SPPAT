@@ -180,3 +180,63 @@ Provide:
 
 Do not call your own implementation "accepted".
 Acceptance belongs to the project owner/controller after rendered review.
+
+## SECURITY & ACCESS BOUNDARY
+
+The SPPAT project is the only authorized work scope.
+
+### Allowed filesystem scope
+Normal implementation work may access only:
+- the current SPPAT project root;
+- files and folders inside that project root.
+
+Only when an explicit task names them, the agent may also access these sibling project artifacts:
+- `../SPPAT_FINAL_QA/`
+- `../SPPAT_FINAL_QA.zip`
+- `../SPPAT_AUDIT_V2/`
+- `../SPPAT_AUDIT_V2_FULL.zip`
+- `../SPPAT_PRE_CLEANUP_BACKUP/`
+
+Do not browse, search, read, write, list, or index unrelated user locations, including:
+- Desktop
+- Documents
+- Downloads
+- Pictures
+- Music
+- Movies
+- iCloud Drive
+- browser profiles/history/cookies
+- personal application data
+- unrelated repositories
+- home-directory-wide searches
+
+Do not run broad commands such as `find /Users/...`, `find ~`, or recursive searches outside the authorized project paths.
+
+### Personal browser/session boundary
+Do not access or interact with:
+- YouTube account/history/music
+- Gmail
+- Google account pages
+- social media
+- personal browser tabs/history
+- any authenticated personal service
+
+unless the project owner explicitly requests that exact external service in the current task.
+
+The SPPAT website implementation does not require personal YouTube/music/browser-session access.
+
+### Network boundary
+Use network access only when explicitly necessary for:
+- package installation already required by the project;
+- documented technical verification requested by the owner.
+
+Do not browse the web for replacement photography, content, inspiration, or project facts unless explicitly authorized.
+
+### Permission behavior
+Having technical permission does not imply project authorization.
+If the OS or IDE exposes unrelated user data, ignore it.
+
+If a task appears to require access outside these boundaries:
+STOP and report the exact path/service needed and why.
+Do not request blanket access.
+

@@ -1,9 +1,12 @@
 import Link from "next/link";
+import { businessData } from "@/config/businessData";
 
 export function Footer() {
+  const isDev = process.env.NODE_ENV === 'development';
+
   return (
-    <footer className="border-t border-[#E5E5E5] bg-[#F7F7F5] pt-space-lg pb-space-md">
-      <div className="max-w-7xl mx-auto px-5 lg:px-8">
+    <footer className="border-t border-[#E5E5E5] bg-[#F7F7F5] pt-space-lg pb-space-md mt-auto">
+      <div className="max-w-[1440px] mx-auto px-5 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md lg:gap-8">
           {/* SPPAT Info */}
           <div className="flex flex-col gap-4">
@@ -12,12 +15,29 @@ export function Footer() {
               Complete badkamerrenovaties en professioneel tegelwerk in heel Nederland.
             </p>
             <div className="font-inter text-body leading-[1.6] flex flex-col gap-1 mt-2">
-              <a href="tel:+31612345678" className="hover:underline">Telefoon: +31 6 1234 5678</a>
-              <a href="mailto:info@sppat.nl" className="hover:underline">E-mail: info@sppat.nl</a>
-              <a href="https://wa.me/31612345678" className="hover:underline">WhatsApp: +31 6 1234 5678</a>
-              <span>Instagram: @sppat.nl</span>
-              <span>KvK: 12345678</span>
-              <span>BTW: NL000000000B00</span>
+              {businessData.telephone ? (
+                <a href={`tel:${businessData.telephone.replace(/\s+/g, '')}`} className="hover:underline">Telefoon: {businessData.telephone}</a>
+              ) : isDev ? (
+                <span className="text-gray-400">[Telefoon: TBD]</span>
+              ) : null}
+              
+              {businessData.email ? (
+                <a href={`mailto:${businessData.email}`} className="hover:underline">E-mail: {businessData.email}</a>
+              ) : isDev ? (
+                <span className="text-gray-400">[E-mail: TBD]</span>
+              ) : null}
+              
+              {businessData.taxID ? (
+                <span>KvK: {businessData.taxID}</span>
+              ) : isDev ? (
+                <span className="text-gray-400">[KvK: TBD]</span>
+              ) : null}
+              
+              {businessData.vatID ? (
+                <span>BTW: {businessData.vatID}</span>
+              ) : isDev ? (
+                <span className="text-gray-400">[BTW: TBD]</span>
+              ) : null}
             </div>
           </div>
 

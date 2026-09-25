@@ -6,319 +6,369 @@ export interface MediaAsset {
   tabletSrc?: string;
   mobileSrc?: string;
   objectPosition?: string;
-  status: 'approved' | 'provisional' | 'gap';
+  status: 'approved' | 'provisional' | 'gap' | 'review-selected';
   sourceClass?: 'verified-sppat' | 'standalone-sppat' | 'technical-process' | 'reference' | 'generated' | 'temporary';
+  origin?: string;
   notes?: string;
 }
 
 export const mediaMapping: Record<string, MediaAsset> = {
   "HOME-01": {
     mediaId: "HOME-01",
-    src: "/images/raw/Generated Image September 10, 2026 - 7_57PM.jpg",
+    src: "/images/curated/home/home-01-hero.jpg",
     alt: "Complete badkamerrenovatie en tegelwerk sfeerbeeld",
     objectPosition: "55% 52%",
-    status: "approved",
-    sourceClass: "generated",
-    notes: "Neutral WB, restrained contrast. Do not caption as SPPAT work."
+    origin: "media",
+    status: "approved"
   },
   "HOME-02": {
     mediaId: "HOME-02",
-    objectPosition: "80% 50%",
-    src: "/images/production/SPPAT-SVC-bath-feb-card-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-bath-feb-card-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-SVC-bath-feb-card-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-bath-feb-card-mobile.webp",
+    src: "/images/curated/home/home-02-badkamers.jpg",
     alt: "Badkamer met tegelwerk en sanitair",
-    status: "approved",
-    sourceClass: "standalone-sppat",
+    objectPosition: "80% 50%",
+    origin: "media",
+    status: "approved"
   },
   "HOME-03": {
     mediaId: "HOME-03",
-    src: "/images/production/SPPAT-SVC-kitchen-card-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-kitchen-card-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-SVC-kitchen-card-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-kitchen-card-mobile.webp",
-    objectPosition: "55% 60%",
+    src: "/images/curated/home/home-03-tegelwerk.jpg",
     alt: "Keuken met tegelvloer",
-    status: "approved",
-    sourceClass: "standalone-sppat",
+    objectPosition: "55% 60%",
+    origin: "media",
+    status: "approved"
   },
   "HOME-04": {
     mediaId: "HOME-04",
-    src: "/images/raw/Generated Image September 10, 2026 - 11_53PM.jpg",
+    src: "/images/curated/home/home-04-tech.jpg",
     alt: "Vakmanschap en technische voorbereiding",
     objectPosition: "center",
-    status: "approved",
-    sourceClass: "generated",
-    notes: "Replaced from KB-LASER per user request."
+    origin: "media",
+    status: "approved"
+  },
+  "HOME-PROJECT-A": {
+    mediaId: "HOME-PROJECT-A",
+    src: "/images/curated/home/home-project-a.jpg",
+    alt: "HOME-PROJECT-A visual",
+    origin: "media",
+    status: "approved"
+  },
+  "HOME-PROJECT-B": {
+    mediaId: "HOME-PROJECT-B",
+    src: "/images/curated/home/home-project-b.jpg",
+    alt: "HOME-PROJECT-B visual",
+    origin: "media",
+    status: "approved"
+  },
+  "HOME-PROJECT-C": {
+    mediaId: "HOME-PROJECT-C",
+    src: "/images/curated/home/home-project-c.jpg",
+    alt: "HOME-PROJECT-C visual",
+    origin: "media",
+    status: "approved"
+  },
+  "HOME-CTA": {
+    mediaId: "HOME-CTA",
+    src: "/images/curated/home/home-cta.jpg",
+    alt: "HOME-CTA visual",
+    origin: "media",
+    status: "approved"
   },
   "BADK-01": {
     mediaId: "BADK-01",
-    src: "/images/production/SPPAT-SVC-ai-bathroom-hero-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-ai-bathroom-hero-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-SVC-ai-bathroom-hero-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-ai-bathroom-hero-mobile.webp",
-    objectPosition: "52% 50%",
+    src: "/images/curated/services/badk-01-hero.jpg",
     alt: "Premium badkamer met inloopdouche",
-    status: "approved",
-    sourceClass: "generated"
+    objectPosition: "52% 50%",
+    origin: "media",
+    status: "approved"
   },
   "BADK-02": {
     mediaId: "BADK-02",
-    src: "/images/production/SPPAT-SVC-substrate-detail-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-substrate-detail-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-SVC-substrate-detail-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-substrate-detail-mobile.webp",
+    src: "/images/curated/services/badk-02-concealed.jpg",
     alt: "Voorbereiding van de vloer voor tegelwerk",
-    status: "approved",
-    sourceClass: "technical-process"
-  },
-  "BADK-TOILET": {
-    mediaId: "BADK-TOILET",
-    src: "/images/production/SPPAT-SVC-compact-card-desktop.webp",
-    alt: "Toilet renovatie",
-    status: "provisional",
-    sourceClass: "temporary"
+    origin: "special-references",
+    status: "approved"
   },
   "BADK-03": {
     mediaId: "BADK-03",
-    src: "/images/production/SPPAT-SVC-ai-niche-detail-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-ai-niche-detail-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-SVC-ai-niche-detail-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-ai-niche-detail-mobile.webp",
+    src: "/images/curated/services/badk-03-finish.jpg",
     alt: "Detail van nis in badkamer",
-    status: "approved",
-    sourceClass: "generated"
+    origin: "media",
+    status: "approved"
+  },
+  "BADK-TOILET": {
+    mediaId: "BADK-TOILET",
+    src: "/images/curated/services/badk-toilet.jpg",
+    alt: "Toilet renovatie",
+    origin: "media",
+    status: "approved"
+  },
+  "BADK-CTA": {
+    mediaId: "BADK-CTA",
+    src: "/images/curated/services/badk-cta.jpg",
+    alt: "BADK-CTA visual",
+    origin: "media",
+    status: "approved"
   },
   "ALM-01": {
     mediaId: "ALM-01",
-    src: "/images/production/SPPAT-SVC-compact-card-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-compact-card-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-SVC-compact-card-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-compact-card-mobile.webp",
+    src: "/images/curated/services/alm-01.jpg",
     alt: "Badkamer met douche en wandcloset",
-    status: "approved",
-    sourceClass: "standalone-sppat"
+    origin: "media",
+    status: "approved"
   },
   "TEGEL-01": {
     mediaId: "TEGEL-01",
-    src: "/images/raw/Generated Image September 11, 2026 - 11_48AM.jpg",
-    objectPosition: "center bottom",
+    src: "/images/curated/services/tegel-01-hero.jpg",
     alt: "Brede tegelvloer doorlopend in de ruimte",
-    status: "approved",
-    sourceClass: "generated"
+    objectPosition: "center bottom",
+    origin: "media",
+    status: "approved"
   },
   "TEGEL-02": {
     mediaId: "TEGEL-02",
-    src: "/images/production/SPPAT-PROJ-01-bath08-2-detail-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-PROJ-01-bath08-2-detail-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-PROJ-01-bath08-2-detail-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-PROJ-01-bath08-2-detail-mobile.webp",
+    src: "/images/curated/services/tegel-02-xxl.jpg",
     alt: "Grootformaat tegels in inloopdouche",
-    status: "approved",
-    sourceClass: "verified-sppat"
+    origin: "media",
+    status: "approved"
   },
   "TEGEL-03": {
     mediaId: "TEGEL-03",
-    src: "/images/production/SPPAT-SVC-ai-woodlook-detail-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-ai-woodlook-detail-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-SVC-ai-woodlook-detail-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-ai-woodlook-detail-mobile.webp",
+    src: "/images/curated/services/tegel-03-parket.jpg",
     alt: "Keramisch parket met lange voegen",
-    status: "approved",
-    sourceClass: "generated"
-  },
-  "SPEC-01": {
-    mediaId: "SPEC-01",
-    src: "/images/raw/Generated Image September 10, 2026 - 10_46PM.jpg",
-    alt: "Natuursteenblad gecombineerd met donkere wand en hout",
-    status: "approved",
-    sourceClass: "generated"
+    origin: "media",
+    status: "approved"
   },
   "SPEC-02": {
     mediaId: "SPEC-02",
-    src: "/images/raw/Generated Image September 10, 2026 - 10_26PM.jpg",
+    src: "/images/curated/specialisaties/spec-02-xxl.jpg",
     alt: "Grootformaat keramische platen wand",
-    status: "approved",
-    sourceClass: "generated"
+    origin: "media",
+    status: "approved"
   },
   "SPEC-03": {
     mediaId: "SPEC-03",
-    src: "/images/raw/mozaik1.jpg",
-    objectPosition: "center",
+    src: "/images/curated/specialisaties/spec-03-mosaic.jpg",
     alt: "Mozaïek detail",
-    status: "approved",
-    sourceClass: "reference"
+    objectPosition: "center",
+    origin: "media",
+    status: "approved"
   },
   "SPEC-04A": {
     mediaId: "SPEC-04A",
-    src: "/images/raw/Generated Image September 11, 2026 - 2_05PM.jpg",
+    src: "/images/curated/specialisaties/spec-04a-stone-texture.jpg",
     alt: "Natuursteen met open poriën",
-    status: "approved",
-    sourceClass: "generated"
+    origin: "media",
+    status: "approved"
   },
   "SPEC-04B": {
     mediaId: "SPEC-04B",
-    src: "/images/raw/Generated Image September 10, 2026 - 7_29PM.jpg",
+    src: "/images/curated/specialisaties/spec-04b-stone-edge.jpg",
     alt: "Detail van stenen hoek met textuur",
-    status: "approved",
-    sourceClass: "generated"
+    origin: "media",
+    status: "approved"
   },
   "SPEC-05": {
     mediaId: "SPEC-05",
-    src: "/images/production/SPPAT-SVC-ai-woodlook-hero-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-SVC-ai-woodlook-hero-desktop.webp",
-    mobileSrc: "/images/production/SPPAT-SVC-ai-woodlook-detail-mobile.webp",
+    src: "/images/curated/specialisaties/spec-05-parket.jpg",
     alt: "Keramisch parket voeglijnen",
-    status: "approved",
-    sourceClass: "generated"
-  },
-  "ABOUT-02": {
-    mediaId: "ABOUT-02",
-    src: "/images/raw/Generated Image September 10, 2026 - 11_53PM.jpg",
-    alt: "Vakmanschap technische strip",
-    objectPosition: "center",
-    status: "approved",
-    sourceClass: "generated"
+    origin: "media",
+    status: "approved"
   },
   "ABOUT-01": {
     mediaId: "ABOUT-01",
-    src: "/images/raw/Generated Image September 10, 2026 - 11_53PM.jpg",
+    src: "/images/curated/about/about-01-process.jpg",
     alt: "Vakmanschap met tegel en lijmkam",
-    status: "approved",
-    sourceClass: "generated"
+    origin: "media",
+    status: "approved"
   },
-  "KB-01 WATERDICHTING": {
-    mediaId: "KB-01 WATERDICHTING",
-    src: "/images/raw/Generated Image September 10, 2026 - 8_27PM.jpg",
-    alt: "Waterdichting in natte cel hoek",
-    status: "approved",
-    sourceClass: "generated"
+  "ABOUT-02": {
+    mediaId: "ABOUT-02",
+    src: "/images/curated/about/about-02-tech-strip.jpg",
+    alt: "Vakmanschap technische strip",
+    objectPosition: "center",
+    origin: "media",
+    status: "approved"
   },
-  "KB-02 LIPPAGE": {
-    mediaId: "KB-02 LIPPAGE",
-    src: "/images/raw/Generated Image September 10, 2026 - 8_27PM (1).jpg",
-    alt: "Laserlijn en levelingsysteem op tegelwerk",
-    status: "approved",
-    sourceClass: "generated"
+  "KB-WATERDICHTING": {
+    mediaId: "KB-WATERDICHTING",
+    src: "/images/curated/knowledge/kb-waterdichting.jpg",
+    alt: "KB-WATERDICHTING visual",
+    origin: "special-references",
+    status: "approved"
   },
-  "KB-03 INSPECTIELUIK": {
-    mediaId: "KB-03 INSPECTIELUIK",
-    src: "/images/raw/Generated Image September 11, 2026 - 11_16AM.jpg",
-    alt: "Tijdelijk beeld voor inspectieluik",
-    status: "gap",
-    sourceClass: "temporary",
-    notes: "NOT FOR PRODUCTION — MEDIA GAP"
+  "KB-LIPPAGE": {
+    mediaId: "KB-LIPPAGE",
+    src: "/images/curated/knowledge/kb-lippage.jpg",
+    alt: "KB-LIPPAGE visual",
+    origin: "media",
+    status: "approved"
   },
-  "KB-04 EPOXY/CEMENT": {
-    mediaId: "KB-04 EPOXY/CEMENT",
-    src: "/images/raw/Generated Image September 11, 2026 - 11_16AM.jpg",
-    alt: "Kruising van tegelvoegen",
-    status: "approved",
-    sourceClass: "generated"
+  "KB-INSPECTIELUIK": {
+    mediaId: "KB-INSPECTIELUIK",
+    src: "/images/curated/knowledge/kb-inspectieluik-temp.jpg",
+    alt: "KB-INSPECTIELUIK visual",
+    origin: "media",
+    status: "provisional"
   },
-  "KB-INLINE": {
-    mediaId: "KB-INLINE",
-    src: "/images/raw/Generated Image September 10, 2026 - 8_27PM.jpg",
-    alt: "Waterdichting in natte cel hoek",
-    status: "approved",
-    sourceClass: "generated"
+  "KB-EPOXY-CEMENT": {
+    mediaId: "KB-EPOXY-CEMENT",
+    src: "/images/curated/knowledge/kb-epoxy-cement.jpg",
+    alt: "KB-EPOXY-CEMENT visual",
+    origin: "media",
+    status: "approved"
   },
-  "PROJ-01-A": {
-    mediaId: "PROJ-01-A",
-    src: "/images/production/SPPAT-PROJ-01-bath08-hero-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-PROJ-01-bath08-hero-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-PROJ-01-bath08-hero-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-PROJ-01-bath08-hero-mobile.webp",
-    alt: "Complete badkamer renovatie overzicht",
-    status: "approved",
-    sourceClass: "verified-sppat"
+  "PROJECT-01-01": {
+    mediaId: "PROJECT-01-01",
+    src: "/images/curated/projects/project-01/p01-01.jpeg",
+    alt: "PROJECT-01-01 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-01-B": {
-    mediaId: "PROJ-01-B",
-    src: "/images/production/SPPAT-PROJ-01-bath08-1-hero-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-PROJ-01-bath08-1-hero-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-PROJ-01-bath08-1-hero-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-PROJ-01-bath08-1-hero-mobile.webp",
-    alt: "Detail van badkamer inloopdouche",
-    status: "approved",
-    sourceClass: "verified-sppat"
+  "PROJECT-01-02": {
+    mediaId: "PROJECT-01-02",
+    src: "/images/curated/projects/project-01/p01-02.jpeg",
+    alt: "PROJECT-01-02 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-01-C": {
-    mediaId: "PROJ-01-C",
-    src: "/images/production/SPPAT-PROJ-01-bath08-2-hero-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-PROJ-01-bath08-2-hero-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-PROJ-01-bath08-2-hero-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-PROJ-01-bath08-2-hero-mobile.webp",
-    alt: "Detail van wastafel en spiegel",
-    status: "approved",
-    sourceClass: "verified-sppat"
+  "PROJECT-01-03": {
+    mediaId: "PROJECT-01-03",
+    src: "/images/curated/projects/project-01/p01-03.jpeg",
+    alt: "PROJECT-01-03 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-03-A": {
-    mediaId: "PROJ-03-A",
-    src: "/images/production/SPPAT-PROJ-03-floor07-9-hero-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-PROJ-03-floor07-9-hero-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-PROJ-03-floor07-9-hero-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-PROJ-03-floor07-9-hero-mobile.webp",
-    alt: "Grootformaat vloertegels overzicht",
-    status: "approved",
-    sourceClass: "verified-sppat"
+  "PROJECT-02-01": {
+    mediaId: "PROJECT-02-01",
+    src: "/images/curated/projects/project-02/p02-01.jpeg",
+    alt: "PROJECT-02-01 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-03-B": {
-    mediaId: "PROJ-03-B",
-    src: "/images/production/SPPAT-PROJ-03-floor07-4-card-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-PROJ-03-floor07-4-card-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-PROJ-03-floor07-4-card-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-PROJ-03-floor07-4-card-mobile.webp",
-    alt: "Detail van vloertegels aansluiting",
-    status: "approved",
-    sourceClass: "verified-sppat"
+  "PROJECT-02-02": {
+    mediaId: "PROJECT-02-02",
+    src: "/images/curated/projects/project-02/p02-02.jpeg",
+    alt: "PROJECT-02-02 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-03-C": {
-    mediaId: "PROJ-03-C",
-    src: "/images/production/SPPAT-PROJ-03-floor07-6-card-desktop.webp",
-    desktopSrc: "/images/production/SPPAT-PROJ-03-floor07-6-card-desktop.webp",
-    tabletSrc: "/images/production/SPPAT-PROJ-03-floor07-6-card-tablet.webp",
-    mobileSrc: "/images/production/SPPAT-PROJ-03-floor07-6-card-mobile.webp",
-    alt: "Vloertegel patroon",
-    status: "approved",
-    sourceClass: "verified-sppat"
+  "PROJECT-02-03": {
+    mediaId: "PROJECT-02-03",
+    src: "/images/curated/projects/project-02/p02-03.jpeg",
+    alt: "PROJECT-02-03 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-06-A": {
-    mediaId: "PROJ-06-A",
-    src: "/images/production/SPPAT-PROJ-06-res04-4-hero-desktop.webp",
-    alt: "Complete renovatie tegelwerk",
-    status: "gap",
-    sourceClass: "temporary",
-    notes: "NOT FOR PRODUCTION — VERIFIED PROJECT MEDIA MISSING"
+  "PROJECT-02-04": {
+    mediaId: "PROJECT-02-04",
+    src: "/images/curated/projects/project-02/p02-04.jpeg",
+    alt: "PROJECT-02-04 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-06-B": {
-    mediaId: "PROJ-06-B",
-    src: "/images/production/SPPAT-PROJ-06-res03-6-card-desktop.webp",
-    alt: "Detail tegelwerk rand",
-    status: "gap",
-    sourceClass: "temporary",
-    notes: "NOT FOR PRODUCTION — VERIFIED PROJECT MEDIA MISSING"
+  "PROJECT-02-05": {
+    mediaId: "PROJECT-02-05",
+    src: "/images/curated/projects/project-02/p02-05.jpeg",
+    alt: "PROJECT-02-05 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-02-A": {
-    mediaId: "PROJ-02-A",
-    src: "/images/production/SPPAT-SVC-ai-bathroom-hero-desktop.webp",
-    alt: "Tijdelijk beeld voor Project 02",
-    status: "approved",
-    sourceClass: "verified-sppat",
+  "PROJECT-03-01": {
+    mediaId: "PROJECT-03-01",
+    src: "/images/curated/projects/project-03/p03-01.jpeg",
+    alt: "PROJECT-03-01 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-04-A": {
-    mediaId: "PROJ-04-A",
-    src: "/images/production/SPPAT-SVC-bath-feb-card-desktop.webp",
-    alt: "Tijdelijk beeld voor Project 04",
-    status: "approved",
-    sourceClass: "verified-sppat",
+  "PROJECT-03-02": {
+    mediaId: "PROJECT-03-02",
+    src: "/images/curated/projects/project-03/p03-02.jpeg",
+    alt: "PROJECT-03-02 visual",
+    origin: "project-series",
+    status: "approved"
   },
-  "PROJ-05-A": {
-    mediaId: "PROJ-05-A",
-    src: "/images/production/SPPAT-SVC-kitchen-card-desktop.webp",
-    alt: "Tijdelijk beeld voor Project 05",
-    status: "approved",
-    sourceClass: "verified-sppat",
-  }
-}
+  "PROJECT-03-03": {
+    mediaId: "PROJECT-03-03",
+    src: "/images/curated/projects/project-03/p03-03.jpeg",
+    alt: "PROJECT-03-03 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-04-01": {
+    mediaId: "PROJECT-04-01",
+    src: "/images/curated/projects/project-04/p04-01.jpeg",
+    alt: "PROJECT-04-01 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-04-02": {
+    mediaId: "PROJECT-04-02",
+    src: "/images/curated/projects/project-04/p04-02.jpeg",
+    alt: "PROJECT-04-02 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-04-03": {
+    mediaId: "PROJECT-04-03",
+    src: "/images/curated/projects/project-04/p04-03.jpeg",
+    alt: "PROJECT-04-03 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-04-04": {
+    mediaId: "PROJECT-04-04",
+    src: "/images/curated/projects/project-04/p04-04.jpeg",
+    alt: "PROJECT-04-04 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-04-05": {
+    mediaId: "PROJECT-04-05",
+    src: "/images/curated/projects/project-04/p04-05.jpeg",
+    alt: "PROJECT-04-05 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-04-06": {
+    mediaId: "PROJECT-04-06",
+    src: "/images/curated/projects/project-04/p04-06.jpeg",
+    alt: "PROJECT-04-06 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-05-01": {
+    mediaId: "PROJECT-05-01",
+    src: "/images/curated/projects/project-05/p05-01.jpeg",
+    alt: "PROJECT-05-01 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-05-02": {
+    mediaId: "PROJECT-05-02",
+    src: "/images/curated/projects/project-05/p05-02.jpeg",
+    alt: "PROJECT-05-02 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-05-03": {
+    mediaId: "PROJECT-05-03",
+    src: "/images/curated/projects/project-05/p05-03.jpeg",
+    alt: "PROJECT-05-03 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-05-04": {
+    mediaId: "PROJECT-05-04",
+    src: "/images/curated/projects/project-05/p05-04.jpeg",
+    alt: "PROJECT-05-04 visual",
+    origin: "project-series",
+    status: "approved"
+  },
+  "PROJECT-06-TEMP-01": {
+    mediaId: "PROJECT-06-TEMP-01",
+    src: "/images/curated/projects/project-06/p06-temp-01.jpeg",
+    alt: "PROJECT-06-TEMP-01 visual",
+    origin: "references",
+    status: "approved"
+  },
+};

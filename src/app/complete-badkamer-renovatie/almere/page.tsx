@@ -16,7 +16,7 @@ export default function BadkamerrenovatieAlmere() {
   return (
     <main className="grid grid-cols-1 md:grid-cols-12 gap-x-4">
       {/* Hero Section: 50/50 Split. No overlap. */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0 pt-space-xl">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0 pt-space-xl">
         <div className="col-span-1 md:col-span-5 md:col-start-1 flex flex-col justify-center order-2 md:order-1 mt-space-md md:mt-0">
           <H1>Badkamerrenovatie in Almere</H1>
           <p className="mt-space-sm font-inter text-[#1A1A1A] text-lg">
@@ -35,7 +35,7 @@ export default function BadkamerrenovatieAlmere() {
       </section>
 
       {/* Local Tech & Tiling: Typography-led cols 3-10 */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
         <div className="col-span-1 md:col-span-8 md:col-start-3">
           <div className="mb-space-lg">
             <H2>Complete uitvoering, lokaal besproken</H2>
@@ -43,7 +43,7 @@ export default function BadkamerrenovatieAlmere() {
               Geen woning of badkamer is hetzelfde. Daarom beginnen we bij de bestaande situatie en het gewenste eindresultaat, niet bij een standaardpakket.
             </p>
             <div className="mt-space-sm">
-              <Link href="/complete-badkamer-renovatie/" className="font-space-grotesk uppercase text-sm tracking-wider underline hover:no-underline">
+              <Link href="/complete-badkamer-renovatie/" className="font-space uppercase text-sm tracking-wider underline hover:no-underline">
                 Bekijk complete badkamerrenovatie →
               </Link>
             </div>
@@ -55,7 +55,7 @@ export default function BadkamerrenovatieAlmere() {
               Wilt u niet de volledige ruimte laten verbouwen, maar wel professioneel tegelwerk laten uitvoeren? Bekijk dan de tegelwerkdiensten en specialisaties.
             </p>
             <div className="mt-space-sm">
-              <Link href="/tegelwerk/" className="font-space-grotesk uppercase text-sm tracking-wider underline hover:no-underline">
+              <Link href="/tegelwerk/" className="font-space uppercase text-sm tracking-wider underline hover:no-underline">
                 Bekijk tegelwerk →
               </Link>
             </div>
@@ -64,14 +64,14 @@ export default function BadkamerrenovatieAlmere() {
       </section>
 
       {/* CTA: Centered typographic block */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-4 md:px-0 border-t border-[#E5E5E5] pt-space-xl">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0 border-t border-[#E5E5E5] pt-space-xl">
         <div className="col-span-1 md:col-span-8 md:col-start-3 text-center">
           <H2>Uw badkamer in Almere bespreken?</H2>
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
             Stuur foto&apos;s, globale maten en uw ideeën.
           </p>
           <div className="mt-space-md">
-            <Link href="/contact/" className="bg-[#1A1A1A] text-white px-6 py-3 font-space-grotesk uppercase tracking-wider text-sm hover:bg-black transition-colors inline-block">
+            <Link href="/contact/" className="bg-[#1A1A1A] text-white px-6 py-3 font-space uppercase tracking-wider text-sm hover:bg-black transition-colors inline-block">
               Project bespreken
             </Link>
           </div>

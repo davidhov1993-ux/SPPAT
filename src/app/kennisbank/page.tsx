@@ -30,7 +30,7 @@ export default function KennisbankPage() {
       <section className="grid grid-cols-4 md:grid-cols-12 px-5 md:px-10">
         {/* Sticky Index (Desktop Only) */}
         <div className="hidden md:block col-span-3">
-          <div className="sticky top-20 flex flex-col gap-4 text-sm font-space-grotesk tracking-widest uppercase">
+          <div className="sticky top-20 flex flex-col gap-4 text-sm font-space tracking-widest uppercase">
             <a href="#waterdichting" className="hover:underline">Waterdichting</a>
             <a href="#lippage" className="hover:underline">Tegel Lippage</a>
             <a href="#inspectieluik" className="hover:underline">Inspectieluik</a>
@@ -51,7 +51,7 @@ export default function KennisbankPage() {
                 Natte zones rond douche en bad vragen extra aandacht. Kimband wordt binnen waterdichtingssystemen gebruikt om kwetsbare aansluitingen, bijvoorbeeld tussen wand en vloer, af te dichten.
               </p>
             </div>
-            <MediaSlot mediaId="KB-01 WATERDICHTING" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
+            <MediaSlot mediaId="KB-WATERDICHTING" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
           </article>
 
           {/* Article 2 */}
@@ -65,7 +65,7 @@ export default function KennisbankPage() {
                 Levelingsystemen kunnen helpen, maar ze vervangen geen geschikte ondergrond of correcte voorbereiding. Grootformaat tegels vragen extra aandacht qua vlakheid.
               </p>
             </div>
-            <MediaSlot mediaId="KB-02 LIPPAGE" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
+            <MediaSlot mediaId="KB-LIPPAGE" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
           </article>
 
           {/* Article 3 */}
@@ -79,7 +79,7 @@ export default function KennisbankPage() {
                 Voeglijnen, maatvoering, en de constructie moeten perfect op elkaar aansluiten voor een onzichtbaar resultaat.
               </p>
             </div>
-            <MediaSlot mediaId="KB-03 INSPECTIELUIK" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
+            <MediaSlot mediaId="KB-INSPECTIELUIK" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
           </article>
 
           {/* Article 4 */}
@@ -93,7 +93,7 @@ export default function KennisbankPage() {
                 Is epoxy altijd beter? Nee. De keuze hangt af van ruimte, type tegel, gewenste voegbreedte en onderhoud.
               </p>
             </div>
-            <MediaSlot mediaId="KB-04 EPOXY/CEMENT" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
+            <MediaSlot mediaId="KB-EPOXY-CEMENT" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
           </article>
         </div>
       </section>

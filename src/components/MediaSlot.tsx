@@ -6,6 +6,7 @@ interface MediaSlotProps {
   inset?: boolean;
   className?: string;
   bleedMobile?: boolean; // For edge-to-edge bleed on mobile
+  caption?: string;
 }
 
 export function MediaSlot({
@@ -14,6 +15,7 @@ export function MediaSlot({
   inset = false,
   className = "",
   bleedMobile = false,
+  caption,
 }: MediaSlotProps) {
   let aspectClass = "";
   if (aspectRatio !== "auto") {
@@ -55,6 +57,7 @@ export function MediaSlot({
             data-media-id={mediaId}
           />
         </picture>
+        {caption && <div className="mt-2 text-sm text-[#666] font-inter italic">{caption}</div>}
         {showDevMarker && (
           <div className="absolute top-2 left-2 bg-black text-white text-[10px] font-space tracking-widest uppercase px-2 py-1 z-20 pointer-events-none opacity-80 border border-white/20">
             {mediaId} · {media.status}

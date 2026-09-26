@@ -18,7 +18,7 @@ export default function Tegelwerk() {
       <section className="col-span-1 md:col-span-12 relative w-full mb-space-xl">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-5 md:px-0">
           <div className="col-span-1 md:col-span-10 relative">
-            <MediaSlot mediaId="TEGEL-01" className="w-full aspect-[4/5] md:aspect-[21/9]" bleedMobile={true} />
+            <MediaSlot mediaId="TEGEL-HERO" className="w-full aspect-[4/5] md:aspect-[21/9]" bleedMobile={true} />
             <div className="mt-space-md md:mt-0 md:absolute md:bottom-[-2rem] md:right-8 bg-[#F7F7F5] p-space-md md:p-space-lg max-w-xl border-t border-l border-[#E5E5E5] z-10 mx-auto md:mx-0 shadow-sm relative">
               <span className="block text-sm uppercase tracking-widest mb-space-xs font-space text-[#1A1A1A]">Tegelwerk</span>
               <H1>Professioneel Tegelwerk & Installatie</H1>
@@ -42,7 +42,7 @@ export default function Tegelwerk() {
            </p>
         </div>
         <div className="col-span-1 md:col-span-7 order-first md:order-last mb-space-md md:mb-0">
-           <MediaSlot mediaId="TEGEL-03" className="w-full aspect-[4/5] md:aspect-[3/2] object-cover" />
+           <MediaSlot mediaId="TEGEL-PREM-B" className="w-full aspect-[4/5] md:aspect-[3/2] object-cover" />
         </div>
       </section>
 
@@ -101,6 +101,7 @@ export default function Tegelwerk() {
         <div className="col-span-1 md:col-span-8 md:col-start-3 mb-space-xl" id="vloertegels">
           <BlueprintLine className="mb-space-md" />
           <H2>Vloertegels Leggen</H2>
+          <MediaSlot mediaId="TEGEL-VLOER" className="w-full max-w-sm my-space-sm aspect-square object-cover" />
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             Een strakke tegelvloer begint bij een stabiele, geschikte en voldoende vlakke basis. Daarna bepalen de tegelverdeling, voeglijnen en aansluitingen hoe rustig het eindresultaat oogt.
           </p>
@@ -135,6 +136,7 @@ export default function Tegelwerk() {
         <div className="col-span-1 md:col-span-8 md:col-start-4 mb-space-xl" id="wandtegels">
           <BlueprintLine className="mb-space-md" />
           <H2>Wandtegels Zetten</H2>
+          <MediaSlot mediaId="TEGEL-WAND" className="w-full max-w-[500px] my-space-sm aspect-[7/3] object-cover" />
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             Bij wandtegelwerk vallen afwijkingen direct op. Voeglijnen, hoeken, nissen, kranen, stopcontacten en andere uitsparingen maken de verdeling van het tegelvlak bepalend voor het eindresultaat.
           </p>
@@ -159,6 +161,7 @@ export default function Tegelwerk() {
         <div className="col-span-1 md:col-span-8 md:col-start-3 mb-space-xl" id="keuken">
           <BlueprintLine className="mb-space-md" />
           <H2>Keuken Achterwand & Vloer Tegelen</H2>
+          <MediaSlot mediaId="TEGEL-KEUKEN" className="w-full max-w-lg my-space-sm aspect-video object-cover" />
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             In een keuken komt tegelwerk samen met werkbladen, kasten, stopcontacten, kranen en apparatuur. Daardoor zit de kwaliteit vaak juist in de kleine aansluitingen.
           </p>
@@ -189,6 +192,7 @@ export default function Tegelwerk() {
         <div className="col-span-1 md:col-span-8 md:col-start-4 mb-space-xl" id="balkon">
           <BlueprintLine className="mb-space-md" />
           <H2>Balkon Tegelen</H2>
+          <MediaSlot mediaId="TEGEL-BALKON" className="w-full max-w-md my-space-sm aspect-[4/3] object-cover" />
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             Buitentegelwerk krijgt te maken met regen, temperatuurwisselingen en andere omstandigheden dan tegelwerk binnen. Daarom moet niet alleen naar de tegel worden gekeken, maar ook naar de bestaande constructie, ondergrond en waterafvoer.
           </p>
@@ -205,6 +209,7 @@ export default function Tegelwerk() {
         <div className="col-span-1 md:col-span-8 md:col-start-3 mb-space-xl" id="badkamer">
           <BlueprintLine className="mb-space-md" />
           <H2>Badkamer Vakkundig Laten Tegelen</H2>
+          <MediaSlot mediaId="TEGEL-BADK" className="w-full max-w-md my-space-sm aspect-square object-cover" />
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             Regelt u de verbouwing zelf en zoekt u een specialist voor het tegelwerk? SPPAT kan het vloer- en wandtegelwerk als afzonderlijk onderdeel uitvoeren.
           </p>
@@ -233,6 +238,49 @@ export default function Tegelwerk() {
             <Link href="/complete-badkamer-renovatie/" className="font-space uppercase text-sm tracking-wider hover:underline border-b border-[#1A1A1A] pb-1">
               Bekijk complete badkamerrenovatie →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      
+      {/* Formaten in de praktijk */}
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
+        <div className="col-span-1 md:col-span-8 md:col-start-3">
+          <H2>Formaten in de praktijk</H2>
+          <p className="mt-space-sm font-inter text-[#1A1A1A]">
+            Het tegelformaat beïnvloedt de verdeling, snijlijnen en het ritme van een vlak. In het uitgevoerde werk van SPPAT zijn onder meer toepassingen met 7×19 cm, 40×40 cm, 60×120 cm en 120×60 cm zichtbaar. Welke verdeling passend is, hangt af van ruimte, ondergrond, tegel en ontwerp.
+          </p>
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 mt-space-md hide-scrollbar pb-4 md:grid md:grid-cols-4 md:pb-0 -mx-5 px-5 md:mx-0 md:px-0">
+            <div className="flex-none w-[60vw] md:w-auto snap-center">
+              <MediaSlot mediaId="TEGEL-FORMAT-7X19" className="w-full aspect-square object-cover" caption="7x19 cm" />
+            </div>
+            <div className="flex-none w-[60vw] md:w-auto snap-center">
+              <MediaSlot mediaId="TEGEL-FORMAT-40X40" className="w-full aspect-square object-cover" caption="40x40 cm" />
+            </div>
+            <div className="flex-none w-[60vw] md:w-auto snap-center">
+              <MediaSlot mediaId="TEGEL-FORMAT-60X120" className="w-full aspect-square object-cover" caption="60x120 cm" />
+            </div>
+            <div className="flex-none w-[60vw] md:w-auto snap-center">
+              <MediaSlot mediaId="TEGEL-FORMAT-120X60" className="w-full aspect-square object-cover" caption="120x60 cm" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Verstek / 45° afwerking */}
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
+        <div className="col-span-1 md:col-span-8 md:col-start-3">
+          <H2>Verstek / 45° afwerking</H2>
+          <p className="mt-space-sm font-inter text-[#1A1A1A]">
+            Bij geschikte tegels kan een zichtbare buitenhoek in verstek worden uitgevoerd, waarbij de tegelranden onder 45° worden voorbereid. Of deze afwerking passend is, hangt af van materiaal, dikte, randkwaliteit en ontwerp. Het is een detailoplossing, geen vaste standaard voor ieder project.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-space-md">
+            <div>
+              <MediaSlot mediaId="TEGEL-45-PROCESS" className="w-full aspect-[4/3] object-cover" caption="Proces: voorbereiding" />
+            </div>
+            <div>
+              <MediaSlot mediaId="TEGEL-45-RESULT" className="w-full aspect-[4/3] object-cover" caption="Resultaat: afgewerkte buitenhoek" />
+            </div>
           </div>
         </div>
       </section>

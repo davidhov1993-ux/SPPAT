@@ -137,16 +137,38 @@ export default function Home() {
         </div>
         
         {/* Horizontal scroll on mobile, 3 cols on desktop */}
-        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 md:grid md:grid-cols-3 -mx-5 px-5 md:mx-0 md:px-0 w-[calc(100%+40px)] md:w-full pb-4 md:pb-0 hide-scrollbar">
-          <div className="flex-none w-[85vw] md:w-auto snap-center">
-            <MediaSlot mediaId="HOME-PROJECT-A" className="w-full aspect-[4/5] object-cover" />
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-8 -mx-5 px-5 md:mx-0 md:px-0 w-[calc(100%+40px)] md:w-full pb-4 md:pb-0 hide-scrollbar md:flex-col md:overflow-visible">
+          
+          {/* Project A */}
+          <div className="flex-none w-[90vw] md:w-full snap-center grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-md md:mb-space-lg">
+            <div className="col-span-1 md:col-span-8 relative">
+              <MediaSlot mediaId="HOME-PROJECT-A-DOMINANT" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
+            </div>
+            <div className="col-span-1 md:col-span-4 hidden md:block mt-16 xl:mt-32">
+              <MediaSlot mediaId="HOME-PROJECT-A-INSET" className="w-full aspect-[3/4] object-cover" />
+            </div>
           </div>
-          <div className="flex-none w-[85vw] md:w-auto snap-center">
-            <MediaSlot mediaId="HOME-PROJECT-B" className="w-full aspect-[4/5] object-cover" />
+
+          {/* Project B */}
+          <div className="flex-none w-[90vw] md:w-full snap-center grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-md md:mb-space-lg">
+            <div className="col-span-1 md:col-span-4 hidden md:block mt-16 xl:mt-32">
+              <MediaSlot mediaId="HOME-PROJECT-B-INSET" className="w-full aspect-[3/4] object-cover" />
+            </div>
+            <div className="col-span-1 md:col-span-8 relative">
+              <MediaSlot mediaId="HOME-PROJECT-B-DOMINANT" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
+            </div>
           </div>
-          <div className="flex-none w-[85vw] md:w-auto snap-center">
-            <MediaSlot mediaId="HOME-PROJECT-C" className="w-full aspect-[4/5] object-cover" />
+
+          {/* Project C */}
+          <div className="flex-none w-[90vw] md:w-full snap-center grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-md md:mb-space-lg">
+            <div className="col-span-1 md:col-span-8 relative">
+              <MediaSlot mediaId="HOME-PROJECT-C-DOMINANT" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
+            </div>
+            <div className="col-span-1 md:col-span-4 hidden md:block mt-16 xl:mt-32">
+              <MediaSlot mediaId="HOME-PROJECT-C-INSET" className="w-full aspect-[3/4] object-cover" />
+            </div>
           </div>
+
         </div>
 
         <div className="text-center mt-space-md">

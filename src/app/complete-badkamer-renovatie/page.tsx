@@ -17,7 +17,7 @@ export default function Badkamers() {
       {/* Hero Section */}
       <section className="col-span-1 md:col-span-12 relative w-full mb-space-xl">
         <div className="w-full relative px-0">
-          <MediaSlot mediaId="BADK-01" className="w-full aspect-[4/5] md:aspect-[16/9] object-cover" />
+          <MediaSlot mediaId="BADK-HERO" className="w-full aspect-[4/5] md:aspect-[16/9] object-cover" />
         </div>
         <div className="p-space-md md:absolute md:bottom-0 md:left-0 bg-[#F7F7F5] md:col-span-6 lg:col-span-5 max-w-2xl md:border-t md:border-r border-[#E5E5E5] -mt-10 md:mt-0 relative z-10">
           <H1>Complete Badkamerrenovatie van A tot Z</H1>
@@ -59,6 +59,50 @@ export default function Badkamers() {
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             De exacte scope wordt per badkamer bepaald.
           </p>
+        </div>
+      </section>
+
+      
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0">
+        <div className="col-span-1 md:col-span-4 order-first mb-space-md md:mb-0">
+          <MediaSlot mediaId="BADK-TECH" className="w-full aspect-[4/5] object-cover" caption="Inbouwtechniek voorbereiding" />
+        </div>
+        <div className="col-span-1 md:col-span-7 md:col-start-6 flex flex-col justify-center">
+          <H2>Inbouwtechniek</H2>
+          <p className="mt-space-sm font-inter text-[#1A1A1A]">
+            Afhankelijk van het ontwerp kunnen onder meer een inbouwreservoir, inbouwkranen en andere technische onderdelen in de wandopbouw worden opgenomen. De exacte oplossing wordt afgestemd op de bestaande situatie en het gekozen sanitair.
+          </p>
+        </div>
+      </section>
+
+      {/* Technical Evidence Rail */}
+      <section className="col-span-1 md:col-span-12 mb-space-xl px-5 md:px-0">
+        <H3 className="mb-space-md text-center">Uitvoeringsdetails & Techniek</H3>
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 md:grid md:grid-cols-4 md:gap-4 -mx-5 px-5 md:mx-0 md:px-0 hide-scrollbar pb-4 md:pb-0">
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-WATERDICHTING" className="w-full aspect-square object-cover" caption="Waterdichting" />
+          </div>
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-VOORBEREIDING-1" className="w-full aspect-square object-cover" caption="Ondergrondvoorbereiding" />
+          </div>
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-VLOEROPBOUW" className="w-full aspect-square object-cover" caption="Vloeropbouw / isolatie" />
+          </div>
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-VLOERVERWARMING-1" className="w-full aspect-square object-cover" caption="Vloerverwarming" />
+          </div>
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-DOUCHEGOOT-1" className="w-full aspect-square object-cover" caption="Douchegoot" />
+          </div>
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-NIS-LED" className="w-full aspect-square object-cover" caption="Nis + LED" />
+          </div>
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-AFSCHOT" className="w-full aspect-square object-cover" caption="Douche-afschot" />
+          </div>
+          <div className="flex-none w-[70vw] md:w-auto snap-center">
+            <MediaSlot mediaId="BADK-DETAILS" className="w-full aspect-[3/2] object-cover" caption="Details & Finishing" />
+          </div>
         </div>
       </section>
 
@@ -188,7 +232,10 @@ export default function Badkamers() {
 
       {/* Toiletrenovatie Grid */}
       <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0" id="toiletrenovatie">
-        <div className="col-span-1 md:col-span-8 md:col-start-3">
+        <div className="col-span-1 md:col-span-6 md:col-start-1 mb-space-md md:mb-0">
+          <MediaSlot mediaId="BADK-TOILET" className="w-full aspect-[4/5] object-cover" />
+        </div>
+        <div className="col-span-1 md:col-span-5 md:col-start-8">
           <H2>Complete Toiletrenovatie</H2>
           <p className="mt-space-sm font-inter text-[#1A1A1A]">
             Een toiletruimte is compact, maar technisch niet eenvoudig. Juist doordat alles dicht bij elkaar komt, vallen maatvoering, tegelverdeling, aansluitingen en afwerking extra op.

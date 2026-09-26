@@ -1,374 +1,554 @@
-export interface MediaAsset {
-  mediaId: string;
-  src: string;
-  alt: string;
-  desktopSrc?: string;
-  tabletSrc?: string;
-  mobileSrc?: string;
-  objectPosition?: string;
-  status: 'approved' | 'provisional' | 'gap' | 'review-selected';
-  sourceClass?: 'verified-sppat' | 'standalone-sppat' | 'technical-process' | 'reference' | 'generated' | 'temporary';
-  origin?: string;
-  notes?: string;
-}
-
-export const mediaMapping: Record<string, MediaAsset> = {
+export const mediaMapping: Record<string, { mediaId: string, src: string, alt: string, status: string, desktopSrc?: string, tabletSrc?: string, mobileSrc?: string, objectPosition?: string }> = {
   "HOME-01": {
     mediaId: "HOME-01",
-    src: "/images/curated/home/home-01-hero.jpg",
-    alt: "Complete badkamerrenovatie en tegelwerk sfeerbeeld",
-    objectPosition: "55% 52%",
-    origin: "media",
+    src: "/media/экстра-крупный_формат.jpg",
+    alt: "HOME-01 visual",
     status: "approved"
   },
   "HOME-02": {
     mediaId: "HOME-02",
-    src: "/images/curated/home/home-02-badkamers.jpg",
-    alt: "Badkamer met tegelwerk en sanitair",
-    objectPosition: "80% 50%",
-    origin: "media",
+    src: "/media/ванная-ниша-лед-мозаика-120ъ60см.jpeg",
+    alt: "HOME-02 visual",
     status: "approved"
   },
   "HOME-03": {
     mediaId: "HOME-03",
-    src: "/images/curated/home/home-03-tegelwerk.jpg",
-    alt: "Keuken met tegelvloer",
-    objectPosition: "55% 60%",
-    origin: "media",
+    src: "/media/большая_гостиная-60х120см.jpg",
+    alt: "HOME-03 visual",
     status: "approved"
   },
   "HOME-04": {
     mediaId: "HOME-04",
-    src: "/images/curated/home/home-04-tech.jpg",
-    alt: "Vakmanschap en technische voorbereiding",
-    objectPosition: "center",
-    origin: "media",
-    status: "approved"
-  },
-  "HOME-PROJECT-A": {
-    mediaId: "HOME-PROJECT-A",
-    src: "/images/curated/home/home-project-a.jpg",
-    alt: "HOME-PROJECT-A visual",
-    origin: "media",
-    status: "approved"
-  },
-  "HOME-PROJECT-B": {
-    mediaId: "HOME-PROJECT-B",
-    src: "/images/curated/home/home-project-b.jpg",
-    alt: "HOME-PROJECT-B visual",
-    origin: "media",
-    status: "approved"
-  },
-  "HOME-PROJECT-C": {
-    mediaId: "HOME-PROJECT-C",
-    src: "/images/curated/home/home-project-c.jpg",
-    alt: "HOME-PROJECT-C visual",
-    origin: "media",
+    src: "/media/лазер-идеальный_шов.jpg",
+    alt: "HOME-04 visual",
     status: "approved"
   },
   "HOME-CTA": {
     mediaId: "HOME-CTA",
-    src: "/images/curated/home/home-cta.jpg",
+    src: "/media/120х60_раковина.jpg",
     alt: "HOME-CTA visual",
-    origin: "media",
     status: "approved"
   },
-  "BADK-01": {
-    mediaId: "BADK-01",
-    src: "/images/curated/services/badk-01-hero.jpg",
-    alt: "Premium badkamer met inloopdouche",
-    objectPosition: "52% 50%",
-    origin: "media",
+  "HOME-PROJECT-A-DOMINANT": {
+    mediaId: "HOME-PROJECT-A-DOMINANT",
+    src: "/references/Новая папка 3/WhatsApp Image 2025-02-26 at 18.20.06.jpeg",
+    alt: "HOME-PROJECT-A-DOMINANT visual",
     status: "approved"
   },
-  "BADK-02": {
-    mediaId: "BADK-02",
-    src: "/images/curated/services/badk-02-concealed.jpg",
-    alt: "Voorbereiding van de vloer voor tegelwerk",
-    origin: "special-references",
+  "HOME-PROJECT-A-INSET": {
+    mediaId: "HOME-PROJECT-A-INSET",
+    src: "/references/Новая папка 3/WhatsApp Image 2025-05-30 at 21.24.02 (5).jpeg",
+    alt: "HOME-PROJECT-A-INSET visual",
     status: "approved"
   },
-  "BADK-03": {
-    mediaId: "BADK-03",
-    src: "/images/curated/services/badk-03-finish.jpg",
-    alt: "Detail van nis in badkamer",
-    origin: "media",
+  "HOME-PROJECT-B-DOMINANT": {
+    mediaId: "HOME-PROJECT-B-DOMINANT",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.03 (6).jpeg",
+    alt: "HOME-PROJECT-B-DOMINANT visual",
+    status: "approved"
+  },
+  "HOME-PROJECT-B-INSET": {
+    mediaId: "HOME-PROJECT-B-INSET",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.04 (4).jpeg",
+    alt: "HOME-PROJECT-B-INSET visual",
+    status: "approved"
+  },
+  "HOME-PROJECT-C-DOMINANT": {
+    mediaId: "HOME-PROJECT-C-DOMINANT",
+    src: "/references/Новая папка 5/WhatsApp Image 2025-05-30 at 21.24.07 (6).jpeg",
+    alt: "HOME-PROJECT-C-DOMINANT visual",
+    status: "approved"
+  },
+  "HOME-PROJECT-C-INSET": {
+    mediaId: "HOME-PROJECT-C-INSET",
+    src: "/references/Новая папка 5/WhatsApp Image 2025-05-30 at 21.24.07 (1).jpeg",
+    alt: "HOME-PROJECT-C-INSET visual",
+    status: "approved"
+  },
+  "BADK-HERO": {
+    mediaId: "BADK-HERO",
+    src: "/media/душевая_премиум-120х60.jpg",
+    alt: "BADK-HERO visual",
+    status: "approved"
+  },
+  "BADK-TECH": {
+    mediaId: "BADK-TECH",
+    src: "/special-references/монтаж_геберит.jpg",
+    alt: "BADK-TECH visual",
+    status: "approved"
+  },
+  "BADK-DETAILS": {
+    mediaId: "BADK-DETAILS",
+    src: "/media/mozaik1.jpg",
+    alt: "BADK-DETAILS visual",
     status: "approved"
   },
   "BADK-TOILET": {
     mediaId: "BADK-TOILET",
-    src: "/images/curated/services/badk-toilet.jpg",
-    alt: "Toilet renovatie",
-    origin: "media",
+    src: "/media/дуалет-раковина-ниша-лед.jpg",
+    alt: "BADK-TOILET visual",
     status: "approved"
   },
   "BADK-CTA": {
     mediaId: "BADK-CTA",
-    src: "/images/curated/services/badk-cta.jpg",
+    src: "/media/хз_что_с_этим_делать.jpg",
     alt: "BADK-CTA visual",
-    origin: "media",
+    status: "approved"
+  },
+  "BADK-WATERDICHTING": {
+    mediaId: "BADK-WATERDICHTING",
+    src: "/special-references/гидроизоляция.jpg",
+    alt: "BADK-WATERDICHTING visual",
+    status: "approved"
+  },
+  "BADK-VOORBEREIDING-1": {
+    mediaId: "BADK-VOORBEREIDING-1",
+    src: "/special-references/подготовка.jpeg",
+    alt: "BADK-VOORBEREIDING-1 visual",
+    status: "approved"
+  },
+  "BADK-VOORBEREIDING-2": {
+    mediaId: "BADK-VOORBEREIDING-2",
+    src: "/special-references/подготовка-2.jpeg",
+    alt: "BADK-VOORBEREIDING-2 visual",
+    status: "approved"
+  },
+  "BADK-VOORBEREIDING-3": {
+    mediaId: "BADK-VOORBEREIDING-3",
+    src: "/special-references/подготовка-3.jpeg",
+    alt: "BADK-VOORBEREIDING-3 visual",
+    status: "approved"
+  },
+  "BADK-VLOEROPBOUW": {
+    mediaId: "BADK-VLOEROPBOUW",
+    src: "/special-references/утеплитель-под-стяжку.jpeg",
+    alt: "BADK-VLOEROPBOUW visual",
+    status: "approved"
+  },
+  "BADK-VLOERVERWARMING-1": {
+    mediaId: "BADK-VLOERVERWARMING-1",
+    src: "/media/теплый_пол-2.jpg",
+    alt: "BADK-VLOERVERWARMING-1 visual",
+    status: "approved"
+  },
+  "BADK-VLOERVERWARMING-2": {
+    mediaId: "BADK-VLOERVERWARMING-2",
+    src: "/media/теплый_пол.jpeg",
+    alt: "BADK-VLOERVERWARMING-2 visual",
+    status: "approved"
+  },
+  "BADK-DOUCHEGOOT-1": {
+    mediaId: "BADK-DOUCHEGOOT-1",
+    src: "/media/трап-2.jpg",
+    alt: "BADK-DOUCHEGOOT-1 visual",
+    status: "approved"
+  },
+  "BADK-DOUCHEGOOT-2": {
+    mediaId: "BADK-DOUCHEGOOT-2",
+    src: "/media/трап.jpg",
+    alt: "BADK-DOUCHEGOOT-2 visual",
+    status: "approved"
+  },
+  "BADK-INBOUWNIS": {
+    mediaId: "BADK-INBOUWNIS",
+    src: "/media/ниша-2.jpg",
+    alt: "BADK-INBOUWNIS visual",
+    status: "approved"
+  },
+  "BADK-NIS-LED": {
+    mediaId: "BADK-NIS-LED",
+    src: "/media/ниша_лед.jpg",
+    alt: "BADK-NIS-LED visual",
+    status: "approved"
+  },
+  "BADK-AFSCHOT": {
+    mediaId: "BADK-AFSCHOT",
+    src: "/media/душевой_спад.jpg",
+    alt: "BADK-AFSCHOT visual",
     status: "approved"
   },
   "ALM-01": {
     mediaId: "ALM-01",
-    src: "/images/curated/services/alm-01.jpg",
-    alt: "Badkamer met douche en wandcloset",
-    origin: "media",
+    src: "/media/дизайн_тропик.jpg",
+    alt: "ALM-01 visual",
     status: "approved"
   },
-  "TEGEL-01": {
-    mediaId: "TEGEL-01",
-    src: "/images/curated/services/tegel-01-hero.jpg",
-    alt: "Brede tegelvloer doorlopend in de ruimte",
-    objectPosition: "center bottom",
-    origin: "media",
+  "TEGEL-HERO": {
+    mediaId: "TEGEL-HERO",
+    src: "/media/левитирующая_стена.jpg",
+    alt: "TEGEL-HERO visual",
     status: "approved"
   },
-  "TEGEL-02": {
-    mediaId: "TEGEL-02",
-    src: "/images/curated/services/tegel-02-xxl.jpg",
-    alt: "Grootformaat tegels in inloopdouche",
-    origin: "media",
+  "TEGEL-PREM-A": {
+    mediaId: "TEGEL-PREM-A",
+    src: "/media/подрез_45.jpg",
+    alt: "TEGEL-PREM-A visual",
     status: "approved"
   },
-  "TEGEL-03": {
-    mediaId: "TEGEL-03",
-    src: "/images/curated/services/tegel-03-parket.jpg",
-    alt: "Keramisch parket met lange voegen",
-    origin: "media",
+  "TEGEL-PREM-B": {
+    mediaId: "TEGEL-PREM-B",
+    src: "/media/ниша-запил-45-мозаика.jpg",
+    alt: "TEGEL-PREM-B visual",
     status: "approved"
   },
-  "SPEC-02": {
-    mediaId: "SPEC-02",
-    src: "/images/curated/specialisaties/spec-02-xxl.jpg",
-    alt: "Grootformaat keramische platen wand",
-    origin: "media",
+  "TEGEL-VLOER": {
+    mediaId: "TEGEL-VLOER",
+    src: "/media/40х40см.jpg",
+    alt: "TEGEL-VLOER visual",
     status: "approved"
   },
-  "SPEC-03": {
-    mediaId: "SPEC-03",
-    src: "/images/curated/specialisaties/spec-03-mosaic.jpg",
-    alt: "Mozaïek detail",
-    objectPosition: "center",
-    origin: "media",
+  "TEGEL-WAND": {
+    mediaId: "TEGEL-WAND",
+    src: "/media/дизайн_ванная_7х19см-раковина(из_керамогранита).jpg",
+    alt: "TEGEL-WAND visual",
     status: "approved"
   },
-  "SPEC-04A": {
-    mediaId: "SPEC-04A",
-    src: "/images/curated/specialisaties/spec-04a-stone-texture.jpg",
-    alt: "Natuursteen met open poriën",
-    origin: "media",
+  "TEGEL-KEUKEN": {
+    mediaId: "TEGEL-KEUKEN",
+    src: "/media/фартук.jpg",
+    alt: "TEGEL-KEUKEN visual",
     status: "approved"
   },
-  "SPEC-04B": {
-    mediaId: "SPEC-04B",
-    src: "/images/curated/specialisaties/spec-04b-stone-edge.jpg",
-    alt: "Detail van stenen hoek met textuur",
-    origin: "media",
+  "TEGEL-BALKON": {
+    mediaId: "TEGEL-BALKON",
+    src: "/media/balkon.jpg",
+    alt: "TEGEL-BALKON visual",
     status: "approved"
   },
-  "SPEC-05": {
-    mediaId: "SPEC-05",
-    src: "/images/curated/specialisaties/spec-05-parket.jpg",
-    alt: "Keramisch parket voeglijnen",
-    origin: "media",
+  "TEGEL-BADK": {
+    mediaId: "TEGEL-BADK",
+    src: "/media/душевая-мозаика.jpg",
+    alt: "TEGEL-BADK visual",
     status: "approved"
   },
-  "ABOUT-01": {
-    mediaId: "ABOUT-01",
-    src: "/images/curated/about/about-01-process.jpg",
-    alt: "Vakmanschap met tegel en lijmkam",
-    origin: "media",
+  "TEGEL-EGALISATIE": {
+    mediaId: "TEGEL-EGALISATIE",
+    src: "/special-references/самонивелирующая_смесь.jpeg",
+    alt: "TEGEL-EGALISATIE visual",
     status: "approved"
   },
-  "ABOUT-02": {
-    mediaId: "ABOUT-02",
-    src: "/images/curated/about/about-02-tech-strip.jpg",
-    alt: "Vakmanschap technische strip",
-    objectPosition: "center",
-    origin: "media",
+  "TEGEL-PLAATSING-1": {
+    mediaId: "TEGEL-PLAATSING-1",
+    src: "/special-references/процесс.jpg",
+    alt: "TEGEL-PLAATSING-1 visual",
+    status: "approved"
+  },
+  "TEGEL-PLAATSING-2": {
+    mediaId: "TEGEL-PLAATSING-2",
+    src: "/special-references/процецсс-3.jpg",
+    alt: "TEGEL-PLAATSING-2 visual",
+    status: "approved"
+  },
+  "TEGEL-FORMAT-7X19": {
+    mediaId: "TEGEL-FORMAT-7X19",
+    src: "/media/дизайн_ванная_7х19см-раковина(из_керамогранита).jpg",
+    alt: "TEGEL-FORMAT-7X19 visual",
+    status: "approved"
+  },
+  "TEGEL-FORMAT-40X40": {
+    mediaId: "TEGEL-FORMAT-40X40",
+    src: "/media/40х40см.jpg",
+    alt: "TEGEL-FORMAT-40X40 visual",
+    status: "approved"
+  },
+  "TEGEL-FORMAT-60X120": {
+    mediaId: "TEGEL-FORMAT-60X120",
+    src: "/media/большая_гостиная-60х120см.jpg",
+    alt: "TEGEL-FORMAT-60X120 visual",
+    status: "approved"
+  },
+  "TEGEL-FORMAT-120X60": {
+    mediaId: "TEGEL-FORMAT-120X60",
+    src: "/media/120х60_раковина.jpg",
+    alt: "TEGEL-FORMAT-120X60 visual",
+    status: "approved"
+  },
+  "TEGEL-45-PROCESS": {
+    mediaId: "TEGEL-45-PROCESS",
+    src: "/special-references/запил-45-процесс.jpeg",
+    alt: "TEGEL-45-PROCESS visual",
+    status: "approved"
+  },
+  "TEGEL-45-RESULT": {
+    mediaId: "TEGEL-45-RESULT",
+    src: "/media/запил-45-1.jpg",
+    alt: "TEGEL-45-RESULT visual",
+    status: "approved"
+  },
+  "SPEC-XXL": {
+    mediaId: "SPEC-XXL",
+    src: "/media/раковина(из_широкоформатной плитки).jpg",
+    alt: "SPEC-XXL visual",
+    status: "approved"
+  },
+  "SPEC-XXL-PROCESS": {
+    mediaId: "SPEC-XXL-PROCESS",
+    src: "/special-references/Вставка 24.09.2026 в 09:53:19.jpg",
+    alt: "SPEC-XXL-PROCESS visual",
+    status: "approved"
+  },
+  "SPEC-MOZAIEK": {
+    mediaId: "SPEC-MOZAIEK",
+    src: "/media/мозаика-люкс.jpg",
+    alt: "SPEC-MOZAIEK visual",
+    status: "approved"
+  },
+  "SPEC-PARKET": {
+    mediaId: "SPEC-PARKET",
+    src: "/media/под_паркет(ламинат).jpg",
+    alt: "SPEC-PARKET visual",
+    status: "approved"
+  },
+  "ABOUT-HERO": {
+    mediaId: "ABOUT-HERO",
+    src: "/media/монтаж_душ_стекла.jpg",
+    alt: "ABOUT-HERO visual",
+    status: "approved"
+  },
+  "ABOUT-TECH": {
+    mediaId: "ABOUT-TECH",
+    src: "/media/идуальная_геометрия.jpg",
+    alt: "ABOUT-TECH visual",
     status: "approved"
   },
   "KB-WATERDICHTING": {
     mediaId: "KB-WATERDICHTING",
-    src: "/images/curated/knowledge/kb-waterdichting.jpg",
+    src: "/special-references/гидроизоляция.jpg",
     alt: "KB-WATERDICHTING visual",
-    origin: "special-references",
     status: "approved"
   },
   "KB-LIPPAGE": {
     mediaId: "KB-LIPPAGE",
-    src: "/images/curated/knowledge/kb-lippage.jpg",
+    src: "/special-references/Вставка 24.09.2026 в 09:53:19.jpg",
     alt: "KB-LIPPAGE visual",
-    origin: "media",
+    status: "approved"
+  },
+  "P01-01": {
+    mediaId: "P01-01",
+    src: "/references/Новая папка/WhatsApp Image 2025-02-26 at 18.20.13.jpeg",
+    alt: "P01-01 visual",
+    status: "approved"
+  },
+  "P01-02": {
+    mediaId: "P01-02",
+    src: "/references/Новая папка/WhatsApp Image 2025-02-26 at 18.20.16.jpeg",
+    alt: "P01-02 visual",
+    status: "approved"
+  },
+  "P01-03": {
+    mediaId: "P01-03",
+    src: "/references/Новая папка/WhatsApp Image 2025-05-30 at 21.24.01 (4).jpeg",
+    alt: "P01-03 visual",
+    status: "approved"
+  },
+  "P02-01": {
+    mediaId: "P02-01",
+    src: "/references/Новая папка 2/WhatsApp Image 2025-05-30 at 21.24.08.jpeg",
+    alt: "P02-01 visual",
+    status: "approved"
+  },
+  "P02-02": {
+    mediaId: "P02-02",
+    src: "/references/Новая папка 2/WhatsApp Image 2025-05-30 at 21.24.08 (1).jpeg",
+    alt: "P02-02 visual",
+    status: "approved"
+  },
+  "P02-03": {
+    mediaId: "P02-03",
+    src: "/references/Новая папка 2/WhatsApp Image 2025-05-30 at 21.24.08 (2).jpeg",
+    alt: "P02-03 visual",
+    status: "approved"
+  },
+  "P02-04": {
+    mediaId: "P02-04",
+    src: "/references/Новая папка 2/WhatsApp Image 2025-05-30 at 21.24.08 (3).jpeg",
+    alt: "P02-04 visual",
+    status: "approved"
+  },
+  "P02-05": {
+    mediaId: "P02-05",
+    src: "/references/Новая папка 2/WhatsApp Image 2025-05-30 at 21.24.09.jpeg",
+    alt: "P02-05 visual",
+    status: "approved"
+  },
+  "P03-01": {
+    mediaId: "P03-01",
+    src: "/references/Новая папка 3/WhatsApp Image 2025-02-26 at 18.20.06.jpeg",
+    alt: "P03-01 visual",
+    status: "approved"
+  },
+  "P03-02": {
+    mediaId: "P03-02",
+    src: "/references/Новая папка 3/WhatsApp Image 2025-05-30 at 21.24.01 (6).jpeg",
+    alt: "P03-02 visual",
+    status: "approved"
+  },
+  "P03-03": {
+    mediaId: "P03-03",
+    src: "/references/Новая папка 3/WhatsApp Image 2025-05-30 at 21.24.02 (5).jpeg",
+    alt: "P03-03 visual",
+    status: "approved"
+  },
+  "P04-01": {
+    mediaId: "P04-01",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.03 (6).jpeg",
+    alt: "P04-01 visual",
+    status: "approved"
+  },
+  "P04-02": {
+    mediaId: "P04-02",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-02-26 at 18.20.07.jpeg",
+    alt: "P04-02 visual",
+    status: "approved"
+  },
+  "P04-03": {
+    mediaId: "P04-03",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.02 (4).jpeg",
+    alt: "P04-03 visual",
+    status: "approved"
+  },
+  "P04-04": {
+    mediaId: "P04-04",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.04 (2).jpeg",
+    alt: "P04-04 visual",
+    status: "approved"
+  },
+  "P04-05": {
+    mediaId: "P04-05",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.04 (3).jpeg",
+    alt: "P04-05 visual",
+    status: "approved"
+  },
+  "P04-06": {
+    mediaId: "P04-06",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.04 (4).jpeg",
+    alt: "P04-06 visual",
+    status: "approved"
+  },
+  "P04-07": {
+    mediaId: "P04-07",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.04 (6).jpeg",
+    alt: "P04-07 visual",
+    status: "approved"
+  },
+  "P04-08": {
+    mediaId: "P04-08",
+    src: "/references/Новая папка 4/WhatsApp Image 2025-05-30 at 21.24.04 (7).jpeg",
+    alt: "P04-08 visual",
+    status: "approved"
+  },
+  "P05-01": {
+    mediaId: "P05-01",
+    src: "/references/Новая папка 5/WhatsApp Image 2025-05-30 at 21.24.07 (6).jpeg",
+    alt: "P05-01 visual",
+    status: "approved"
+  },
+  "P05-02": {
+    mediaId: "P05-02",
+    src: "/references/Новая папка 5/WhatsApp Image 2025-05-30 at 21.24.07 (9).jpeg",
+    alt: "P05-02 visual",
+    status: "approved"
+  },
+  "P05-03": {
+    mediaId: "P05-03",
+    src: "/references/Новая папка 5/WhatsApp Image 2025-05-30 at 21.24.07 (1).jpeg",
+    alt: "P05-03 visual",
+    status: "approved"
+  },
+  "P05-04": {
+    mediaId: "P05-04",
+    src: "/references/Новая папка 5/WhatsApp Image 2025-05-30 at 21.24.07 (4).jpeg",
+    alt: "P05-04 visual",
+    status: "approved"
+  },
+  "LOOSE-01": {
+    mediaId: "LOOSE-01",
+    src: "/references/кухня.jpeg",
+    alt: "LOOSE-01 visual",
+    status: "approved"
+  },
+  "LOOSE-02": {
+    mediaId: "LOOSE-02",
+    src: "/references/калидор_60х60.jpeg",
+    alt: "LOOSE-02 visual",
+    status: "approved"
+  },
+  "LOOSE-03": {
+    mediaId: "LOOSE-03",
+    src: "/references/ванная-1.jpeg",
+    alt: "LOOSE-03 visual",
+    status: "approved"
+  },
+  "LOOSE-04": {
+    mediaId: "LOOSE-04",
+    src: "/references/ванная-туалет.jpeg",
+    alt: "LOOSE-04 visual",
+    status: "approved"
+  },
+  "LOOSE-05": {
+    mediaId: "LOOSE-05",
+    src: "/references/ванная.JPG",
+    alt: "LOOSE-05 visual",
+    status: "approved"
+  },
+  "LOOSE-06": {
+    mediaId: "LOOSE-06",
+    src: "/references/вання-120х60.jpeg",
+    alt: "LOOSE-06 visual",
+    status: "approved"
+  },
+  "LOOSE-07": {
+    mediaId: "LOOSE-07",
+    src: "/references/вання.jpeg",
+    alt: "LOOSE-07 visual",
+    status: "approved"
+  },
+  "LOOSE-08": {
+    mediaId: "LOOSE-08",
+    src: "/references/джакузи.JPG",
+    alt: "LOOSE-08 visual",
+    status: "approved"
+  },
+  "LOOSE-09": {
+    mediaId: "LOOSE-09",
+    src: "/references/душ с туалетом.JPG",
+    alt: "LOOSE-09 visual",
+    status: "approved"
+  },
+  "LOOSE-10": {
+    mediaId: "LOOSE-10",
+    src: "/references/душ-большой формат-3х1,5м.jpg",
+    alt: "LOOSE-10 visual",
+    status: "approved"
+  },
+  "LOOSE-11": {
+    mediaId: "LOOSE-11",
+    src: "/references/душевая кабинка.jpg",
+    alt: "LOOSE-11 visual",
+    status: "approved"
+  },
+  "LOOSE-12": {
+    mediaId: "LOOSE-12",
+    src: "/references/душевая_туалет_раковина.jpeg",
+    alt: "LOOSE-12 visual",
+    status: "approved"
+  },
+  "LOOSE-13": {
+    mediaId: "LOOSE-13",
+    src: "/references/душевой спад.jpg",
+    alt: "LOOSE-13 visual",
+    status: "approved"
+  },
+  "KB-EPOXY": {
+    mediaId: "KB-EPOXY",
+    src: "/media/лазер-идеальный_шов.jpg",
+    alt: "KB-EPOXY visual",
     status: "approved"
   },
   "KB-INSPECTIELUIK": {
     mediaId: "KB-INSPECTIELUIK",
-    src: "/images/curated/knowledge/kb-inspectieluik-temp.jpg",
+    src: "/media/dummy.jpg",
     alt: "KB-INSPECTIELUIK visual",
-    origin: "media",
-    status: "gap"
-  },
-  "KB-EPOXY": {
-    mediaId: "KB-EPOXY",
-    src: "/images/curated/knowledge/kb-epoxy-cement.jpg",
-    alt: "KB-EPOXY-CEMENT visual",
-    origin: "media",
-    status: "approved"
-  },
-  "PROJECT-01-01": {
-    mediaId: "PROJECT-01-01",
-    src: "/images/curated/projects/project-01/p01-01.jpeg",
-    alt: "PROJECT-01-01 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-01-02": {
-    mediaId: "PROJECT-01-02",
-    src: "/images/curated/projects/project-01/p01-02.jpeg",
-    alt: "PROJECT-01-02 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-01-03": {
-    mediaId: "PROJECT-01-03",
-    src: "/images/curated/projects/project-01/p01-03.jpeg",
-    alt: "PROJECT-01-03 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-02-01": {
-    mediaId: "PROJECT-02-01",
-    src: "/images/curated/projects/project-02/p02-01.jpeg",
-    alt: "PROJECT-02-01 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-02-02": {
-    mediaId: "PROJECT-02-02",
-    src: "/images/curated/projects/project-02/p02-02.jpeg",
-    alt: "PROJECT-02-02 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-02-03": {
-    mediaId: "PROJECT-02-03",
-    src: "/images/curated/projects/project-02/p02-03.jpeg",
-    alt: "PROJECT-02-03 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-02-04": {
-    mediaId: "PROJECT-02-04",
-    src: "/images/curated/projects/project-02/p02-04.jpeg",
-    alt: "PROJECT-02-04 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-02-05": {
-    mediaId: "PROJECT-02-05",
-    src: "/images/curated/projects/project-02/p02-05.jpeg",
-    alt: "PROJECT-02-05 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-03-01": {
-    mediaId: "PROJECT-03-01",
-    src: "/images/curated/projects/project-03/p03-01.jpeg",
-    alt: "PROJECT-03-01 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-03-02": {
-    mediaId: "PROJECT-03-02",
-    src: "/images/curated/projects/project-03/p03-02.jpeg",
-    alt: "PROJECT-03-02 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-03-03": {
-    mediaId: "PROJECT-03-03",
-    src: "/images/curated/projects/project-03/p03-03.jpeg",
-    alt: "PROJECT-03-03 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-04-01": {
-    mediaId: "PROJECT-04-01",
-    src: "/images/curated/projects/project-04/p04-01.jpeg",
-    alt: "PROJECT-04-01 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-04-02": {
-    mediaId: "PROJECT-04-02",
-    src: "/images/curated/projects/project-04/p04-02.jpeg",
-    alt: "PROJECT-04-02 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-04-03": {
-    mediaId: "PROJECT-04-03",
-    src: "/images/curated/projects/project-04/p04-03.jpeg",
-    alt: "PROJECT-04-03 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-04-04": {
-    mediaId: "PROJECT-04-04",
-    src: "/images/curated/projects/project-04/p04-04.jpeg",
-    alt: "PROJECT-04-04 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-04-05": {
-    mediaId: "PROJECT-04-05",
-    src: "/images/curated/projects/project-04/p04-05.jpeg",
-    alt: "PROJECT-04-05 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-04-06": {
-    mediaId: "PROJECT-04-06",
-    src: "/images/curated/projects/project-04/p04-06.jpeg",
-    alt: "PROJECT-04-06 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-05-01": {
-    mediaId: "PROJECT-05-01",
-    src: "/images/curated/projects/project-05/p05-01.jpeg",
-    alt: "PROJECT-05-01 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-05-02": {
-    mediaId: "PROJECT-05-02",
-    src: "/images/curated/projects/project-05/p05-02.jpeg",
-    alt: "PROJECT-05-02 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-05-03": {
-    mediaId: "PROJECT-05-03",
-    src: "/images/curated/projects/project-05/p05-03.jpeg",
-    alt: "PROJECT-05-03 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-05-04": {
-    mediaId: "PROJECT-05-04",
-    src: "/images/curated/projects/project-05/p05-04.jpeg",
-    alt: "PROJECT-05-04 visual",
-    origin: "project-series",
-    status: "approved"
-  },
-  "PROJECT-06-TEMP-01": {
-    mediaId: "PROJECT-06-TEMP-01",
-    src: "/images/curated/projects/project-06/p06-temp-01.jpeg",
-    alt: "PROJECT-06-TEMP-01 visual",
-    origin: "references",
     status: "approved"
   },
 };

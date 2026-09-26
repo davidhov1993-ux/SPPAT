@@ -50,10 +50,15 @@ export default function Specialisaties() {
             <li>douchegoot en vloeropbouw;</li>
             <li>overgang naar andere materialen.</li>
           </ul>
+          
           <h3 className="font-space uppercase tracking-widest text-sm text-[#1A1A1A] mt-6 mb-2 font-bold">Grootformaat in badkamer en douche</h3>
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
             Grootformaat kan ook in natte ruimtes worden toegepast wanneer materiaal, ondergrond en technische opbouw daarvoor geschikt zijn.
           </p>
+          <div className="my-space-md">
+            <MediaSlot mediaId="SPEC-XXL-PROCESS" className="w-full aspect-[4/3] object-cover" caption="Grootformaat plaatsing" />
+          </div>
+
           <div className="mt-space-sm flex gap-4 mt-6">
             <Link href="/tegelwerk/#badkamer" className="font-space uppercase text-sm tracking-wider hover:underline font-bold text-[#1A1A1A]">Badkamer tegelen →</Link>
             <Link href="/kennisbank/#lippage" className="font-space uppercase text-sm tracking-wider hover:underline font-bold text-[#1A1A1A]">Lippage uitgelegd →</Link>
@@ -64,7 +69,7 @@ export default function Specialisaties() {
       {/* Mozaïek */}
       <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0" id="mozaiek">
         <div className="col-span-1 md:col-span-5 md:col-start-2 mb-space-md md:mb-0">
-          <MediaSlot mediaId="SPEC-03" className="w-full aspect-[1/1] md:aspect-[4/5] object-cover" />
+          <MediaSlot mediaId="SPEC-MOZAIEK" className="w-full aspect-[1/1] md:aspect-[4/5] object-cover" />
         </div>
         <div className="col-span-1 md:col-span-5 flex flex-col justify-center">
           <H2>Professioneel Mozaïek Zetten</H2>
@@ -110,20 +115,20 @@ export default function Specialisaties() {
         {/* Diptych Desktop / Scroll Snap Mobile */}
         <div className="col-span-1 md:col-span-12 flex md:grid md:grid-cols-2 gap-4 overflow-x-auto snap-x snap-mandatory pb-4 md:pb-0 -mx-5 px-5 md:mx-0 md:px-0 w-[calc(100%+40px)] md:w-auto">
           <div className="flex-none w-[85vw] md:w-auto snap-center group">
-            <MediaSlot mediaId="SPEC-04A" className="w-full aspect-[4/5] object-cover" />
+            <MediaSlot mediaId="NAT-01" className="w-full aspect-[4/5] object-cover" />
           </div>
           <div className="flex-none w-[85vw] md:w-auto snap-center group">
-            <MediaSlot mediaId="SPEC-04B" className="w-full aspect-[4/5] object-cover" />
+            <MediaSlot mediaId="NAT-02" className="w-full aspect-[4/5] object-cover" />
           </div>
         </div>
       </section>
 
       {/* Keramisch Parket */}
       <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0" id="keramisch-parket">
-        <div className="col-span-1 md:col-span-7 md:col-start-6 mb-space-md md:mb-0 order-first md:order-last">
-           <MediaSlot mediaId="SPEC-05" className="w-full aspect-[4/3] md:aspect-[3/2] object-cover" />
+        <div className="col-span-1 md:col-span-10 md:col-start-3 mb-space-md md:mb-0 order-first md:order-last">
+           <MediaSlot mediaId="SPEC-PARKET" className="w-full aspect-[4/3] md:aspect-[21/9] object-cover" />
         </div>
-        <div className="col-span-1 md:col-span-5 md:col-start-1 flex flex-col justify-end order-last md:order-first pt-space-lg">
+        <div className="col-span-1 md:col-span-5 md:col-start-1 flex flex-col justify-end order-last md:order-first pt-space-lg md:-mt-32 relative z-10 bg-[#F7F7F5] md:p-space-md md:border-t md:border-r border-[#E5E5E5]">
            <BlueprintLine className="mb-space-md" />
            <H2>Keramisch Parket Leggen</H2>
            <p className="mt-space-xs font-inter text-[#1A1A1A]">

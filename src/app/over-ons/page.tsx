@@ -16,7 +16,7 @@ export default function OverOnsPage() {
       {/* Hero Overlap */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-5 md:px-0 pt-space-xl relative mb-space-xl">
         <div className="col-span-1 md:col-span-8 md:col-start-5 relative z-0">
-          <MediaSlot mediaId="ABOUT-01" className="w-full aspect-[4/5] md:aspect-[16/9] object-cover" />
+          <MediaSlot mediaId="ABOUT-HERO" className="w-full aspect-[3/4] object-cover" />
         </div>
         <div className="col-span-1 md:col-span-6 md:absolute md:bottom-10 md:left-10 z-10 bg-[#F7F7F5] p-space-md -mt-10 md:mt-0 relative">
           <H1>Betrouwbaarheid in Techniek en Uitvoering</H1>
@@ -52,7 +52,7 @@ export default function OverOnsPage() {
 
       {/* Technical Integrity Strip */}
       <section className="w-full my-space-lg border-y border-[#E5E5E5] md:border-none">
-        <MediaSlot mediaId="ABOUT-02" className="w-full aspect-[4/3] md:aspect-[21/9] object-cover" />
+        <MediaSlot mediaId="ABOUT-TECH" className="w-full aspect-[21/9] md:aspect-[3/1] object-cover" />
       </section>
 
       <section className="px-5 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl">

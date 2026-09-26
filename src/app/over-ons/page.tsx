@@ -1,5 +1,6 @@
 import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
+import { CtaBrief } from "@/components/CtaComponents";
 
 import { Metadata } from "next";
 
@@ -69,14 +70,8 @@ export default function OverOnsPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-1 md:col-span-4 md:col-start-9 flex items-center">
-          <div className="w-full bg-[#1A1A1A] text-[#F7F7F5] p-space-md border border-[#1A1A1A]">
-            <h2 className="font-space uppercase tracking-widest text-lg mb-space-xs">Kennismaken met SPPAT?</h2>
-            <p className="font-inter text-[#E5E5E5] mb-space-md">Bespreek uw project direct met de uitvoerder.</p>
-            <a href="/contact/" className="inline-block bg-[#F7F7F5] text-[#1A1A1A] px-6 py-3 font-space uppercase tracking-wider text-sm hover:bg-[#E5E5E5] transition-colors">
-              Project bespreken
-            </a>
-          </div>
+        <div className="col-span-1 md:col-span-4 md:col-start-9 flex flex-col justify-center">
+          <CtaBrief title="Kennismaken met SPPAT?" link="/contact/" />
         </div>
       </section>
     </main>

@@ -22,10 +22,10 @@ export default function Tegelwerk() {
         <div className="col-span-1 md:col-span-5 md:col-start-1 bg-[#F7F7F5] p-space-md md:p-space-lg z-10 md:absolute md:top-10 md:left-0 border-[#E5E5E5] md:border-r md:border-b -mt-16 md:-mt-0 relative mx-5 md:mx-0">
           <H1>Professioneel Tegelwerk & Installatie</H1>
           <p className="mt-space-sm font-inter text-[#1A1A1A] text-lg">
-            Slecht tegelwerk valt altijd op. Goed tegelwerk is onzichtbaar: u ziet geen storende voegen, geen onlogische snijlijnen en geen slordige aansluitingen.
+            Goed tegelwerk is meer dan tegels recht naast elkaar plaatsen. De kwaliteit begint bij de ondergrond en wordt zichtbaar in de verdeling, voeglijnen, snedes, hoeken, aansluitingen en overgang naar andere materialen.
           </p>
           <p className="mt-space-xs font-inter text-[#1A1A1A] text-lg">
-            SPPAT is gespecialiseerd in technisch tegelwerk. Van regulier formaat tot mozaïek, natuursteen en XXL-tegels. Een strak eindresultaat is daarbij nooit een toevalstreffer, maar het gevolg van voorbereiding en controle over het materiaal.
+            SPPAT verzorgt professioneel tegelwerk voor verschillende ruimtes en toepassingen in heel Nederland.
           </p>
         </div>
       </section>

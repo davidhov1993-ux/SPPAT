@@ -1,11 +1,12 @@
 import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
+import { CtaMonument } from "@/components/CtaComponents";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gerealiseerde Projecten & Referenties | SPPAT",
-  description: "Bekijk geverifieerde SPPAT-projecten, badkamers en tegelwerk. Echte praktijkvoorbeelden uit heel Nederland.",
+  title: "Gerealiseerde Projecten | Badkamers & Tegelwerk | SPPAT",
+  description: "Bekijk een selectie van gerealiseerde SPPAT-projecten: badkamers, tegelvloeren en details van uitgevoerd tegelwerk.",
   alternates: { canonical: "https://www.sppat.nl/projecten" },
 };
 
@@ -15,11 +16,11 @@ export default function Projecten() {
       {/* Intro */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-5 md:px-0 pt-space-xl mb-space-xl">
         <div className="col-span-1 md:col-span-8 md:col-start-3">
-          <H1>Uitgevoerd Werk</H1>
+          <H1>Gerealiseerde Projecten</H1>
           <p className="mt-space-sm font-inter text-[#1A1A1A] text-lg">
             Hier laten we het werk spreken. De portfolio toont afzonderlijke, geverifieerde SPPAT-projectgroepen. Foto&apos;s die niet aantoonbaar tot één projectserie behoren, mogen daarnaast als losse werkbeelden worden getoond zonder er een fictieve case van te maken.
           </p>
-          <p className="mt-space-xs font-inter text-[#666666] text-sm uppercase tracking-wider">
+          <p className="mt-space-xs font-inter text-[#666666] text-sm uppercase tracking-wider mt-4">
             Geen locaties, budgetten, data, materiaalmerken, projectduur of technische specificaties publiceren tenzij die later expliciet zijn bevestigd.
           </p>
         </div>
@@ -31,6 +32,7 @@ export default function Projecten() {
           <H2>Project 01</H2>
           <span className="font-space text-sm tracking-widest text-[#666666]">01 / 05</span>
         </div>
+        <div className="col-span-1 md:col-span-12 mb-4"><p className="font-inter text-[#1A1A1A]">Een selectie beelden van één gerealiseerd SPPAT-project. Bekijk het geheel en de details van de zichtbare afwerking.</p></div>
         <div className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-4">
           <MediaSlot mediaId="P01-01" className="w-full aspect-[4/5] object-cover" />
           <MediaSlot mediaId="P01-02" className="w-full aspect-[4/5] object-cover" />
@@ -44,6 +46,7 @@ export default function Projecten() {
           <H2>Project 02</H2>
           <span className="font-space text-sm tracking-widest text-[#666666]">02 / 05</span>
         </div>
+        <div className="col-span-1 md:col-span-12 mb-4"><p className="font-inter text-[#1A1A1A]">Een selectie beelden van één gerealiseerd SPPAT-project, met aandacht voor het totale vlak en zichtbare detaillering.</p></div>
         <div className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <MediaSlot mediaId="P02-01" className="w-full aspect-[4/5] md:aspect-square object-cover" />
           <MediaSlot mediaId="P02-02" className="w-full aspect-[4/5] md:aspect-square object-cover" />
@@ -61,6 +64,7 @@ export default function Projecten() {
           <H2>Project 03</H2>
           <span className="font-space text-sm tracking-widest text-[#666666]">03 / 05</span>
         </div>
+        <div className="col-span-1 md:col-span-12 mb-4"><p className="font-inter text-[#1A1A1A]">Een afzonderlijke serie uit het gerealiseerde werk van SPPAT.</p></div>
         <div className="col-span-1 md:col-span-9 relative mb-4 md:mb-0">
           <MediaSlot mediaId="P03-01" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
         </div>
@@ -76,6 +80,7 @@ export default function Projecten() {
           <H2>Project 04</H2>
           <span className="font-space text-sm tracking-widest text-[#666666]">04 / 05</span>
         </div>
+        <div className="col-span-1 md:col-span-12 mb-4"><p className="font-inter text-[#1A1A1A]">Een compacte projectserie uit het gerealiseerde werk van SPPAT.</p></div>
         <div className="col-span-1 md:col-span-12 mb-4">
           <MediaSlot mediaId="P04-01" className="w-full aspect-[4/3] md:aspect-[21/9] object-cover" />
         </div>
@@ -96,6 +101,7 @@ export default function Projecten() {
           <H2>Project 05</H2>
           <span className="font-space text-sm tracking-widest text-[#666666]">05 / 05</span>
         </div>
+        <div className="col-span-1 md:col-span-12 mb-4"><p className="font-inter text-[#1A1A1A]">Een compacte projectserie uit het gerealiseerde werk van SPPAT.</p></div>
         <div className="col-span-1 md:col-span-8 mb-4 md:mb-0">
           <MediaSlot mediaId="P05-01" className="w-full aspect-[4/3] md:aspect-[3/2] object-cover" />
         </div>
@@ -136,6 +142,15 @@ export default function Projecten() {
           <MediaSlot mediaId="LOOSE-12" className="w-full h-auto object-cover break-inside-avoid" />
           <MediaSlot mediaId="LOOSE-13" className="w-full h-auto object-cover break-inside-avoid" />
         </div>
+      </section>
+
+
+      {/* Final Conversion Block */}
+      <section className="col-span-1 md:col-span-12 overflow-hidden w-full mt-space-xl pt-space-lg">
+        <p className="font-inter text-[#1A1A1A] text-lg mb-4">
+          Vertel ons wat u wilt realiseren en stuur eventueel referentiebeelden mee.
+        </p>
+        <CtaMonument title="Een vergelijkbaar niveau voor uw project?" link="/contact/" />
       </section>
 
     </main>

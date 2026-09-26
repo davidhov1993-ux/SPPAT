@@ -181,14 +181,14 @@ export const mediaMapping: Record<string, { mediaId: string, src: string, alt: s
   },
   "TEGEL-PREM-A": {
     mediaId: "TEGEL-PREM-A",
-    src: "/media/подрез_45.jpg",
-    alt: "TEGEL-PREM-A visual",
+    src: "/media/раковина(из_широкоформатной плитки).jpg",
+    alt: "Grootformaat wastafel",
     status: "approved"
   },
   "TEGEL-PREM-B": {
     mediaId: "TEGEL-PREM-B",
-    src: "/media/ниша-запил-45-мозаика.jpg",
-    alt: "TEGEL-PREM-B visual",
+    src: "/media/мозаика-люкс.jpg",
+    alt: "Luxe mozaïek detail",
     status: "approved"
   },
   "TEGEL-VLOER": {
@@ -547,8 +547,33 @@ export const mediaMapping: Record<string, { mediaId: string, src: string, alt: s
   },
   "KB-INSPECTIELUIK": {
     mediaId: "KB-INSPECTIELUIK",
-    src: "/media/dummy.jpg",
-    alt: "KB-INSPECTIELUIK visual",
+    src: "",
+    alt: "Inspectieluik",
+    status: "gap"
+  },
+
+  "BADK-HIDDEN-TECH": {
+    mediaId: "BADK-HIDDEN-TECH",
+    src: "/special-references/подготовка.jpeg",
+    alt: "Ondergrond voorbereiding in badkamer",
     status: "approved"
+  },
+  "BADK-03": {
+    mediaId: "BADK-03",
+    src: "/media/mozaik1.jpg",
+    alt: "Mozaïek details en afwerking",
+    status: "approved"
+  },
+  "NAT-01": {
+    mediaId: "NAT-01",
+    src: "",
+    alt: "Natuursteen project",
+    status: "gap"
+  },
+  "NAT-02": {
+    mediaId: "NAT-02",
+    src: "",
+    alt: "Natuursteen detail",
+    status: "gap"
   },
 };

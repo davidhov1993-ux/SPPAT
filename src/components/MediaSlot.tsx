@@ -36,9 +36,9 @@ export function MediaSlot({
 
   // Dev marker
   const isDev = process.env.NODE_ENV === 'development';
-  const showDevMarker = isDev && media && (media.status === 'provisional' || media.status === 'gap');
+  const showDevMarker = isDev && (!media || media.status === 'provisional' || media.status === 'gap');
 
-  if (media && media.src) {
+  if (media && media.src && media.status !== 'gap') {
     return (
       <div 
         className={`relative ${insetClass} ${bleedClass} ${className} ${aspectClass}`}
@@ -67,15 +67,6 @@ export function MediaSlot({
     );
   }
 
-  // Fallback to geometric placeholder if no mapped media found
-  return (
-    <div 
-      className={`relative bg-[#E5E5E5] flex items-center justify-center overflow-hidden ${insetClass} ${bleedClass} ${className} ${aspectClass}`}
-      data-media-id={mediaId}
-    >
-      <span className="font-space text-[0.875rem] text-[#1A1A1A] uppercase opacity-50 tracking-[0.05em]">
-        [MEDIA: {mediaId}]
-      </span>
-    </div>
-  );
+  // Fallback: render nothing if media is missing or marked as gap
+  return null;
 }

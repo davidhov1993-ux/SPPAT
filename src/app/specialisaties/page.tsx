@@ -124,12 +124,12 @@ export default function Specialisaties() {
       </section>
 
       {/* Keramisch Parket */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0" id="keramisch-parket">
-        <div className="col-span-1 md:col-span-10 md:col-start-3 mb-space-md md:mb-0 order-first md:order-last">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0 pt-space-xl relative" id="keramisch-parket">
+        <div className="col-span-1 md:col-span-10 md:col-start-3 md:order-last relative z-0">
            <MediaSlot mediaId="SPEC-PARKET" className="w-full aspect-[4/3] md:aspect-[21/9] object-cover" />
         </div>
-        <div className="col-span-1 md:col-span-5 md:col-start-1 flex flex-col justify-end order-last md:order-first pt-space-lg md:-mt-32 relative z-10 bg-[#F7F7F5] md:p-space-md md:border-t md:border-r border-[#E5E5E5]">
-           <BlueprintLine className="mb-space-md" />
+        <div className="col-span-1 md:col-span-4 md:col-start-1 flex flex-col justify-end order-last md:order-first z-10 bg-[#F7F7F5] p-space-md md:absolute md:top-10 md:left-0 border-[#E5E5E5] md:border-r md:border-b -mt-10 md:mt-0 relative mx-5 md:mx-0 shadow-sm md:shadow-none">
+           <BlueprintLine className="mb-space-md hidden md:block" />
            <H2>Keramisch Parket Leggen</H2>
            <p className="mt-space-xs font-inter text-[#1A1A1A]">
              Keramisch parket combineert de uitstraling van houten planken met een keramische vloer. Door de langwerpige vorm hebben vlakheid, patroon en voegverdeling veel invloed op het eindbeeld.
@@ -144,7 +144,7 @@ export default function Specialisaties() {
            </p>
            <div className="mt-space-sm mt-6">
              <span className="font-space uppercase text-sm tracking-wider text-[#666666] mr-4">Verdieping:</span>
-             <Link href="/kennisbank/#lippage" className="font-space uppercase text-sm tracking-wider hover:underline font-bold text-[#1A1A1A]">Wat is lippage? →</Link>
+             <a href="/kennisbank/#lippage" className="font-space uppercase text-sm tracking-wider hover:underline font-bold text-[#1A1A1A]">Wat is lippage? →</a>
            </div>
         </div>
       </section>

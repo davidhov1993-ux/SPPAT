@@ -1,6 +1,5 @@
 import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
-import { CtaBrief } from "@/components/CtaComponents";
 
 import { Metadata } from "next";
 
@@ -14,16 +13,16 @@ export default function OverOnsPage() {
   return (
     <main className="w-full">
       {/* Hero Overlap */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-5 md:px-0 pt-space-xl relative mb-space-xl">
-        <div className="col-span-1 md:col-span-8 md:col-start-5 relative z-0">
-          <MediaSlot mediaId="ABOUT-HERO" className="w-full aspect-[3/4] object-cover" />
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-5 md:px-0 mb-space-lg md:mb-space-xl relative">
+        <div className="col-span-1 md:col-span-8 md:col-start-5 relative z-0 max-h-[720px] md:h-[70vh] w-full">
+          <MediaSlot mediaId="ABOUT-HERO" className="w-full h-full object-cover" />
         </div>
-        <div className="col-span-1 md:col-span-6 md:absolute md:bottom-10 md:left-10 z-10 bg-[#F7F7F5] p-space-md -mt-10 md:mt-0 relative">
+        <div className="col-span-1 md:col-span-6 md:absolute md:bottom-0 md:left-0 z-10 bg-[#F7F7F5] p-space-md md:p-space-lg border-[#E5E5E5] md:border-t md:border-r -mt-10 md:-mt-0 relative mx-5 md:mx-0">
           <H1>Betrouwbaarheid in Techniek en Uitvoering</H1>
-          <p className="mt-space-sm text-lg text-[#1A1A1A]">
+          <p className="mt-space-sm text-lg text-[#1A1A1A] font-inter">
             SPPAT richt zich op complete badkamerrenovaties en professioneel tegelwerk in heel Nederland. Met 35 jaar ervaring kijken we verder dan alleen de zichtbare afwerking.
           </p>
-          <p className="mt-space-xs text-lg text-[#1A1A1A]">
+          <p className="mt-space-xs text-lg text-[#1A1A1A] font-inter">
             Een goed eindresultaat ontstaat wanneer ontwerp, techniek, voorbereiding en uitvoering op elkaar aansluiten.
           </p>
         </div>
@@ -56,29 +55,29 @@ export default function OverOnsPage() {
       </section>
 
       <section className="px-5 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl">
-        <div className="col-span-1 md:col-span-8 md:col-start-3 text-[#1A1A1A] space-y-space-md">
-          
+        <div className="col-span-1 md:col-span-6 md:col-start-2 text-[#1A1A1A] space-y-space-md mb-space-md md:mb-0">
           <div>
             <H2>Van voorbereiding tot eindafwerking in heel Nederland</H2>
-            <p className="mt-space-xs text-lg">
+            <p className="mt-space-xs text-lg font-inter">
               SPPAT werkt voor klanten in heel Nederland. De focus ligt op complete badkamers, tegelwerk en specialistische tegeltoepassingen.
             </p>
           </div>
-
           <div>
             <H2>Materialen: flexibel geregeld</H2>
-            <p className="mt-space-xs text-lg">
+            <p className="mt-space-xs text-lg font-inter">
               Wilt u zelf tegels en sanitair kiezen en inkopen? Dat kan. Wilt u dat SPPAT materialen verzorgt? Dat kan eveneens. Ook een combinatie is mogelijk.
             </p>
           </div>
-
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="col-span-1 md:col-span-12 w-full mt-space-xl">
-        
-          <CtaBrief title="Kennismaken met SPPAT?" link="/contact/" />
+        <div className="col-span-1 md:col-span-4 md:col-start-9 flex items-center">
+          <div className="w-full bg-[#1A1A1A] text-[#F7F7F5] p-space-md border border-[#1A1A1A]">
+            <h2 className="font-space uppercase tracking-widest text-lg mb-space-xs">Kennismaken met SPPAT?</h2>
+            <p className="font-inter text-[#E5E5E5] mb-space-md">Bespreek uw project direct met de uitvoerder.</p>
+            <a href="/contact/" className="inline-block bg-[#F7F7F5] text-[#1A1A1A] px-6 py-3 font-space uppercase tracking-wider text-sm hover:bg-[#E5E5E5] transition-colors">
+              Project bespreken
+            </a>
+          </div>
+        </div>
       </section>
     </main>
   );

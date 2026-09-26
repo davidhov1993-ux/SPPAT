@@ -185,7 +185,7 @@ export default function Badkamers() {
           <div className="aspect-[4/5] relative w-full md:px-0">
             {/* Mobile: Inset Evidence image */}
             <div className="w-full h-full md:mx-0 border-y border-[#E5E5E5] md:border-none">
-              <MediaSlot mediaId="BADK-02" className="w-full h-full object-cover aspect-[4/5]" />
+              <MediaSlot mediaId="BADK-HIDDEN-TECH" className="w-full h-full object-cover aspect-[4/5]" />
             </div>
           </div>
         </div>

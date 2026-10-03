@@ -1,27 +1,26 @@
 import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
-import { CtaBrief } from "@/components/CtaComponents";
+import Link from "next/link";
+import styles from "./about.module.css";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Over SPPAT | 35 Jaar Ervaring in Renovatie & Tegelwerk",
   description: "Maak kennis met SPPAT: 35 jaar ervaring, complete badkamerrenovaties en professioneel tegelwerk voor klanten in heel Nederland.",
-  alternates: { canonical: "https://www.sppat.nl/over-ons" },
+  alternates: { canonical: "https://www.sppat.nl/over-ons/" },
 };
 
 export default function OverOnsPage() {
   return (
-    <main className="w-full">
+    <main className={styles.page}>
       {/* Hero Overlap */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-x-4 px-5 md:px-0 mb-space-lg md:mb-space-xl relative">
-        <div className="col-span-1 md:col-span-8 md:col-start-5 relative z-0 max-h-[720px] md:h-[70vh] w-full">
-          <MediaSlot mediaId="ABOUT-HERO" className="w-full h-full object-cover" />
-        </div>
-        <div className="col-span-1 md:col-span-6 md:absolute md:bottom-0 md:left-0 z-10 bg-[#F7F7F5] p-space-md md:p-space-lg border-[#E5E5E5] md:border-t md:border-r -mt-10 md:-mt-0 relative mx-5 md:mx-0">
+      <section className={styles.hero}>
+        <MediaSlot mediaId="ABOUT-01" className={styles.heroImage} priority />
+        <div className={styles.heroCopy}>
           <H1>Betrouwbaarheid in Techniek en Uitvoering</H1>
           <p className="mt-space-sm text-lg text-[#1A1A1A] font-inter">
-            SPPAT richt zich op complete badkamerrenovaties en professioneel tegelwerk in heel Nederland. Met 35 jaar ervaring kijken we verder dan alleen de zichtbare afwerking.
+            SPPAT richt zich op <Link href="/complete-badkamer-renovatie/" className={styles.contextLink}>complete badkamerrenovaties</Link> en <Link href="/tegelwerk/" className={styles.contextLink}>professioneel tegelwerk</Link> in heel Nederland. Met 35 jaar ervaring kijken we verder dan alleen de zichtbare afwerking.
           </p>
           <p className="mt-space-xs text-lg text-[#1A1A1A] font-inter">
             Een goed eindresultaat ontstaat wanneer ontwerp, techniek, voorbereiding en uitvoering op elkaar aansluiten.
@@ -30,8 +29,8 @@ export default function OverOnsPage() {
       </section>
 
       {/* Company Content */}
-      <section className="px-5 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4">
-        <div className="col-span-1 md:col-span-8 md:col-start-3 text-[#1A1A1A] space-y-space-md">
+      <section className={styles.reading}>
+        <div className={styles.readingCopy}>
           
           <div>
             <H2>Verantwoordelijkheid voor het totaalplaatje</H2>
@@ -45,18 +44,14 @@ export default function OverOnsPage() {
             <p className="mt-space-xs text-lg">
               Ervaring is voor ons geen marketinggetal op zichzelf. Het betekent vooral herkennen waar een project technisch gevoelig wordt, vooruitdenken over aansluitingen en begrijpen dat fouten in de voorbereiding later moeilijk te verbergen zijn.
             </p>
+            <Link href="/projecten/" className={`${styles.contextLink} mt-space-sm inline-block font-space text-sm uppercase tracking-wider`}>Bekijk projecten</Link>
           </div>
 
         </div>
       </section>
 
-      {/* Technical Integrity Strip */}
-      <section className="w-full my-space-lg border-y border-[#E5E5E5] md:border-none">
-        <MediaSlot mediaId="ABOUT-TECH" className="w-full aspect-[21/9] md:aspect-[3/1] object-cover" />
-      </section>
-
-      <section className="px-5 md:px-0 py-space-lg grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl">
-        <div className="col-span-1 md:col-span-6 md:col-start-2 text-[#1A1A1A] space-y-space-md mb-space-md md:mb-0">
+      <section className={styles.closing}>
+        <div className={styles.closingCopy}>
           <div>
             <H2>Van voorbereiding tot eindafwerking in heel Nederland</H2>
             <p className="mt-space-xs text-lg font-inter">
@@ -70,9 +65,10 @@ export default function OverOnsPage() {
             </p>
           </div>
         </div>
-        <div className="col-span-1 md:col-span-4 md:col-start-9 flex flex-col justify-center">
-          <CtaBrief title="Kennismaken met SPPAT?" link="/contact/" />
-        </div>
+        <aside className={styles.brief} aria-labelledby="about-contact">
+          <H2 id="about-contact">Kennismaken met SPPAT?</H2>
+          <Link href="/contact/" className={`${styles.contextLink} font-space text-sm uppercase tracking-wider`}>Project bespreken</Link>
+        </aside>
       </section>
     </main>
   );

@@ -6,7 +6,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-[#E5E5E5] bg-[#F7F7F5] pt-space-lg pb-space-md mt-auto">
-      <div className="max-w-[1440px] mx-auto px-5 lg:px-8">
+      <div className="max-w-full mx-auto px-5 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md lg:gap-8">
           {/* SPPAT Info */}
           <div className="flex flex-col gap-4">

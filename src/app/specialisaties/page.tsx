@@ -13,22 +13,29 @@ export const metadata: Metadata = {
 
 export default function Specialisaties() {
   return (
-    <main className="grid grid-cols-1 md:grid-cols-12 gap-x-4">
+    <main data-page="specialisaties" className="grid grid-cols-1 md:grid-cols-12 gap-x-6">
       {/* Intro - Typography Only */}
-      <section className="col-span-1 md:col-span-12 px-5 md:px-0 mt-space-xl mb-space-xl text-center flex flex-col items-center">
+      <section className="col-span-1 md:col-span-12 px-5 md:px-10 mt-space-xl mb-space-xl text-center flex flex-col items-center">
         <span className="block text-sm uppercase tracking-widest mb-space-xs font-space text-[#1A1A1A]">Specialisaties</span>
         <H1 className="max-w-4xl mx-auto">Specialisaties in Tegelwerk</H1>
         <p className="mt-space-sm font-inter text-[#1A1A1A] max-w-2xl mx-auto">
-          Niet ieder materiaal laat zich op dezelfde manier verwerken. Formaat, gewicht, oppervlak, patroon en natuurlijke eigenschappen kunnen invloed hebben op voorbereiding, handling, verdeling en afwerking. SPPAT voert ook tegelwerk uit waarbij juist die details centraal staan.
+          Niet ieder materiaal laat zich op dezelfde manier verwerken. Formaat, gewicht, oppervlak, patroon en natuurlijke eigenschappen kunnen invloed hebben op voorbereiding, handling, verdeling en afwerking.</p>
+        <p className="mt-space-xs max-w-2xl">SPPAT voert ook tegelwerk uit waarbij juist die details centraal staan.
         </p>
       </section>
 
+      <section className="material-index"><div><H2>Grootformaat &amp; XXL</H2><p className="mt-space-sm">Grote tegels en platen creëren een rustig beeld met minder voegen, maar maken vlakheid, handling en detaillering extra belangrijk.</p>
+          <div className="mt-space-sm flex flex-wrap gap-6"><Link href="/specialisaties/#grootformaat" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Bekijk grootformaat tegels →</Link></div></div><div><H2>Mozaïek</H2><p className="mt-space-sm">Veel kleine elementen maken iedere lijn en overgang zichtbaar. De ondergrond en aansluiting op omliggend tegelwerk verdienen daarom extra aandacht.</p>
+          <div className="mt-space-sm flex flex-wrap gap-6"><Link href="/specialisaties/#mozaiek" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Bekijk mozaïek →</Link></div></div><div><H2>Natuursteen</H2><p className="mt-space-sm">Natuursteen heeft natuurlijke variatie en vraagt om een aanpak die past bij het specifieke materiaal en de toepassing.</p>
+          <div className="mt-space-sm flex flex-wrap gap-6"><Link href="/specialisaties/#natuursteen" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Bekijk natuursteen →</Link></div></div><div><H2>Keramisch parket</H2><p className="mt-space-sm">Houtlooktegels combineren het karakter van een plankvloer met keramiek. Het legbeeld wordt sterk bepaald door patroon, voegverdeling en vlakheid.</p>
+          <div className="mt-space-sm flex flex-wrap gap-6"><Link href="/specialisaties/#keramisch-parket" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Bekijk keramisch parket →</Link></div></div></section>
+
       {/* XXL */}
-      <section className="col-span-1 md:col-span-12 relative w-full mb-space-xl" id="grootformaat">
+      <section className="material-xxl col-span-1 md:col-span-12 mb-space-xl" id="grootformaat">
         <div className="w-full relative px-0">
-          <MediaSlot mediaId="SPEC-02" className="w-full aspect-[4/5] md:aspect-[16/9] object-cover" bleedMobile={true} />
+          <MediaSlot mediaId="SPEC-XXL" className="w-full aspect-[4/5] md:aspect-[16/9] object-cover"  />
         </div>
-        <div className="relative -mt-4 md:mt-0 mx-5 md:mx-0 md:absolute md:bottom-[-2rem] md:left-8 bg-white p-space-md md:p-space-lg w-auto max-w-full md:max-w-2xl border-t border-r border-[#E5E5E5] z-10">
+        <div className="material-xxl-copy">
           <H2>Grootformaat & XXL Tegels Leggen</H2>
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
             Grootformaat tegels en keramische platen kunnen een ruimte een rustig, architectonisch karakter geven. Tegelijk worden afwijkingen in ondergrond, lijnen en aansluitingen sneller zichtbaar.
@@ -50,28 +57,26 @@ export default function Specialisaties() {
             <li>douchegoot en vloeropbouw;</li>
             <li>overgang naar andere materialen.</li>
           </ul>
-          
+
           <h3 className="font-space uppercase tracking-widest text-sm text-[#1A1A1A] mt-6 mb-2 font-bold">Grootformaat in badkamer en douche</h3>
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
             Grootformaat kan ook in natte ruimtes worden toegepast wanneer materiaal, ondergrond en technische opbouw daarvoor geschikt zijn.
           </p>
-          <div className="my-space-md">
-            <MediaSlot mediaId="SPEC-XXL-PROCESS" className="w-full aspect-[4/3] object-cover" caption="Grootformaat plaatsing" />
-          </div>
-
-          <div className="mt-space-sm flex gap-4 mt-6">
+          <div className="mt-space-sm flex flex-wrap gap-6">
             <Link href="/tegelwerk/#badkamer" className="font-space uppercase text-sm tracking-wider hover:underline font-bold text-[#1A1A1A]">Badkamer tegelen →</Link>
             <Link href="/kennisbank/#lippage" className="font-space uppercase text-sm tracking-wider hover:underline font-bold text-[#1A1A1A]">Lippage uitgelegd →</Link>
           </div>
+        <h3 className="mt-space-md mb-space-sm">Grootformaat tegels in uw project?</h3>
+          <Link href="/contact/" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Project bespreken →</Link>
         </div>
       </section>
 
       {/* Mozaïek */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0" id="mozaiek">
-        <div className="col-span-1 md:col-span-5 md:col-start-2 mb-space-md md:mb-0">
-          <MediaSlot mediaId="SPEC-MOZAIEK" className="w-full aspect-[1/1] md:aspect-[4/5] object-cover" />
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-6 mb-space-xl px-5 md:px-10" id="mozaiek">
+        <div className="col-span-1 md:col-span-4 md:col-start-2 mb-space-md md:mb-0">
+          <MediaSlot mediaId="SPEC-MOZ" className="w-full aspect-square md:aspect-[4/5] object-cover" />
         </div>
-        <div className="col-span-1 md:col-span-5 flex flex-col justify-center">
+        <div className="col-span-1 md:col-span-6 md:col-start-7 flex flex-col justify-center">
           <H2>Professioneel Mozaïek Zetten</H2>
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
             Mozaïek bestaat uit kleine elementen, maar vraagt juist daardoor veel controle over het totale vlak. Kleine afwijkingen in ondergrond of aansluiting kunnen over een groter oppervlak zichtbaar worden.
@@ -88,11 +93,17 @@ export default function Specialisaties() {
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
             Bij matten of losse elementen moet het patroon als één geheel blijven lezen. Ook de overgang naar omliggende tegels, profielen, hoeken en sanitair bepaalt het eindbeeld.
           </p>
+        <h3 className="mt-space-md mb-space-sm">Mozaïek in uw project?</h3>
+          <Link href="/contact/" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Project bespreken →</Link>
         </div>
       </section>
 
       {/* Natuursteen */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0" id="natuursteen">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-6 mb-space-xl px-5 md:px-10" id="natuursteen">
+        <div className="stone-diptych">
+          <MediaSlot mediaId="SPEC-STONE-A" className="aspect-[4/5]" />
+          <MediaSlot mediaId="SPEC-STONE-B" className="aspect-[4/5]" />
+        </div>
         <div className="col-span-1 md:col-span-8 md:col-start-3 mb-space-md">
           <H2>Natuursteen Leggen</H2>
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
@@ -110,25 +121,18 @@ export default function Specialisaties() {
           <p className="mt-space-xs font-inter text-[#1A1A1A]">
             Onderhoud is afhankelijk van de specifieke steensoort en afwerking. Volg daarom altijd het advies dat past bij het daadwerkelijk gekozen materiaal.
           </p>
+        <h3 className="mt-space-md mb-space-sm">Natuursteen in uw project?</h3>
+          <Link href="/contact/" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Project bespreken →</Link>
         </div>
-        
-        {/* Diptych Desktop / Scroll Snap Mobile */}
-        <div className="col-span-1 md:col-span-12 flex md:grid md:grid-cols-2 gap-4 overflow-x-auto snap-x snap-mandatory pb-4 md:pb-0 -mx-5 px-5 md:mx-0 md:px-0 w-[calc(100%+40px)] md:w-auto">
-          <div className="flex-none w-[85vw] md:w-auto snap-center group">
-            <MediaSlot mediaId="NAT-01" className="w-full aspect-[4/5] object-cover" />
-          </div>
-          <div className="flex-none w-[85vw] md:w-auto snap-center group">
-            <MediaSlot mediaId="NAT-02" className="w-full aspect-[4/5] object-cover" />
-          </div>
-        </div>
-      </section>
+
+        </section>
 
       {/* Keramisch Parket */}
-      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-4 mb-space-xl px-5 md:px-0 pt-space-xl relative" id="keramisch-parket">
+      <section className="col-span-1 md:col-span-12 grid grid-cols-1 md:grid-cols-12 gap-x-6 mb-space-xl px-5 md:px-10 relative" id="keramisch-parket">
         <div className="col-span-1 md:col-span-10 md:col-start-3 md:order-last relative z-0">
            <MediaSlot mediaId="SPEC-PARKET" className="w-full aspect-[4/3] md:aspect-[21/9] object-cover" />
         </div>
-        <div className="col-span-1 md:col-span-4 md:col-start-1 flex flex-col justify-end order-last md:order-first z-10 bg-[#F7F7F5] p-space-md md:absolute md:top-10 md:left-0 border-[#E5E5E5] md:border-r md:border-b -mt-10 md:mt-0 relative mx-5 md:mx-0 shadow-sm md:shadow-none">
+        <div className="material-parket-copy">
            <BlueprintLine className="mb-space-md hidden md:block" />
            <H2>Keramisch Parket Leggen</H2>
            <p className="mt-space-xs font-inter text-[#1A1A1A]">
@@ -146,12 +150,19 @@ export default function Specialisaties() {
              <span className="font-space uppercase text-sm tracking-wider text-[#666666] mr-4">Verdieping:</span>
              <a href="/kennisbank/#lippage" className="font-space uppercase text-sm tracking-wider hover:underline font-bold text-[#1A1A1A]">Wat is lippage? →</a>
            </div>
+        <h3 className="mt-space-md mb-space-sm">Houtlook tegels professioneel laten leggen?</h3>
+          <Link href="/contact/" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Project bespreken →</Link>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="col-span-1 md:col-span-12 overflow-hidden w-full">
-        <CtaMonument title="Uw project bespreken" />
+        <div className="service-close">
+          <H2>Gerealiseerde Projecten</H2>
+          <Link href="/projecten/" className="mt-space-sm inline-block font-space uppercase text-sm underline underline-offset-4">Bekijk projecten →</Link>
+          <H2 className="mt-space-lg">Een specialistisch tegelproject bespreken?</H2>
+        </div>
+        <CtaMonument title="Project bespreken" />
       </section>
 
     </main>

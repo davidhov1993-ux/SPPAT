@@ -1,0 +1,2198 @@
+SPPAT — FINAL MASTER HANDOFF
+
+Это единый финальный файл проекта.
+
+Содержит только три утвержденных источника:
+
+1. FINAL MEDIA MAPPING
+   Какое фото используется, источник, происхождение/достоверность, роль,
+   desktop/tablet/mobile формат, crop/focus и обработка.
+
+2. FINAL DESIGN SPECIFICATION
+   Последняя утвержденная дизайн-спецификация арт-директора:
+   "The Anatomy of Precision / The Continuous Blueprint".
+
+3. FINAL WEBSITE CONTENT — 9 PAGES
+   Финальные утвержденные тексты, SEO, CTA, навигация, внутренние ссылки,
+   формы и правила контента для 9 публичных страниц.
+
+ПРИОРИТЕТЫ ПРИ РАБОТЕ:
+- Выбор конкретной фотографии и ее crop/focus: FINAL MEDIA MAPPING.
+- Композиция, сетка, типографика, responsive и визуальная система: FINAL DESIGN SPECIFICATION.
+- Любой публичный текст, URL, CTA, SEO и фактическое утверждение: FINAL WEBSITE CONTENT.
+- Ничего нового придумывать не нужно.
+
+======================================================================
+PART 1 — FINAL MEDIA MAPPING
+======================================================================
+
+# SPPAT — FINAL MEDIA MAPPING
+
+**Status:** Ready for developer handoff, with one portfolio gap noted below.  
+**Basis:** final 9-page content specification + final design specification + full uploaded media archive.
+
+## 1. Archive audit
+
+The archive contains **302 image files**, but it is not 302 unique photographs:
+
+- `production/`: **255 WebP files**, mostly responsive/crop derivatives of **22 source visuals**.
+- `media/`: **38 JPG files**, including generated/reference visuals, standalone visuals and some exact duplicates.
+- `special-references/`: **9 files**, including generated references and real process/technical phone photos.
+
+The `production/` folder is useful and should be preferred whenever its source visual is selected because desktop/tablet/mobile variants already exist.
+
+### Provenance classes used below
+
+- **Verified project series** — only `SPPAT-PROJ-*` groups. Safe for the Projects evidence section.
+- **Real standalone / process** — `SPPAT-SVC-*` without `ai-`, plus WhatsApp process photos. Use as supporting work/process only; do not invent a project case around them.
+- **Illustrative / generated reference** — `Generated Image ...`, `SPPAT-SVC-ai-*`, and `SPPAT-VIS-*` where duplicated/generated provenance is evident. Never present as completed SPPAT work.
+
+## 2. Critical portfolio finding
+
+The archive contains verified project-series assets for only:
+
+- **Project 01** — 4 source views.
+- **Project 03** — 4 source views.
+- **Project 06** — 2 source views.
+
+There are **no `SPPAT-PROJ-02`, `SPPAT-PROJ-04`, or `SPPAT-PROJ-05` series in this archive**.
+
+Therefore the live Projects page should currently show **3 verified project series**, not fabricate six. If Project 02/04/05 photos exist elsewhere, add them later. Until then, hide those empty project blocks rather than filling them with standalone or reference images.
+
+---
+
+# 3. Final slot mapping
+
+| MEDIA ID | Selected source | Provenance | Desktop / tablet | Mobile | Crop / focus | Processing note |
+|---|---|---|---|---|---|---|
+| **HOME-01** | `media/Generated Image September 10, 2026 - 7_57PM.jpg` | Illustrative/generated | Use source as 16:9 hero | Crop 4:5 | Keep full room geometry; focus ~55% X / 52% Y | Neutral WB, restrained contrast. Do not caption as SPPAT work. |
+| **HOME-02** | `production/SPPAT-SVC-bath-feb-*` | Real standalone | Prefer `card-desktop`, `card-tablet` | `card-mobile` | Center bathroom; preserve WC + vanity relationship | Correct verticals/WB. Supporting real work only, not a named project. |
+| **HOME-03** | `production/SPPAT-SVC-kitchen-*` | Real standalone | `card-desktop`, `card-tablet` | `card-mobile` | Keep floor plane dominant; focus ~55% / 60% | Minor perspective correction; preserve actual workmanship. |
+| **HOME-04** | `production/SPPAT-KB-LASER-hero-*` | Technical/process, provenance should be confirmed | Rotate source **90° counter-clockwise** during asset prep; crop to wide technical strip | Rotate same; inset crop | Keep laser line + tile grid + fixture alignment visible | Best authentic technical image. Do not use current orientation as-is. |
+| **BADK-01** | `production/SPPAT-SVC-ai-bathroom-*` | Illustrative/generated | `hero-desktop`, `hero-tablet` | `hero-mobile` | Preserve shower, niche and vanity; center ~52% / 50% | Good premium hero. Never label as completed SPPAT project. |
+| **BADK-02** | `production/SPPAT-SVC-substrate-*` | Real process | `detail-desktop`, `detail-tablet` | `detail-mobile` | Floor preparation should remain dominant | Neutralize phone-photo cast; straighten. Strong real technical evidence. |
+| **BADK-03** | `production/SPPAT-SVC-ai-niche-*` | Illustrative/generated | `detail-desktop`, `detail-tablet` | `detail-mobile` | Keep niche edge and surrounding tile geometry intact | Minimal processing. Use as finish-detail illustration only. |
+| **ALM-01** | `production/SPPAT-SVC-compact-*` | Real standalone | `card-desktop`, `card-tablet` | `card-mobile` | Preserve shower/WC/vanity context | Do not imply the photographed bathroom is located in Almere unless verified. |
+| **TEGEL-01** | `media/Generated Image September 11, 2026 - 11_48AM.jpg` | Illustrative/generated | 16:9 wide floor hero | 4:5 crop | Floor plane + long grout lines must dominate; focus lower-center | Clean reference visual. No SPPAT authorship claim. |
+| **TEGEL-02** | `production/SPPAT-PROJ-01-bath08-2-*` | Verified SPPAT project | `detail-desktop`, `detail-tablet` | `detail-mobile` | Preserve large-format wall surface and shower geometry | Real proof. Crop out incidental construction clutter where possible; do not alter tile geometry. |
+| **TEGEL-03** | `production/SPPAT-SVC-ai-woodlook-*` | Illustrative/generated | `detail-desktop`, `detail-tablet` | `detail-mobile` | Keep long plank lines and joints visible | Good for pattern/joint explanation. |
+| **SPEC-01** | `media/Generated Image September 10, 2026 - 10_46PM.jpg` | Illustrative/generated | Full-bleed 16:9 | 4:5 crop | Keep stone top + dark wall + wood texture intersection | Strong material-contrast hero. |
+| **SPEC-02** | `media/Generated Image September 10, 2026 - 10_26PM.jpg` (`SPPAT-VIS-013.jpg` is an exact duplicate) | Illustrative/generated | Full-bleed 16:9 | 4:5 crop | Preserve large slab planes + floating basin edge | Use only one duplicate source; do not import both. |
+| **SPEC-03** | `media/mozaik1.jpg` | Standalone/reference; provenance not explicit | Crop to portrait/4-col composition | 1:1 inset crop | Mosaic grid must stay straight; center crop | Verify provenance before calling it SPPAT work. Otherwise treat as material illustration. |
+| **SPEC-04A** | `media/Generated Image September 11, 2026 - 2_05PM.jpg` | Illustrative/generated | First 4:5 image of stone diptych | Horizontal strip item | Preserve travertine pores/veins and grout line | Pair with SPEC-04B. |
+| **SPEC-04B** | `media/Generated Image September 10, 2026 - 7_29PM.jpg` | Illustrative/generated | Second 4:5 image of stone diptych | Horizontal strip item | Keep mitered stone corner as focal point | Pair gives texture + craftsmanship detail. |
+| **SPEC-05** | `production/SPPAT-SVC-ai-woodlook-*` | Illustrative/generated | `hero/detail-desktop` depending component | `detail-mobile` | Low-angle plank lines, center/lower focus | Reuse is acceptable because it appears on a different page/context. |
+| **ABOUT-01** | `media/Generated Image September 10, 2026 - 11_53PM.jpg` | Illustrative/generated process | Wide crop around hands/trowel/tile adhesive | 4:5 showing full working gesture | Hands/tool/action are the focal point | Strong craftsmanship visual. Do not identify the worker or claim it documents SPPAT unless verified. |
+| **KB-01 WATERDICHTING** | `media/Generated Image September 10, 2026 - 8_27PM.jpg` | Illustrative/generated technical | Offset landscape crop | 4:3 inset | Waterproofed corner/junction must remain obvious | Excellent explanatory image. |
+| **KB-02 LIPPAGE** | `media/Generated Image September 10, 2026 - 8_27PM (1).jpg` | Illustrative/generated technical | Offset landscape | 4:3 inset | Keep leveling clip + laser line + joint intersection | `(1)(1)` is an exact duplicate; import only one. |
+| **KB-03 INSPECTIELUIK** | **MEDIA GAP** | — | — | — | Need a concealed/tiled inspection hatch with readable seam/access logic | Do not substitute a drain or unrelated joint. |
+| **KB-04 EPOXY/CEMENT** | `media/Generated Image September 11, 2026 - 11_16AM.jpg` | Illustrative/generated technical | Offset landscape / square detail | 4:3 inset | Grout joint intersection should remain central | Adequate explanatory visual; no product-specific claim. |
+
+---
+
+# 4. Projects page mapping
+
+## PROJECT 01 — use Archetype Beta (portrait sequence)
+
+**Primary 3 images**
+
+1. `production/SPPAT-PROJ-01-bath08-hero-desktop.webp`
+2. `production/SPPAT-PROJ-01-bath08-1-hero-desktop.webp`
+3. `production/SPPAT-PROJ-01-bath08-2-hero-desktop.webp`
+
+**Optional fourth / supporting detail**
+
+4. `production/SPPAT-PROJ-01-bath08-3-detail-desktop.webp`
+
+For tablet/mobile use matching `*-tablet.webp` / `*-mobile.webp` variants from the same source bases.
+
+**Treatment:** correct WB/verticals and crop out temporary bags/towels/cables where possible. Do not retouch tile lines, joints, geometry, or workmanship.
+
+## PROJECT 03 — use Archetype Alpha (panorama + support)
+
+**Dominant image**
+
+- `production/SPPAT-PROJ-03-floor07-9-hero-desktop.webp`
+
+**Supporting images**
+
+- `production/SPPAT-PROJ-03-floor07-4-card-desktop.webp`
+- `production/SPPAT-PROJ-03-floor07-6-card-desktop.webp`
+
+**Reserve only / use after cleanup**
+
+- `production/SPPAT-PROJ-03-floor07-1-*` — visible bucket/bottle/construction clutter makes it the weakest view.
+
+For smaller breakpoints use corresponding responsive variants.
+
+## PROJECT 06 — use 2-image Alpha variant
+
+**Dominant image**
+
+- `production/SPPAT-PROJ-06-res04-4-hero-desktop.webp`
+
+**Secondary image**
+
+- `production/SPPAT-PROJ-06-res03-6-card-desktop.webp`
+
+Use corresponding mobile/tablet variants.
+
+**Treatment:** straighten perspective, reduce harsh highlight/phone-camera cast, remove only temporary loose construction items if needed.
+
+## PROJECT 02 / 04 / 05
+
+**Missing from supplied archive.** Do not create project series from `SPPAT-SVC-*`, AI/reference images, or unrelated standalone photos.
+
+---
+
+# 5. Useful reserve images
+
+Keep these available as alternates but do not force them into the current layout:
+
+- `production/SPPAT-SVC-wall-feb-*` — real standalone bathroom wall/large-format support.
+- `media/WC1.jpg` / `media/WC2.jpg` — toilet visuals; use only if provenance is confirmed and a later composition needs them.
+- `media/balkon.jpg` — good joint/edge macro for balcony/technical support if required later.
+- `media/mozaik1.jpg` — already selected for SPEC-03; strong material texture.
+- `special-references/WhatsApp Image 2025-05-30 at 21.24.06 (7).jpeg`, `(8).jpeg`, `(9).jpeg`, `21.24.09 (7).jpeg` — useful real technical/process reserve images for substrate/floor build-up.
+
+---
+
+# 6. Images to avoid / deprioritize
+
+- Exact duplicates (`SPPAT-VIS-001/002/004/005/006/013/015` duplicate generated files or other assets): import only one copy.
+- `production/SPPAT-KB-LASER-*` **without rotation correction**.
+- `SPPAT-PROJ-03-floor07-1-*` as a hero: too much visible temporary clutter.
+- Any generated/reference image inside the Projects evidence section.
+- Any standalone image turned into a fictional named project.
+
+---
+
+# 7. Global processing brief
+
+## Real project / standalone SPPAT photography
+
+Allowed:
+
+- straighten verticals/perspective;
+- neutral white balance;
+- moderate exposure/highlight/shadow correction;
+- subtle local contrast;
+- crop to design ratio;
+- remove temporary loose clutter (bucket, cable, bag, bottle) where it does not alter the work itself.
+
+Not allowed:
+
+- rebuilding tile geometry;
+- hiding bad joints or edges;
+- changing materials/colors materially;
+- adding fixtures that were not present;
+- making one project look like another.
+
+## Generated / illustrative imagery
+
+- keep neutral, architectural grading;
+- no fake project labels, locations or authorship;
+- ALT text describes only what is visible;
+- use primarily for heroes, material explanation and technical editorial sections, not proof galleries.
+
+---
+
+# 8. Developer handoff rule
+
+The developer should map **MEDIA ID → exact selected source** from this document and make no new image-selection decisions.
+
+For `production/` sources, use the existing desktop/tablet/mobile derivatives where available. For raw JPG selections, Next/Image may generate optimized renditions, but keep the specified focal/crop behavior.
+
+**One required content decision before launch:** either supply Project 02/04/05 series, or revise the Projects page copy from six verified project groups to the three verified groups currently present in the archive.
+
+
+======================================================================
+PART 2 — FINAL DESIGN SPECIFICATION
+======================================================================
+
+SPPAT — FINAL DESIGN CORRECTION & IMPLEMENTATION SPECIFICATION
+
+Status: Design Specification — Ready for Media Matching
+Design System: "The Anatomy of Precision / The Continuous Blueprint"
+Role: Senior Art Director / UX/UI Architect
+
+==================================================
+
+1.  CREATIVE CONCEPT & VISUAL PRINCIPLES
+    ==================================================
+
+"The Continuous Blueprint" The website functions as a living architectural
+document. The design relies on a continuous 1px structural grid (#E5E5E5) that
+travels through the pages, acting as a physical framework from which typography
+and imagery hang.
+
+Visual Principles:
+
+  - Evidence over Emotion: Imagery serves as technical proof. No lifestyle
+    clichés.
+  - Architectural Asymmetry: Elements align to the grid but intentionally span
+    unequal columns to create tension and guide the eye diagonally.
+  - Materiality: The interface itself is stark and neutral (#F7F7F5 background,
+    #1A1A1A text), allowing the textures of concrete, ceramic, stone, and steel
+    in the photography to provide all visual warmth and depth.
+
+================================================== 2. TYPOGRAPHY SYSTEM
+
+Typography is a deliberate design material, contrasting technical precision with
+high readability.
+
+Typeface 1: Space Grotesk (The Technical Layer)
+
+  - Role: Display headings (H1, H2), numerical data, process steps, metadata,
+    and navigation.
+  - Characteristics: Geometric, engineered, slightly brutalist. Communicates
+    measurement and precision.
+
+Typeface 2: Inter (The Editorial Layer)
+
+  - Role: Body copy, long-form reading, secondary descriptions.
+  - Characteristics: Highly legible, neutral, Swiss-style clarity.
+
+Responsive Scale (Fluid clamp() values):
+
+  - H1 (Display): clamp(2.5rem, 5vw, 4.5rem) | Space Grotesk | Tracking: -0.03em
+    | Line-height: 1.05
+  - H2 (Section): clamp(2rem, 4vw, 3.5rem) | Space Grotesk | Tracking: -0.02em |
+    Line-height: 1.1
+  - H3 (Subsection): clamp(1.25rem, 2vw, 1.5rem) | Space Grotesk | Tracking: 0em
+    | Line-height: 1.2
+  - Body: clamp(1rem, 1.1vw, 1.125rem) | Inter | Line-height: 1.6
+  - Meta/Caption: 0.875rem | Space Grotesk | Uppercase | Tracking: 0.05em
+
+Rule: Apply word-break: keep-all; overflow-wrap: break-word; to all headings to
+prevent arbitrary hyphenation of Dutch compound words.
+
+================================================== 3. SPACING & STRUCTURAL RHYTHM
+
+Whitespace is not empty; it is structural.
+
+  - space-xs: 8px (Micro-rhythm: between H3 and paragraph).
+  - space-sm: 24px (Component rhythm: between list items).
+  - space-md: 64px desktop / 48px mobile (Inner padding of technical blocks).
+  - space-lg: 120px desktop / 80px mobile (Standard transition between distinct
+    semantic sections).
+  - space-xl: 160px desktop / 100px mobile (Architectural breathing room, used
+    to isolate major proof sections).
+
+The Blueprint Line: 1px solid #E5E5E5. Used to draw continuous vertical axes
+down the page or to cap major horizontal sections. Never used to draw closed
+boxes around paragraphs.
+
+================================================== 4. MOBILE ART DIRECTION (390px)
+
+Mobile is a distinct compositional canvas. We do not use a generic 1-column
+"Image/Text" stack.
+
+  - Edge-to-Edge Bleed: Used ONLY for establishing Hero images and wide
+    architectural panoramas to maximize screen impact.
+  - Inset Evidence: Technical macro photos and detail shots are inset by 20px on
+    both sides, often bordered by a 1px top/bottom line, treating them as
+    inserted technical figures rather than background art.
+  - Interlocking Typography: Text blocks intentionally overlap the bottom 15% of
+    edge-to-edge images (using negative margins and a solid background color) to
+    maintain the "Continuous Blueprint" connection.
+  - Horizontal Detail Strips: Where multiple detail images exist (e.g.,
+    Projecten, Specialisaties), they are placed in a horizontal CSS scroll-snap
+    container (overflow-x: auto), allowing the user to swipe through evidence
+    without creating endless vertical scroll fatigue.
+
+================================================== 5. CTA COMPOSITION SYSTEM
+
+Eliminate repetitive centered blocks. Use contextual conversion endings:
+
+  - CTA-Anchor (Visual Integration): The CTA text and button are integrated into
+    the negative space of the final architectural image on the page. (Used on
+    Home, Badkamers).
+  - CTA-Monument (Typographic Close): A massive, full-width H2 ("PROJECT
+    BESPREKEN") in Space Grotesk, spanning 12 columns, with a simple arrow. Acts
+    as a brutalist architectural footer transition. No images. (Used on
+    Tegelwerk, Specialisaties).
+  - CTA-Brief (Technical Prompt): A compact, 4-column technical intake prompt
+    sitting alongside the final paragraph of a service page, bounded by
+    blueprint lines. (Used on Kennisbank, Over Ons).
+
+================================================== 6. EXACTLY 9 PUBLIC PAGES & COMPOSITIONS
+
+There are exactly 9 public content pages. No additional routes may be created.
+
+6.1 HOME (/)
+
+Narrative: Premium positioning → Core Routing → Technical Proof → Real Evidence.
+
+1.  Hero: Edge-to-edge bleed image (16:9). H1 typography block is inset,
+    anchored to the bottom-left grid, overlapping the image.
+2.  Core Capabilities (Interlocking Split):
+      - Desktop: Badkamers gets a dominant portrait image (cols 1-5). Tegelwerk
+        gets a wide landscape image (cols 7-12) that sits lower on the Y-axis.
+        Typography for both sits in the negative space between them.
+      - Mobile: Badkamers image bleeds edge-to-edge. Tegelwerk image is inset.
+        Typography interlocks.
+3.  Technical Proof:
+      - Desktop: A horizontal detail strip. A 12-column wide, but short
+        (e.g., 40vh) panoramic macro shot of technical precision, interrupting
+        the page flow. Text sits above it.
+4.  Selected Projects:
+      - Desktop: 2-3 projects using the Archetype Alpha (see Projecten).
+      - Mobile: Horizontal scroll-snap strip of project cards.
+5.  Final CTA: CTA-Anchor.
+
+6.2 BADKAMERS (/complete-badkamer-renovatie/)
+
+Narrative: A-Z capability, process, and finishing.
+
+1.  Hero: Edge-to-edge bleed image.
+2.  The Process (Timeline):
+      - Desktop: A continuous 1px vertical blueprint line runs down column 4.
+        Process steps (Demolition to Finishing) hang off this line into
+        columns 5-10.
+      - Mobile: Vertical line runs down the left edge (20px in).
+3.  Technical Construction:
+      - Desktop: Text cols 1-5. Image cols 7-12 (Portrait 4:5).
+      - Mobile: Inset Evidence image FIRST, text SECOND.
+4.  Details & Finishing (inc. Toilet):
+      - Desktop: Image cols 1-6 (Landscape 3:2). Text cols 8-12.
+5.  Final CTA: CTA-Anchor.
+
+6.3 BADKAMERRENOVATIE ALMERE (/complete-badkamer-renovatie/almere/)
+
+Narrative: Local SEO landing page, visually connected but condensed.
+
+1.  Hero:
+      - Composition: Standard 50/50 split (Text cols 1-5, Image cols 7-12). No
+        overlap to differentiate from the main Badkamers page.
+2.  Local Tech & Tiling:
+      - Composition: Typography-led. Cols 3-10.
+3.  CTA:
+      - Composition: Centered typographic block.
+
+6.4 TEGELWERK (/tegelwerk/)
+
+Narrative: Comprehensive index of applications, leading to premium capabilities.
+
+1.  Hero Overlap:
+      - Composition: Image cols 3-12. Text cols 1-5 overlapping top-left.
+2.  Intro & Applications (The Typographic Index):
+      - Composition: Intro text cols 1-5. Applications (Vloertegels, Wandtegels,
+        Keuken, Balkon, Badkamer) listed in cols 7-12. Each application is an H3
+        with a short description, separated by 1px borders. NO images here to
+        ensure fast scanning.
+      - Mobile: 1-column typographic list.
+3.  Premium Capabilities (XXL & Natuursteen):
+      - Composition: 7/5 Split. Text cols 1-6. Image cols 8-12.
+4.  Premium Capabilities (Mozaïek & Keramisch Parket):
+      - Composition: 5/7 Split. Image cols 1-5. Text cols 7-12.
+5.  Final CTA: CTA-Monument.
+
+6.5 SPECIALISATIES (/specialisaties/)
+
+Narrative: Material-driven editorial feature.
+
+1.  Hero: Typography-led intro. Max 8 cols. No hero image.
+2.  Material Compositions (Editorial Variation):
+      - XXL: Massive full-bleed 16:9 image. Typography overlaid in a stark white
+        box.
+      - Mozaïek: A tight, 4-column portrait image (macro detail) paired with
+        a 6-column text block. High negative space.
+      - Natuursteen: A diptych. Two 4:5 portrait images side-by-side (cols 1-5
+        and 6-10), text below.
+      - Keramisch Parket: Wide floor perspective (cols 3-12) with typography
+        anchored to the left blueprint line (cols 1-4), overlapping the image.
+3.  Final CTA: CTA-Monument.
+
+6.6 PROJECTEN (/projecten/)
+
+Narrative: The Evidence Layer. All six verified project series exist inside this
+single page. There are NO individual project pages (/projecten/:slug/).
+
+  - Hub Intro: Typography only. 1px bottom border.
+  - Project Series Archetypes (Applied to sections within this single page):
+      - Archetype Alpha (The Panorama): 1 dominant 16:9 image (cols 1-10) + 1
+        inset 1:1 detail overlapping the bottom-right edge (cols 9-12).
+      - Archetype Beta (The Portrait Sequence): 2 or 3 vertical 4:5 images in a
+        staggered horizontal row. Text anchored to the lowest image.
+      - Archetype Gamma (The Technical Diptych): 50/50 split of two extreme
+        macro details (cols 1-6, 7-12), followed by a wide contextual shot.
+      - Archetype Delta (The Monolith - for 2 images): 1 massive portrait image
+        (cols 1-7) with typography running vertically alongside it (cols 9-12).
+  - Mobile Behavior: Archetypes Alpha and Gamma use horizontal scroll-snap for
+    secondary images. Beta and Delta use vertical stacking with inset images.
+  - Final CTA: CTA-Monument.
+
+6.7 OVER ONS (/over-ons/)
+
+Narrative: Trust and technical discipline.
+
+1.  Hero Overlap: Image cols 5-12. Text cols 1-6 overlapping bottom-left.
+2.  Company Content: Centered reading column (cols 3-10). space-lg vertical
+    rhythm.
+3.  Technical Integrity: A 12-column wide, short horizontal image strip
+    (process/workmanship) interrupting the text flow.
+4.  Final CTA: CTA-Brief.
+
+6.8 CONTACT (/contact/)
+
+Narrative: Pure utility and conversion.
+
+1.  Split Utility Layout:
+      - Desktop: No Hero image. space-xl top padding. Left (cols 1-5): H1,
+        Intro, Direct Contact Info (Phone, Email, KVK). Right (cols 7-12):
+        Contact Form.
+      - Mobile: 1-column stack. TEXT FIRST / FORM SECOND.
+
+6.9 KENNISBANK (/kennisbank/)
+
+Narrative: One continuous editorial/technical page containing 4 topics. There
+are NO separate article pages.
+
+1.  Hero: Typography only. Cols 3-10. space-xl top padding.
+2.  The Index (Sticky): Desktop only. Cols 1-3 contain a sticky list of the 4
+    topics. Clicking scrolls to the section.
+3.  The Articles (Topic Sections):
+      - Composition: Cols 5-12. Each of the 4 topics is a section within this
+        single page.
+      - Rhythm: Each topic starts with a 1px top border, space-lg top padding,
+        H2, text, and ONE technical macro image (16:9, spanning cols 5-12).
+      - Mobile: The sticky index disappears. The page becomes a standard
+        vertical scroll of the 4 topic sections. Images crop to 4:3.
+4.  Final CTA: CTA-Brief.
+
+================================================== 7. NAVIGATION & FOOTER
+
+Desktop Header (1440/1024):
+
+  - Sppat | Badkamers | Tegelwerk | Specialisaties | Projecten | Over ons |
+    Contact | [Project bespreken]
+  - Clean, flat links. Space Grotesk, 14px, uppercase. Active state: 1px #1A1A1A
+    underline.
+
+Mobile Navigation (834/390):
+
+  - Accessible modal menu. Large Space Grotesk typography. Focus trapped inside
+    when open. Escape closes.
+
+Breadcrumbs:
+
+  - Desktop: HOME / CATEGORY / PAGE. Space Grotesk, 12px, uppercase.
+  - Mobile: ← CATEGORY. Clean wrapping, no horizontal scroll.
+
+Footer:
+
+  - 4 Columns (Desktop), 2x2 (Tablet), 1 Column (Mobile).
+  - DIENSTEN | TEGELWERK | SPPAT | CONTACT.
+  - Verified business data only. No placeholders.
+
+================================================== 8. MEDIA WORKFLOW & REQUIREMENTS
+
+The Design Specification defines MEDIA IDs and visual requirements only.
+
+After design approval, a separate media-selection step will match actual SPPAT
+photographs to each MEDIA ID.
+
+The developer will receive the final approved mapping: MEDIA ID → final image
+file
+
+The developer implements that mapping and does not make art-direction or
+photo-selection decisions.
+
+| Media ID      | Page           | Position       | Visual Need / Subject Category                                                       | Geometry / Composition                          | Authenticity                      | Desktop Role              | Mobile Role             |
+| :------------ | :------------- | :------------- | :----------------------------------------------------------------------------------- | :---------------------------------------------- | :-------------------------------- | :------------------------ | :---------------------- |
+| **HOME-01**   | Home           | Hero           | Premium completed space establishing architectural scale.                            | Wide perspective, strong depth.                 | Illustrative/reference acceptable | Edge-to-edge bleed (16:9) | Edge-to-edge (4:5)      |
+| **HOME-02**   | Home           | Core Cap 1     | Complete bathroom context.                                                           | Portrait orientation, balanced composition.     | Illustrative/reference acceptable | 5-col portrait            | Edge-to-edge (4:5)      |
+| **HOME-03**   | Home           | Core Cap 2     | Large tiled floor context.                                                           | Landscape or wide perspective.                  | Illustrative/reference acceptable | 6-col landscape           | Inset (4:3)             |
+| **HOME-04**   | Home           | Tech Proof     | Technical precision/process detail showing alignment, measurement or joint accuracy. | Strong linear geometry, macro focus.            | Technical/process image           | 12-col horizontal strip   | Inset (16:9)            |
+| **BADK-01**   | Badkamers      | Hero           | Complete A-Z bathroom renovation scope.                                              | Wide perspective.                               | Illustrative/reference acceptable | Edge-to-edge bleed (16:9) | Edge-to-edge (4:5)      |
+| **BADK-02**   | Badkamers      | Tech Split     | Invisible quality (substrate, waterproofing, or concealed systems).                  | Macro or process detail.                        | Technical/process image           | 5-col portrait            | Inset (4:5)             |
+| **BADK-03**   | Badkamers      | Finish Split   | Finishing precision (niche, flush plate, or edge detail).                            | Close detail, strong lighting.                  | Illustrative/reference acceptable | 5-col portrait            | Inset (4:5)             |
+| **ALM-01**    | Almere         | Hero           | Local landing premium bathroom.                                                      | Medium interior.                                | Illustrative/reference acceptable | 6-col landscape           | Stacked (4:5)           |
+| **TEGEL-01**  | Tegelwerk      | Hero           | Tiling scale (living floor flowing into kitchen/hall).                               | Deep perspective, focus on floor plane.         | Illustrative/reference acceptable | Edge-to-edge bleed (16:9) | Edge-to-edge (4:5)      |
+| **TEGEL-02**  | Tegelwerk      | Premium A      | XXL slab installation or Natural stone detail.                                       | Close detail, material texture dominant.        | Verified SPPAT preferred          | 5-col portrait            | Inset (4:5)             |
+| **TEGEL-03**  | Tegelwerk      | Premium B      | Curved mosaic wall or wood-look joint.                                               | Close detail, pattern/joint dominant.           | Illustrative/reference acceptable | 5-col portrait            | Inset (4:5)             |
+| **SPEC-01**   | Specialisaties | Hero           | Intersection of two premium materials.                                               | Abstract detail, vertical intersection line.    | Illustrative/reference acceptable | Full-bleed (16:9)         | Edge-to-edge (4:5)      |
+| **SPEC-02**   | Specialisaties | XXL            | Material scale and seamlessness.                                                     | Massive surface area, minimal joints.           | Illustrative/reference acceptable | Full-bleed (16:9)         | Edge-to-edge (4:5)      |
+| **SPEC-03**   | Specialisaties | Mosaic         | Material precision and grid alignment.                                               | Macro detail, curved or niche application.      | Illustrative/reference acceptable | 4-col portrait            | Inset (1:1)             |
+| **SPEC-04**   | Specialisaties | Stone          | Organic texture vs precise installation.                                             | Close detail showing material pores/veins.      | Illustrative/reference acceptable | Diptych (4:5)             | Horizontal scroll strip |
+| **SPEC-05**   | Specialisaties | Parket         | Flatness and joint quality of long tiles.                                            | Low-angle floor perspective.                    | Illustrative/reference acceptable | 10-col landscape          | Inset (4:3)             |
+| **PROJ-REAL** | Projecten      | Galleries      | Real evidence of SPPAT craftsmanship.                                                | Varies based on source material.                | Verified SPPAT required           | Archetype system          | Archetype system        |
+| **ABOUT-01**  | Over Ons       | Hero           | Craftsmanship, human element, or technical planning.                                 | Process focus (e.g., hands, tools, blueprints). | Technical/process image           | Edge-to-edge bleed (16:9) | Edge-to-edge (4:5)      |
+| **KB-INLINE** | Kennisbank     | Topic Sections | Close technical/material image that clearly communicates specific technical subject. | Macro detail, grid-breaking composition.        | Technical/process image           | 7-col offset landscape    | Inset (4:3)             |
+
+================================================== 9. DEFINITION OF DONE
+
+The implementation is complete when:
+
+1.  Exactly 9 approved public routes exist. No individual project detail routes
+    or knowledge article routes exist.
+2.  The Typography system (Space Grotesk + Inter) is implemented with fluid
+    scaling and correct hyphenation rules.
+3.  The Spacing system (space-xs to space-xl) dictates all margins/padding. No
+    arbitrary whitespace exists.
+4.  Mobile (390px) utilizes edge-to-edge, inset, and horizontal scroll-snap
+    behaviors as specified, rather than a generic 1-column stack.
+5.  Projecten utilizes the flexible Archetype system with verified real
+    photography within the single /projecten/ page.
+6.  The developer has implemented the final approved MEDIA ID → final image file
+    mapping without making independent photo-selection decisions.
+7.  No public provenance labels, fake business data, or empty placeholders
+    remain.
+8.  The final build passes visual QA at 1440, 1024, 834, and 390 breakpoints.
+
+
+======================================================================
+PART 3 — FINAL WEBSITE CONTENT — 9 PAGES
+======================================================================
+
+# SPPAT — FINAL WEBSITE CONTENT — 9-PAGE ARCHITECTURE
+
+**Status:** FINAL CONTENT SOURCE  
+**Language:** Nederlands (NL)  
+**Market:** Nederland  
+**Brand:** SPPAT  
+**Architecture:** 9 publieke pagina's  
+**Purpose:** Dit document bevat de volledige publieke websitecopy, SEO-basis, navigatiecopy, formulierteksten, CTA's, interne links en contentaanwijzingen voor de nieuwe SPPAT-website. Design- en implementatiebeslissingen horen niet in dit document, met uitzondering van expliciete content-, media-authenticiteits- en URL-regels.
+
+**Belangrijk:** De inhoud uit de eerdere uitgebreide paginastructuur blijft behouden. De architectuur is geconsolideerd: voormalige child pages zijn inhoudelijke secties binnen grotere pagina's. Zij zijn geen zelfstandige publieke pagina's meer.
+
+---
+
+# 1. VASTE BEDRIJFSFEITEN
+-   SPPAT werkt voor klanten in heel Nederland.
+-   Kern: complete badkamerrenovaties en professioneel tegelwerk.
+-   Ervaring: **35 jaar**.
+-   Complete badkamerrenovatie kan als **A--Z-project** worden
+    uitgevoerd.
+-   Afhankelijk van het project kan de scope bestaan uit sloop, water en
+    afvoer, elektra, bouwkundige/ondergrondvoorbereiding, waterdichting,
+    inbouwtechniek zoals Geberit, tegelwerk, sanitair, LED en
+    eindafwerking.
+-   Materialen kunnen door SPPAT worden verzorgd, door de klant worden
+    aangeschaft of in een gecombineerde vorm worden geregeld.
+-   Geen standaard doorlooptijden publiceren.
+-   Geen prijzen of prijsranges publiceren totdat SPPAT deze expliciet
+    bevestigt.
+-   Geen garanties, certificeringen, merken, teamgrootte, responstijden
+    of vaste uitvoeringsmethodes verzinnen.
+-   Technische informatie mag uitleggen **waarom iets belangrijk is** en
+    **welke oplossingen bestaan**, maar niet suggereren dat SPPAT altijd
+    één specifieke methode of product toepast.
+
+------------------------------------------------------------------------
+
+---
+
+# 2. TIJDELIJKE CONTACTGEGEVENS
+
+Deze waarden zijn tijdelijke voorbeelden en worden vóór livegang
+vervangen.
+
+-   Telefoon: `+31 6 1234 5678`
+-   E-mail: `info@sppat.nl`
+-   WhatsApp: `+31 6 1234 5678`
+-   Instagram: `@sppat.nl`
+-   KvK: `12345678`
+-   BTW: `NL000000000B00`
+-   Adres: `Nederland`
+-   Werkgebied: `Heel Nederland`
+
+Social labels: - Instagram - WhatsApp - Bellen - E-mail
+
+------------------------------------------------------------------------
+
+---
+
+# 3. HEADER & NAVIGATIE
+
+**Logo:** SPPAT
+
+**Hoofdnavigatie**
+
+- Badkamers → `/complete-badkamer-renovatie/`
+- Tegelwerk → `/tegelwerk/`
+- Specialisaties → `/specialisaties/`
+- Projecten → `/projecten/`
+- Over ons → `/over-ons/`
+- Contact → `/contact/`
+
+**Primaire header-CTA:** `Project bespreken` → `/contact/`
+
+**Kennisbank:** `/kennisbank/` is een volwaardige inhoudspagina, maar hoeft niet als gelijkwaardig hoofdnavigatie-item te worden behandeld. Zij mag contextueel vanuit diensten, footer en relevante technische secties worden gelinkt.
+
+**Badkamerrenovatie Almere:** `/complete-badkamer-renovatie/almere/` is een ondersteunende lokale landingspagina en staat niet in de primaire navigatie.
+
+
+---
+
+# 4. CTA-TAAL
+
+Gebruik consequent:
+
+-   Primair: **Project bespreken**
+-   Portfolio: **Bekijk projecten**
+-   Dienst: **Bekijk de mogelijkheden**
+-   Verdieping: **Lees meer**
+-   Contact: **Neem contact op**
+-   Formulier: **Aanvraag versturen**
+-   WhatsApp: **Stuur een WhatsApp**
+-   Telefoon: **Bel SPPAT**
+
+Geen overdreven CTA-copy zoals "Claim uw droombadkamer", "Boek nu" of
+kunstmatige schaarste.
+
+------------------------------------------------------------------------
+
+---
+
+# 5. FOOTER
+
+## SPPAT
+
+Complete badkamerrenovaties en professioneel tegelwerk in heel Nederland.
+
+Telefoon: `+31 6 1234 5678`  
+E-mail: `info@sppat.nl`  
+WhatsApp: `+31 6 1234 5678`  
+Instagram: `@sppat.nl`  
+KvK: `12345678`  
+BTW: `NL000000000B00`
+
+## Badkamers
+
+- Complete badkamerrenovatie → `/complete-badkamer-renovatie/`
+- Complete toiletrenovatie → `/complete-badkamer-renovatie/#toiletrenovatie`
+- Badkamerrenovatie Almere → `/complete-badkamer-renovatie/almere/`
+
+## Tegelwerk
+
+- Vloertegels leggen → `/tegelwerk/#vloertegels`
+- Wandtegels zetten → `/tegelwerk/#wandtegels`
+- Keuken tegelen → `/tegelwerk/#keuken`
+- Balkon tegelen → `/tegelwerk/#balkon`
+- Badkamer tegelen → `/tegelwerk/#badkamer`
+
+## Specialisaties
+
+- Grootformaat tegels → `/specialisaties/#grootformaat`
+- Mozaïek → `/specialisaties/#mozaiek`
+- Natuursteen → `/specialisaties/#natuursteen`
+- Keramisch parket → `/specialisaties/#keramisch-parket`
+
+## Informatie
+
+- Projecten → `/projecten/`
+- Over ons → `/over-ons/`
+- Kennisbank → `/kennisbank/`
+- Contact → `/contact/`
+
+**Footerregel:** `© SPPAT. Alle rechten voorbehouden.`
+
+
+---
+
+# 6. PAGINA 1 — HOME
+
+**URL:** `/`\
+**SEO title:**
+`Complete Badkamerrenovaties & Professioneel Tegelwerk | SPPAT`\
+**Meta description:**
+`SPPAT realiseert complete badkamerrenovaties en professioneel tegelwerk in heel Nederland. 35 jaar ervaring, van voorbereiding en techniek tot nauwkeurige afwerking.`\
+**Primary intent:** complete badkamerrenovatie / professioneel tegelwerk
+
+## Hero
+
+**Eyebrow:** `SPPAT — Nederland`
+
+# Complete Badkamerrenovaties & Technisch Tegelwerk
+
+Een hoogwaardige badkamer of tegelvloer begint niet bij de laatste
+tegel, maar bij alles wat daaronder gebeurt. SPPAT realiseert complete
+badkamerrenovaties en professioneel tegelwerk met aandacht voor
+voorbereiding, techniek, maatvoering en afwerking.
+
+Van sloop en installatiewerk tot waterdichting, tegelwerk, sanitair en
+de laatste details: bij een complete renovatie kan het volledige project
+als één geheel worden uitgevoerd.
+
+**CTA:** `Project bespreken` → `/contact/`\
+**Secondary:** `Bekijk projecten` → `/projecten/`
+
+**Visual intent:** sterke complete badkamer of hoogwaardige
+tegeltoepassing; geen auteurschapsclaim wanneer het geen geverifieerd
+SPPAT-project is.\
+**ALT-richting:** beschrijf uitsluitend wat zichtbaar is.
+
+## Kwaliteit begint onder de tegels
+
+Een strak eindresultaat wordt voor een groot deel bepaald voordat de
+tegel wordt geplaatst. De vlakheid en stabiliteit van de ondergrond,
+aansluitingen, afschot in natte zones en een passende waterdichting
+hebben direct invloed op het uiteindelijke tegelwerk.
+
+Daarom kijkt SPPAT niet alleen naar wat zichtbaar wordt, maar naar het
+complete technische geheel waarop de afwerking moet worden gebouwd.
+
+**Contextlinks:**\
+`Waterdichting in de badkamer` →
+`/kennisbank/#waterdichting`\
+`Lippage bij tegelwerk` → `/kennisbank/#lippage`
+
+## Turnkey Badkamerrenovatie van A tot Z
+
+Een complete badkamer bestaat uit meerdere disciplines die precies op
+elkaar moeten aansluiten. SPPAT kan het volledige renovatieproject
+uitvoeren: van demontage en technische aanpassingen tot
+ondergrondvoorbereiding, tegelwerk, sanitair, verlichting en
+eindafwerking.
+
+Dat maakt het mogelijk om de ruimte als één project te benaderen in
+plaats van als een verzameling losse werkzaamheden.
+
+**CTA:** `Complete badkamerrenovatie` → `/complete-badkamer-renovatie/`
+
+## Professioneel Tegelwerk voor Elke Ruimte
+
+SPPAT verzorgt vloer- en wandtegelwerk voor badkamers, toiletten,
+keukens, woonruimtes en balkons. Daarbij gaat het niet alleen om het
+plaatsen van tegels, maar ook om de voorbereiding, verdeling, lijnen,
+aansluitingen en details die het eindbeeld bepalen.
+
+**Links:**\
+`Vloertegels` → `/tegelwerk/#vloertegels`\
+`Wandtegels` → `/tegelwerk/#wandtegels`\
+`Keuken` → `/tegelwerk/#keuken`\
+`Balkon` → `/tegelwerk/#balkon`\
+`Badkamer` → `/tegelwerk/#badkamer`
+
+## Specialisaties in Veeleisende Materialen
+
+Sommige materialen vragen extra aandacht bij voorbereiding, handling,
+verdeling en afwerking. SPPAT werkt ook met grootformaat tegels,
+mozaïek, natuursteen en keramisch parket.
+
+**Links:**\
+`Grootformaat / XXL` → `/specialisaties/#grootformaat`\
+`Mozaïek` → `/specialisaties/#mozaiek`\
+`Natuursteen` → `/specialisaties/#natuursteen`\
+`Keramisch parket` → `/specialisaties/#keramisch-parket`
+
+## Gerealiseerde Projecten
+
+Het eindresultaat moet niet alleen worden beschreven, maar ook zichtbaar
+zijn. Bekijk een selectie van echte SPPAT-projecten en afzonderlijke
+details van uitgevoerd tegel- en renovatiewerk.
+
+**CTA:** `Bekijk projecten` → `/projecten/`
+
+## 35 Jaar Ervaring in Bouwtechniek
+
+35 jaar ervaring betekent vooral dat een project niet alleen vanuit de
+zichtbare afwerking wordt bekeken. Een badkamer, vloer of tegelwand is
+een opeenvolging van keuzes die elkaar beïnvloeden.
+
+SPPAT combineert praktische bouwervaring met aandacht voor technisch
+tegelwerk en verzorgde detaillering.
+
+## Klaar om uw project concreet te maken?
+
+Heeft u al een ontwerp, foto's, een plattegrond of alleen een idee?
+Stuur door wat u heeft. Met foto's van de huidige situatie, globale
+afmetingen en uw wensen kan het gesprek direct concreter beginnen.
+
+**CTA:** `Project bespreken` → `/contact/`\
+**Secondary:** `Stuur een WhatsApp` → `[WHATSAPP]`
+
+------------------------------------------------------------------------
+
+---
+
+# 7. PAGINA 2 — COMPLETE BADKAMERRENOVATIE
+
+**URL:** `/complete-badkamer-renovatie/`\
+**SEO title:** `Complete Badkamerrenovatie van A tot Z | SPPAT`\
+**Meta description:**
+`Complete badkamer laten renoveren? SPPAT verzorgt het project van sloop en techniek tot tegelwerk, sanitair en afwerking. Werkzaam in heel Nederland.`
+
+# Complete Badkamerrenovatie van A tot Z
+
+Een complete badkamerrenovatie is een technisch project waarin veel
+onderdelen van elkaar afhankelijk zijn. Leidingen, afvoer, elektra,
+wanden, vloer, waterdichting, tegelverdeling en sanitair moeten
+uiteindelijk één kloppend geheel vormen.
+
+SPPAT kan de complete uitvoering van A tot Z verzorgen, zodat het
+project als één samenhangende verbouwing wordt aangepakt.
+
+**CTA:** `Project bespreken`
+
+## Eén gecoördineerde uitvoering voor uw complete verbouwing
+
+Afhankelijk van de bestaande situatie en het ontwerp kan een complete
+renovatie onder meer bestaan uit:
+
+-   demontage en verwijdering van de bestaande badkamer;
+-   aanpassingen aan waterleidingen en afvoer;
+-   elektrotechnische werkzaamheden;
+-   bouwkundige aanpassingen en ondergrondvoorbereiding;
+-   voorbereiden en uitvlakken van vloer en wanden;
+-   waterdichting van relevante natte zones;
+-   inbouwtechniek, bijvoorbeeld een inbouwreservoir of inbouwkranen;
+-   douchegoot, nis of andere geïntegreerde details;
+-   vloer- en wandtegelwerk;
+-   plaatsing en aansluiting van sanitair;
+-   verlichting en LED waar onderdeel van het project;
+-   voegen, kitten en eindafwerking.
+
+De exacte scope wordt per badkamer bepaald.
+
+## Onze A tot Z werkwijze
+
+### 1. Bestaande situatie en wensen
+
+We bekijken wat er aanwezig is, wat behouden blijft en wat moet
+veranderen.
+
+### 2. Technische voorbereiding
+
+Indeling, leidingwerk, afvoer, elektra en bouwkundige consequenties
+worden in samenhang bekeken.
+
+### 3. Ondergrond en natte zones
+
+De basis wordt geschikt gemaakt voor de gekozen afwerking. In natte
+zones krijgt waterbeheersing bijzondere aandacht.
+
+### 4. Tegelwerk en detaillering
+
+Tegelverdeling, snijlijnen, voegen, hoeken, nissen en aansluitingen
+worden als onderdeel van het totaalbeeld uitgevoerd.
+
+### 5. Sanitair en afwerking
+
+Na het tegelwerk volgen de zichtbare onderdelen en de uiteindelijke
+afwerking.
+
+## De onzichtbare techniek bepaalt de levensduur
+
+Een badkamer kan direct na oplevering mooi ogen, terwijl de echte
+kwaliteit voor een groot deel verborgen zit. Denk aan de ondergrond,
+aansluitingen, afvoer, waterdichting en de opbouw onder het tegelwerk.
+
+SPPAT behandelt die onderdelen niet als bijzaak. Ze vormen de basis
+waarop de zichtbare afwerking moet functioneren.
+
+**Links:**\
+`Waterdichting uitgelegd` →
+`/kennisbank/#waterdichting`\
+`Badkamer alleen laten tegelen` → `/tegelwerk/#badkamer`
+
+## Volledige vrijheid in materiaalkeuze
+
+De materiaalinkoop kan worden afgestemd op het project. SPPAT kan
+materialen verzorgen, u kunt zelf sanitair en tegels aanschaffen, of we
+combineren beide.
+
+Zo blijft de keuzevrijheid bij u, terwijl de technische uitvoerbaarheid
+onderdeel blijft van het gesprek.
+
+## Mogelijkheden binnen een complete badkamer
+
+Afhankelijk van ontwerp en situatie kunnen onder meer worden
+geïntegreerd:
+
+-   inloopdouche;
+-   douchegoot;
+-   bad;
+-   wandcloset / inbouwreservoir;
+-   inbouwnis;
+-   betegeld inspectieluik;
+-   vloerverwarming als onderdeel van het project;
+-   grootformaat tegels;
+-   mozaïekaccenten;
+-   natuursteen;
+-   LED-verlichting;
+-   maatwerkdetails in het tegelwerk.
+
+Deze lijst beschrijft mogelijkheden, geen vaste standaardopbouw.
+
+## Gerealiseerde Badkamers
+
+Bekijk echte SPPAT-projecten voor een beeld van de afwerking en
+verschillende toepassingen.
+
+**CTA:** `Bekijk projecten` → `/projecten/`
+
+## Start uw badkamerrenovatie
+
+Stuur foto's van de huidige badkamer, globale maten of een plattegrond
+en voorbeelden van wat u mooi vindt. Daarmee kan het eerste gesprek
+direct over uw eigen situatie gaan.
+
+**CTA:** `Project bespreken` → `/contact/`
+
+### FAQ
+
+**Kan SPPAT de complete badkamer uitvoeren?**\
+Ja. Complete badkamerrenovatie wordt als A--Z-dienst aangeboden. De
+exacte werkzaamheden worden per project bepaald.
+
+**Kan ik mijn eigen tegels en sanitair kopen?**\
+Ja. Materialen kunnen door SPPAT worden verzorgd, door u worden
+aangeschaft of gecombineerd worden ingekocht.
+
+**Doet SPPAT ook alleen het tegelwerk?**\
+Ja. Voor tegelwerk zonder complete renovatie is er de aparte dienst
+Badkamer tegelen.
+
+**Werkt SPPAT alleen in Almere?**\
+Nee. SPPAT voert projecten uit in heel Nederland.
+
+------------------------------------------------------------------------
+
+---
+
+<a id="toiletrenovatie"></a>
+## Complete Toiletrenovatie
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/complete-badkamer-renovatie/#toiletrenovatie`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Complete Toiletrenovatie | Toilet Verbouwen | SPPAT`
+**Voormalige meta description (referentie):** `Toiletruimte compleet laten renoveren? SPPAT verzorgt techniek, voorbereiding, tegelwerk, sanitair en afwerking als één project.`
+
+Een toiletruimte is compact, maar technisch niet eenvoudig. Juist
+doordat alles dicht bij elkaar komt, vallen maatvoering, tegelverdeling,
+aansluitingen en afwerking extra op.
+
+SPPAT kan de complete toiletrenovatie verzorgen: van demontage en
+technische aanpassingen tot tegelwerk, sanitair en eindafwerking.
+
+### Wat kan onderdeel zijn van de renovatie?
+
+-   demontage;
+-   water- en afvoeraanpassingen;
+-   inbouwreservoir en wandcloset;
+-   elektra en verlichting waar nodig;
+-   voorbereiding van vloer en wanden;
+-   tegelwerk;
+-   fonteintje en kraan;
+-   nis of andere compacte maatwerkoplossing;
+-   voegen, kitten en eindafwerking.
+
+De exacte werkzaamheden worden per ruimte bepaald.
+
+### Veel kwaliteit op weinig vierkante meters
+
+In een kleine ruimte bepalen lijnen en verhoudingen sterk hoe rustig het
+eindresultaat oogt. De positie van voegen, hoeken, sanitair en eventuele
+nissen verdient daarom vooraf aandacht.
+
+### Toilet als onderdeel van een groter project
+
+Wordt het toilet samen met de badkamer of ander tegelwerk aangepakt? Dan
+kunnen de werkzaamheden als onderdeel van een groter renovatieproject
+worden besproken.
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+# 8. PAGINA 3 — BADKAMERRENOVATIE ALMERE
+
+**URL:** `/complete-badkamer-renovatie/almere/`\
+**SEO title:** `Badkamerrenovatie Almere | Complete Uitvoering | SPPAT`\
+**Meta description:**
+`Badkamer renoveren in Almere? SPPAT verzorgt complete badkamerrenovaties en technisch tegelwerk. Van voorbereiding tot afwerking.`
+
+# Badkamerrenovatie in Almere
+
+Woont u in Almere en wilt u uw badkamer volledig vernieuwen? SPPAT
+verzorgt complete badkamerrenovaties waarbij techniek, tegelwerk en
+afwerking als één project worden bekeken.
+
+Van een nieuwe indeling en installatiewerk tot waterdichting, tegelwerk
+en sanitair: de exacte scope wordt afgestemd op de bestaande woning en
+uw plannen.
+
+## Complete uitvoering, lokaal besproken
+
+Geen woning of badkamer is hetzelfde. Daarom beginnen we bij de
+bestaande situatie en het gewenste eindresultaat, niet bij een
+standaardpakket.
+
+**CTA:** `Bekijk complete badkamerrenovatie` →
+`/complete-badkamer-renovatie/`
+
+## Ook voor technisch tegelwerk
+
+Wilt u niet de volledige ruimte laten verbouwen, maar wel professioneel
+tegelwerk laten uitvoeren? Bekijk dan de tegelwerkdiensten en
+specialisaties.
+
+**CTA:** `Bekijk tegelwerk` → `/tegelwerk/`
+
+## Uw badkamer in Almere bespreken?
+
+Stuur foto's, globale maten en uw ideeën.
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+# 9. PAGINA 4 — TEGELWERK
+
+**URL:** `/tegelwerk/`\
+**SEO title:** `Professioneel Tegelwerk & Installatie | SPPAT`\
+**Meta description:**
+`Professioneel tegelwerk voor vloeren, wanden, badkamers, keukens en balkons. SPPAT werkt in heel Nederland, inclusief specialistische tegeltoepassingen.`
+
+# Professioneel Tegelwerk & Installatie
+
+Goed tegelwerk is meer dan tegels recht naast elkaar plaatsen. De
+kwaliteit begint bij de ondergrond en wordt zichtbaar in de verdeling,
+voeglijnen, snedes, hoeken, aansluitingen en overgang naar andere
+materialen.
+
+SPPAT verzorgt professioneel tegelwerk voor verschillende ruimtes en
+toepassingen in heel Nederland.
+
+## De basis voor een strak eindresultaat
+
+Voor de eerste tegel wordt geplaatst, moet duidelijk zijn wat de
+ondergrond vraagt en hoe de tegelverdeling uitkomt. Een goede
+voorbereiding voorkomt dat problemen pas zichtbaar worden bij hoeken,
+deuren, nissen of het einde van een wand.
+
+## Onze tegelwerkdiensten
+
+### Vloertegels leggen
+
+Voor woonruimtes, hallen, keukens, badkamers en andere vloeren.\
+`Meer over vloertegels` → `/tegelwerk/#vloertegels`
+
+### Wandtegels zetten
+
+Voor badkamers, toiletten, keukens en andere betegelde wanden.\
+`Meer over wandtegels` → `/tegelwerk/#wandtegels`
+
+### Keuken tegelen
+
+Achterwanden, spatwanden en vloeren met aandacht voor uitsparingen en
+aansluitingen.\
+`Meer over keuken tegelwerk` → `/tegelwerk/#keuken`
+
+### Balkon tegelen
+
+Buitentegelwerk waarbij ondergrond, waterafvoer en weersbelasting
+onderdeel zijn van de beoordeling.\
+`Meer over balkons` → `/tegelwerk/#balkon`
+
+### Badkamer tegelen
+
+Voor projecten waarbij u de renovatie zelf organiseert maar het
+tegelwerk professioneel wilt laten uitvoeren.\
+`Meer over badkamer tegelen` → `/tegelwerk/#badkamer`
+
+## Expertise in veeleisende materialen
+
+Naast regulier tegelwerk werkt SPPAT met toepassingen waarbij formaat,
+materiaal of detaillering extra aandacht vraagt:
+
+-   grootformaat en XXL;
+-   mozaïek;
+-   natuursteen;
+-   keramisch parket.
+
+**CTA:** `Bekijk specialisaties` → `/specialisaties/`
+
+## Oog voor de afwerking
+
+Een nette tegelwand of vloer wordt uiteindelijk beoordeeld op details:
+de verdeling van het vlak, rechte lijnen, aansluitingen, hoeken,
+uitsparingen en de relatie tussen tegel en sanitair of interieur.
+
+## Gerealiseerde Tegelprojecten
+
+**CTA:** `Bekijk projecten` → `/projecten/`
+
+## Uw tegelproject bespreken?
+
+Stuur foto's van de ruimte, globale maten en indien mogelijk het type of
+formaat tegel dat u wilt gebruiken.
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="vloertegels"></a>
+## Vloertegels Leggen
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/tegelwerk/#vloertegels`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Vloertegels Leggen | Professioneel Tegelwerk | SPPAT`
+**Voormalige meta description (referentie):** `Vloertegels laten leggen? SPPAT verzorgt voorbereiding, tegelverdeling en nauwkeurige afwerking voor tegelvloeren in heel Nederland.`
+
+Een strakke tegelvloer begint bij een stabiele, geschikte en voldoende
+vlakke basis. Daarna bepalen de tegelverdeling, voeglijnen en
+aansluitingen hoe rustig het eindresultaat oogt.
+
+### Voorbereiding en egalisatie
+
+Voor plaatsing wordt beoordeeld wat de bestaande ondergrond nodig heeft.
+Afhankelijk van de situatie kan voorbereiding of egalisatie nodig zijn.
+
+Bij vloerverwarming wordt de combinatie van ondergrond,
+verwarmingssysteem en gekozen afwerking als geheel bekeken. SPPAT biedt
+vloerverwarming niet als losse hoofdservice aan, maar kan deze binnen
+een passend renovatie- of tegelproject meenemen.
+
+### Tegelverdeling
+
+Vooraf nadenken over startpunt, zichtlijnen, deuren, wanden en
+snijstukken voorkomt een onrustig eindbeeld.
+
+### Verschillende toepassingen
+
+-   woonkamer;
+-   hal;
+-   keuken;
+-   badkamer;
+-   toilet;
+-   grotere doorlopende vloeren.
+
+### Een nieuwe tegelvloer realiseren?
+
+**CTA:** `Project bespreken` → `/contact/`\
+**Context:** `Lippage voorkomen` →
+`/kennisbank/#lippage`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="wandtegels"></a>
+## Wandtegels Zetten
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/tegelwerk/#wandtegels`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Wandtegels Zetten | Badkamer, Toilet & Keuken | SPPAT`
+**Voormalige meta description (referentie):** `Wandtegels professioneel laten zetten? SPPAT verzorgt tegelverdeling, uitsparingen, hoeken en nauwkeurige afwerking.`
+
+Bij wandtegelwerk vallen afwijkingen direct op. Voeglijnen, hoeken,
+nissen, kranen, stopcontacten en andere uitsparingen maken de verdeling
+van het tegelvlak bepalend voor het eindresultaat.
+
+### Eerst verdelen, daarna plaatsen
+
+Een goede indeling voorkomt onnodig smalle passtukken en helpt
+belangrijke lijnen logisch door te laten lopen.
+
+### Details die het verschil maken
+
+-   buiten- en binnenhoeken;
+-   aansluitingen op plafond en vloer;
+-   uitsparingen voor leidingwerk en elektra;
+-   nissen;
+-   aansluiting op sanitair;
+-   overgang tussen verschillende materialen.
+
+Welke technische afwerking wordt gekozen, hangt af van tegel, ondergrond
+en ontwerp.
+
+### Uw wanden professioneel laten tegelen?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="keuken"></a>
+## Keuken Achterwand & Vloer Tegelen
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/tegelwerk/#keuken`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Keuken Achterwand & Vloer Tegelen | SPPAT`
+**Voormalige meta description (referentie):** `Keuken laten tegelen? SPPAT verzorgt achterwanden, spatwanden en tegelvloeren met nauwkeurige uitsparingen en aansluitingen.`
+
+In een keuken komt tegelwerk samen met werkbladen, kasten,
+stopcontacten, kranen en apparatuur. Daardoor zit de kwaliteit vaak
+juist in de kleine aansluitingen.
+
+### Maatwerk rondom vaste elementen
+
+Een goede tegelverdeling houdt rekening met:
+
+-   bovenkant werkblad;
+-   onderzijde bovenkasten;
+-   stopcontacten en schakelaars;
+-   kranen en leidingdoorvoeren;
+-   hoeken en eindpunten;
+-   zichtbare snijlijnen.
+
+### Voegkeuze
+
+Voegmateriaal en voegkleur beïnvloeden zowel uitstraling als onderhoud.
+Welke oplossing geschikt is, hangt af van toepassing, tegel en
+belasting.
+
+**Verdieping:** `Epoxyvoeg vs. cementvoeg` →
+`/kennisbank/#epoxy-vs-cement`
+
+### Uw keuken voorzien van nieuw tegelwerk?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="balkon"></a>
+## Balkon Tegelen
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/tegelwerk/#balkon`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Balkon Tegelen | Buitentegelwerk | SPPAT`
+**Voormalige meta description (referentie):** `Balkon laten tegelen? SPPAT beoordeelt ondergrond, waterafvoer en tegeltoepassing voor verzorgd buitentegelwerk.`
+
+Buitentegelwerk krijgt te maken met regen, temperatuurwisselingen en
+andere omstandigheden dan tegelwerk binnen. Daarom moet niet alleen naar
+de tegel worden gekeken, maar ook naar de bestaande constructie,
+ondergrond en waterafvoer.
+
+### Water moet weg kunnen
+
+Een balkon of buitenterras vraagt om een opbouw die past bij de
+specifieke situatie. Afschot, afvoer, aansluitingen en materiaalkeuze
+worden daarom vóór uitvoering beoordeeld.
+
+### Afwerking aan randen en aansluitingen
+
+Randen, dorpels, gevels en afvoeren zijn belangrijke details in
+buitentegelwerk. De oplossing is afhankelijk van de bestaande
+bouwsituatie.
+
+### Uw balkon voorzien van tegelwerk?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="badkamer"></a>
+## Badkamer Vakkundig Laten Tegelen
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/tegelwerk/#badkamer`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Badkamer Laten Tegelen | Vakkundig Tegelwerk | SPPAT`
+**Voormalige meta description (referentie):** `Badkamer professioneel laten tegelen? SPPAT verzorgt vloer- en wandtegelwerk met aandacht voor natte zones, afschot, voegen en details.`
+
+Regelt u de verbouwing zelf en zoekt u een specialist voor het
+tegelwerk? SPPAT kan het vloer- en wandtegelwerk als afzonderlijk
+onderdeel uitvoeren.
+
+### Aandachtspunten in natte ruimtes
+
+Badkamertegelwerk vraagt om aandacht voor:
+
+-   geschikte en vlakke ondergronden;
+-   natte zones;
+-   aansluiting op douchegoot of put;
+-   afschot waar noodzakelijk;
+-   tegelverdeling;
+-   nissen en inbouwdelen;
+-   hoeken en aansluitingen;
+-   voeg- en kitdetails.
+
+De exacte technische opbouw hangt af van de bestaande situatie en
+gekozen materialen.
+
+### Complete renovatie nodig?
+
+Wilt u dat ook sloop, installatiewerk, voorbereiding, sanitair en
+afwerking worden meegenomen?
+
+**CTA:** `Bekijk complete badkamerrenovatie` →
+`/complete-badkamer-renovatie/`
+
+### Alleen het tegelwerk bespreken?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+# 10. PAGINA 5 — SPECIALISATIES
+
+**URL:** `/specialisaties/`\
+**SEO title:**
+`Tegel Specialisaties | Grootformaat, Mozaïek & Natuursteen | SPPAT`\
+**Meta description:**
+`Specialistisch tegelwerk door SPPAT: grootformaat en XXL tegels, mozaïek, natuursteen en keramisch parket.`
+
+# Specialisaties in Tegelwerk
+
+Niet ieder materiaal laat zich op dezelfde manier verwerken. Formaat,
+gewicht, oppervlak, patroon en natuurlijke eigenschappen kunnen invloed
+hebben op voorbereiding, handling, verdeling en afwerking.
+
+SPPAT voert ook tegelwerk uit waarbij juist die details centraal staan.
+
+## Grootformaat & XXL
+
+Grote tegels en platen creëren een rustig beeld met minder voegen, maar
+maken vlakheid, handling en detaillering extra belangrijk.
+
+`Bekijk grootformaat tegels` → `/specialisaties/#grootformaat`
+
+## Mozaïek
+
+Veel kleine elementen maken iedere lijn en overgang zichtbaar. De
+ondergrond en aansluiting op omliggend tegelwerk verdienen daarom extra
+aandacht.
+
+`Bekijk mozaïek` → `/specialisaties/#mozaiek`
+
+## Natuursteen
+
+Natuursteen heeft natuurlijke variatie en vraagt om een aanpak die past
+bij het specifieke materiaal en de toepassing.
+
+`Bekijk natuursteen` → `/specialisaties/#natuursteen`
+
+## Keramisch parket
+
+Houtlooktegels combineren het karakter van een plankvloer met keramiek.
+Het legbeeld wordt sterk bepaald door patroon, voegverdeling en
+vlakheid.
+
+`Bekijk keramisch parket` → `/specialisaties/#keramisch-parket`
+
+## Gerealiseerde Projecten
+
+**CTA:** `Bekijk projecten` → `/projecten/`
+
+## Een specialistisch tegelproject bespreken?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="grootformaat"></a>
+## Grootformaat & XXL Tegels Leggen
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/specialisaties/#grootformaat`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Grootformaat & XXL Tegels Leggen | SPPAT`
+**Voormalige meta description (referentie):** `Grootformaat of XXL tegels laten plaatsen? SPPAT verzorgt specialistisch tegelwerk met aandacht voor vlakheid, verdeling en details.`
+
+Grootformaat tegels en keramische platen kunnen een ruimte een rustig,
+architectonisch karakter geven. Tegelijk worden afwijkingen in
+ondergrond, lijnen en aansluitingen sneller zichtbaar.
+
+### De ondergrond wordt belangrijker naarmate het formaat groeit
+
+Grote formaten vragen om een ondergrond die geschikt is voor de gekozen
+tegel en toepassing. Voor uitvoering wordt daarom gekeken naar vlakheid,
+stabiliteit, formaat, ruimte en gewenste verdeling.
+
+### Minder voegen betekent niet minder voorbereiding
+
+Juist doordat er minder voegen zijn, krijgen positie en maat van iedere
+plaat meer visuele invloed.
+
+Aandachtspunten kunnen zijn:
+
+-   positionering van snijlijnen;
+-   aansluiting op nissen en inbouwdelen;
+-   buitenhoeken;
+-   doorvoeren;
+-   douchegoot en vloeropbouw;
+-   overgang naar andere materialen.
+
+### Grootformaat in badkamer en douche
+
+Grootformaat kan ook in natte ruimtes worden toegepast wanneer
+materiaal, ondergrond en technische opbouw daarvoor geschikt zijn.
+
+**Links:**\
+`Badkamer tegelen` → `/tegelwerk/#badkamer`\
+`Lippage uitgelegd` → `/kennisbank/#lippage`
+
+### Grootformaat tegels in uw project?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="mozaiek"></a>
+## Professioneel Mozaïek Zetten
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/specialisaties/#mozaiek`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Mozaïek Zetten | Specialistisch Tegelwerk | SPPAT`
+**Voormalige meta description (referentie):** `Mozaïek professioneel laten zetten? SPPAT verzorgt mozaïek voor badkamers, douches, nissen en accentvlakken.`
+
+Mozaïek bestaat uit kleine elementen, maar vraagt juist daardoor veel
+controle over het totale vlak. Kleine afwijkingen in ondergrond of
+aansluiting kunnen over een groter oppervlak zichtbaar worden.
+
+### Waar mozaïek sterk tot zijn recht komt
+
+-   douchevloeren;
+-   nissen;
+-   accentwanden;
+-   gebogen of bijzondere vlakken waar het gekozen mozaïek voor geschikt
+    is;
+-   combinaties met grotere tegelformaten.
+
+### Aandacht voor overgang en lijnvoering
+
+Bij matten of losse elementen moet het patroon als één geheel blijven
+lezen. Ook de overgang naar omliggende tegels, profielen, hoeken en
+sanitair bepaalt het eindbeeld.
+
+### Mozaïek in uw project?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="natuursteen"></a>
+## Natuursteen Leggen
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/specialisaties/#natuursteen`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Natuursteen Leggen | Badkamer & Vloer | SPPAT`
+**Voormalige meta description (referentie):** `Natuursteen laten verwerken? SPPAT verzorgt specialistisch tegelwerk waarbij materiaal, ondergrond, patroon en afwerking zorgvuldig worden beoordeeld.`
+
+Natuursteen is geen volledig uniform fabrieksproduct. Kleur, structuur
+en eigenschappen kunnen per steensoort en partij verschillen. Juist die
+variatie maakt het materiaal bijzonder en vraagt om aandacht vóór en
+tijdens de verwerking.
+
+### Eerst het materiaal begrijpen
+
+De geschikte verwerking hangt af van de gekozen steensoort, formaat,
+ondergrond en ruimte. Daarom worden lijm-, voeg-, onderhouds- en
+eventuele beschermingskeuzes niet als één universele standaard
+gepresenteerd.
+
+### Het legbeeld als geheel
+
+Bij natuursteen is niet alleen maatvoering belangrijk. Ook de
+natuurlijke tekening en verdeling van de elementen hebben invloed op het
+visuele resultaat.
+
+### Onderhoud
+
+Onderhoud is afhankelijk van de specifieke steensoort en afwerking. Volg
+daarom altijd het advies dat past bij het daadwerkelijk gekozen
+materiaal.
+
+### Natuursteen in uw project?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="keramisch-parket"></a>
+## Keramisch Parket Leggen
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/specialisaties/#keramisch-parket`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Keramisch Parket Leggen | Houtlook Tegels | SPPAT`
+**Voormalige meta description (referentie):** `Keramisch parket of houtlook tegels laten leggen? SPPAT verzorgt voorbereiding, patroonverdeling en nauwkeurige plaatsing.`
+
+Keramisch parket combineert de uitstraling van houten planken met een
+keramische vloer. Door de langwerpige vorm hebben vlakheid, patroon en
+voegverdeling veel invloed op het eindbeeld.
+
+### Patroon en verdeling
+
+De gekozen planklengte, ruimte en gewenste uitstraling bepalen welk
+legbeeld passend is. De verdeling wordt daarom vooraf bekeken in plaats
+van pas tijdens het leggen te ontstaan.
+
+### Ondergrond en vlakheid
+
+Langwerpige tegels kunnen producttoleranties hebben. Een geschikte
+ondergrond en doordachte plaatsing helpen zichtbare hoogteverschillen te
+beperken.
+
+**Verdieping:** `Wat is lippage?` →
+`/kennisbank/#lippage`
+
+### Houtlook tegels professioneel laten leggen?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+# 11. PAGINA 6 — PROJECTEN
+
+**URL:** `/projecten/`\
+**SEO title:**
+`Gerealiseerde Projecten | Badkamers & Tegelwerk | SPPAT`\
+**Meta description:**
+`Bekijk een selectie van gerealiseerde SPPAT-projecten: badkamers, tegelvloeren en details van uitgevoerd tegelwerk.`
+
+# Gerealiseerde Projecten
+
+Hier laten we het werk spreken. De portfolio toont zes afzonderlijke,
+geverifieerde SPPAT-projectgroepen. Foto's die niet aantoonbaar tot één
+projectserie behoren, mogen daarnaast als losse werkbeelden worden
+getoond zonder er een fictieve case van te maken.
+
+Geen locaties, budgetten, data, materiaalmerken, projectduur of
+technische specificaties publiceren tenzij die later expliciet zijn
+bevestigd.
+
+## Project 01
+
+**Contentlabel:** `Project 01`\
+**Copy:** Een selectie beelden van één gerealiseerd SPPAT-project.
+Bekijk het geheel en de details van de zichtbare afwerking.\
+**Media:** uitsluitend projectgroep 01.
+
+## Project 02
+
+**Contentlabel:** `Project 02`\
+**Copy:** Een selectie beelden van één gerealiseerd SPPAT-project, met
+aandacht voor het totale vlak en zichtbare detaillering.\
+**Media:** uitsluitend projectgroep 02.
+
+## Project 03
+
+**Contentlabel:** `Project 03`\
+**Copy:** Een afzonderlijke serie uit het gerealiseerde werk van SPPAT.\
+**Media:** uitsluitend projectgroep 03.
+
+## Project 04
+
+**Contentlabel:** `Project 04`\
+**Copy:** Een compacte projectserie uit het gerealiseerde werk van
+SPPAT.\
+**Media:** uitsluitend projectgroep 04.
+
+## Project 05
+
+**Contentlabel:** `Project 05`\
+**Copy:** Een compacte projectserie uit het gerealiseerde werk van
+SPPAT.\
+**Media:** uitsluitend projectgroep 05.
+
+## Project 06
+
+**Contentlabel:** `Project 06`\
+**Copy:** Een compacte projectserie uit het gerealiseerde werk van
+SPPAT.\
+**Media:** uitsluitend projectgroep 06.
+
+## Meer werk en details
+
+Losse geverifieerde SPPAT-foto's mogen in één aanvullende beeldsectie
+worden opgenomen. Deze worden niet als afzonderlijk "project" benoemd
+wanneer de projectcontext ontbreekt.
+
+Illustratieve of stockbeelden horen niet in deze bewijssectie.
+
+## Een vergelijkbaar niveau voor uw project?
+
+Vertel ons wat u wilt realiseren en stuur eventueel referentiebeelden
+mee.
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+# 12. PAGINA 7 — OVER ONS
+
+**URL:** `/over-ons/`\
+**SEO title:** `Over SPPAT | 35 Jaar Ervaring in Renovatie & Tegelwerk`\
+**Meta description:**
+`Maak kennis met SPPAT: 35 jaar ervaring, complete badkamerrenovaties en professioneel tegelwerk voor klanten in heel Nederland.`
+
+# Betrouwbaarheid in Techniek en Uitvoering
+
+SPPAT richt zich op complete badkamerrenovaties en professioneel
+tegelwerk in heel Nederland. Met 35 jaar ervaring kijken we verder dan
+alleen de zichtbare afwerking.
+
+Een goed eindresultaat ontstaat wanneer ontwerp, techniek, voorbereiding
+en uitvoering op elkaar aansluiten.
+
+## Verantwoordelijkheid voor het totaalplaatje
+
+Bij een complete badkamer kunnen verschillende werkzaamheden binnen één
+project worden samengebracht. Daardoor kan bij iedere stap rekening
+worden gehouden met wat daarna komt: van leidingwerk en ondergrond tot
+tegelverdeling en uiteindelijke montage.
+
+## 35 jaar praktijkervaring
+
+Ervaring is voor ons geen marketinggetal op zichzelf. Het betekent
+vooral herkennen waar een project technisch gevoelig wordt,
+vooruitdenken over aansluitingen en begrijpen dat fouten in de
+voorbereiding later moeilijk te verbergen zijn.
+
+## Van voorbereiding tot eindafwerking in heel Nederland
+
+SPPAT werkt voor klanten in heel Nederland. De focus ligt op complete
+badkamers, tegelwerk en specialistische tegeltoepassingen.
+
+## Materialen: flexibel geregeld
+
+Wilt u zelf tegels en sanitair kiezen en inkopen? Dat kan. Wilt u dat
+SPPAT materialen verzorgt? Dat kan eveneens. Ook een combinatie is
+mogelijk.
+
+## Kennismaken met SPPAT?
+
+**CTA:** `Project bespreken` → `/contact/`
+
+------------------------------------------------------------------------
+
+---
+
+# 13. PAGINA 8 — CONTACT
+
+**URL:** `/contact/`\
+**SEO title:**
+`Contact | Badkamerrenovatie & Tegelwerk Bespreken | SPPAT`\
+**Meta description:**
+`Bespreek uw badkamer- of tegelproject met SPPAT. Stuur uw wensen, foto’s en afmetingen en geef ons een eerste beeld van het project.`
+
+# Uw Project Bespreken
+
+Heeft u plannen voor een complete badkamerrenovatie of tegelproject?
+Stuur ons de informatie die u al heeft. Dat hoeft nog geen compleet
+bouwplan te zijn.
+
+Foto's van de huidige situatie, globale afmetingen, een plattegrond en
+voorbeelden van de gewenste stijl helpen om het eerste gesprek concreter
+te maken.
+
+## Wat kunt u meesturen?
+
+-   foto's van de huidige ruimte;
+-   globale lengte- en breedtematen;
+-   plattegrond, indien beschikbaar;
+-   foto's of links van wat u mooi vindt;
+-   gewenst type tegel of formaat, indien al gekozen;
+-   korte uitleg van wat moet veranderen.
+
+## Contactformulier
+
+**Naam**\*\
+Placeholder: `Uw naam`
+
+**E-mailadres**\*\
+Placeholder: `naam@voorbeeld.nl`
+
+**Telefoonnummer**\
+Placeholder: `+31 6 1234 5678`
+
+**Postcode**\*\
+Placeholder: `1234 AB`
+
+**Type project**\*\
+Opties: - Complete badkamerrenovatie - Toiletrenovatie - Tegelwerk -
+Grootformaat / XXL - Mozaïek - Natuursteen - Keramisch parket - Anders
+
+**Korte omschrijving van uw project**\*\
+Placeholder:
+`Vertel kort wat u wilt laten uitvoeren, wat de huidige situatie is en welke wensen u heeft.`
+
+**Upload foto, referentie of plattegrond**\
+Helper:
+`Optioneel. Voeg indien mogelijk foto's of een plattegrond toe. Max. 10 MB per bestand.`
+
+**Privacy/consent tijdelijke tekst:**\
+`Ik geef toestemming om mijn gegevens te gebruiken om contact met mij op te nemen over deze aanvraag.`
+
+**Submit:** `Aanvraag versturen`
+
+**Validation algemeen:**\
+`Controleer de gemarkeerde velden en probeer het opnieuw.`
+
+**Upload fout:**\
+`Dit bestand kan niet worden toegevoegd. Controleer het bestandstype en de bestandsgrootte.`
+
+**Success:**\
+`Bedankt. Uw aanvraag is verzonden. We nemen contact met u op.`
+
+Geen niet-bevestigde responstijd tonen.
+
+## Direct contact
+
+**Telefoon:** `+31 6 1234 5678`\
+**E-mail:** `info@sppat.nl`\
+**WhatsApp:** `+31 6 1234 5678`\
+**Instagram:** `@sppat.nl`\
+**Werkgebied:** `Heel Nederland`
+
+------------------------------------------------------------------------
+
+---
+
+# 14. PAGINA 9 — KENNISBANK
+
+**URL:** `/kennisbank/`\
+**SEO title:** `Kennisbank | Badkamertechniek & Tegelwerk | SPPAT`\
+**Meta description:**
+`Praktische uitleg over waterdichting, lippage, betegelde inspectieluiken en voegmaterialen bij badkamer- en tegelwerk.`
+
+# Kennisbank: Techniek achter de afwerking
+
+Een mooi tegelvlak is het zichtbare eindpunt van een technische opbouw.
+In de Kennisbank leggen we onderwerpen uit die invloed hebben op de
+kwaliteit, levensduur en afwerking van badkamer- en tegelprojecten.
+
+## Waterdichting in de badkamer
+
+Waarom tegels alleen geen volledige waterdichting vormen en waarom de
+onderliggende opbouw in natte zones belangrijk is.\
+`Lees artikel` → `/kennisbank/#waterdichting`
+
+## Tegel-lippage voorkomen
+
+Wat lippage is, waardoor hoogteverschillen ontstaan en waarom
+ondergrond, tegel en plaatsing samen moeten worden bekeken.\
+`Lees artikel` → `/kennisbank/#lippage`
+
+## Onzichtbaar betegeld inspectieluik
+
+Hoe technische installaties bereikbaar kunnen blijven zonder een
+opvallend standaardluik in het tegelbeeld.\
+`Lees artikel` → `/kennisbank/#inspectieluik`
+
+## Epoxyvoeg vs. cementvoeg
+
+De belangrijkste verschillen tussen twee typen voegmateriaal en waarom
+de toepassing bepaalt wat passend is.\
+`Lees artikel` → `/kennisbank/#epoxy-vs-cement`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="waterdichting"></a>
+## Waterdichting in de Badkamer: Wat Gebeurt er Onder de Tegels?
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/kennisbank/#waterdichting`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Waterdichting Badkamer & Kimband | Uitleg | SPPAT`
+**Voormalige meta description (referentie):** `Hoe werkt waterdichting onder badkamertegels? Lees over natte zones, aansluitingen, kimband en waarom de ondergrond belangrijk is.`
+
+### Zijn tegels waterdicht?
+
+Tegels zelf kunnen zeer weinig water opnemen, maar een betegeld
+oppervlak bestaat ook uit voegen, hoeken, doorvoeren en aansluitingen.
+Daarom wordt de bescherming tegen vocht niet uitsluitend aan de
+zichtbare tegelafwerking overgelaten.
+
+### Natte zones vragen extra aandacht
+
+Met name rond douche en bad krijgt de onderliggende opbouw te maken met
+regelmatige waterbelasting. Welke waterdichtingsoplossing geschikt is,
+hangt af van ondergrond, systeem en situatie.
+
+### Wat doet kimband?
+
+Kimband wordt binnen bepaalde waterdichtingssystemen gebruikt om
+kwetsbare aansluitingen, bijvoorbeeld tussen wand en vloer, mee op te
+nemen in de afdichtingslaag. Het is onderdeel van een systeem en geen
+los wondermiddel.
+
+### Doorvoeren en details
+
+Leidingen, kranen, afvoeren, nissen en andere onderbrekingen verdienen
+specifieke aandacht. De exacte oplossing hoort bij de gekozen technische
+opbouw.
+
+### Wat betekent dit voor uw renovatie?
+
+Vraag bij een badkamerproject niet alleen welke tegel wordt gebruikt,
+maar ook hoe de natte zones technisch worden opgebouwd.
+
+**Commercial path:** `Complete badkamerrenovatie` →
+`/complete-badkamer-renovatie/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="lippage"></a>
+## Tegel Lippage: Hoogteverschillen Beperken
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/kennisbank/#lippage`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Tegel Lippage: Oorzaken & Beperken | SPPAT`
+**Voormalige meta description (referentie):** `Wat is lippage bij tegelwerk? Lees waardoor hoogteverschillen ontstaan en welke rol ondergrond, tegelformaat en plaatsing spelen.`
+
+### Wat is lippage?
+
+Lippage is het zichtbare of voelbare hoogteverschil tussen de randen van
+aangrenzende tegels. Een beperkte tolerantie kan samenhangen met
+producteigenschappen en de toepassing, maar storende verschillen kunnen
+het eindbeeld sterk beïnvloeden.
+
+### Waardoor ontstaat het?
+
+Mogelijke factoren zijn:
+
+-   onvoldoende vlakke ondergrond;
+-   maat- of vormtoleranties van de tegel;
+-   langwerpige of grote formaten;
+-   gekozen legpatroon;
+-   plaatsing en lijmbed;
+-   combinatie van meerdere factoren.
+
+### Waarom grootformaat extra aandacht vraagt
+
+Naarmate tegels groter worden, wordt vlakheid van de ondergrond steeds
+belangrijker en kunnen kleine afwijkingen over een groter vlak
+doorwerken.
+
+### Levelingsystemen
+
+Een levelingsysteem kan tijdens plaatsing helpen bij het onderling
+positioneren van tegels. Het vervangt echter geen geschikte ondergrond
+of correcte voorbereiding.
+
+### Praktische conclusie
+
+Lippage wordt niet opgelost door één hulpmiddel. Een goed resultaat
+begint bij de combinatie van ondergrond, tegel, patroon en uitvoering.
+
+**Commercial path:** `Grootformaat tegels` →
+`/specialisaties/#grootformaat`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="inspectieluik"></a>
+## Het Onzichtbare, Betegelde Inspectieluik
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/kennisbank/#inspectieluik`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Onzichtbaar Betegeld Inspectieluik Badkamer | SPPAT`
+**Voormalige meta description (referentie):** `Een betegeld inspectieluik houdt techniek bereikbaar zonder het tegelbeeld onnodig te onderbreken. Lees hoe het principe werkt.`
+
+### Techniek bereikbaar houden
+
+Inbouwreservoirs, afsluiters en andere technische onderdelen kunnen
+onderhoud of inspectie nodig hebben. Ze volledig onbereikbaar wegwerken
+is daarom niet altijd verstandig.
+
+### Waarom een betegeld luik?
+
+Een betegeld inspectieluik kan de toegang behouden terwijl de zichtzijde
+aansluit bij het omliggende tegelwerk.
+
+### Waar zit de moeilijkheid?
+
+Het luik moet niet alleen openen. Ook voeglijnen, maatvoering,
+constructie en omliggende tegels moeten logisch op elkaar aansluiten.
+
+### Niet iedere situatie is hetzelfde
+
+Afmeting, systeem, tegelgewicht en benodigde toegang bepalen welke
+oplossing geschikt is.
+
+**Commercial path:** `Complete badkamerrenovatie` →
+`/complete-badkamer-renovatie/`
+
+------------------------------------------------------------------------
+
+---
+
+<a id="epoxy-vs-cement"></a>
+## Epoxyvoeg vs. Cementvoeg
+
+**Sectiestatus:** geïntegreerd in deze pagina; geen aparte publieke URL.
+**Voormalige URL:** ``/kennisbank/#epoxy-vs-cement`` → redirect naar deze sectie.
+**Voormalige SEO title / zoekintentie (referentie):** `Epoxyvoeg vs. Cementvoeg | Verschillen Uitgelegd | SPPAT`
+**Voormalige meta description (referentie):** `Wat is het verschil tussen epoxyvoeg en cementvoeg? Lees over eigenschappen, toepassing, verwerking en keuze per tegelproject.`
+
+### Cementgebonden voeg
+
+Cementgebonden voegmortel is een veelgebruikte oplossing voor tegelwerk.
+Er bestaan verschillende producten voor verschillende voegbreedtes en
+toepassingen.
+
+### Epoxyvoeg
+
+Epoxyvoeg is gebaseerd op hars en heeft andere eigenschappen en
+verwerking dan een traditionele cementgebonden voeg. Het materiaal kan
+interessant zijn waar specifieke eisen aan belasting, reiniging of
+vochtbestendigheid gelden.
+
+### Is epoxy altijd beter?
+
+Nee. "Sterker" of "duurder" betekent niet automatisch dat het voor
+iedere ruimte de beste keuze is. Tegeltype, toepassing, uitstraling,
+verwerking en onderhoud spelen mee.
+
+### Wat bepaalt de keuze?
+
+-   ruimte en belasting;
+-   type tegel;
+-   gewenste voegbreedte en uitstraling;
+-   onderhoud;
+-   technische eisen van het project.
+
+De uiteindelijke keuze moet aansluiten bij de daadwerkelijke toepassing
+en productvoorschriften.
+
+**Commercial path:** `Keuken tegelwerk` → `/tegelwerk/#keuken`
+
+------------------------------------------------------------------------
+
+---
+
+# 15. DEFINITIEVE INTERNE LINKSTRUCTUUR
+
+## Home
+
+→ Complete badkamer  
+→ Tegelwerk  
+→ Specialisaties  
+→ Projecten  
+→ Contact  
+→ relevante Kennisbank-secties
+
+## Complete badkamerrenovatie
+
+→ Toiletrenovatie-sectie op dezelfde pagina  
+→ Tegelwerk / badkamer-sectie  
+→ Projecten  
+→ Kennisbank / waterdichting  
+→ Contact
+
+## Badkamerrenovatie Almere
+
+→ Complete badkamerrenovatie  
+→ Tegelwerk  
+→ Projecten waar contextueel passend  
+→ Contact
+
+## Tegelwerk
+
+→ interne ankers voor vloer, wand, keuken, balkon en badkamer  
+→ Specialisaties  
+→ Projecten  
+→ relevante Kennisbank-secties  
+→ Contact
+
+## Specialisaties
+
+→ interne ankers voor grootformaat, mozaïek, natuursteen en keramisch parket  
+→ Tegelwerk  
+→ Projecten  
+→ relevante Kennisbank-secties  
+→ Contact
+
+## Projecten
+
+→ relevante diensten alleen waar natuurlijk  
+→ Contact
+
+## Over ons
+
+→ Complete badkamerrenovatie  
+→ Tegelwerk  
+→ Projecten  
+→ Contact
+
+## Kennisbank
+
+→ interne ankers voor de vier technische onderwerpen  
+→ per onderwerp één natuurlijke commerciële vervolgstap; geen agressieve verkoopblokken midden in uitleg.
+
+## Contact
+
+→ geen verplichte extra commerciële route; primaire taak is aanvraag/contact.
+
+
+---
+
+# 16. URL-CONSOLIDATIE EN REDIRECTS
+
+De volgende voormalige standalone URL's worden niet als aparte pagina's gebouwd. Gebruik permanente redirects naar de relevante sectie op de geconsolideerde pagina.
+
+| Voormalige URL | Nieuwe bestemming |
+|---|---|
+| `/complete-badkamer-renovatie/#toiletrenovatie` | `/complete-badkamer-renovatie/#toiletrenovatie` |
+| `/tegelwerk/#vloertegels` | `/tegelwerk/#vloertegels` |
+| `/tegelwerk/#wandtegels` | `/tegelwerk/#wandtegels` |
+| `/tegelwerk/#keuken` | `/tegelwerk/#keuken` |
+| `/tegelwerk/#balkon` | `/tegelwerk/#balkon` |
+| `/tegelwerk/#badkamer` | `/tegelwerk/#badkamer` |
+| `/specialisaties/#grootformaat` | `/specialisaties/#grootformaat` |
+| `/specialisaties/#mozaiek` | `/specialisaties/#mozaiek` |
+| `/specialisaties/#natuursteen` | `/specialisaties/#natuursteen` |
+| `/specialisaties/#keramisch-parket` | `/specialisaties/#keramisch-parket` |
+| `/kennisbank/#waterdichting` | `/kennisbank/#waterdichting` |
+| `/kennisbank/#lippage` | `/kennisbank/#lippage` |
+| `/kennisbank/#inspectieluik` | `/kennisbank/#inspectieluik` |
+| `/kennisbank/#epoxy-vs-cement` | `/kennisbank/#epoxy-vs-cement` |
+
+**Niet consolideren:** `/complete-badkamer-renovatie/almere/` blijft een zelfstandige ondersteunende SEO-landingspagina.
+
+
+---
+
+# 17. CONTENTREGELS VOOR MEDIA EN ALT
+
+1. Een foto mag alleen `SPPAT-project`, `ons werk` of vergelijkbaar worden genoemd wanneer de herkomst als echt SPPAT-werk is bevestigd.
+2. Stock-, referentie- en gegenereerde beelden zijn illustratief. Geen projectclaim, locatieclaim of uitvoeringsclaim.
+3. ALT-tekst beschrijft wat daadwerkelijk zichtbaar is. Geen keyword stuffing.
+4. Voorbeelden:
+   - `Badkamer met grootformaat wandtegels en inloopdouche`
+   - `Detail van mozaïek in een douchewand`
+   - `Voorbereiding van een vloer voor tegelwerk`
+5. Niet gebruiken:
+   - `Beste tegelzetter Nederland luxe badkamer goedkoop`
+   - `Door SPPAT gerealiseerde badkamer in Almere` wanneer dat niet geverifieerd is.
+
+## Mediaworkflow voor de designfase
+
+De designer selecteert in deze fase **geen concrete foto's en ontvangt hiervoor geen verplichte fotobibliotheek**.
+
+De designer bepaalt per visuele positie uitsluitend de **beeldbehoefte**:
+
+- wat op de foto zichtbaar moet zijn;
+- type shot / afstand;
+- gewenste oriëntatie;
+- voorkeursverhouding / aspect ratio;
+- benodigde compositie in het kader;
+- veilige crop-zones en focal point;
+- gewenste visuele schaal en plaatsing;
+- gedrag/crop op desktop, compact desktop, tablet en mobiel;
+- of echte geverifieerde SPPAT-projectfotografie verplicht is, voorkeur heeft, of illustratief beeld is toegestaan.
+
+Na goedkeuring van het design worden de bestaande SPPAT-foto's afzonderlijk geselecteerd en aan deze beeldposities gekoppeld. De designer hoeft in de designspecificatie geen bestandsnamen te noemen en mag het ontwerp niet beperken tot toevallig beschikbare foto's.
+
+## Projectfotografie
+
+- De pagina `/projecten/` bevat zes afzonderlijke, geverifieerde SPPAT-projectgroepen.
+- Iedere projectgroep blijft inhoudelijk gescheiden; beelden uit verschillende projectseries mogen niet als één project worden gepresenteerd.
+- Losse geverifieerde SPPAT-foto's zonder projectcontext mogen als aanvullende werkbeelden/details worden gebruikt, maar niet als fictieve case.
+- De designer bepaalt voor Project 01–06 welke beeldrollen en formaten de compositie idealiter nodig heeft; de daadwerkelijke beeldselectie gebeurt daarna.
+
+
+---
+
+# 18. SEO- EN REDACTIONELE REGELS
+
+- Eén duidelijke H1 per publieke pagina.
+- Zoekterm natuurlijk in title, H1 en relevante bodycopy; niet mechanisch herhalen.
+- De geconsolideerde servicepagina's dragen meerdere verwante zoekintenties via duidelijke H2/H3-secties en interne ankers; maak hiervoor geen extra pagina's tenzij de contentarchitectuur later expliciet wordt gewijzigd.
+- Kennisbank beantwoordt technische vragen binnen één inhoudelijke pagina en linkt daarna logisch naar een dienst.
+- Geen teksten kopiëren tussen pagina's om lengte te creëren.
+- Geen `premium`, `luxe`, `beste`, `perfect` als lege zelfclaim. Kwaliteit wordt onderbouwd met scope, ervaring, technische uitleg en werkelijk werk.
+- Geen verzonnen reviews of klantcitaten.
+- Geen verzonnen keurmerken, garanties of verzekeringen.
+- Geen standaard prijs- of tijdsclaims.
+- Nederland is het primaire werkgebied. Almere is uitsluitend een ondersteunende lokale landingspagina.
+- Schrijf in natuurlijk Nederlands met `u/uw` als vaste aanspreekvorm.
+- Interne ankers moeten semantisch en technisch stabiel zijn; gebruik de in dit document gedefinieerde anchor-ID's.
+- Canonical URLs verwijzen naar de 9 definitieve publieke pagina's, niet naar voormalige child-URL's.
+
+
+---
+
+# 19. STRUCTURED-DATA CONTENT BASIS
+
+De ontwikkelaar mag structured data technisch implementeren, maar alleen met bevestigde waarden uit deze contentbron.
+
+Geschikte typen:
+
+- `Organization` / `LocalBusiness` met tijdelijke contactwaarden totdat echte gegevens worden ingevuld;
+- `Service` voor de commerciële dienstpagina's waar inhoudelijk passend;
+- `BreadcrumbList` voor de ondersteunende Almere-landingspagina en waar relevant binnen de 9-pagina-architectuur;
+- `CollectionPage` of `WebPage` voor Projecten en Kennisbank waar technisch passend;
+- `FAQPage` uitsluitend wanneer de zichtbare pagina daadwerkelijk dezelfde FAQ bevat en de implementatie aan actuele zoekmachinerichtlijnen voldoet.
+
+Geen `reviewRating`, `aggregateRating`, prijs, openingstijden, adres of andere velden verzinnen.
+
+
+---
+
+# 20. CONTENT CHECK VOOR LIVEGANG
+
+Vóór publicatie vervangen/controleren:
+
+- `[PHONE]` / voorbeeldtelefoon;
+- `[EMAIL]`;
+- `[WHATSAPP]`;
+- Instagram;
+- KvK;
+- BTW;
+- eventueel definitief adres;
+- werkende formulierbestemming;
+- definitieve privacy-/AVG-tekst en eventueel privacybeleid;
+- herkomststatus van iedere projectfoto;
+- selectie van foto's tegen de door de designer gespecificeerde media requirements;
+- alle ALT-teksten nadat definitieve beelden zijn gekozen;
+- geen tijdelijke responstijd;
+- geen prijs of doorlooptijd die niet expliciet door SPPAT is bevestigd;
+- alle interne links en anchor-links;
+- alle redirects uit hoofdstuk 16;
+- titles/meta descriptions op uiteindelijke lengte en SERP-weergave;
+- canonical URLs, sitemap en indexeerbaarheid technisch controleren;
+- sitemap bevat alleen de 9 definitieve publieke pagina's en overige later expliciet goedgekeurde wettelijke/systeempagina's.
+
+
+---
+
+# 21. CONTENT AUTHORITY
+
+Dit bestand is de enige inhoudelijke bron voor de nieuwe website.
+
+Oudere SPPAT Markdown-bestanden blijven uitsluitend archief/source material. Zij mogen niet worden gebruikt om:
+
+- oude Almere-first positionering terug te brengen;
+- oude prijzen of termijnen te publiceren;
+- de eerdere uitgebreide child-page-architectuur te herstellen;
+- designbeslissingen als contentregel te behandelen;
+- onbevestigde technische methodes als vaste SPPAT-werkwijze te publiceren;
+- fictieve projectdata te creëren.
+
+Bij conflict geldt dit bestand.
+
+## Definitieve publieke sitemap
+
+1. `/`
+2. `/complete-badkamer-renovatie/`
+3. `/complete-badkamer-renovatie/almere/`
+4. `/tegelwerk/`
+5. `/specialisaties/`
+6. `/projecten/`
+7. `/over-ons/`
+8. `/contact/`
+9. `/kennisbank/`

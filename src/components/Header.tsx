@@ -14,7 +14,10 @@ export function Header() {
 
   useEffect(() => {
     if (isOpen) {
+      const previousFocus = document.activeElement as HTMLElement | null;
+      const previousOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
+      modalRef.current?.querySelector<HTMLElement>('a[href], button')?.focus();
       
       const handleKeyDown = (e: KeyboardEvent) => {
         if (e.key === 'Escape') setIsOpen(false);
@@ -45,10 +48,9 @@ export function Header() {
       document.addEventListener('keydown', handleKeyDown);
       return () => {
         document.removeEventListener('keydown', handleKeyDown);
-        document.body.style.overflow = "unset";
+        document.body.style.overflow = previousOverflow;
+        previousFocus?.focus();
       };
-    } else {
-      document.body.style.overflow = "unset";
     }
   }, [isOpen]);
 
@@ -68,7 +70,7 @@ export function Header() {
         Ga naar hoofdinhoud
       </a>
       
-      <div className="max-w-[1440px] w-full mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
+      <div className="max-w-full w-full mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="font-space font-bold uppercase tracking-[0.05em] text-[#1A1A1A] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]">
           SPPAT
         </Link>
@@ -81,6 +83,7 @@ export function Header() {
                <Link
                  key={link.href}
                  href={link.href}
+                 aria-current={isActive ? "page" : undefined}
                  className={`font-space text-[14px] uppercase tracking-[0.05em] text-[#1A1A1A] hover:underline decoration-1 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A] ${isActive ? 'underline' : ''}`}
                >
                  {link.label}
@@ -96,7 +99,7 @@ export function Header() {
         <button
           className="lg:hidden p-2 -mr-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A]"
           onClick={toggleMenu}
-          aria-label="Toggle menu"
+          aria-label="Open menu"
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
         >
@@ -129,6 +132,7 @@ export function Header() {
                  <Link
                    key={link.href}
                    href={link.href}
+                   aria-current={isActive ? "page" : undefined}
                    onClick={toggleMenu}
                    className={`font-space text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-[-0.02em] text-[#1A1A1A] word-break-keep focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1A1A1A] ${isActive ? 'underline decoration-1 underline-offset-4' : ''}`}
                  >

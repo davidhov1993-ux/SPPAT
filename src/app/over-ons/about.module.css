@@ -1,0 +1,131 @@
+.page {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.page p {
+  font-size: var(--text-body);
+  line-height: 1.6;
+}
+
+.page [data-media-id] > picture {
+  position: absolute;
+  inset: 0;
+}
+
+.hero,
+.reading,
+.closing {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-space-sm);
+  margin-bottom: var(--spacing-space-lg);
+}
+
+.heroImage {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.heroCopy {
+  position: relative;
+  z-index: 1;
+  margin: calc(-100vw * .1875 - 24px) 20px 0;
+  padding-block: var(--spacing-space-sm);
+  background: var(--background);
+}
+
+.reading,
+.closing {
+  padding-inline: 20px;
+}
+
+.readingCopy,
+.closingCopy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-space-lg);
+}
+
+.contextLink {
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  text-decoration-thickness: 1px;
+}
+
+.contextLink:hover {
+  text-decoration: none;
+}
+
+.brief {
+  min-width: 0;
+  padding-block: var(--spacing-space-sm);
+  border-block: 1px solid var(--color-blueprint);
+}
+
+.brief h2 {
+  margin-bottom: var(--spacing-space-sm);
+  font-size: var(--text-h3);
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero,
+  .reading,
+  .closing {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: var(--spacing-space-sm);
+  }
+
+  .heroImage {
+    grid-column: 5 / -1;
+    grid-row: 1;
+    aspect-ratio: 16 / 9;
+  }
+
+  .heroCopy {
+    grid-column: 1 / 7;
+    grid-row: 2;
+    margin: clamp(-120px, -8vw, -64px) 0 0;
+    padding: var(--spacing-space-md);
+    border-top: 1px solid var(--color-blueprint);
+    border-right: 1px solid var(--color-blueprint);
+  }
+
+  .reading,
+  .closing {
+    padding-inline: 0;
+  }
+
+  .readingCopy {
+    grid-column: 3 / 11;
+    padding-inline: var(--spacing-space-sm);
+    border-left: 1px solid var(--color-blueprint);
+  }
+
+  .closingCopy {
+    grid-column: 3 / 9;
+    padding-inline: var(--spacing-space-sm);
+    border-left: 1px solid var(--color-blueprint);
+  }
+
+  .brief {
+    grid-column: 9 / -1;
+    align-self: end;
+    margin-right: var(--spacing-space-sm);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .heroCopy {
+    grid-column: 1 / 9;
+    padding-inline: 24px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .heroImage { aspect-ratio: 4 / 3; }
+}

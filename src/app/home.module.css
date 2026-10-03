@@ -1,0 +1,261 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page p {
+  font-size: var(--text-body);
+  line-height: 1.6;
+}
+
+.compoundBreak {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .compoundBreak {
+    display: initial;
+  }
+}
+
+/* Keep image dimensions controlled by the approved slot, not the source ratio. */
+.page [data-media-id] > picture {
+  position: absolute;
+  inset: 0;
+}
+
+.section,
+.hero {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+  margin-bottom: var(--spacing-space-xl);
+}
+
+.section {
+  padding-inline: 20px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.heroImage {
+  aspect-ratio: 4 / 5;
+}
+
+.heroCopy {
+  position: relative;
+  z-index: 1;
+  margin: calc(-100vw * .1875) 20px 0;
+  padding: var(--spacing-space-sm);
+  background: var(--background);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-space-sm);
+}
+
+.actions > a {
+  max-width: 100%;
+  flex: 1 1 13rem;
+}
+
+.capabilities {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--spacing-space-sm);
+}
+
+.bathImage {
+  margin-inline: -20px;
+}
+
+.bathCopy {
+  position: relative;
+  margin-top: -80px;
+  padding: var(--spacing-space-sm);
+  background: var(--background);
+}
+
+.tileImage {
+  grid-row: 3;
+  margin-top: var(--spacing-space-lg);
+}
+
+.tileCopy {
+  grid-row: 4;
+}
+
+.technicalImage {
+  aspect-ratio: 16 / 9;
+  border-block: 1px solid var(--color-blueprint);
+}
+
+.projects {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 20px;
+  gap: var(--spacing-space-sm);
+  margin-inline: -20px;
+  padding: 0 20px var(--spacing-space-sm);
+}
+
+.project {
+  flex: 0 0 88%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.projectImages {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.projectMain {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.projectDetail {
+  grid-column: 8 / -1;
+  grid-row: 2;
+  z-index: 1;
+  margin-top: -24px;
+  padding: 8px;
+  background: var(--background);
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.ctaImage {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.ctaCopy {
+  position: relative;
+  z-index: 1;
+  margin: -64px 20px 0;
+  padding: var(--spacing-space-sm);
+  background: var(--background);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-inline: 40px;
+    border-inline: 1px solid var(--color-blueprint);
+  }
+
+  .hero,
+  .capabilities,
+  .cta {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .heroImage {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
+  }
+
+  .heroCopy {
+    grid-column: 1 / 11;
+    margin: calc(100vw * -.084375) 0 0 40px;
+    padding: var(--spacing-space-md);
+  }
+
+  .actions > a {
+    flex: 0 1 auto;
+  }
+
+  .capabilities {
+    gap: var(--spacing-space-sm);
+  }
+
+  .bathImage {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    margin: 0;
+    align-self: start;
+  }
+
+  .bathCopy {
+    grid-column: 1 / 6;
+    grid-row: 2;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tileCopy {
+    grid-column: 7 / -1;
+    grid-row: 1;
+    align-self: end;
+    padding-top: var(--spacing-space-lg);
+  }
+
+  .tileImage {
+    grid-column: 7 / -1;
+    grid-row: 2;
+    margin: 0;
+    align-self: start;
+  }
+
+  .technicalImage {
+    aspect-ratio: 21 / 9;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    gap: var(--spacing-space-xl);
+    margin: 0;
+    padding: 0;
+  }
+
+  .projectMain {
+    grid-column: 1 / 11;
+  }
+
+  .projectDetail {
+    grid-column: 9 / -1;
+    margin-top: -50%;
+  }
+
+  .ctaImage {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    aspect-ratio: 21 / 9;
+    min-height: 100%;
+  }
+
+  .ctaCopy {
+    grid-column: 1 / 10;
+    grid-row: 1;
+    align-self: end;
+    margin: var(--spacing-space-md) 0 var(--spacing-space-md) 40px;
+    padding: var(--spacing-space-md);
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroCopy {
+    grid-column-end: 9;
+  }
+
+  .ctaCopy {
+    grid-column-end: 8;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .heroImage, .ctaImage { aspect-ratio: 4 / 3; }
+}

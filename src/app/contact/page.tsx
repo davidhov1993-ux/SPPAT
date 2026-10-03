@@ -3,8 +3,6 @@
 import { H1, H2, H3 } from "@/components/Typography";
 import { useState, useRef } from "react";
 import { businessData } from "@/config/businessData";
-import type { Metadata } from 'next';
-import Head from 'next/head';
 
 export default function ContactPage() {
   const [fileName, setFileName] = useState("");
@@ -27,11 +25,9 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="w-full px-5 md:px-10 pt-space-xl pb-space-xl">
-      <title>Contact | Badkamerrenovatie & Tegelwerk Bespreken | SPPAT</title>
-      <meta name="description" content="Bespreek uw badkamer- of tegelproject met SPPAT. Stuur uw wensen, foto’s en afmetingen en geef ons een eerste beeld van het project." />
+    <main data-page="contact" className="w-full px-5 md:px-10 pt-space-xl pb-space-xl">
       
-      <div className="grid grid-cols-4 md:grid-cols-12 gap-10 max-w-[1440px] mx-auto">
+      <div className="grid grid-cols-4 md:grid-cols-12 gap-10 max-w-full mx-auto">
         
         {/* Left Column: Info */}
         <div className="col-span-4 md:col-span-5 flex flex-col gap-space-md">

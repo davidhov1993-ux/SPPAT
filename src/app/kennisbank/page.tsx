@@ -1,6 +1,5 @@
 import { H1, H2 } from "@/components/Typography";
 import { MediaSlot } from "@/components/MediaSlot";
-;
 import { CtaBrief } from "@/components/CtaComponents";
 
 import { Metadata } from "next";
@@ -9,14 +8,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Kennisbank | Badkamertechniek & Tegelwerk | SPPAT",
   description: "Praktische uitleg over waterdichting, lippage, betegelde inspectieluiken en voegmaterialen bij badkamer- en tegelwerk.",
-  alternates: { canonical: "https://www.sppat.nl/kennisbank" },
+  alternates: { canonical: "https://www.sppat.nl/kennisbank/" },
 };
 
 
 
 export default function KennisbankPage() {
   return (
-    <main className="w-full">
+    <main data-page="kennisbank" className="w-full">
       {/* Hero */}
       <section className="grid grid-cols-4 md:grid-cols-12 px-5 md:px-10 pt-space-xl pb-space-lg">
         <div className="col-span-4 md:col-span-8 md:col-start-3">
@@ -26,6 +25,8 @@ export default function KennisbankPage() {
           </p>
         </div>
       </section>
+
+      <section className="knowledge-index"><div><H2>Waterdichting in de badkamer</H2><p className="mt-space-sm">Waarom tegels alleen geen volledige waterdichting vormen en waarom de onderliggende opbouw in natte zones belangrijk is.</p><div className="mt-space-sm flex flex-wrap gap-6"><Link href="/kennisbank/#waterdichting" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Lees artikel →</Link></div></div><div><H2>Tegel-lippage voorkomen</H2><p className="mt-space-sm">Wat lippage is, waardoor hoogteverschillen ontstaan en waarom ondergrond, tegel en plaatsing samen moeten worden bekeken.</p><div className="mt-space-sm flex flex-wrap gap-6"><Link href="/kennisbank/#lippage" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Lees artikel →</Link></div></div><div><H2>Onzichtbaar betegeld inspectieluik</H2><p className="mt-space-sm">Hoe technische installaties bereikbaar kunnen blijven zonder een opvallend standaardluik in het tegelbeeld.</p><div className="mt-space-sm flex flex-wrap gap-6"><Link href="/kennisbank/#inspectieluik" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Lees artikel →</Link></div></div><div><H2>Epoxyvoeg vs. cementvoeg</H2><p className="mt-space-sm">De belangrijkste verschillen tussen twee typen voegmateriaal en waarom de toepassing bepaalt wat passend is.</p><div className="mt-space-sm flex flex-wrap gap-6"><Link href="/kennisbank/#epoxy-vs-cement" className="font-space text-sm uppercase tracking-wider underline underline-offset-4">Lees artikel →</Link></div></div></section>
 
       {/* Main Content with Sticky Index */}
       <section className="grid grid-cols-4 md:grid-cols-12 px-5 md:px-10">
@@ -160,24 +161,20 @@ export default function KennisbankPage() {
                 <li>onderhoud;</li>
                 <li>technische eisen van het project.</li>
               </ul>
+              <div className="knowledge-close"><div>
               <p className="mt-space-xs">
                 De uiteindelijke keuze moet aansluiten bij de daadwerkelijke toepassing en productvoorschriften.
               </p>
               <div className="mt-space-sm mt-6">
                 <Link href="/tegelwerk/#keuken" className="font-space uppercase text-sm tracking-wider hover:underline text-[#1A1A1A] font-bold">Keuken tegelwerk →</Link>
               </div>
+              </div><CtaBrief title="Project bespreken" link="/contact/" /></div>
             </div>
             <MediaSlot mediaId="KB-EPOXY" className="w-full aspect-[4/3] md:aspect-[16/9] object-cover" />
           </article>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="px-5 md:px-10 pb-space-xl flex justify-end">
-        <div className="w-full md:w-1/3">
-          <CtaBrief title="Uw project bespreken?" link="/contact/" />
-        </div>
-      </section>
     </main>
   );
 }

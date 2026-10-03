@@ -1,0 +1,126 @@
+/* Final master: content-sized blueprint grids for the remaining public pages. */
+main :where(section, article, div, form, a, h1, h2, h3) { min-width: 0; }
+main :where(p, li) { font-size: var(--text-body); line-height: 1.6; }
+main :where(h1, h2, h3) { word-break: keep-all; overflow-wrap: break-word; }
+main [id] { scroll-margin-top: 88px; }
+:focus-visible { outline: 2px solid #1a1a1a; outline-offset: 4px; }
+main[data-page] { width: 100%; max-width: 100%; margin-inline: auto; }
+
+.service-hero, .tile-hero, .material-xxl, .cta-anchor {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+.service-hero-copy, .tile-hero-copy, .material-xxl-copy, .material-parket-copy, .cta-anchor-copy {
+  position: relative;
+  z-index: 1;
+  margin: -64px 20px 0;
+  padding: 24px;
+  background: var(--background);
+}
+.material-xxl-copy { background: white; }
+.material-parket-copy { grid-column: 1 / -1; order: 2; }
+.tile-hero-image { min-width: 0; }
+.cta-anchor-image { grid-column: 1 / -1; }
+.cta-monument { padding-inline: 20px; }
+.material-index, .knowledge-index {
+  display: grid;
+  grid-column: 1 / -1;
+  gap: var(--spacing-space-md);
+  margin: 0 20px var(--spacing-space-xl);
+}
+.material-index > div, .knowledge-index > div {
+  border-top: 1px solid var(--color-blueprint);
+  padding-top: 24px;
+}
+.material-index h2, .knowledge-index h2 { font-size: var(--text-h3); }
+main[data-page="specialisaties"] h3, main[data-page="kennisbank"] h3 {
+  font-family: var(--font-space), sans-serif;
+  font-size: var(--text-h3);
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+.stone-diptych {
+  grid-column: 1 / -1;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 24px;
+  margin-bottom: var(--spacing-space-md);
+}
+.stone-diptych > div { flex: 0 0 85%; scroll-snap-align: start; }
+.service-close { padding-inline: 20px; }
+.project-secondary { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 24px; }
+.project-secondary > div { flex: 0 0 85%; scroll-snap-align: start; }
+.knowledge-close { display: grid; gap: 24px; }
+.knowledge-close > div:last-child { margin-top: 24px; padding-block: 24px; }
+.knowledge-close > div:last-child h2 { font-size: var(--text-h3); }
+main[data-page="projecten"] section:last-child { text-align: left; padding-top: 0; }
+main[data-page="projecten"] section:last-child > div { grid-column: 1 / -1; }
+main[data-page="projecten"] .cta-monument { padding-inline: 0; }
+main[data-page="projecten"] .break-inside-avoid picture { height: auto; }
+main[data-page="contact"] :where(input, select, textarea) { min-width: 0; width: 100%; }
+main[data-page="contact"] input[type="checkbox"] { width: auto; }
+main[data-page="contact"] form { min-width: 0; }
+main[data-page="contact"] form button { max-width: 100%; }
+main[data-page="contact"] > div > div:last-child { padding: 24px; }
+
+@media (min-width: 768px) {
+  .service-hero, .tile-hero, .material-xxl, .cta-anchor {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 24px;
+  }
+  .service-hero > div:first-child, .material-xxl > div:first-child { grid-column: 1 / -1; }
+  .service-hero-copy { grid-column: 1 / 9; margin: -96px 0 0 40px; padding: var(--spacing-space-md); }
+  .tile-hero { padding-top: var(--spacing-space-md); }
+  .tile-hero-image { grid-column: 3 / -1; grid-row: 1; align-self: start; }
+  .tile-hero-copy { grid-column: 1 / 7; grid-row: 1; align-self: start; margin: -48px 0 0 40px; padding: 24px; border-right: 1px solid var(--color-blueprint); }
+  .material-xxl-copy { grid-column: 1 / 9; margin: -96px 0 0 40px; padding: var(--spacing-space-md); }
+  .material-parket-copy { grid-column: 1 / 7; grid-row: 2; margin: -64px 0 0; padding: 24px; border-left: 1px solid var(--color-blueprint); }
+  main[data-page="specialisaties"] #keramisch-parket > div:first-child { grid-row: 1; }
+  .cta-anchor-copy { grid-column: 1 / 9; margin: -96px 0 0 40px; padding: var(--spacing-space-md); }
+  .cta-monument, .service-close { padding-inline: 40px; }
+  .material-index, .knowledge-index { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-inline: calc(100% / 6); }
+  .stone-diptych { grid-column: 1 / 11; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; }
+  main[data-page="specialisaties"] #natuursteen > div:nth-child(2) { grid-column: 1 / 11; }
+  .project-beta { align-items: start; }
+  .project-beta > div:nth-child(2) { margin-top: 64px; }
+  .project-beta > div:nth-child(3) { margin-top: 120px; }
+  .project-secondary { flex-direction: column; overflow: visible; }
+  .project-secondary > div { flex: none; }
+  main[data-page="projecten"] :is(#project-03, #project-05) > div:nth-child(3) { grid-column: 1 / 11; grid-row: 3; }
+  main[data-page="projecten"] :is(#project-03, #project-05) .project-secondary {
+    grid-column: 8 / -1;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: -64px;
+    padding: 8px;
+    gap: 8px;
+    background: var(--background);
+    z-index: 1;
+  }
+  main[data-page="projecten"] .project-secondary > div { aspect-ratio: 1; }
+  .project-rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); overflow: visible; }
+  .project-rail > div { width: auto; }
+  .knowledge-close { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); align-items: end; }
+  .knowledge-close > div:last-child { grid-column: auto; margin-top: 0; }
+  main[data-page="contact"] > div > div:last-child { padding: 24px; }
+}
+@media (min-width: 1280px) {
+  .service-hero-copy { grid-column-end: 8; }
+  .tile-hero-copy { grid-column-end: 6; }
+  .material-parket-copy { grid-column-end: 6; }
+  .cta-anchor-copy { grid-column-end: 8; }
+  main[data-page="contact"] > div > div:last-child { padding: var(--spacing-space-md); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
+
+/* Intermediate windows retain a landscape image rather than a stretched phone hero. */
+@media (min-width: 481px) and (max-width: 767px) {
+  .service-hero [data-media-id], .tile-hero [data-media-id], .material-xxl [data-media-id] { aspect-ratio: 4 / 3; }
+}
+main[data-page] :where(p, ul) { max-width: 75ch; }

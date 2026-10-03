@@ -21,7 +21,7 @@ export function Breadcrumbs() {
   const mobileBack = items.length > 1 ? items[items.length - 2] : null;
 
   return (
-    <nav aria-label="Breadcrumb" className="w-full max-w-[1440px] mx-auto px-5 lg:px-8 py-space-sm">
+    <nav aria-label="Breadcrumb" className="w-full max-w-full mx-auto px-5 lg:px-8 py-space-sm">
       {/* Desktop */}
       <ol className="hidden md:flex flex-wrap items-center gap-2 font-space text-[12px] uppercase tracking-widest text-[#1A1A1A] opacity-70">
         <li>

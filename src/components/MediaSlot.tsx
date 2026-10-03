@@ -7,6 +7,7 @@ interface MediaSlotProps {
   className?: string;
   bleedMobile?: boolean; // For edge-to-edge bleed on mobile
   caption?: string;
+  priority?: boolean;
 }
 
 export function MediaSlot({
@@ -16,6 +17,7 @@ export function MediaSlot({
   className = "",
   bleedMobile = false,
   caption,
+  priority = false,
 }: MediaSlotProps) {
   let aspectClass = "";
   if (aspectRatio !== "auto") {
@@ -44,7 +46,7 @@ export function MediaSlot({
         className={`relative ${insetClass} ${bleedClass} ${className} ${aspectClass}`}
         data-media-id={mediaId}
       >
-        <picture className="block w-full h-full">
+        <picture className={`block w-full h-full ${aspectRatio !== "auto" || /aspect-|h-full/.test(className) ? "absolute inset-0" : ""}`}>
           {media.desktopSrc && <source media="(min-width: 1024px)" srcSet={media.desktopSrc} />}
           {media.tabletSrc && <source media="(min-width: 834px)" srcSet={media.tabletSrc} />}
           {media.mobileSrc && <source media="(max-width: 833px)" srcSet={media.mobileSrc} />}
@@ -53,7 +55,8 @@ export function MediaSlot({
             alt={media.alt} 
             className="w-full h-full object-cover block"
             style={{ objectPosition: media.objectPosition || "center" }}
-            loading="lazy"
+            loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : undefined}
             data-media-id={mediaId}
           />
         </picture>
